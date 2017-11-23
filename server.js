@@ -1,6 +1,7 @@
 const express = require('express'),
 bodyParser = require('body-parser'),
 path = require('path'),
+logger = require('morgan'),
 mongoose = require('mongoose'),
 config = require('./db/config');
 User = require('./api/models/User');
@@ -21,6 +22,7 @@ port = process.env.PORT || 3001;
 
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
+app.use(logger('dev'));
 
 server.listen(port, () => {
   console.log(`Dont listen to my port ${port}`);
