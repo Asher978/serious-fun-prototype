@@ -61,7 +61,7 @@ UserSchema.methods = {
     const user = this;
     return user.update({
       $pull: {
-        toekns: { token }
+        tokens: { token }
       }
     });
   }
