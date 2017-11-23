@@ -2,7 +2,7 @@ const express = require('express'),
 bodyParser = require('body-parser'),
 mongoose = require('mongoose'),
 config = require('./db/config');
-
+User = require('./api/models/User');
 require('dotenv').config();
 
 mongoose.connect(config.database);
