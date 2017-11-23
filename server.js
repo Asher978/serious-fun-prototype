@@ -28,6 +28,8 @@ app.get('/', (req,res) => {
   res.send('hello world');
 });
 
+const userRoutes = require('./api/routes/userRoutes');
+app.use('/user',userRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
