@@ -1,9 +1,11 @@
 const express = require('express'),
 bodyParser = require('body-parser'),
 path = require('path'),
+logger = require('morgan'),
 mongoose = require('mongoose'),
 config = require('./db/config');
-User = require('./api/models/User');
+User = require('./api/models/User'),
+School = require('./api/models/Schools');
 require('dotenv').config();
 
 mongoose.connect(config.database);
@@ -21,6 +23,7 @@ port = process.env.PORT || 3001;
 
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
+app.use(logger('dev'));
 
 server.listen(port, () => {
   console.log(`Dont listen to my port ${port}`);
@@ -32,6 +35,9 @@ app.get('/', (req,res) => {
 
 const userRoutes = require('./api/routes/userRoutes');
 app.use('/user', userRoutes);
+
+const schoolRoutes = require('./api/routes/schoolRoutes');
+app.use('/schools', schoolRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
