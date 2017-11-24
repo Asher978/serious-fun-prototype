@@ -4,6 +4,11 @@ const mongoose = require('mongoose'),
 const School = mongoose.model('School');
 
 const schoolController = {
+    getAll : (req, res) => {
+        School.find({},(err, schools)=>{
+            res.send(schools);
+        });
+    },
     newSchool : (req, res) => {
         let body = _.pick(req.body, ['schoolName', 'st_Addr', 'city', 'state', 'zipcode']);
         console.log(body);
