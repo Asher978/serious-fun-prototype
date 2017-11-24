@@ -4,7 +4,8 @@ path = require('path'),
 logger = require('morgan'),
 mongoose = require('mongoose'),
 config = require('./db/config');
-User = require('./api/models/User');
+User = require('./api/models/User'),
+School = require('./api/models/Schools');
 require('dotenv').config();
 
 mongoose.connect(config.database);
@@ -34,6 +35,9 @@ app.get('/', (req,res) => {
 
 const userRoutes = require('./api/routes/userRoutes');
 app.use('/user', userRoutes);
+
+const schoolRoutes = require('./api/routes/schoolRoutes');
+app.use('/schools', schoolRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
