@@ -4,7 +4,7 @@ const mongoose = require('mongoose'),
 const School = mongoose.model('School');
 
 const schoolController = {
-    newSchool : (req,res) => {
+    newSchool : (req, res) => {
         let body = _.pick(req.body, ['schoolName', 'st_Addr', 'city', 'state', 'zipcode']);
         console.log(body);
         const new_School = new School(body);
@@ -13,7 +13,20 @@ const schoolController = {
         }).catch(err=>{
             console.log(err);
             res.send(err);
-        })
+        });
+    },
+    removeSchool : (req, res) => {
+        let body = _.pick(req.body, ["school_id"]);
+        console.log(body);
+        School.findByIdAndRemove({_id: body.school_id}).then(()=>{
+            res.send({
+                status: 'ok',
+                school_id: body.school_id
+            });
+            }).catch(err=> {
+                console.log(err);
+                res.send(err);
+            });
     }
 
 }
