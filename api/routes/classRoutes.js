@@ -3,5 +3,6 @@ const classesRouter = require('express').Router(),
 
 classesRouter.get('/', classesController.getAll);
 classesRouter.post('/', classesController.addClass);
+classesRouter.put('/:classId', classesController.updateClass);
 
 module.exports = classesRouter;
