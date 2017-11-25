@@ -32,7 +32,16 @@ const schoolController = {
                 console.log(err);
                 res.send(err);
             });
-    }
+    },
+    updateSchool : (req, res) => {
+        let body = _.pick(req.body, ['schoolName', 'st_Addr', 'city', 'state', 'zipcode']);
+        School.findOneAndUpdate(req.params.schoolId, body, {"new": true}, (err, school) => {
+            res.send({
+                "status" : "ok",
+                school
+            });
+        });
+    }  
 
 }
 
