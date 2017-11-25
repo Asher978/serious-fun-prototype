@@ -3,9 +3,10 @@ bodyParser = require('body-parser'),
 path = require('path'),
 logger = require('morgan'),
 mongoose = require('mongoose'),
-config = require('./db/config');
+config = require('./db/config'),
 User = require('./api/models/User'),
-School = require('./api/models/Schools');
+School = require('./api/models/Schools'),
+Class = require('./api/models/Classes');
 require('dotenv').config();
 
 mongoose.connect(config.database);
