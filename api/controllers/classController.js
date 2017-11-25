@@ -19,6 +19,15 @@ const ClassesController = {
             });
         });
         console.log(body);
+    },
+    updateClass : (req, res) => {
+        let body = _.pick(req.body,['className', 'desc', 'price', 'picture_url']);
+        Class.findByIdAndUpdate(req.params.classId, body, {"new" : true}, (err, updClass) => {
+            res.send({
+                "status" : "ok",
+                "updatedClass" :updClass
+            });
+        })        
     }
 }
 
