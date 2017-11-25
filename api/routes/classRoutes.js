@@ -1,8 +1,6 @@
-const classRouter = require('express').Router();
+const classRouter = require('express').Router(),
+    classController = require('./../controllers/classController');
 
-classRouter.get('/', (req, res) => {
-    console.log('this is the class route');
-    res.send('this is the class route'); 
-});
+classRouter.get('/', classController.getAll);
 
 module.exports = classRouter;
