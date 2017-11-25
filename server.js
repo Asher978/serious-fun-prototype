@@ -3,9 +3,10 @@ bodyParser = require('body-parser'),
 path = require('path'),
 logger = require('morgan'),
 mongoose = require('mongoose'),
-config = require('./db/config');
+config = require('./db/config'),
 User = require('./api/models/User'),
-School = require('./api/models/Schools');
+School = require('./api/models/Schools'),
+Class = require('./api/models/Classes');
 require('dotenv').config();
 
 mongoose.connect(config.database);
@@ -38,6 +39,9 @@ app.use('/user', userRoutes);
 
 const schoolRoutes = require('./api/routes/schoolRoutes');
 app.use('/schools', schoolRoutes);
+
+const classesRoutes =  require('./api/routes/classRoutes');
+app.use('/classes', classesRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
