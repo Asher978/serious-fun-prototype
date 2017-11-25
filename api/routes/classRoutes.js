@@ -4,5 +4,6 @@ const classesRouter = require('express').Router(),
 classesRouter.get('/', classesController.getAll);
 classesRouter.post('/', classesController.addClass);
 classesRouter.put('/:classId', classesController.updateClass);
+classesRouter.delete('/:classId', classesController.removeClass);
 
 module.exports = classesRouter;
