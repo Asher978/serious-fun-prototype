@@ -28,6 +28,15 @@ const ClassesController = {
                 "updatedClass" :updClass
             });
         })        
+    },
+    removeClass : (req, res) => {
+        Class.findByIdAndRemove(req.params.classId,(err, removedClass) => {
+            console.log(removedClass);
+            res.send({
+                "status" : "ok",
+                "removedClass": removedClass
+            });
+        });
     }
 }
 
