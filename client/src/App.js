@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import RegisterForm from './components/RegisterForm';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
   constructor () {
