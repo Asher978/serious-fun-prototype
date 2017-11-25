@@ -40,8 +40,8 @@ app.use('/user', userRoutes);
 const schoolRoutes = require('./api/routes/schoolRoutes');
 app.use('/schools', schoolRoutes);
 
-const classRoutes =  require('./api/routes/classRoutes');
-app.use('/classes', classRoutes);
+const classesRoutes =  require('./api/routes/classRoutes');
+app.use('/classes', classesRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');

@@ -3,7 +3,7 @@ const mongoose = require('mongoose'),
 
 const Class = mongoose.model('Class');
 
-const ClassController = {
+const ClassesController = {
     getAll : (req, res) => {
         Class.find({},(err, classes) => {
             res.send(classes);
@@ -22,4 +22,4 @@ const ClassController = {
     }
 }
 
-module.exports = ClassController;
+module.exports = ClassesController;
