@@ -4,5 +4,7 @@ const schoolRoutes = require('express').Router(),
 schoolRoutes.get('/', schoolController.getAll);      
 schoolRoutes.post('/add', schoolController.newSchool);
 schoolRoutes.delete('/delete', schoolController.removeSchool);
+schoolRoutes.put('/:schoolId', schoolController.updateSchool);
+
 
 module.exports = schoolRoutes;
