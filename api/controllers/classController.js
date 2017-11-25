@@ -5,11 +5,21 @@ const Class = mongoose.model('Class');
 
 const ClassController = {
     getAll : (req, res) => {
-        console.log('this are all the classes');
         Class.find({},(err, classes) => {
             res.send(classes);
         });
     },
+    addClass : (req,res) => {
+        let body = _.pick(req.body,['className', 'desc', 'price', 'picture_url']),
+        newClass = new Class(body);
+        newClass.save((err, newclass) => {
+            res.send({
+                "status": "ok",
+                "newClass":newclass
+            });
+        });
+        console.log(body);
+    }
 }
 
 module.exports = ClassController;
