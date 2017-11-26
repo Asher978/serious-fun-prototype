@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 
@@ -115,4 +115,34 @@
 .homeImage {
   height: 100vh;
   width: 100vw;
+}
+
+/* ADMIN PAGE SETTINGS */
+
+/* HEADER */
+#header {
+  background: #333333;
+  color: #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+#header .create {
+ padding-top: 20px;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  background: #cccccc;
+  color: #333333;
+}
+
+.breadcrumb a {
+  color: #333333;
+}
+
+/* WEBSITE OVERVIEW */
+.overview {
+  text-align: center;
+
 }
