@@ -1,4 +1,5 @@
 import React from 'react';
+import Dropzone from 'react-dropzone';
 
 const AddClass = props => {
   return (
@@ -15,9 +16,9 @@ const AddClass = props => {
               <input 
               className='form-control' 
               type="text"
-              name="className"
+              name="classname"
               placeholder="Enter the Class Name"
-              value={props.className}
+              value={props.classname}
               onChange={props.handleInputChange}
               required />
           </span>
@@ -49,6 +50,14 @@ const AddClass = props => {
               onChange={props.handleInputChange}
               required />
           </span>
+          </div>
+          <div className='form-group'>
+            <span className='input-group'>
+                <li className='breadcrumb main-color-bg'>Class Image: Click on the box below to add an image for this class</li>
+            </span>
+            <Dropzone onDrop={props.handleDrop} accept="image/jpeg, image/png, image/jpg">
+                <p>Drop your files or click here to upload</p>
+            </Dropzone>
           </div>
           <input type="submit" value="Submit!" className="main-color-bg btn-lg btn-block" />
       </form>
