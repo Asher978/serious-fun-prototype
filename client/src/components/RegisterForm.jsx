@@ -9,13 +9,16 @@ const RegisterForm = props => {
           <img className='img-circle' width={350} src={logo} alt="logo"/> 
           <h1>User Account Registration</h1><br/>
           <div className='well'>
-            <form>
+            <form onSubmit={props.handleRegister}>
               <div className='form-group'>
                 <span className='input-group'>
                 <span className='input-group-addon main-color-bg'><i className="glyphicon glyphicon-user"></i></span>
                 <input type='text' 
                       className='form-control'
                       placeholder='Please select a User Name'
+                      name='registerUsername'
+                      value={props.registerUsername}
+                      onChange={props.handleInputChange}
                       required     
                 />
                 </span>
@@ -26,6 +29,9 @@ const RegisterForm = props => {
                 <input type='password'
                       className='form-control'
                       placeholder='Please select a password'
+                      name='registerPassword'
+                      value={props.registerPassword}
+                      onChange={props.handleInputChange}
                       required
                 />
                 </span>
