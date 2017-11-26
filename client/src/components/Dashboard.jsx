@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import superagent from 'superagent';
+import sha1 from 'sha1';
 
 import AddSchool from '../components/AddSchool';
 import AddClass from '../components/AddClass';
@@ -15,6 +17,10 @@ class Dashboard extends Component {
       city: '',
       state: '',
       zipcode: '',
+      classname: '',
+      desc: '',
+      price: '',
+      picture_url: ''
     }
   }
 
@@ -50,7 +56,63 @@ class Dashboard extends Component {
 
   handleAddClass = e => {
     e.preventDefault();
-    axios.post('/classes')
+    axios.post('/classes', {
+      'className': this.state.classname,
+      'desc': this.state.desc,
+      'price': this.state.price,
+      'picture_url': this.state.picture_url
+    }).then(res => {
+      console.log(res);
+      this.setState({
+        classname: '',
+        desc: '',
+        price: '',
+        picture_url: ''
+      })
+    }).catch(err => {
+      console.log(err);
+    })
+  }
+
+  handleDrop = file => {
+    const image = file[0]
+
+    const cloudName = 'dnixq4nvb';
+    const url = 'https://api.cloudinary.com/v1_1/'+cloudName+'/image/upload';
+
+    // cloudinary API requires timestamp in milli seconds
+    const timestamp = Date.now()/1000;
+    const uploadPreset = 'gsolnxvn';
+
+    // prepping the string for the upload
+    const paramsStr = 'timestamp='+timestamp+'&upload_preset='+uploadPreset+'e-1DajckQfu24NBJcwTcAvNtlYM';
+    
+    //encrypting the string before sending it to API
+    const signature = sha1(paramsStr); 
+    const params = {
+      'api_key': '862335133837131',
+      'timestamp': timestamp,
+      'upload_preset': uploadPreset,
+      'signature': signature
+    }
+
+    let uploadRequest = superagent.post(url)
+    uploadRequest.attach('file', image)
+
+    Object.keys(params).forEach((key) => {
+      uploadRequest.field(key, params[key])
+    })
+
+    uploadRequest.end((err, res) => {
+      if (err) {
+        console.log(err)
+        return
+      } else {
+        var imgUrl = res.body.secure_url
+        console.log(imgUrl)
+        this.setState({ picture_url: imgUrl })
+      }
+    })
   }
 
   decideWhichForm = () => {
@@ -66,7 +128,15 @@ class Dashboard extends Component {
                     handleAddSchool={this.handleAddSchool}
                  /> )
       case 'class':
-        return ( <AddClass /> )
+        return ( <AddClass 
+                    handleInputChange={this.handleInputChange}
+                    classname={this.state.classname}
+                    desc={this.state.desc}
+                    price={this.state.price}
+                    picture_url={this.state.picture_url}
+                    handleAddClass={this.handleAddClass}
+                    handleDrop={this.handleDrop}
+                 /> )
       default:
         break
     }
