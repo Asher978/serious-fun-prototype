@@ -1,15 +1,26 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+} from 'react-router-dom';
+
+import Auth from './modules/Auth';
 import RegisterForm from './components/RegisterForm';
 import LoginForm from './components/LoginForm';
+import Nav from './components/Nav';
+import Dashboard from './components/Dashboard';
+import Home from './components/Home';
 
 class App extends Component {
   constructor () {
     super ();
     this.state = {
+      auth: Auth.isUserAuthenticated(),
       registerUsername: '',
-      registerpassword: '',
+      registerPassword: '',
       loginUsername: '',
       loginPassword: ''
     }
@@ -28,11 +39,15 @@ class App extends Component {
     e.preventDefault();
     axios.post('/user', {
       username: this.state.registerUsername,
-      password: this.state.registerpassword
+      password: this.state.registerPassword
     }).then(res => {
-      console.log(res);
-      // TODO - save the token in session storage and set state
-
+      console.log(res.data.user.tokens[0].token);
+      if(res.data.user.tokens[0].token) {
+        Auth.authenticateToken(res.data.user.tokens[0].token);
+        this.setState({
+          auth: Auth.isUserAuthenticated(),
+        })
+      }
     }).catch(err => {
       console.log(err);
     })
@@ -40,29 +55,87 @@ class App extends Component {
 
   handleLogin = (e) => {
     e.preventDefault();
-    axios.post('/login', {
-      username: this.state.loginUsername,
-      password: this.state.loginPassword,
+    axios.post('/user/login', {
+      "username": this.state.loginUsername,
+      "password": this.state.loginPassword,
     }).then(res => {
-      // TODO - save token in session and set state
-
+      if(res.data.user.tokens[0].token) {
+        Auth.authenticateToken(res.data.user.tokens[0].token);
+        this.setState({
+          auth: Auth.isUserAuthenticated(),
+          loginUsername: '',
+          loginPassword: '',
+        })
+      }
     }).catch(err => {
       console.log(err);
     })
   }
 
   handleLogout = () => {
-
-    // TODO - send axios delete request
-    //        send token in header
-    //        set state after the response
+    axios.delete('/user/logout', {
+      "token": Auth.getToken(),
+    }).then(res => {
+      Auth.deauthenticateUser();
+      this.setState({
+        auth: Auth.isUserAuthenticated(),
+        loginUsername: '',
+        loginPassword: '',
+      })
+    })
   }
 
   render() {
     return (
-      <div className="App">
-        <h1>Lets have some SERIOUS FUN....!!!</h1>
-      </div>
+      <Router>
+        <div className="App">
+          <Nav handleLogout={this.handleLogout} />
+
+          <Route 
+            exact
+            path="/"
+            component={Home}
+          />
+
+          <Route
+            exact
+            path="/dashboard"
+            render={() =>
+              this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}
+          />
+          
+          <Route exact path='/login' 
+          render={() =>
+              !this.state.auth ? (
+                <LoginForm
+                  auth={this.state.auth}
+                  loginUsername={this.state.loginUsername}
+                  loginPassword={this.state.loginPassword}
+                  handleInputChange={this.handleInputChange}
+                  handleLogin={this.handleLogin}
+                />
+              ) : (
+                <Redirect to="/dashboard" />
+              )}
+           />
+
+           <Route exact path='/register'
+           render={() =>
+              !this.state.auth ? (
+                <RegisterForm
+                  auth={this.state.auth}
+                  registerUsername={this.state.registerUsername}
+                  registerPassword={this.state.registerPassword}
+                  handleInputChange={this.handleInputChange}
+                  handleRegister={this.handleRegister}
+                />
+              ) : (
+                <Redirect to="/dashboard" />
+              )}
+          />
+
+        </div>
+      </Router>
     );
   }
 }
