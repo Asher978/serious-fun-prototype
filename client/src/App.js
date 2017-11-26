@@ -74,7 +74,9 @@ class App extends Component {
 
   handleLogout = () => {
     axios.delete('/user/logout', {
-      "token": Auth.getToken(),
+      headers: {
+        "x-auth": Auth.getToken(),
+      }
     }).then(res => {
       Auth.deauthenticateUser();
       this.setState({
