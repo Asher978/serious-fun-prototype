@@ -28,6 +28,11 @@ class DetailedSChool  extends Component {
                     {this.state.data.st_Addr}<br/>
                     {this.state.data.city} {this.state.data.state} {this.state.data.zipcode}
                 </p>
+                <ul>
+                    <li>class1</li>
+                    <li>class2</li>
+                    <li>class3</li>
+                </ul>
             </div>
         )
     }
