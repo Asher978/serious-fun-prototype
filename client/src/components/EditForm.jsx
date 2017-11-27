@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import { Redirect } from 'react-router-dom';
 class EditForm extends Component{
     constructor(){
         super();
         this.state = {
             data: null,
             dataLoaded: false,
+            redirect: false,
             title1 : '',
             content1 : '',
             title2 : '',
@@ -53,7 +54,9 @@ class EditForm extends Component{
             'bodyTitle1': this.state.bodyTitle1,
             'bodyTitle2': this.state.bodyTitle2
         }).then(response => {
-            console.log(response);
+            this.setState({
+                redirect: true
+            });
         }).catch(err =>{
             console.log(err);
         })
@@ -164,6 +167,10 @@ class EditForm extends Component{
             )
     }
     render(){
+        const { redirect } = this.state; 
+        if(redirect){
+            return <Redirect to='/'/>
+        }
         return(
         <div>
             {this.state.dataLoaded ? this.renderHomeForm(): <h1>Loading....</h1> }
