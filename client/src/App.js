@@ -4,7 +4,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Redirect,
+  Redirect
 } from 'react-router-dom';
 
 import Auth from './modules/Auth';
@@ -14,6 +14,7 @@ import Nav from './components/Nav';
 import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import Schools from './components/Schools';
+import DetailedSchool from './components/DetailedSchool';
 
 class App extends Component {
   constructor () {
@@ -95,11 +96,12 @@ class App extends Component {
           <Nav handleLogout={this.handleLogout} />
 
           <Route exact path="/" component={Home}/>
+          <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
           <Route exact path='/schools' render={() => <Schools />} />
 
           <Route exact path="/dashboard" render={() =>
               this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
-          
+
           <Route exact path='/login' 
           render={() =>
               !this.state.auth ? (
