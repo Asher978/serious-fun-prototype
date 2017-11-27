@@ -6,6 +6,7 @@ import sha1 from 'sha1';
 
 import AddSchool from '../components/AddSchool';
 import AddClass from '../components/AddClass';
+import EditForm from './EditForm';
 
 class Dashboard extends Component {
   constructor () {
@@ -145,6 +146,8 @@ class Dashboard extends Component {
                     handleAddClass={this.handleAddClass}
                     handleDrop={this.handleDrop}
                  /> )
+      case 'home': 
+          return ( <EditForm />)
       default:
         break
     }
@@ -168,6 +171,7 @@ class Dashboard extends Component {
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a type='button' onClick={() => this.setState({ page: 'school' })}>Add a School</a></li>
                     <li><a type='button' onClick={() => this.setState({ page: 'class' })}>Add a Class</a></li>
+                    <li><a type='button' onClick={() => this.setState({ page: 'home' })}>Edit Home Page</a></li>
                   </ul>
                 </div>
               </div>
