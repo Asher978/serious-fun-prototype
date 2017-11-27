@@ -137,6 +137,8 @@ class Dashboard extends Component {
                     handleAddClass={this.handleAddClass}
                     handleDrop={this.handleDrop}
                  /> )
+      case 'home': 
+          return ( <h1>this it the update form for the home page</h1>)
       default:
         break
     }
@@ -160,6 +162,7 @@ class Dashboard extends Component {
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a type='button' onClick={() => this.setState({ page: 'school' })}>Add a School</a></li>
                     <li><a type='button' onClick={() => this.setState({ page: 'class' })}>Add a Class</a></li>
+                    <li><a type='button' onClick={() => this.setState({ page: 'home' })}>Edit Home Page</a></li>
                   </ul>
                 </div>
               </div>
