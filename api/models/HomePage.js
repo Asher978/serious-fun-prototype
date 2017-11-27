@@ -1,8 +1,6 @@
-import { Module } from 'module';
-
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema();
+const Schema = mongoose.Schema;
 
 const HomePageSchema = new Schema({
     title1 : {
