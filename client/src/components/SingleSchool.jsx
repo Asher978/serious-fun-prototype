@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class SingleSChool  extends Component {
     constructor(){
@@ -16,7 +17,7 @@ class SingleSChool  extends Component {
               {this.props.data.st_Addr}<br/>
               {this.props.data.city} {this.props.data.state} {this.props.data.zipcode}
           </p>
-          <button onClick={this.handleButton}>More info</button>
+          <Link to={`/detailedSchool/${this.props.data._id}`}>See Classes</Link>
       </div>
       )
     }
