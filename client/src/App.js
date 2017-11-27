@@ -13,6 +13,7 @@ import LoginForm from './components/LoginForm';
 import Nav from './components/Nav';
 import Dashboard from './components/Dashboard';
 import Home from './components/Home';
+import Schools from './components/Schools';
 
 class App extends Component {
   constructor () {
@@ -93,18 +94,11 @@ class App extends Component {
         <div className="App">
           <Nav handleLogout={this.handleLogout} />
 
-          <Route 
-            exact
-            path="/"
-            component={Home}
-          />
+          <Route exact path="/" component={Home}/>
+          <Route exact path='/schools' render={() => <Schools />} />
 
-          <Route
-            exact
-            path="/dashboard"
-            render={() =>
-              this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}
-          />
+          <Route exact path="/dashboard" render={() =>
+              this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
           
           <Route exact path='/login' 
           render={() =>
