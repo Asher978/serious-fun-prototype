@@ -3,5 +3,6 @@ const homePageRouter = require('express').Router(),
 
 homePageRouter.get('/',homePageController.retrieveData);
 homePageRouter.post('/', homePageController.setData);
+homePageRouter.put('/', homePageController.updateData);
 
 module.exports = homePageRouter;
