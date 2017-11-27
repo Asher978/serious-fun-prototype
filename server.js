@@ -7,6 +7,7 @@ config = require('./db/config'),
 User = require('./api/models/User'),
 School = require('./api/models/Schools'),
 Class = require('./api/models/Classes');
+HomePage = require('./api/models/HomePage');
 require('dotenv').config();
 
 mongoose.connect(config.database);
