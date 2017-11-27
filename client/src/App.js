@@ -15,6 +15,7 @@ import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
+import EditSchool from './components/EditSchool';
 
 class App extends Component {
   constructor () {
@@ -98,6 +99,7 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
           <Route exact path='/schools' render={() => <Schools />} />
+          <Route exact path='/editSchool/:school_id' component={EditSchool} />
 
           <Route exact path="/dashboard" render={() =>
               this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>

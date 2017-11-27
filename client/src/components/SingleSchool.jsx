@@ -18,6 +18,7 @@ class SingleSChool  extends Component {
               {this.props.data.city} {this.props.data.state} {this.props.data.zipcode}
           </p>
           <Link to={`/detailedSchool/${this.props.data._id}`}>See Classes</Link>
+          <Link to={`/editSchool/${this.props.data._id}`}>Edit School</Link>
       </div>
       )
     }
