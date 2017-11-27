@@ -1,7 +1,6 @@
-const homePageRouter = require('express').Router();
+const homePageRouter = require('express').Router(),
+    homePageController = require('./../controllers/homePageController');
 
-homePageRouter.get('/',(req, res) => {
-    console.log('this route works');
-});
+homePageRouter.get('/',homePageController.retrieveData);
 
 module.exports = homePageRouter;
