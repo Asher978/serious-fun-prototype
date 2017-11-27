@@ -9,6 +9,14 @@ const schoolController = {
             res.send(schools);
         });
     },
+    findById : (req, res) => {
+        School.findById(req.params.school_id, (err, school) => {
+            res.send({
+                "status" : "ok",
+                school : school
+            });
+        })
+    },
     newSchool : (req, res) => {
         let body = _.pick(req.body, ['schoolName', 'st_Addr', 'city', 'state', 'zipcode']);
         console.log(body);
