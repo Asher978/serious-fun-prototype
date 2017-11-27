@@ -16,8 +16,7 @@ const SchoolSchema = new Schema({
     st_Addr : {
         type: String,
         required: true,
-        minlength : 6,
-        unique: true
+        minlength : 6
     },
     city : {
         type: String, 
@@ -33,6 +32,15 @@ const SchoolSchema = new Schema({
         type: String,
         required: true,
         maxlength: 5
+    },
+    description : {
+        type: String,
+        required: true,
+        minlength: 20
+    },
+    picture_url : {
+        type : String,
+        required : true
     }
 }); 
 
