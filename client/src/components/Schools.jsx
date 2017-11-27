@@ -12,7 +12,7 @@ class Schools extends Component{
       dataLoaded: false
     }
   }
-  componentWillMount(){
+  componentDidMount(){
     axios.get('/schools/').then(schools => {
       this.setState({
         schools : schools.data,
