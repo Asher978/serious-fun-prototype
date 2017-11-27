@@ -17,10 +17,11 @@ class Dashboard extends Component {
       city: '',
       state: '',
       zipcode: '',
+      description: '',
+      picture_url: '',
       classname: '',
       desc: '',
       price: '',
-      picture_url: ''
     }
   }
 
@@ -39,7 +40,9 @@ class Dashboard extends Component {
       'st_Addr': this.state.st_Addr,
       'city': this.state.city,
       'state': this.state.state,
-      'zipcode': this.state.zipcode
+      'zipcode': this.state.zipcode,
+      'description': this.state.description,
+      'picture_url': this.state.picture_url
     }).then(res => {
       console.log(res);
       this.setState({
@@ -48,6 +51,8 @@ class Dashboard extends Component {
         city: '',
         state: '',
         zipcode: '',
+        description: '',
+        picture_url: '',
       })
     }).catch(err => {
       console.log(err);
@@ -125,7 +130,10 @@ class Dashboard extends Component {
                     city={this.state.city}
                     state={this.state.state}
                     zipcode={this.state.zipcode}
+                    description={this.state.description}
+                    picture_url={this.state.picture_url}
                     handleAddSchool={this.handleAddSchool}
+                    handleDrop={this.handleDrop}
                  /> )
       case 'class':
         return ( <AddClass 
