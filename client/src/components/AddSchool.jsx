@@ -1,4 +1,5 @@
 import React from 'react';
+import Dropzone from 'react-dropzone';
 
 const AddSchool = props => {
   return (
@@ -18,6 +19,19 @@ const AddSchool = props => {
                 name="schoolName"
                 placeholder="Enter the School Name"
                 value={props.schoolName}
+                onChange={props.handleInputChange}
+                required />
+            </span>
+            </div>
+            <div className='form-group'>
+            <span className='input-group'>
+                <span className='input-group-addon main-color-bg'>School Description</span>
+                <input 
+                className='form-control' 
+                type="text"
+                name="description"
+                placeholder="Enter the School Description"
+                value={props.description}
                 onChange={props.handleInputChange}
                 required />
             </span>
@@ -73,6 +87,14 @@ const AddSchool = props => {
                 onChange={props.handleInputChange}
                 required />
             </span>
+            </div>
+            <div className='form-group'>
+                <span className='input-group'>
+                    <li className='breadcrumb main-color-bg'>School Image: Click on the box below to add an image for this School</li>
+                </span>
+                <Dropzone onDrop={props.handleDrop} accept="image/jpeg, image/png, image/jpg">
+                    <p>Drop your files or click here to upload</p>
+                </Dropzone>
             </div>
             <input type="submit" value="Submit!" className="main-color-bg btn-lg btn-block" />
         </form>
