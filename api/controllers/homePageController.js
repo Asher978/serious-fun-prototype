@@ -18,7 +18,7 @@ const homePageController = {
                 res.send({
                     "status" : "Error",
                     "message" : "Home Page was already set"
-                })
+                });
             } else {
                 let body = _.pick(req.body, 
                     ['title1','content1','title2','content2','title3','content3','bodyTitle1', 'bodyTitle2']),
@@ -28,7 +28,18 @@ const homePageController = {
                     res.send(new_Home);
                 });
             }
-        })
+        });
+    },
+    updateData : (req, res) => {
+        let body = _.pick(req.body, 
+            ['title1','content1','title2','content2','title3','content3','bodyTitle1', 'bodyTitle2'])
+        HomePage.findOneAndUpdate({}, body, {"new": true}, (err, content) => {
+            console.log(err);
+            res.send({
+                "status" : "ok",
+                content
+            });
+        });
     }
 }
 
