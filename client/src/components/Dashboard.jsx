@@ -6,6 +6,7 @@ import sha1 from 'sha1';
 
 import AddSchool from '../components/AddSchool';
 import AddClass from '../components/AddClass';
+import EditForm from './EditForm';
 
 class Dashboard extends Component {
   constructor () {
@@ -138,7 +139,7 @@ class Dashboard extends Component {
                     handleDrop={this.handleDrop}
                  /> )
       case 'home': 
-          return ( <h1>this it the update form for the home page</h1>)
+          return ( <EditForm />)
       default:
         break
     }
