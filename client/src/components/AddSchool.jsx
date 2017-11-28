@@ -1,8 +1,7 @@
 import React from 'react';
 import Dropzone from 'react-dropzone';
 
-const AddSchool = props => {
-  return (
+const AddSchool = props => (
     <div className="register">
         <div className="container">
             <ol className="breadcrumb main-color-bg">
@@ -20,7 +19,9 @@ const AddSchool = props => {
                 placeholder="Enter the School Name"
                 value={props.schoolName}
                 onChange={props.handleInputChange}
-                required />
+                pattern=".{6,}"
+                required 
+                title='School Name must be at least 6 characters'/>
             </span>
             </div>
             <div className='form-group'>
@@ -33,7 +34,9 @@ const AddSchool = props => {
                 placeholder="Enter the School Description"
                 value={props.description}
                 onChange={props.handleInputChange}
-                required />
+                pattern=".{20,}"
+                required
+                title='School Description must be at least 20 characters' />
             </span>
             </div>
             <div className='form-group'>
@@ -46,7 +49,9 @@ const AddSchool = props => {
                 name="st_Addr"
                 value={props.st_Addr}
                 onChange={props.handleInputChange}
-                required />
+                pattern=".{6,}"
+                required
+                title='Street Address must be at least 6 characters' />
             </span>
             </div>
             <div className='form-group'>
@@ -59,7 +64,9 @@ const AddSchool = props => {
                 name="city"
                 value={props.city}
                 onChange={props.handleInputChange}
-                required />
+                pattern=".{5,}"
+                required
+                title='City must be at least 5 characters' />
             </span>
             </div>
             <div className='form-group'>
@@ -72,7 +79,9 @@ const AddSchool = props => {
                 name="state"
                 value={props.state}
                 onChange={props.handleInputChange}
-                required />
+                pattern=".{2}"
+                required
+                title='State must be ONLY 2 characters' />
             </span>
             </div>
             <div className='form-group'>
@@ -80,12 +89,14 @@ const AddSchool = props => {
                 <span className='input-group-addon main-color-bg'>Zip Code</span>
                 <input 
                 className='form-control' 
-                type="text"
+                type="number"
                 placeholder="Enter the zipcode"
                 name="zipcode"
                 value={props.zipcode}
                 onChange={props.handleInputChange}
-                required />
+                pattern=".{5}"
+                required
+                title='Zip Code must be ONLY 5 characters' />
             </span>
             </div>
             <div className='form-group'>
@@ -100,6 +111,5 @@ const AddSchool = props => {
         </form>
     </div>
   )
-}
 
 export default AddSchool;
