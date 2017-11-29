@@ -23,6 +23,9 @@ class Dashboard extends Component {
       classname: '',
       desc: '',
       price: '',
+      schools: null,
+      schoolsLoaded: true,
+      ids: []
     }
   }
 
@@ -32,6 +35,22 @@ class Dashboard extends Component {
     this.setState({
       [name]: value,
     });
+  }
+
+  handleRadioChange = e => {
+    const isChecked = e.target.checked;
+    const value = e.target.value;
+    const id = this.state.ids;
+    if(isChecked && !id.includes(value)) {
+      id.push(value);
+      this.setState({
+        ids: id
+      });
+    } else if (!isChecked && id.includes(value)) {
+      var unCheckedIndex = id.indexOf(value);
+      id.splice(unCheckedIndex, 1);
+      this.setState({ ids: id });
+    }
   }
 
   handleAddSchool = (e) => {
@@ -66,7 +85,8 @@ class Dashboard extends Component {
       'className': this.state.classname,
       'desc': this.state.desc,
       'price': this.state.price,
-      'picture_url': this.state.picture_url
+      'picture_url': this.state.picture_url,
+      'schoolIds': this.state.ids
     }).then(res => {
       console.log(res);
       this.setState({
@@ -76,6 +96,18 @@ class Dashboard extends Component {
         picture_url: ''
       })
     }).catch(err => {
+      console.log(err);
+    })
+  }
+
+  componentDidMount() {
+    axios.get('/schools/').then(res => {
+      console.log(res.data)
+      this.setState({
+        schools : res.data,
+        schoolsLoaded: true
+      });
+    }).catch(err=>{
       console.log(err);
     })
   }
@@ -145,6 +177,8 @@ class Dashboard extends Component {
                     picture_url={this.state.picture_url}
                     handleAddClass={this.handleAddClass}
                     handleDrop={this.handleDrop}
+                    schools={this.state.schools}
+                    handleRadioChange={this.handleRadioChange}
                  /> )
       case 'home': 
           return ( <EditForm />)
