@@ -47,7 +47,6 @@ class DetailedSChool  extends Component {
         })
     }
 
-
     renderSchool = () => {
         return (
             <div className='container'>    
@@ -61,16 +60,6 @@ class DetailedSChool  extends Component {
 
                 { this.renderClasses() }
 
-                {/* <h1>{this.state.data.schoolName}</h1>
-                <p>
-                    {this.state.data.st_Addr}<br/>
-                    {this.state.data.city} {this.state.data.state} {this.state.data.zipcode}
-                </p>
-                <ul>
-                    <li>class1</li>
-                    <li>class2</li>
-                    <li>class3</li>
-                </ul> */}
             </div>
         )
     }
