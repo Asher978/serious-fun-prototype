@@ -1,7 +1,8 @@
 const mongoose = require('mongoose'),
     _ = require('lodash');
 
-const Class = mongoose.model('Class');
+const Class = mongoose.model('Class'),
+    School = mongoose.model('School');
 
 const ClassesController = {
     getAll : (req, res) => {
@@ -10,9 +11,16 @@ const ClassesController = {
         });
     },
     addClass : (req,res) => {
+        let { schoolIds } = req.body;
         let body = _.pick(req.body,['className', 'desc', 'price', 'picture_url']),
         newClass = new Class(body);
         newClass.save((err, newclass) => {
+            schoolIds.forEach(id => {
+                School.findById(id, (err, school)=>{
+                    school.classes.push(newClass._id);
+                    school.save();
+                });    
+            });          
             res.send({
                 "status": "ok",
                 "newClass":newclass

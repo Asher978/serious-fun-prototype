@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema,
+    ObjectId = Schema.ObjectId;
 
 // PS 17, 28-37 29th Street
 // Astoria, NY 11102
@@ -41,7 +42,11 @@ const SchoolSchema = new Schema({
     picture_url : {
         type : String,
         required : true
-    }
+    },
+    classes : [{
+        type: ObjectId,
+        required: true
+    }]
 }); 
 
 const School = mongoose.model('School', SchoolSchema);
