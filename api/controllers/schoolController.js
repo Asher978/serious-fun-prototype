@@ -10,10 +10,10 @@ const schoolController = {
         });
     },
     findById : (req, res) => {
-        School.findById(req.params.school_id, (err, school) => {
+        School.findById(req.params.school_id).populate('classes').exec((err, school) => {
             res.send({
-                "status" : "ok",
-                school : school
+                "status": "ok",
+                school
             });
         })
     },
