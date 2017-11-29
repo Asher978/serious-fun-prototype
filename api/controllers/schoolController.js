@@ -43,11 +43,22 @@ const schoolController = {
     },
     updateSchool : (req, res) => {
         let body = _.pick(req.body, ['schoolName', 'st_Addr', 'city', 'state', 'zipcode', 'description', 'picture_url']);
+        let { classes } = req.body;
         School.findOneAndUpdate(req.params.schoolId, body, {"new": true}, (err, school) => {
-            console.log(err);
+            if(classes){
+                classes.forEach((newClass) => {
+                    if(school.classes.indexOf(newClass) == -1){
+
+                        school.classes.push(newClass);
+                    } else {
+                        console.log('class Already exists in the db');
+                    }
+                });
+                school.save();
+            }
             res.send({
                 "status" : "ok",
-                school: school
+                school
             });
         });
     }  

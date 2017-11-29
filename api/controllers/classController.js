@@ -15,15 +15,17 @@ const ClassesController = {
         let body = _.pick(req.body,['className', 'desc', 'price', 'picture_url']),
         newClass = new Class(body);
         newClass.save((err, newclass) => {
-            schoolIds.forEach(id => {
-                School.findById(id, (err, school)=>{
-                    school.classes.push(newClass._id);
-                    school.save();
-                });    
-            });          
+            if(schoolIds){
+                schoolIds.forEach(id => {
+                    School.findById(id, (err, school)=>{
+                        school.classes.push(newClass._id);
+                        school.save();
+                    });    
+                });
+            }          
             res.send({
                 "status": "ok",
-                "newClass":newclass
+                newclass
             });
         });
         console.log(body);
