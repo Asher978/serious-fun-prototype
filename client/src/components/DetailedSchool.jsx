@@ -5,6 +5,7 @@ class DetailedSChool  extends Component {
         super();
         this.state = {
             data: null,
+            classes: null,
             dataLoaded : false
         }
     }
@@ -12,18 +13,55 @@ class DetailedSChool  extends Component {
     componentDidMount() {
         let id = this.props.match.params.school_id;
         axios.get(`/schools/${id}`).then(response => {
+            console.log(response)
             this.setState({
                 data: response.data.school,
+                classes: response.data.school.classes,
                 dataLoaded : true
             });
         }).catch(err => {
             console.log(err);
         });
     }
+
+    renderClasses = () => {
+       return this.state.classes.map(cls => {
+            return (
+                <div className='col-md-12'>
+                    <div className="panel panel-default">
+                        <div className="panel-heading main-color-bg">
+                            <h3 className="panel-title">{cls.className}</h3>
+                        </div>
+                        <div className="panel-body">
+                            <div className='col-md-4'>
+                                <div className='well overview'>
+                                    <h2>{cls.desc}</h2>
+                                    <h4>${cls.price}</h4>
+                                    <img className='img-thumbnail' src={cls.picture_url} alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        })
+    }
+
+
     renderSchool = () => {
         return (
-            <div>           
-                <h1>{this.state.data.schoolName}</h1>
+            <div className='container'>    
+                <div className="jumbotron">
+                    <h1>{this.state.data.schoolName}</h1>
+                    <h3>
+                    {this.state.data.st_Addr}<br/>
+                    {this.state.data.city}, {this.state.data.state} {this.state.data.zipcode}    
+                    </h3>
+                </div>
+
+                { this.renderClasses() }
+
+                {/* <h1>{this.state.data.schoolName}</h1>
                 <p>
                     {this.state.data.st_Addr}<br/>
                     {this.state.data.city} {this.state.data.state} {this.state.data.zipcode}
@@ -32,10 +70,12 @@ class DetailedSChool  extends Component {
                     <li>class1</li>
                     <li>class2</li>
                     <li>class3</li>
-                </ul>
+                </ul> */}
             </div>
         )
     }
+
+
     render(){
       return (
       <div>
