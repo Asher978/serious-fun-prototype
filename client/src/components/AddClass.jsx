@@ -12,7 +12,7 @@ class AddClass extends Component {
             return schools.map(school => {
                 return (
                         <label key={school._id} className="checkbox-inline">
-                            <input type="checkbox" name="optradio" value={school._id} onChange={this.handleRadioChange}/>
+                            <input type="checkbox" name="optradio" value={school._id} onChange={this.props.handleRadioChange}/>
                             {school.schoolName}
                         </label>
                        )
