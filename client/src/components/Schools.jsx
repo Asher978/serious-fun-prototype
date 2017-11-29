@@ -25,17 +25,19 @@ class Schools extends Component{
   renderSchools = () => {
     console.log(this.state.schools);
     return (
-      <div>
-        {this.state.schools.map(element => {
-          return <SingleSchool key= {element._id} data= {element} />
-        })}
-      </div>
+        <div class="row">
+          {this.state.schools.map(element => {
+            return <SingleSchool key= {element._id} data= {element} />
+            })}    
+          </div>
     )
   }
   render(){
     return (
-      <div>
-        <h1>Schools</h1>
+      <div className='container'>
+        <div className="page-header">
+          <h1>PARTICIPATING <small>SCHOOLS</small></h1>
+        </div>
         {this.state.dataLoaded ? this.renderSchools(): <h2>loading.....</h2>} 
       </div>
     )
