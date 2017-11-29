@@ -83,7 +83,7 @@ class EditSchool extends Component {
       })
       .then(res => {
         this.setState({
-          updatedSchool_id: res.data.school.school_id,
+          newId: res.data.school._id,
           fireRedirect: true,
         });
       })
@@ -209,7 +209,7 @@ class EditSchool extends Component {
             <input type="submit" value="Update!" className="main-color-bg btn-lg btn-block" />
         </form>
 
-        {this.state.fireRedirect ? <Redirect push to={`/schools/${this.state.newId}`} /> : '' }
+        {this.state.fireRedirect ? <Redirect push to={`/detailedSchool/${this.state.newId}`} /> : '' }
 
       </div>
     )
