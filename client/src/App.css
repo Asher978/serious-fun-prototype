@@ -1,20 +1,23 @@
 /* Lato font from Google */
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
-body{
-  font-family: 'Lato', sans-serif;
+body {
+  font-family: "Lato", sans-serif;
 }
 
-
 /* Nav Section */
-.topHead{
+.topHead {
   background-image: url("assets/nav/dskp-header.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 122px;
   width: 100%;
 }
 
 /* Logo, Search and Login/Registration */
-.midHead{
+.midHead {
   width: 100%;
   height: 124px;
   background-color: #ffffff;
@@ -22,19 +25,18 @@ body{
   justify-content: space-between;
 }
 
-.midHead .container{
+.midHead .container {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
 
-.midHead .mainLogo{
+.midHead .mainLogo {
   background-image: url("assets/nav/dskp-logo.jpg");
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   width: 307px;
   height: 123px;
   margin-right: auto;
@@ -42,18 +44,23 @@ body{
 
 .midHead .user {
   display: flex;
-  font-weight: bold;
-  color: #1e3089;
 }
 
 .midHead .user > * {
   margin: 0 1px;
 }
 
+.midHead .userAuth {
+  font-size: 16px;
+  text-decoration: none;
+  color: #1e3089;
+  font-weight: bold;
+}
 .midHead .helpBtn {
   width: 133px;
   height: 40px;
   border-radius: 4px;
+  border: none;
   color: white;
   text-transform: uppercase;
   font-size: 18px;
@@ -64,10 +71,6 @@ body{
   background-color: #f5483a;
 }
 
-.midHead .userAuth{
-  font-size: 16px;
-}
-
 /* Navbar link */
 
 .navLink {
@@ -75,7 +78,8 @@ body{
 }
 .navLink .container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1440px;
   margin: auto;
 }
@@ -86,24 +90,58 @@ body{
   color: white;
   padding: 12px 30px;
   display: block;
-  flex:1;
+  flex: 1;
   text-align: center;
+}
+.linkBox:hover .navLinks {
+  background: #f5483a;
+}
+
+/* Nav - Drop Menu */
+
+.navLink .linkBox {
+  position: relative;
+}
+
+.dropdownMenu {
+  visibility: hidden;
+  width: 184px;
+  height: 0px;
+  background-color: #eeeeee;
+  border: solid 1px #f5483a;
+  padding: 15px 20px 15px 20px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  transition: height 0.2s;
+   overflow: hidden;
+  box-sizing: border-box;
+}
+.linkBox:hover .dropdownMenu {
+  visibility: visible;
+  height: 176px;
+}
+.linkBox:hover .regis {
+  visibility: visible;
+  height: 102px;
 }
 
 
 
-
-
-
-
-
-
-
+.dropdownMenu > * {
+  display: flex;
+  flex-direction: column;
+}
+.dropdownMenu .dropLinks {
+  font-size: 16px;
+  color: #f5483a;
+  padding: 7px;
+}
 
 /* .App { */
-  /* text-align: center; */
+/* text-align: center; */
 /* } */
-
 
 /* CUSTOM COLOR USED FOR FORMS */
 /* .main-color-bg  {
@@ -116,7 +154,7 @@ body{
 /* NAVBAR SETTINGS */
 
 /* .navbar  { */
-  /* margin-bottom: 0;
+/* margin-bottom: 0;
   border-radius: 0;
   padding: .5% 0;
   font-size: 1.1em;
@@ -134,11 +172,10 @@ body{
 }
  */
 
-
 /* Color Settings for Nav Bar */
 
 /* .navbar { */
-  /* background-color: rgb(25, 40, 134);
+/* background-color: rgb(25, 40, 134);
   border-color: white; */
 /* }
 .navbar .navbar-brand {
@@ -249,7 +286,6 @@ body{
 
 } */
 
-
 /* HOME PAGE SETTINGS */
 
 /* .carousel {
@@ -291,8 +327,8 @@ body{
 /* RESPONSIVE SETTINGS */
 
 /* @media (min-width: 768px) { */
-  
-    /* .carousel-caption p {
+
+/* .carousel-caption p {
       margin-bottom: 20px;
       font-size: 21px;
       line-height: 1.4;
@@ -302,15 +338,15 @@ body{
       font-size: 50px;
     }
   } */
-  
-  /* @media (min-width: 992px) {
+
+/* @media (min-width: 992px) {
     .featurette-heading {
       margin-top: 120px;
     }
   }
    */
 
-  /* SCHOOL EDIT PAGE */
+/* SCHOOL EDIT PAGE */
 
 /* .editSchool {
   margin-top: 10px;

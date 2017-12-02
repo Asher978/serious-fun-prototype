@@ -7,51 +7,114 @@ const Nav = props => {
     <nav className="navbar">
       <div className="topHead" />
       <div className="midHead">
-        {/* <div className="leftSec">
-            <div className="mainLogo"></div>
-        </div> */}
-        {/* <div className="rightSec"> */}
         <div className="container">
-          <div className="mainLogo"></div>
-          <div className="helpBtn">support</div>
+          <Link to="/" className="mainLogo" />
+          <Link to="">
+            <button className="helpBtn">support</button>
+          </Link>
           <div className="user">
-            <div id="login" className="userAuth">
+            <Link to="" id="login" className="userAuth">
               Login
-            </div>
+            </Link>
             <div className="userAuth">|</div>
-            <div id="signUp" className="userAuth">
+            <Link to="" id="signUp" className="userAuth">
               Sign Up
-            </div>
+            </Link>
           </div>
         </div>
-        {/* </div> */}
       </div>
       <div className="navLink">
         <div className="container">
-          <a href="" id="home" className="navLinks">
-            home
-          </a>
-          <a href="" id="about" className="navLinks">
-            about
-          </a>
-          <a href="" id="location" className="navLinks">
-            locations
-          </a>
-          <a href="" id="program" className="navLinks">
-            program
-          </a>
-          <a href="" id="calendar" className="navLinks">
-            calendar
-          </a>
-          <a href="" id="registration" className="navLinks">
-            registration
-          </a>
-          <a href="" id="faq" className="navLinks">
-            faq
-          </a>
-          <a href="" id="contact" className="navLinks">
-            contact
-          </a>
+          <div className="linkBox">
+            <Link to="/" id="home" className="navLinks">
+              home
+            </Link>
+          </div>
+          <div className="linkBox">
+            <Link to="" id="about" className="navLinks">
+              about
+            </Link>
+
+            <div className="dropdownMenu">
+              <div className="aboutDrop">
+                <Link to="" id="aboutDrop" className="dropLinks">
+                  About Us
+                </Link>
+                <Link to="" id="teamDrop" className="dropLinks">
+                  Our Team
+                </Link>
+                <Link to="" id="testimonialDrop" className="dropLinks">
+                  Testimonials
+                </Link>
+                <Link to="" id="workDrop" className="dropLinks">
+                  Work With Us
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="linkBox">
+            <Link to="" id="location" className="navLinks">
+              locations
+            </Link>
+          </div>
+
+          <div className="linkBox">
+            <Link to="" id="program" className="navLinks">
+              program
+            </Link>
+
+            <div className="dropdownMenu">
+              <div className="programDrop">
+                <Link to="" id="overviewDrop" className="dropLinks">
+                  Overview
+                </Link>
+                <Link to="" id="classDrop" className="dropLinks">
+                  Classes
+                </Link>
+                <Link to="" id="tuitionDrop" className="dropLinks">
+                  Tuition
+                </Link>
+                <Link to="" id="transportationDrop" className="dropLinks">
+                  Transportation
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="linkBox">
+            <Link to="" id="calendar" className="navLinks">
+              calendar
+            </Link>
+          </div>
+
+          <div className="linkBox">
+            <Link to="" id="registration" className="navLinks">
+              registration
+            </Link>
+
+            <div className="dropdownMenu regis">
+              <div className="registrationDrop">
+                <Link to="" id="registerDrop" className="dropLinks">
+                  How-To Register
+                </Link>
+                <Link to="" id="onGoingDrop" className="dropLinks">
+                  Ongoing Register
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="linkBox">
+            <Link to="" id="faq" className="navLinks">
+              faq
+            </Link>
+          </div>
+
+          <div className="linkBox">
+            <Link to="" id="contact" className="navLinks">
+              contact
+            </Link>
+          </div>
         </div>
       </div>
 
