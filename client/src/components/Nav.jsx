@@ -1,11 +1,61 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Auth from '../modules/Auth';
+import React from "react";
+import { Link } from "react-router-dom";
+import Auth from "../modules/Auth";
 
 const Nav = props => {
   return (
-    <nav className="navbar navbar-inverse">
-      <div className="container-fluid">
+    <nav className="navbar">
+      <div className="topHead" />
+      <div className="midHead">
+        {/* <div className="leftSec">
+            <div className="mainLogo"></div>
+        </div> */}
+        {/* <div className="rightSec"> */}
+        <div className="container">
+          <div className="mainLogo"></div>
+          <div className="helpBtn">support</div>
+          <div className="user">
+            <div id="login" className="userAuth">
+              Login
+            </div>
+            <div className="userAuth">|</div>
+            <div id="signUp" className="userAuth">
+              Sign Up
+            </div>
+          </div>
+        </div>
+        {/* </div> */}
+      </div>
+      <div className="navLink">
+        <div className="container">
+          <a href="" id="home" className="navLinks">
+            home
+          </a>
+          <a href="" id="about" className="navLinks">
+            about
+          </a>
+          <a href="" id="location" className="navLinks">
+            locations
+          </a>
+          <a href="" id="program" className="navLinks">
+            program
+          </a>
+          <a href="" id="calendar" className="navLinks">
+            calendar
+          </a>
+          <a href="" id="registration" className="navLinks">
+            registration
+          </a>
+          <a href="" id="faq" className="navLinks">
+            faq
+          </a>
+          <a href="" id="contact" className="navLinks">
+            contact
+          </a>
+        </div>
+      </div>
+
+      {/* <div className="container">
         <div className="navbra-header">
             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
                 <span className="icon-bar"></span>
@@ -31,9 +81,9 @@ const Nav = props => {
                 </ul>
             )}
         </div>
-      </div>
+      </div> */}
     </nav>
-  )
-}
+  );
+};
 
 export default Nav;
