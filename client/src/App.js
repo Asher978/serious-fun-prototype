@@ -17,6 +17,7 @@ import Home from './components/Home';
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
+import Footer from './components/Footer';
 
 class App extends Component {
   constructor () {
@@ -141,6 +142,7 @@ class App extends Component {
               )}
           />
 
+          <Footer />
         </div>
       </Router>
     );
