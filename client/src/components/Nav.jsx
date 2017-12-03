@@ -82,7 +82,7 @@ const Nav = props => {
           </div>
 
           <div className="linkBox">
-            <Link to="" id="calendar" className="navLinks">
+            <Link to="/calendar" id="calendar" className="navLinks">
               calendar
             </Link>
           </div>

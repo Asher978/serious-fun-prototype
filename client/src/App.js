@@ -11,6 +11,7 @@ import Auth from './modules/Auth';
 import RegisterForm from './components/RegisterForm';
 import LoginForm from './components/LoginForm';
 import Nav from './components/Nav';
+import Calendar from './components/Calendar';
 import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import Schools from './components/Schools';
@@ -97,6 +98,12 @@ class App extends Component {
           <Nav handleLogout={this.handleLogout} />
 
           <Route exact path="/" component={Home}/>
+          <Route exact path="/calendar" component={Calendar}/>
+
+
+
+
+          
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
           <Route exact path='/schools' render={() => <Schools />} />
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
