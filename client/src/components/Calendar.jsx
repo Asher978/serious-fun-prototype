@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import FullCalendar from './FullCalendar';
+
 const Calendar = props => {
   return (
     <div className="calContainer">
@@ -9,11 +11,7 @@ const Calendar = props => {
         Current Program Dates: September 11, 2017 - June 1, 2018
       </div>
 
-      <iframe
-        src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=l9dlc6er0krfdqto253o5384r4%40group.calendar.google.com&amp;color=%23A32929&amp;ctz=America%2FNew_York"
-        width="400"
-        height="415"
-      />
+      <FullCalendar/>
 
       <div className="eventInfoContainer">
         
@@ -60,3 +58,10 @@ const Calendar = props => {
 };
 
 export default Calendar;
+
+
+// <iframe
+// src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=l9dlc6er0krfdqto253o5384r4%40group.calendar.google.com&amp;color=%23A32929&amp;ctz=America%2FNew_York"
+// width="400"
+// height="415"
+// />

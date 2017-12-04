@@ -32,6 +32,8 @@ body {
   width: 100%;
   height: 124px;
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
 .midHead .container {
@@ -39,7 +41,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 67%;
+  width: 65%;
 }
 
 .midHead .mainLogo {
@@ -85,6 +87,7 @@ body {
 .navLink {
   background-color: #1e3089;
   width: 100%;
+  z-index: 1000;
 }
 .navLink .container {
   display: flex;
@@ -92,7 +95,7 @@ body {
   flex-wrap: wrap;
   max-width: 1440px;
   margin: auto;
-  width: 75%;
+  width: 65.5%;
 }
 .navLink .navLinks {
   text-decoration: none;
@@ -164,6 +167,8 @@ body {
 /* Footer */
 
 .navbar .topBar{
+  display: flex;
+  justify-content: center;
 	width: 100%;
 	height: 68px;
 	background-color: #1e3089;
@@ -173,7 +178,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 68%;
+  width: 66%;
 }
 .navbar .topBar .container .copyright{
 	font-size: 14px;
