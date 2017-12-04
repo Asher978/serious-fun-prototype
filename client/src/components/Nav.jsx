@@ -9,9 +9,9 @@ const Nav = props => {
       <div className="midHead">
         <div className="container">
           <Link to="/" className="mainLogo" />
-          <Link to="">
-            <button className="helpBtn">support</button>
-          </Link>
+         
+            <Link to="" className="helpBtn">support</Link>
+          
           <div className="user">
             <Link to="" id="login" className="userAuth">
               Login
