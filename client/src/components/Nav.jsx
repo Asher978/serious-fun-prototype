@@ -48,7 +48,7 @@ const Nav = props => {
                 <Link to="" id="testimonialDrop" className="dropLinks">
                   Testimonials
                 </Link>
-                <Link to="" id="workDrop" className="dropLinks">
+                <Link to="/careers" id="workDrop" className="dropLinks">
                   Work With Us
                 </Link>
               </div>
