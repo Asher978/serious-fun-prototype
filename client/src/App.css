@@ -125,7 +125,7 @@ body {
   height: 0px;
   background-color: #eeeeee;
   border: solid 1px #f5483a;
-  padding: 15px 20px 15px 20px;
+  padding: 13px 20px 19px 20px;
   position: absolute;
   left: 0;
   -webkit-transition: height 0.2s;
@@ -136,7 +136,7 @@ body {
 }
 .linkBox:hover .dropdownMenu {
   visibility: visible;
-  height: 176px;
+  height: 213px;
 }
 .linkBox:hover .regis {
   visibility: visible;
@@ -150,7 +150,7 @@ body {
 .dropdownMenu .dropLinks {
   font-size: 16px;
   color: #f5483a;
-  padding: 7px;
+  padding: 8px 7px;
 }
 
 /* Home Page Slides */

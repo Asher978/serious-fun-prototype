@@ -45,11 +45,14 @@ const Nav = props => {
                 <Link to="/ourteam" id="teamDrop" className="dropLinks">
                   Our Team
                 </Link>
-                <Link to="" id="testimonialDrop" className="dropLinks">
-                  Testimonials
-                </Link>
                 <Link to="/careers" id="workDrop" className="dropLinks">
                   Work With Us
+                </Link>
+                <Link to="/supporters" id="supportDrop" className="dropLinks">
+                  Our Supporters
+                </Link>
+                <Link to="/peoplesay" id="peoplesayDrop" className="dropLinks">
+                  What People Say
                 </Link>
               </div>
             </div>
