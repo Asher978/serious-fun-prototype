@@ -203,7 +203,7 @@ body {
 .ourContainer .ourClass .ourPic {
   background-image: url("assets/homeInfo/classes.jpg");
 }
-.ourContainer .ourTeam .ourPic {
+.ourContainer .ourHomeTeam .ourPic {
   background-image: url("assets/homeInfo/team.jpg");
 }
 .ourContainer .ourDifference .ourPic {

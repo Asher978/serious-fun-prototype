@@ -24,7 +24,7 @@ class Home extends Component {
       <div className="ourText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
       
       </div>
-      <div className="ourTeam">
+      <div className="ourHomeTeam">
       <div className="ourTitle">Our Team</div>
       <div className="ourPic"></div>
       <div className="ourText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</div>
