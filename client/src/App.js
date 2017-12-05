@@ -14,6 +14,7 @@ import Nav from './components/Nav';
 import Calendar from './components/Calendar';
 import Dashboard from './components/Dashboard';
 import Home from './components/Home';
+import AboutUs from './components/AboutUs';
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
@@ -99,6 +100,7 @@ class App extends Component {
           <Nav handleLogout={this.handleLogout} />
 
           <Route exact path="/" component={Home}/>
+          <Route exact path="/aboutus" component={AboutUs}/>
           <Route exact path="/calendar" component={Calendar}/>
 
 

@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Auth from "../modules/Auth";
 
+import AboutUs from './AboutUs';
+
 const Nav = props => {
   return (
     <nav className="navbar">
@@ -37,7 +39,7 @@ const Nav = props => {
 
             <div className="dropdownMenu">
               <div className="aboutDrop">
-                <Link to="" id="aboutDrop" className="dropLinks">
+                <Link to="/aboutus" id="aboutDrop" className="dropLinks">
                   About Us
                 </Link>
                 <Link to="" id="teamDrop" className="dropLinks">
