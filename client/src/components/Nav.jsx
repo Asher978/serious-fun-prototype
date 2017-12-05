@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Auth from "../modules/Auth";
 
-import AboutUs from './AboutUs';
-
 const Nav = props => {
   return (
     <nav className="navbar">
@@ -11,9 +9,11 @@ const Nav = props => {
       <div className="midHead">
         <div className="container">
           <Link to="/" className="mainLogo" />
-         
-            <Link to="" className="helpBtn">support</Link>
-          
+
+          <Link to="" className="helpBtn">
+            support
+          </Link>
+
           <div className="user">
             <Link to="" id="login" className="userAuth">
               Login
@@ -42,7 +42,7 @@ const Nav = props => {
                 <Link to="/aboutus" id="aboutDrop" className="dropLinks">
                   About Us
                 </Link>
-                <Link to="" id="teamDrop" className="dropLinks">
+                <Link to="/ourteam" id="teamDrop" className="dropLinks">
                   Our Team
                 </Link>
                 <Link to="" id="testimonialDrop" className="dropLinks">

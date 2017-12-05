@@ -281,28 +281,126 @@ body {
   color: #f5483a;
   padding: 0px 0px 6px 0px;
 }
-.aboutUsInfoMission, .aboutUsInfoStaff, .aboutUsInfoDifference {
+.aboutUsInfoMission,
+.aboutUsInfoStaff,
+.aboutUsInfoDifference {
   padding: 12px 0px;
 }
-.aboutUs .aboutUsInfoContainer .infoOurText, .infoOurMoreInfo {
-	width: 780px;
-	font-size: 16px;
-	color: #000000;
+.aboutUs .aboutUsInfoContainer .infoOurText,
+.infoOurMoreInfo {
+  width: 780px;
+  font-size: 16px;
+  color: #000000;
 }
 .aboutUs .aboutUsInfoContainer .infoOurMoreInfo {
-	width: 780px;
-	height: 68px;
-	font-size: 14px;
-	font-style: italic;
+  width: 780px;
+  height: 68px;
+  font-size: 14px;
+  font-style: italic;
   color: #000000;
   padding: 16px 0px;
   margin-bottom: 37px;
 }
-.aboutUs .aboutUsInfoContainer .infoOurMoreInfo .infoOurMoreInfoLinks{
-	font-weight: bold;
+.aboutUs .aboutUsInfoContainer .infoOurMoreInfo .infoOurMoreInfoLinks {
+  font-weight: bold;
   color: #1e3089;
   text-decoration: none;
   font-style: normal;
+}
+
+
+/* Our Team */
+
+.ourTeam {
+  margin: 48px auto;
+  width: 65%;
+
+}
+
+.ourTeam .ourTeamContainer .ourTeamTitle{
+	height: 39px;
+	font-size: 32px;
+	font-weight: bold;
+	color: #f5483a;
+}
+.ourTeam .ourTeamContainer .ourTeamFounderInfo{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.ourTeam .ourTeamContainer .ourTeamFounderInfo > *{
+padding: 8px 12px 19px 0px;
+}
+.ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderText{
+	width: 540px;
+	height: 190px;
+	font-size: 16px;
+  color: #000000;
+  padding: 8px 0px 0px 12px;
+}
+
+
+.ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderPicContainer .ourTeamFounderPic{
+  background-image: url("assets/ourTeam/founder.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 221px;
+  height: 202px;
+  
+}
+.ourTeam .ourTeamMemberPicCap p{
+  margin: 0px;
+  padding: 4px 10px;
+  /* padding: 4px 0px; */
+  font-weight: bold;
+  
+}
+.ourTeam .ourTeamMemberPicCap p:last-child {
+  padding: 0px 10px;
+  font-style: italic;
+  font-weight: normal;
+}
+.ourTeamMid, .ourTeamBottom {
+	padding: 19px 0px;
+}
+.ourTeamMid .ourTeamTitle, .ourTeamBottom .ourTeamTitle {
+	font-size: 24px !important;
+}
+
+.ourTeamMid .ourTeamMemberInfo, .ourTeamBottom .ourTeamMemberInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ourTeam .ourTeamMemberPicContainer .ourTeamMemberPic{
+  background-image: url("assets/ourTeam/staff.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+	width: 221px;
+  height: 202px;
+  padding: 4px 10px 0px 10px;
+}
+.ourTeam .ourTeamInfo{
+  padding: 32px 0px 57px 0px;
+}
+.ourTeam .ourTeamInfo .ourTeamInfoText{
+	width: 640px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+.ourTeam .ourTeamInfo .ourTeamInfoBtn{
+	width: 160px;
+	height: 32px;
+	border-radius: 4px;
+  background-color: #1e3089;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+  color: #ffffff;
+  line-height: 32px;
+  margin: 8px 0px;
 }
 
 /* Footer */

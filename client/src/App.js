@@ -15,6 +15,7 @@ import Calendar from './components/Calendar';
 import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
+import OurTeam from './components/OurTeam';
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
@@ -101,6 +102,7 @@ class App extends Component {
 
           <Route exact path="/" component={Home}/>
           <Route exact path="/aboutus" component={AboutUs}/>
+          <Route exact path="/ourteam" component={OurTeam}/>
           <Route exact path="/calendar" component={Calendar}/>
 
 
