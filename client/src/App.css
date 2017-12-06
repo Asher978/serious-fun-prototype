@@ -464,7 +464,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 66%;
-  margin: 0 auto;
+  margin: 48px auto 10px auto;
   padding: 10px 0px;
 }
 
@@ -482,22 +482,59 @@ body {
   font-weight: bold;
   text-align: center;
   line-height: 30px;
+  text-decoration: none;
+  color: black;
 }
 .afterSchoolLocationContainer{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 65.5%;
+  margin: 0px 16.8%;
+  /* background: rebeccapurple; */
 }
-.afterSchoolContainer .afterSchoolLocation {
+.afterSchoolLocationContainer .afterSchoolLocation{
+  padding: 12px 10px 32px 0px;
+}
+.afterSchoolLocationContainer .first{
+  margin-left: -37px;
+}
+.afterSchoolLocationContainer .second{
+  padding: 0px 10px 42px 10px;
+}
+.afterSchoolContainer .afterSchoolLocation .afterSchoolLocationInfoColumnContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+.afterSchoolLocationInfoColumnContainer .afterSchoolLocationInfoColumn{
+  /* background: aliceblue; */
+  margin-right: 77px;
+}
+.afterSchoolLocationInfoColumnContainer .second{
+  /* background: aliceblue; */
+  margin-right: -35px;
+}
+.afterSchoolLocationInfoColumnContainer  .afterSchoolLocationInfo, .afterSchoolLocationInfo{
+  padding: 13.5px 0px;
+      /* margin: 10px 0px; */
+      
+}
+ .secLast{
+  padding: 0px 10px 42px 0px;
+      
+}
+.afterSchoolLocationInfoColumnContainer  .last{
+  /* padding: 13.5px 0px; */
+      margin: 22px 0px;
+}
+.hrVerticalLine{
+  margin: 0px 40px;
+  height: 450px;
 }
 .afterSchoolContainer .afterSchoolLocation .afterSchoolLocationTitle {
   font-size: 24px;
   font-weight: bold;
   color: #f5483a;
+  padding: 10px 0px 10.5px 0px;
 }
 .afterSchoolLocation .afterSchoolLocationInfoTitle {
   font-size: 16px;
@@ -508,6 +545,22 @@ body {
   width: 240px;
   height: 57px;
   font-size: 16px;
+
+}
+
+.infoLocationBottomText{
+  margin: 0px 16.8% 40px 16.8%;
+	font-size: 16px;
+	font-style: italic;
+}
+
+.infoLocationBottomMap{
+  background-image: url("assets/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+	width: 940px;
+  height: 322px;
+  margin: 0px 16.8% 98px 16.5%;
 }
 
 /* Footer */
