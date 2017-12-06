@@ -1,26 +1,269 @@
-.App {
-  /* text-align: center; */
+/* Lato font from Google */
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Nav Section */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topHead {
+  background-image: url("assets/nav/dskp-header.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%; */
+  background-repeat: no-repeat;
+  height: 122px;
+  width: 100%;
+}
+
+/* Logo, Search and Login/Registration */
+.midHead {
+  width: 100%;
+  height: 124px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.midHead .container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.midHead .mainLogo {
+  background-image: url("assets/nav/dskp-logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 307px;
+  height: 123px;
+  margin-right: auto;
+}
+
+.midHead .user {
+  display: flex;
+}
+
+.midHead .user > * {
+  margin: 0 1px;
+}
+
+.midHead .userAuth {
+  font-size: 16px;
+  text-decoration: none;
+  color: #1e3089;
+  font-weight: bold;
+}
+.midHead .helpBtn {
+  width: 133px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-right: 45px;
+  text-align: center;
+  background-color: #f5483a;
+}
+
+/* Navbar link */
+
+.navLink {
+  background-color: #1e3089;
+  width: 100%;
+  z-index: 1000;
+}
+.navLink .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: auto;
+  width: 65.5%;
+}
+.navLink .navLinks {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  padding: 12px 19px;
+  display: block;
+  flex: 1;
+  text-align: center;
+}
+.linkBox:hover .navLinks {
+  background: #f5483a;
+}
+
+/* Nav - Drop Menu */
+
+.navLink .linkBox {
+  position: relative;
+  margin: 0px -20px;
+}
+
+.dropdownMenu {
+  visibility: hidden;
+  width: 184px;
+  height: 0px;
+  background-color: #eeeeee;
+  border: solid 1px #f5483a;
+  padding: 15px 20px 15px 20px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: height 0.2s;
+  -moz-transition: height 0.2s;
+  transition: height 0.2s;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.linkBox:hover .dropdownMenu {
+  visibility: visible;
+  height: 176px;
+}
+.linkBox:hover .regis {
+  visibility: visible;
+  height: 102px;
+}
+
+.dropdownMenu > * {
+  display: flex;
+  flex-direction: column;
+}
+.dropdownMenu .dropLinks {
+  font-size: 16px;
+  color: #f5483a;
+  padding: 7px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.navbar .topBar{
+  display: flex;
+  justify-content: center;
+	width: 100%;
+	height: 68px;
+	background-color: #1e3089;
+}
+.navbar .topBar .container{
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+}
+.navbar .topBar .container .copyright{
+	font-size: 14px;
+  color: #ffffff;
+  margin-right: auto;
+}
+.navbar .topBar .container .socialLink{
+  height: 68px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.navbar .topBar .container .socialLinks{
+  margin: 0px 5px;
+  width: 40px;
+	height: 40px;
+	border-radius: 8px;
+}
+.navbar .topBar .container .socialLink #networkForGood{
+  background-image: url("assets/nav/donate-now.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 117px;
+	height: 39.8px;
+}
+.navbar .topBar .container .socialLink #facebook{
+  background-image: url("assets/nav/facebook-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.navbar .topBar .container .socialLink #twitter{
+  background-image: url("assets/nav/twitter-icon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.navbar .topBar .container .socialLink #email{
+  background-image: url("assets/nav/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: auto;
+}
+.navbar .bottombar{
+  background-image: url("assets/nav/dskp-footer.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%; */
+  background-repeat: no-repeat;
+  height: 122px;
+  width: 100%;
+}
+
+
+
+
+/* .App { */
+/* text-align: center; */
+/* } */
+
 /* CUSTOM COLOR USED FOR FORMS */
-.main-color-bg  {
+/* .main-color-bg  {
   background-color: rgb(25, 40, 134) !important;
   border-color: black !important;
   color: #ffffff !important;
 }
-
+ */
 
 /* NAVBAR SETTINGS */
 
-.navbar  {
-  margin-bottom: 0;
+/* .navbar  { */
+/* margin-bottom: 0;
   border-radius: 0;
   padding: .5% 0;
   font-size: 1.1em;
-  border: 0;
-}
-
+  border: 0; */
+/* } */
+/* 
 .navbar-brand  {
   float: left;
   min-height: 65px;
@@ -30,15 +273,14 @@
 .navbar-brand img  {
   height: 70px;
 }
-
-
+ */
 
 /* Color Settings for Nav Bar */
 
-.navbar {
-  background-color: rgb(25, 40, 134);
-  border-color: white;
-}
+/* .navbar { */
+/* background-color: rgb(25, 40, 134);
+  border-color: white; */
+/* }
 .navbar .navbar-brand {
   color: #f2f5f6;
 }
@@ -108,19 +350,19 @@
 }
 .navbar .navbar-link:hover {
   color: #ffbbbc;
-}
+} */
 
 /* HOME PAGE IMAGE SETTINGS */
 
-.homeImage {
+/* .homeImage {
   height: 100vh;
   width: 100vw;
-}
+} */
 
 /* ADMIN PAGE SETTINGS */
 
 /* HEADER */
-#header {
+/* #header {
   background: #333333;
   color: #ffffff;
   padding-bottom: 10px;
@@ -129,28 +371,27 @@
 
 #header .create {
  padding-top: 20px;
-}
+} */
 
 /* BREADCRUMB */
-.breadcrumb {
+/* .breadcrumb {
   background: #cccccc;
   color: #333333;
 }
 
 .breadcrumb a {
   color: #333333;
-}
+} */
 
 /* WEBSITE OVERVIEW */
-.overview {
+/* .overview {
   text-align: center;
 
-}
-
+} */
 
 /* HOME PAGE SETTINGS */
 
-.carousel {
+/* .carousel {
   height: 500px;
   margin-bottom: 60px;
 }
@@ -171,11 +412,11 @@
   left: 0;
   min-width: 100%;
   height: 500px;
-}
+} */
 
 /* FEATURETTE SETTINGS */
 
-.featurette-divider {
+/* .featurette-divider {
   margin: 80px 0; 
 }
 
@@ -183,14 +424,14 @@
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -1px;
-}
+  letter-spacing: -1px; */
+/* } */
 
 /* RESPONSIVE SETTINGS */
 
-@media (min-width: 768px) {
-  
-    .carousel-caption p {
+/* @media (min-width: 768px) { */
+
+/* .carousel-caption p {
       margin-bottom: 20px;
       font-size: 21px;
       line-height: 1.4;
@@ -199,16 +440,17 @@
     .featurette-heading {
       font-size: 50px;
     }
-  }
-  
-  @media (min-width: 992px) {
+  } */
+
+/* @media (min-width: 992px) {
     .featurette-heading {
       margin-top: 120px;
     }
   }
-  
+   */
+
 /* SCHOOL EDIT PAGE */
 
-.editSchool {
+/* .editSchool {
   margin-top: 10px;
-}
+} */
