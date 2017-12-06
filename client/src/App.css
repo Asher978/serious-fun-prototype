@@ -452,13 +452,13 @@ body {
   font-size: 16px;
 }
 
-/* After School */
+/* After School - Locations */
 
-.afterSchoolContainer {
+/* .afterSchoolContainer { */
   /* display: flex;
   justify-content: center;
   align-items: flex-start; */
-}
+/* } */
 
 .afterSchoolTop {
   display: flex;
@@ -561,6 +561,124 @@ body {
 	width: 940px;
   height: 322px;
   margin: 0px 16.8% 98px 16.5%;
+}
+
+
+/* About Us - Classes */
+
+/* Top */
+
+.classContainer{
+  width: 66%;
+  /* background: rebeccapurple; */
+  margin: auto;
+}
+
+.classTop{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.classContainer .classTopTitle p{
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
+  margin-bottom: 14px;
+  margin-top: 45px;
+}
+
+
+
+.classTopPicContainer{
+  width: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.classTopPicContainerTOP, .classTopPicContainerBottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.classTopPictures{
+  width: 301px;
+  height: 164px;
+  background-color: rgba(0, 0, 0, 0.25); 
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 8px 10px 0px;
+  /* padding: 20px; */
+  
+} 
+.music{
+  background-image: url("assets/classes/music.jpg");
+} 
+.language{
+  background-image: url("assets/classes/writing.jpg");
+} 
+.visualarts{
+  background-image: url("assets/classes/arts.jpg");
+} 
+.performingarts{
+  background-image: url("assets/classes/performance.jpg");
+} 
+.sportandfitness{
+  background-image: url("assets/classes/sport.jpg");
+} 
+.other{
+  background-image: url("assets/classes/other.jpg");
+} 
+.classTopPicText{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 135px; */
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+
+} 
+.classTopPictures  a{
+  text-decoration: none;
+} 
+
+/* Bottom */
+
+.classBottom{
+  margin-top: 48px;
+  margin-bottom: 96px;
+}
+.classBottomTitle p{
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5483a;
+}
+
+.classBottomPicContainer{
+  display: flex;
+}
+
+.classBottomPicContainer a{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  /* flex-direction: row; */
+  margin-right:20px; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#writopiaLab{
+  background-image: url("assets/classes/writopia.jpg");
+}
+#educationArt{
+  background-image: url("assets/classes/education.jpg");
 }
 
 /* Footer */
