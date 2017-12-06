@@ -58,9 +58,32 @@ const Nav = props => {
             </div>
           </div>
           <div className="linkBox">
-            <Link to="/afterschool" id="afterSchool" className="navLinks">
+            <Link to="" id="afterSchool" className="navLinks">
               After School
             </Link>
+
+            <div className="dropdownMenu">
+            <div className="programDrop">
+              <Link to="" id="overviewDrop" className="dropLinks">
+                Overview
+              </Link>
+              <Link to="/locations" id="locationDrop" className="dropLinks">
+                Locations
+              </Link>
+              <Link to="" id="tuitionDrop" className="dropLinks">
+                Tuition
+              </Link>
+              <Link to="" id="tuitionDrop" className="dropLinks">
+                Classes
+              </Link>
+              <Link to="" id="transportationDrop" className="dropLinks">
+                Transportation
+              </Link>
+              <Link to="" id="policyDrop" className="dropLinks">
+                Polices
+              </Link>
+            </div>
+          </div>
           </div>
 
           <div className="linkBox">

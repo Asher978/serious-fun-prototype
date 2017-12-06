@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const AfterSchool = props => {
+const AfterSchoolLocations = props => {
   return (
     <div className="afterSchoolContainer">
       <div className="afterSchoolTop">
@@ -73,4 +73,4 @@ const AfterSchool = props => {
   );
 };
 
-export default AfterSchool;
+export default AfterSchoolLocations;

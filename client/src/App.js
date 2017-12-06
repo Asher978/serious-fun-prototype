@@ -21,7 +21,7 @@ import Careers from './components/Careers';
 // import Supporters from './components/Supporters';
 import PeopleSay from './components/PeopleSay';
 
-import AfterSchool from './components/AfterSchool';
+import AfterSchoolLocation from './components/AfterSchoolLocation';
 
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
@@ -114,7 +114,7 @@ class App extends Component {
 
           <Route exact path="/peoplesay" component={PeopleSay}/>
 
-          <Route exact path="/afterschool" component={AfterSchool}/>
+          <Route exact path="/locations" component={AfterSchoolLocation}/>
           <Route exact path="/calendar" component={Calendar}/>
 
 
