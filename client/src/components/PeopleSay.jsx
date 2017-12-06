@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const PeopleSay = props => {
   return (
-    <nav className="peopleSay">
+    <div className="peopleSay">
 
-    </nav>
+    </div>
   );
 };
 

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Supporters = props => {
   return (
-    <nav className="supporters">
+    <div className="supporters">
 
-    </nav>
+    </div>
   );
 };
 

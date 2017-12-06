@@ -58,8 +58,8 @@ const Nav = props => {
             </div>
           </div>
           <div className="linkBox">
-            <Link to="" id="location" className="navLinks">
-              locations
+            <Link to="/afterschool" id="afterSchool" className="navLinks">
+              After School
             </Link>
           </div>
 

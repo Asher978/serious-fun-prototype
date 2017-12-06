@@ -308,150 +308,207 @@ body {
   font-style: normal;
 }
 
-
 /* Our Team */
 
 .ourTeam {
   margin: 48px auto;
   width: 65%;
-
 }
 
-.ourTeam .ourTeamContainer .ourTeamTitle{
-	height: 39px;
-	font-size: 32px;
-	font-weight: bold;
-	color: #f5483a;
+.ourTeam .ourTeamContainer .ourTeamTitle {
+  height: 39px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
 }
-.ourTeam .ourTeamContainer .ourTeamFounderInfo{
+.ourTeam .ourTeamContainer .ourTeamFounderInfo {
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-.ourTeam .ourTeamContainer .ourTeamFounderInfo > *{
-padding: 8px 12px 19px 0px;
+.ourTeam .ourTeamContainer .ourTeamFounderInfo > * {
+  padding: 8px 12px 19px 0px;
 }
-.ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderText{
-	width: 540px;
-	height: 190px;
-	font-size: 16px;
+.ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderText {
+  width: 540px;
+  height: 190px;
+  font-size: 16px;
   color: #000000;
   padding: 8px 0px 0px 12px;
 }
 
-
-.ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderPicContainer .ourTeamFounderPic{
+.ourTeam
+  .ourTeamContainer
+  .ourTeamFounderInfo
+  .ourTeamFounderPicContainer
+  .ourTeamFounderPic {
   background-image: url("assets/ourTeam/founder.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 221px;
   height: 202px;
-  
 }
-.ourTeam .ourTeamMemberPicCap p{
+.ourTeam .ourTeamMemberPicCap p {
   margin: 0px;
   padding: 4px 10px;
   /* padding: 4px 0px; */
   font-weight: bold;
-  
 }
 .ourTeam .ourTeamMemberPicCap p:last-child {
   padding: 0px 10px;
   font-style: italic;
   font-weight: normal;
 }
-.ourTeamMid, .ourTeamBottom {
-	padding: 19px 0px;
+.ourTeamMid,
+.ourTeamBottom {
+  padding: 19px 0px;
 }
-.ourTeamMid .ourTeamTitle, .ourTeamBottom .ourTeamTitle {
-	font-size: 24px !important;
+.ourTeamMid .ourTeamTitle,
+.ourTeamBottom .ourTeamTitle {
+  font-size: 24px !important;
 }
 
-.ourTeamMid .ourTeamMemberInfo, .ourTeamBottom .ourTeamMemberInfo{
+.ourTeamMid .ourTeamMemberInfo,
+.ourTeamBottom .ourTeamMemberInfo {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.ourTeam .ourTeamMemberPicContainer .ourTeamMemberPic{
+.ourTeam .ourTeamMemberPicContainer .ourTeamMemberPic {
   background-image: url("assets/ourTeam/staff.jpg");
   background-repeat: no-repeat;
   background-position: center;
-	width: 221px;
+  width: 221px;
   height: 202px;
   padding: 4px 10px 0px 10px;
 }
-.ourTeam .ourTeamInfo{
+.ourTeam .ourTeamInfo {
   padding: 32px 0px 57px 0px;
 }
-.ourTeam .ourTeamInfo .ourTeamInfoText{
-	width: 640px;
-	font-size: 18px;
-	font-weight: bold;
-	color: #000000;
+.ourTeam .ourTeamInfo .ourTeamInfoText {
+  width: 640px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
 }
-.ourTeam .ourTeamInfo .ourTeamInfoBtn{
-	width: 160px;
-	height: 32px;
-	border-radius: 4px;
+.ourTeam .ourTeamInfo .ourTeamInfoBtn {
+  width: 160px;
+  height: 32px;
+  border-radius: 4px;
   background-color: #1e3089;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
   color: #ffffff;
   line-height: 32px;
   margin: 8px 0px;
 }
 
-
 /* Work With Us */
 
-.career .careerPic{
+.career .careerPic {
   background-image: url("assets/slide/bridge.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-	height: 466px;
-	background-color: rgba(0, 0, 0, 0.25);
+  height: 466px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
-.career .careerContainer{
-padding: 32px 0px 80px 0px;
-display: flex;
-flex-direction: column;
-align-items: center;
+.career .careerContainer {
+  padding: 32px 0px 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.career .careerContainer .careerInfoBox{
-padding: 20px 0px 20px 0px;
-}
-
-.careerInfoBox .careerInfoTitle{
-	font-size: 32px;
-	font-weight: bold;
-	color: #f5483a;
-}
-.careerInfoBox .careerInfoText{
-	width: 780px;
-  font-size: 16px; 
-}
-.careerContainer .careerInfoBox .currentJob{
-	font-size: 28px;
+.career .careerContainer .careerInfoBox {
+  padding: 20px 0px 20px 0px;
 }
 
-.careerContainer .careerInfoTextLocation{
+.careerInfoBox .careerInfoTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
+}
+.careerInfoBox .careerInfoText {
+  width: 780px;
+  font-size: 16px;
+}
+.careerContainer .careerInfoBox .currentJob {
+  font-size: 28px;
+}
+
+.careerContainer .careerInfoTextLocation {
   margin-left: 9%;
   display: flex;
   flex-direction: column;
 }
-.careerContainer .careerInfoTextLocationTitle{
+.careerContainer .careerInfoTextLocationTitle {
   padding: 24px 0px 8px 0px;
-	font-size: 18px;
-	font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
-.careerContainer .careerInfoTextLocationText{
-	font-size: 16px;
+.careerContainer .careerInfoTextLocationText {
+  font-size: 16px;
 }
 
+/* After School */
 
+.afterSchoolContainer {
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-start; */
+}
+
+.afterSchoolTop {
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+.afterSchoolContainer .afterSchoolTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
+}
+.afterSchoolTop .afterSchoolBtn {
+  width: 172px;
+  height: 32px;
+  background-color: #ffffff;
+  border: solid 1px #979797;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+}
+.afterSchoolLocationContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.afterSchoolContainer .afterSchoolLocation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.afterSchoolContainer .afterSchoolLocation .afterSchoolLocationTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5483a;
+}
+.afterSchoolLocation .afterSchoolLocationInfoTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e3089;
+}
+.afterSchoolLocation .afterSchoolLocationInfoText {
+  width: 240px;
+  height: 57px;
+  font-size: 16px;
+}
 
 /* Footer */
 
