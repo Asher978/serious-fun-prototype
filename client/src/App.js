@@ -30,15 +30,22 @@ import EditSchool from './components/EditSchool';
 import Footer from './components/Footer';
 
 class App extends Component {
-  constructor () {
-    super ();
-    this.state = {
+  
+  state = {
       auth: Auth.isUserAuthenticated(),
       registerUsername: '',
       registerPassword: '',
       loginUsername: '',
-      loginPassword: ''
+      loginPassword: '',
+      pages : null
     }
+  
+  componentDidMount() {
+    axios.get('/page/').then(res => {
+      this.setState({
+        pages: res.data.pages
+      });
+    });
   }
 
   // use of arrow functions to avoid bindings
@@ -128,7 +135,7 @@ class App extends Component {
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
 
           <Route exact path="/dashboard" render={() =>
-              this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
+              this.state.auth ? <Dashboard auth={this.state.auth} pages={this.state.pages} /> : <Redirect to="/login" />}/>
 
           <Route exact path='/login' 
           render={() =>
