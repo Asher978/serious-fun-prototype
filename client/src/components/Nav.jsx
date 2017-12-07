@@ -64,7 +64,7 @@ const Nav = props => {
 
             <div className="dropdownMenu">
             <div className="programDrop">
-              <Link to="" id="overviewDrop" className="dropLinks">
+              <Link to="/overview" id="overviewDrop" className="dropLinks">
                 Overview
               </Link>
               <Link to="/locations" id="locationDrop" className="dropLinks">
