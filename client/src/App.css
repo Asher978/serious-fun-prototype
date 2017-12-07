@@ -150,7 +150,7 @@ body {
 .dropdownMenu .dropLinks {
   font-size: 16px;
   color: #f5483a;
-  padding: 8px 7px;
+  padding: 7px 7px;
 }
 
 /* Home Page Slides */
@@ -751,6 +751,17 @@ body {
   height: 122px;
   width: 100%;
 }
+
+
+/* SCHOOLS PAGE - MAP CONTAINER SETTING FOR DESKTOP */
+.leaflet-container {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
 
 /* .App { */
 /* text-align: center; */
