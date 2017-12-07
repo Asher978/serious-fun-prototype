@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Auth from "../modules/Auth";
+// import Auth from "../modules/Auth";
 
 const Nav = props => {
   return (

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import axios from 'axios';
 import superagent from 'superagent';
 import sha1 from 'sha1';
-import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
+import { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
 
 import AddSchool from '../components/AddSchool';
 import AddClass from '../components/AddClass';
@@ -255,8 +255,8 @@ class Dashboard extends Component {
                   <li className="list-group-item main-color-bg">
                   <span className='glyphicon glyphicon-arrow-down' aria-hidden='true'></span>&nbsp;Link To
                   </li>
-                  <a href="#" className="list-group-item"><span className='glyphicon glyphicon-education' aria-hidden='true'></span>&nbsp; Schools <span className='badge'> 7 </span></a>
-                  <a href="#" className="list-group-item"><span className='glyphicon glyphicon-folder-open' aria-hidden='true'></span>&nbsp; Classes <span className='badge'> 10 </span></a>
+                  <a href="" className="list-group-item"><span className='glyphicon glyphicon-education' aria-hidden='true'></span>&nbsp; Schools <span className='badge'> 7 </span></a>
+                  <a href="" className="list-group-item"><span className='glyphicon glyphicon-folder-open' aria-hidden='true'></span>&nbsp; Classes <span className='badge'> 10 </span></a>
                 </div>
               </div>
   

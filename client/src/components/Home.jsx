@@ -1,10 +1,24 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
+import axios from 'axios';
+
 class Home extends Component {
 
+    state = {
+      content : null,
+      pageTitle: 'Home',
+      data: null,
+      dataLoaded : false,
+
+
+  }
+
   componentDidMount(){
-    
+    let pageTitle = this.state;
+    axios.get(`/page/${pageTitle}`).then(res =>{
+      console.log(res);
+    }).catch(err => console.log(err));
   }
 
   renderData = () => {

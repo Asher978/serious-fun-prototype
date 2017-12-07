@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import { Map, Marker, Popup, TileLayer, L } from 'react-leaflet'
+import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 import SingleSchool from './SingleSchool';
 
@@ -39,7 +39,7 @@ class Schools extends Component{
 
   renderMap = (schools) => {
     const firstSchool = schools[0].coordinates;
-    const lastSchool = schools[schools.length-1];
+    // const lastSchool = schools[schools.length-1];
     return (
         <Map center={firstSchool} zoom={14}>
           <TileLayer
@@ -66,7 +66,7 @@ class Schools extends Component{
               </Popup>
             </Marker>
         )
-        }
+        } else return null;
       })
     }
   }
