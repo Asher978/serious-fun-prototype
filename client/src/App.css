@@ -150,7 +150,7 @@ body {
 .dropdownMenu .dropLinks {
   font-size: 16px;
   color: #f5483a;
-  padding: 8px 7px;
+  padding: 7px 7px;
 }
 
 /* Home Page Slides */
@@ -681,6 +681,109 @@ body {
   background-image: url("assets/classes/education.jpg");
 }
 
+
+
+
+
+
+/* Program Overview */
+.overViewContainer{
+  display: flex;
+  width:66%;
+  flex-direction: column;
+  margin: 13px auto 96px auto;
+  background: rebeccapurple;
+}
+
+.overViewTitle p {
+	font-size: 32px;
+	font-weight: bold;
+  color: #f5483a;
+  margin-bottom: 24px;
+}
+
+.overViewSubTitle p{
+	font-size: 22px;
+	font-weight: bold;
+  color: #f5483a;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.overViewSmallContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.overViewSubTitleSubTitle{
+	font-size: 14px !important;
+	font-style: italic;
+	color:black !important;
+}
+.overViewRightSec .overViewTextColumn, .overViewHR{
+  margin-left: 16px;
+}
+.overViewTextColumnSubTitle{
+	font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.overViewTextColumnSubTextDate{
+  margin-top: 0px;
+}
+
+.overViewTextColumnSubText{
+  margin-bottom: 0px;
+  width: 460px;
+  margin-top: 2px;
+
+}
+.overViewRightSec{
+  margin-right: 35px;
+}
+
+.overViewRightSec .overViewTextColumnSubText{
+    
+  width: 300px;
+	font-size: 16px;
+	color: #000000;
+}
+.overViewTextColumn .Group{
+
+  margin-top: 8px;
+}
+
+.overViewTextColumnSubTextCalendar{
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+.overViewTextColumnBtn{
+  width: 160px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.overViewTextColumnDate{
+	font-size: 14px !important;
+	font-style: italic;
+	color:black !important;
+}
+
+.overViewRightSec .overViewTextColumnSubText{
+  margin: 0px 0px 0px 0px;
+}
+.overViewHR{
+  margin: 16px 0px 16px 0px;
+  width: 339px;
+	height: 2px;
+	border: solid 1px #bababa;
+}
 /* Footer */
 
 .navbar .topBar {
@@ -751,6 +854,17 @@ body {
   height: 122px;
   width: 100%;
 }
+
+
+/* SCHOOLS PAGE - MAP CONTAINER SETTING FOR DESKTOP */
+.leaflet-container {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
 
 /* .App { */
 /* text-align: center; */

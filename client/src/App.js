@@ -12,7 +12,7 @@ import RegisterForm from './components/RegisterForm';
 import LoginForm from './components/LoginForm';
 import Nav from './components/Nav';
 import Calendar from './components/Calendar';
-import Dashboard from './components/Dashboard';
+// import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 
 import AboutUs from './components/AboutUs';
@@ -21,10 +21,11 @@ import Careers from './components/Careers';
 // import Supporters from './components/Supporters';
 import PeopleSay from './components/PeopleSay';
 
+import Overview from './components/Overview';
 import AfterSchoolLocation from './components/AfterSchoolLocation';
 import Classes from './components/Classes';
 
-import Schools from './components/Schools';
+// import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
 import Footer from './components/Footer';
@@ -115,6 +116,7 @@ class App extends Component {
 
           <Route exact path="/peoplesay" component={PeopleSay}/>
 
+          <Route exact path="/overview" component={Overview}/>
           <Route exact path="/locations" component={AfterSchoolLocation}/>
           <Route exact path="/classes" component={Classes}/>
           <Route exact path="/calendar" component={Calendar}/>
@@ -124,11 +126,10 @@ class App extends Component {
 
           
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
-          <Route exact path='/schools' render={() => <Schools />} />
+          
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
 
-          <Route exact path="/dashboard" render={() =>
-              this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
+
 
           <Route exact path='/login' 
           render={() =>
@@ -168,3 +169,11 @@ class App extends Component {
 }
 
 export default App;
+
+
+// Line 127  <Route exact path='/schools' render={() => <Schools />} />
+
+// Line 131           <Route exact path="/dashboard" render={() =>
+// this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
+
+// Causing erorr ^^

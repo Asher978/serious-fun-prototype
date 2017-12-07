@@ -7,7 +7,8 @@ config = require('./db/config'),
 User = require('./api/models/User'),
 School = require('./api/models/Schools'),
 Class = require('./api/models/Classes'),
-HomePage = require('./api/models/HomePage');
+HomePage = require('./api/models/HomePage'),
+Page = require('./api/models/Page');
 require('dotenv').config();
 
 mongoose.connect(config.database);
@@ -46,6 +47,9 @@ app.use('/classes', classesRoutes);
 
 const homePageRoutes = require('./api/routes/homePageRoutes');
 app.use('/home_page', homePageRoutes);
+
+const pageRoutes = require('./api/routes/pageRoutes');
+app.use('/page', pageRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
