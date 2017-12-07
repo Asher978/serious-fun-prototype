@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 
-const { Schema } = new Schema;
+const { Schema } = mongoose;
 
 const PageSchema = new Schema({
     pageTitle : {
         type: String,
-        require: true
+        require: true,
+        unique : true
     },
     pageContent : {
         type: String,
