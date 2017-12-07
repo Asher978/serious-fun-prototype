@@ -3,6 +3,16 @@ const mongoose = require('mongoose');
 const Page = mongoose.model('Page');
 
 const pageController = {
+    getAll  : (req, res) => {
+        var query = Page.find({}).select('pageTitle');
+        query.exec((err, pages) => {
+            console.log(pages)
+            res.send({
+                'message': 'ok',
+                pages
+            });
+        });
+    }, 
     findPage : (req, res) => {
         let { title } = req.params;
         Page.findOne({'pageTitle' : title },(err,page)=>{
