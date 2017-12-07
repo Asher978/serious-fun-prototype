@@ -45,7 +45,11 @@ const SchoolSchema = new Schema({
     classes : [{
         type: Schema.Types.ObjectId,
         ref : 'Class'
-    }]
+    }], 
+    coordinates: {
+        type: [Number, Number],
+        required: true,
+    },
 }); 
 
 const School = mongoose.model('School', SchoolSchema);

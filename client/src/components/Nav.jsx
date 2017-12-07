@@ -9,9 +9,11 @@ const Nav = props => {
       <div className="midHead">
         <div className="container">
           <Link to="/" className="mainLogo" />
-         
-            <Link to="" className="helpBtn">support</Link>
-          
+
+          <Link to="" className="helpBtn">
+            support
+          </Link>
+
           <div className="user">
             <Link to="" id="login" className="userAuth">
               Login
@@ -37,25 +39,51 @@ const Nav = props => {
 
             <div className="dropdownMenu">
               <div className="aboutDrop">
-                <Link to="" id="aboutDrop" className="dropLinks">
+                <Link to="/aboutus" id="aboutDrop" className="dropLinks">
                   About Us
                 </Link>
-                <Link to="" id="teamDrop" className="dropLinks">
+                <Link to="/ourteam" id="teamDrop" className="dropLinks">
                   Our Team
                 </Link>
-                <Link to="" id="testimonialDrop" className="dropLinks">
-                  Testimonials
-                </Link>
-                <Link to="" id="workDrop" className="dropLinks">
+                <Link to="/careers" id="workDrop" className="dropLinks">
                   Work With Us
+                </Link>
+                <Link to="/supporters" id="supportDrop" className="dropLinks">
+                  Our Supporters
+                </Link>
+                <Link to="/peoplesay" id="peoplesayDrop" className="dropLinks">
+                  What People Say
                 </Link>
               </div>
             </div>
           </div>
           <div className="linkBox">
-            <Link to="" id="location" className="navLinks">
-              locations
+            <Link to="" id="afterSchool" className="navLinks">
+              After School
             </Link>
+
+            <div className="dropdownMenu">
+            <div className="programDrop">
+              <Link to="" id="overviewDrop" className="dropLinks">
+                Overview
+              </Link>
+              <Link to="/locations" id="locationDrop" className="dropLinks">
+                Locations
+              </Link>
+              <Link to="" id="tuitionDrop" className="dropLinks">
+                Tuition
+              </Link>
+              <Link to="/classes" id="tuitionDrop" className="dropLinks">
+                Classes
+              </Link>
+              <Link to="" id="transportationDrop" className="dropLinks">
+                Transportation
+              </Link>
+              <Link to="" id="policyDrop" className="dropLinks">
+                Polices
+              </Link>
+            </div>
+          </div>
           </div>
 
           <div className="linkBox">

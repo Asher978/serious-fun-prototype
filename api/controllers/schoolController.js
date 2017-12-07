@@ -18,7 +18,7 @@ const schoolController = {
         })
     },
     newSchool : (req, res) => {
-        let body = _.pick(req.body, ['schoolName', 'st_Addr', 'city', 'state', 'zipcode', 'description', 'picture_url']);
+        let body = _.pick(req.body, ['schoolName', 'st_Addr', 'city', 'state', 'zipcode', 'description', 'picture_url', 'coordinates']);
         console.log(body);
         const new_School = new School(body);
         new_School.save().then(()=>{
