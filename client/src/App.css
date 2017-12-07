@@ -240,6 +240,12 @@ body {
 }
 
 
+/* SCHOOLS PAGE - MAP CONTAINER SETTING FOR DESKTOP */
+.leaflet-container {
+  height: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
 
 
 /* .App { */
