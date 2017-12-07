@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 // import $ from 'jquery';
 
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 // window['jQuery'] = window['$'] = $;
 var $ = window.$;
 
-class FullCalendar extends React.Component {
+class FullCalendar extends Component {
   componentDidMount() {
     $("#fullCalendar").fullCalendar({
       googleCalendarApiKey: "AIzaSyDU_CakcARBmp2KzTSfDe7TO2Ta5jzaLS4",
