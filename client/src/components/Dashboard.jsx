@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import superagent from 'superagent';
 import sha1 from 'sha1';
+import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
 
 import AddSchool from '../components/AddSchool';
 import AddClass from '../components/AddClass';
@@ -25,7 +26,9 @@ class Dashboard extends Component {
       price: '',
       schools: null,
       schoolsLoaded: true,
-      ids: []
+      ids: [],
+      coordinates: [],
+      coordsLoaded: false
     }
   }
 
@@ -55,28 +58,36 @@ class Dashboard extends Component {
 
   handleAddSchool = (e) => {
     e.preventDefault();
-    axios.post('/schools/add', {
-      'schoolName': this.state.schoolName,
-      'st_Addr': this.state.st_Addr,
-      'city': this.state.city,
-      'state': this.state.state,
-      'zipcode': this.state.zipcode,
-      'description': this.state.description,
-      'picture_url': this.state.picture_url
-    }).then(res => {
-      console.log(res);
-      this.setState({
-        schoolName: '',
-        st_Addr: '',
-        city: '',
-        state: '',
-        zipcode: '',
-        description: '',
-        picture_url: '',
+    
+    this.getSchoolCoords();
+
+    if (this.state.coordsLoaded) {
+      axios.post('/schools/add', {
+        'schoolName': this.state.schoolName,
+        'st_Addr': this.state.st_Addr,
+        'city': this.state.city,
+        'state': this.state.state,
+        'zipcode': this.state.zipcode,
+        'description': this.state.description,
+        'picture_url': this.state.picture_url,
+        'coordinates': this.state.coordinates
+      }).then(res => {
+        console.log(res);
+        this.setState({
+          schoolName: '',
+          st_Addr: '',
+          city: '',
+          state: '',
+          zipcode: '',
+          description: '',
+          picture_url: '',
+          coordinates: [],
+          coordsLoaded: false
+        })
+      }).catch(err => {
+        console.log(err);
       })
-    }).catch(err => {
-      console.log(err);
-    })
+    }
   }
 
   handleAddClass = e => {
@@ -98,6 +109,20 @@ class Dashboard extends Component {
     }).catch(err => {
       console.log(err);
     })
+  }
+
+  getSchoolCoords = () => {
+    
+    let schoolAddress = `${this.state.st_Addr} ${this.state.city} ${this.state.state} ${this.state.zipcode}`;
+
+    geocodeByAddress(schoolAddress)
+      .then(results => getLatLng(results[0]))
+      .then(latLng => {
+        this.setState({
+          coordinates: [latLng.lat, latLng.lng],
+          coordsLoaded: true
+        });
+      }).catch(error => console.log('Error', error))
   }
 
   componentDidMount() {
