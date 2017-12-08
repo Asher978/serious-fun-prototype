@@ -70,11 +70,11 @@ const Nav = props => {
               <Link to="/locations" id="locationDrop" className="dropLinks">
                 Locations
               </Link>
-              <Link to="" id="tuitionDrop" className="dropLinks">
-                Tuition
-              </Link>
               <Link to="/classes" id="tuitionDrop" className="dropLinks">
                 Classes
+              </Link>
+              <Link to="" id="tuitionDrop" className="dropLinks">
+                Tuition
               </Link>
               <Link to="" id="transportationDrop" className="dropLinks">
                 Transportation
