@@ -21,9 +21,11 @@ const Tuition = props => {
     <table className="tuitionLeftMidTable">
     <tbody>
     <tr className="MidContainerTopHR">
-      <th>Per Week</th>
-      <th>Annual Cost</th> 
+      <th><p className="tuitionTHLeftP">Per Week</p><p className="tuitionTHRightP">Annual Cost</p></th>
+
     </tr>
+    </tbody>
+    <tbody>
     <tr>
       <td>1 day</td>
       <td>$700.00</td>
@@ -55,9 +57,8 @@ const Tuition = props => {
     <div className="tuitionLeftMidContainer">
     <table className="tuitionLeftMidTable">
     <tbody>
-    <tr className="MidContainerTopHR">
-      <th>Class</th>
-      <th>Additional Cost</th> 
+    <tr className="MidContainerTopHR BottomHR">
+      <th><p className="tuitionTHLeftP">Class</p><p className="tuitionTHRightP">Additional Cost</p></th>
     </tr>
     <tr>
       <td>A2S</td>
@@ -93,17 +94,17 @@ const Tuition = props => {
     <p className="tuitionRightTitle">Additional Program Fees</p>
 
     <div className="tuitionRightInfo">
-    <p className="tuitionRightSubTitle">Registration:</p>
+    <p className="tuitionRightSubTitle tuitionTextTitles">Registration:</p>
     <p className="tuitionRightSubTitleText">$50.00 per family</p>
     <p className="tuitionRightText">Non-Refundable <br></br>Due in full at time of registration</p>
     </div>
     <div className="tuitionRightInfo">
-    <p className="tuitionRightSubTitle">Drop-In:</p>
+    <p className="tuitionRightSubTitle tuitionTextTitles">Drop-In:</p>
     <p className="tuitionRightSubTitleText">$25.00 per day</p>
     <p className="tuitionRightText">Must be requested 2 school days in advance<br></br>5 drop-in day limit per month</p>
     </div>
     <div className="tuitionRightInfo">
-    <p className="tuitionRightSubTitle">Administration:</p>
+    <p className="tuitionRightSubTitle tuitionTextTitles">Administration:</p>
     <p className="tuitionRightSubTitleText">$25.00 per class change or cancellation</p>
     </div>
 

@@ -309,7 +309,7 @@ body {
   font-style: normal;
 }
 
-/* Our Team */
+/* About Our Team */
 
 .ourTeam {
   margin: 48px auto;
@@ -406,7 +406,7 @@ body {
   margin: 8px 0px;
 }
 
-/* Work With Us */
+/* About Us Work With Us */
 
 .career .careerPic {
   background-image: url("assets/slide/bridge.jpg");
@@ -454,29 +454,28 @@ body {
 }
 
 /* About Us - Supporters */
-.supportersContainer{
+.supportersContainer {
   width: 66%;
   display: flex;
   flex-direction: column;
   margin: 48px auto 96px auto;
   /* background: rebeccapurple; */
-
 }
 
-.supportersTop{
+.supportersTop {
   margin-bottom: 24px;
 }
-.supportTitle{
+.supportTitle {
   margin-bottom: 24px;
-	font-size: 32px;
-	font-weight: bold;
-	color: #f5483a;
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
 }
-.supportTitleText{
-	font-size: 16px;
+.supportTitleText {
+  font-size: 16px;
 }
 
-.supportersMid{
+.supportersMid {
   display: flex;
   flex-direction: row;
 }
@@ -484,52 +483,274 @@ body {
   background-image: url("assets/compass.png");
   background-repeat: no-repeat;
   background-position: center;
-	width: 300px;
+  width: 300px;
   height: 200px;
   margin-right: 20px;
 }
 .supportBottomTitle {
-	font-size: 22px;
-	font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
   color: #f5483a;
   margin-top: 48px;
-  margin-Bottom: 24px;
+  margin-bottom: 24px;
 }
 .supportBottomContainer {
-display: flex;
+  display: flex;
 }
 .supportBottomHR {
-margin: 0px 8px 0px 0px;
-/* width: 2px; */
-height: 136px;
-border: solid 1px #f5483a;
+  margin: 0px 8px 0px 0px;
+  /* width: 2px; */
+  height: 136px;
+  border: solid 1px #f5483a;
 }
 .supportDonors {
-	width: 230px;
-	height: 136px;
+  width: 230px;
+  height: 136px;
 }
 
-.supportBottomSubTitle{
+.supportBottomSubTitle {
   margin-top: 2px;
   margin-bottom: 8px;
 }
-.supportBottomTextTop{
+.supportBottomTextTop {
   margin-top: 8px;
   margin-bottom: 0px;
 }
-.supportBottomTextBottom{
+.supportBottomTextBottom {
   margin-top: 4px;
   font-style: italic;
 }
 
-/* After School - Locations */
+/* About Us - What People Say */
 
-/* .afterSchoolContainer { */
-  /* display: flex;
+.peopleSayContainer {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  margin: 45px auto 96px auto;
+  /* background: rebeccapurple; */
+}
+
+.peopleSayTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
+  margin-bottom: 24px;
+}
+
+.peopleSayFeedBox {
+  width: 100%;
+  height: 91px;
+  background-color: #1e3089;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.peopleSayFeedBoxArrow {
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  -ms-transform: scale(2);
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  display: flex;
   justify-content: center;
-  align-items: flex-start; */
-/* } */
+}
 
+.peopleSayFeedText {
+  width: 780px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.peopleSayTop {
+  display: flex;
+  flex-direction: row;
+  /* background: blueviolet; */
+  width: 90%;
+  justify-content: space-between;
+}
+
+.peopleSayLeftSec {
+  padding-left: 40px;
+}
+.peopleSayRightSec {
+  padding-top: 35px;
+}
+
+.peopleSaySubTitles {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5483a;
+  margin-bottom: 6px;
+}
+
+.peopleSayMidContainer {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  align-items: center;
+}
+
+.peopleSayText {
+  margin-top: 0px;
+  width: 540px;
+  margin-bottom: 8px;
+}
+
+.peopleSayTextCredit {
+  margin-top: 8px;
+  margin-bottom: 23px;
+  font-style: italic;
+}
+
+.peopleSayImage {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 220px;
+  height: 200px;
+  /* margin-right: 20px; */
+}
+
+.peopleSayRightSec .RightImage {
+  background-image: url("assets/whatPeopleSay/kidTop.jpg");
+}
+.peopleSayLeftBottom .LeftImage {
+  background-image: url("assets/whatPeopleSay/homework.jpg");
+  margin-right: 20px;
+}
+
+.peopleSayMid,
+.peopleSayBottom {
+  width: 82%;
+}
+
+.peopleSayBottomSec {
+  display: flex;
+  margin-top: 10px;
+}
+
+/* AfterSchool Overview */
+.overViewContainer {
+  display: flex;
+  width: 66%;
+  flex-direction: column;
+  margin: 13px auto 96px auto;
+  /* background: rebeccapurple; */
+}
+
+.overViewTitle p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
+  margin-bottom: 24px;
+}
+
+.overViewSubTitle p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f5483a;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.overViewSmallContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overViewSubTitleSubTitle {
+  font-size: 14px !important;
+  font-style: italic;
+  color: black !important;
+}
+.overViewRightSec .overViewTextColumn,
+.overViewHR {
+  margin-left: 16px;
+}
+.overViewTextColumnSubTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.overViewLeftSec .overViewTextColumnSubTitle {
+  margin-top: 46px;
+}
+
+.overViewTextColumn .register {
+  margin-top: 32px;
+}
+
+.registerText {
+  margin-bottom: 23px;
+}
+
+.overViewTextColumnSubTextDate {
+  margin-top: 0px;
+}
+
+.overViewTextColumnSubText {
+  /* margin-bottom: 0px; */
+  width: 460px;
+  margin-top: 2px;
+}
+
+.moreInfo {
+  margin-top: 32px;
+}
+
+.overViewRightSec {
+  margin-right: 35px;
+}
+
+.overViewRightSec .overViewTextColumnSubText {
+  width: 300px;
+  font-size: 16px;
+  color: #000000;
+}
+.overViewTextColumn .Group {
+  margin-top: 8px;
+}
+
+.overViewTextColumnSubTextCalendar {
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+.overViewTextColumnBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.overViewTextColumnDate {
+  font-size: 14px !important;
+  font-style: italic;
+  color: black !important;
+}
+
+.overViewRightSec .overViewTextColumnSubText {
+  margin: 4px 0px 4px 0px;
+}
+.overViewHR {
+  margin: 16px 0px 16px 0px;
+  width: 339px;
+  /* height: 2px; */
+  border: solid 1px #bababa;
+}
+
+/* After School - Locations */
 .afterSchoolTop {
   display: flex;
   justify-content: space-between;
@@ -555,7 +776,7 @@ border: solid 1px #f5483a;
   text-decoration: none;
   color: black;
 }
-.afterSchoolLocationContainer{
+.afterSchoolLocationContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -563,40 +784,41 @@ border: solid 1px #f5483a;
   margin: 0px 16.8%;
   /* background: rebeccapurple; */
 }
-.afterSchoolLocationContainer .afterSchoolLocation{
+.afterSchoolLocationContainer .afterSchoolLocation {
   padding: 12px 10px 32px 0px;
 }
-.afterSchoolLocationContainer .first{
+.afterSchoolLocationContainer .first {
   margin-left: -37px;
 }
-.afterSchoolLocationContainer .second{
+.afterSchoolLocationContainer .second {
   padding: 0px 10px 42px 10px;
 }
-.afterSchoolContainer .afterSchoolLocation .afterSchoolLocationInfoColumnContainer {
+.afterSchoolContainer
+  .afterSchoolLocation
+  .afterSchoolLocationInfoColumnContainer {
   display: flex;
 }
-.afterSchoolLocationInfoColumnContainer .afterSchoolLocationInfoColumn{
+.afterSchoolLocationInfoColumnContainer .afterSchoolLocationInfoColumn {
   /* background: aliceblue; */
   margin-right: 77px;
 }
-.afterSchoolLocationInfoColumnContainer .second{
+.afterSchoolLocationInfoColumnContainer .second {
   /* background: aliceblue; */
   margin-right: -35px;
 }
-.afterSchoolLocationInfoColumnContainer  .afterSchoolLocationInfo, .afterSchoolLocationInfo{
+.afterSchoolLocationInfoColumnContainer .afterSchoolLocationInfo,
+.afterSchoolLocationInfo {
   padding: 13.5px 0px;
-      /* margin: 10px 0px; */
-      
+  /* margin: 10px 0px; */
 }
- .secLast{
+.secLast {
   padding: 0px 10px 42px 0px;
-      
 }
-.afterSchoolLocationInfoColumnContainer  .last{
+.afterSchoolLocationInfoColumnContainer .last {
   /* padding: 13.5px 0px; */
-      margin: 22px 0px;
+  margin: 22px 0px;
 }
-.hrVerticalLine{
+.hrVerticalLine {
   margin: 0px 40px;
   height: 450px;
 }
@@ -615,41 +837,39 @@ border: solid 1px #f5483a;
   width: 240px;
   height: 57px;
   font-size: 16px;
-
 }
 
-.infoLocationBottomText{
+.infoLocationBottomText {
   margin: 0px 16.8% 40px 16.8%;
-	font-size: 16px;
-	font-style: italic;
+  font-size: 16px;
+  font-style: italic;
 }
 
-.infoLocationBottomMap{
+.infoLocationBottomMap {
   background-image: url("assets/map.jpg");
   background-repeat: no-repeat;
   background-position: center;
-	width: 940px;
+  width: 940px;
   height: 322px;
   margin: 0px 16.8% 98px 16.5%;
 }
 
-
-/* About Us - Classes */
+/* After School - Classes */
 
 /* Top */
 
-.classContainer{
+.classContainer {
   width: 66%;
   /* background: rebeccapurple; */
   margin: auto;
 }
 
-.classTop{
+.classTop {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.classContainer .classTopTitle p{
+.classContainer .classTopTitle p {
   font-size: 32px;
   font-weight: bold;
   color: #f5483a;
@@ -657,9 +877,7 @@ border: solid 1px #f5483a;
   margin-top: 45px;
 }
 
-
-
-.classTopPicContainer{
+.classTopPicContainer {
   width: 100%;
   /* background: red; */
   display: flex;
@@ -667,42 +885,41 @@ border: solid 1px #f5483a;
   justify-content: center;
 }
 
-.classTopPicContainerTOP, .classTopPicContainerBottom{
+.classTopPicContainerTOP,
+.classTopPicContainerBottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
 }
 
-.classTopPictures{
+.classTopPictures {
   width: 301px;
   height: 164px;
-  background-color: rgba(0, 0, 0, 0.25); 
+  background-color: rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-position: center;
   margin: 10px 8px 10px 0px;
   /* padding: 20px; */
-  
-} 
-.music{
+}
+.music {
   background-image: url("assets/classes/music.jpg");
-} 
-.language{
+}
+.language {
   background-image: url("assets/classes/writing.jpg");
-} 
-.visualarts{
+}
+.visualarts {
   background-image: url("assets/classes/arts.jpg");
-} 
-.performingarts{
+}
+.performingarts {
   background-image: url("assets/classes/performance.jpg");
-} 
-.sportandfitness{
+}
+.sportandfitness {
   background-image: url("assets/classes/sport.jpg");
-} 
-.other{
+}
+.other {
   background-image: url("assets/classes/other.jpg");
-} 
-.classTopPicText{
+}
+.classTopPicText {
   width: 100%;
   height: 100%;
   display: flex;
@@ -713,285 +930,202 @@ border: solid 1px #f5483a;
   font-size: 22px;
   font-weight: bold;
   color: #ffffff;
-
-} 
-.classTopPictures  a{
+}
+.classTopPictures a {
   text-decoration: none;
-} 
+}
 
 /* Bottom */
 
-.classBottom{
+.classBottom {
   margin-top: 48px;
   margin-bottom: 96px;
 }
-.classBottomTitle p{
+.classBottomTitle p {
   font-size: 24px;
   font-weight: bold;
   color: #f5483a;
 }
 
-.classBottomPicContainer{
+.classBottomPicContainer {
   display: flex;
 }
 
-.classBottomPicContainer a{
+.classBottomPicContainer a {
   width: 300px;
   height: 200px;
   display: flex;
   /* flex-direction: row; */
-  margin-right:20px; 
+  margin-right: 20px;
   background-repeat: no-repeat;
   background-position: center;
 }
-#writopiaLab{
+#writopiaLab {
   background-image: url("assets/classes/writopia.jpg");
 }
-#educationArt{
+#educationArt {
   background-image: url("assets/classes/education.jpg");
 }
 
 
-
-
-
-
-/* Program Overview */
-.overViewContainer{
+.tuitionContainer{
   display: flex;
-  width:66%;
   flex-direction: column;
-  margin: 13px auto 96px auto;
-  /* background: rebeccapurple; */
+  margin: 48px auto 156px auto;
+  width: 66%;
 }
 
-.overViewTitle p {
+.tuitionMainTitle{
+
 	font-size: 32px;
 	font-weight: bold;
-  color: #f5483a;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+	color: #f5483a;
 }
 
-.overViewSubTitle p{
-	font-size: 22px;
-	font-weight: bold;
-  color: #f5483a;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.overViewSmallContainer{
+.tuitionInnerTop{
   display: flex;
   justify-content: space-between;
 }
+.tuitionLeftTitle{
+	font-size: 24px;
+	font-weight: bold;
+  color: #f5483a;
+  margin-bottom: 0px;
+}
 
-.overViewSubTitleSubTitle{
-	font-size: 14px !important;
-	font-style: italic;
-	color:black !important;
-}
-.overViewRightSec .overViewTextColumn, .overViewHR{
-  margin-left: 16px;
-}
-.overViewTextColumnSubTitle{
+.tuitionTextTitles{
 	font-size: 16px;
   font-weight: bold;
   margin-bottom: 2px;
-  
+}
+.tuitionLeftText{
+  margin-bottom: 0px;
+}
+.tuitionLeftSubTitle,.tuitionLeftText, .tuitionLeftMidText,.tuitionRightText, .tuitionTextPara, .tuitionRightCancelSubText {
+  font-style: italic;
 }
 
-/* .TransportationText{
-  margin-bottom: 23px;
-} */
-
-.overViewLeftSec .overViewTextColumnSubTitle{
-      margin-top: 46px;
-}
-
-.overViewTextColumn .register{
-  margin-top: 32px;
-}
-
-.registerText{
-  margin-bottom: 23px;
-}
-
-
-.overViewTextColumnSubTextDate{
+.tuitionLeftText, .tuitionRightSubTitleText{
   margin-top: 0px;
 }
 
-.overViewTextColumnSubText{
-  /* margin-bottom: 0px; */
-  width: 460px;
-  margin-top: 2px;
-
+.tuitionLeftClassesTitle{
+  margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #1e3089;
 }
 
-.moreInfo{
-  margin-top: 32px;
+.tuitionLeftMidTable{
+  padding-left: 35px;
+  /* width: 24%; */
+  /* width: 67%; */
+  /* border-collapse: collapse; */
 }
 
-.overViewRightSec{
-  margin-right: 35px;
-}
-
-.overViewRightSec .overViewTextColumnSubText{
-    
-  width: 300px;
-	font-size: 16px;
-	color: #000000;
-}
-.overViewTextColumn .Group{
-
-  margin-top: 8px;
-}
-
-.overViewTextColumnSubTextCalendar{
-  margin-top: 24px;
-  margin-bottom: 23px;
-}
-
-.overViewTextColumnBtn{
+.tuitionLeftMidContainer{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  /* background: rebeccapurple; */
+  width: 86%;
+}
+th{
+  display: flex;
+  width: 152%;
+  justify-content: space-between;
+  font-weight: normal;
+}
+.tuitionTHRightP{
+font-weight: bold;
+}
+.tuitionTHLeftP,.tuitionTHRightP{
+  margin: 0px;
+  color: #f5483a;
+}
+
+.MidContainerTopHR{
+  width: 240px;
+	/* border: solid 1px #f5483a; */
+}
+
+.BottomHR th{
+  width: 140%;
+}
+td:last-child{
+  text-align: end;
+  font-weight: bold;
+}
+
+.tuitionLeftMidText{
+  width: 300px;
+}
+
+.tuitionTextBtn{
+  display: flex;
   width: 160px;
   height: 32px;
   border-radius: 4px;
   background-color: #1e3089;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-  color: #ffffff;
   text-decoration: none;
-}
-.overViewTextColumnDate{
-	font-size: 14px !important;
-	font-style: italic;
-	color:black !important;
-}
-
-.overViewRightSec .overViewTextColumnSubText{
-  margin: 4px 0px 4px 0px;
-}
-.overViewHR{
-  margin: 16px 0px 16px 0px;
-  width: 339px;
-	/* height: 2px; */
-	border: solid 1px #bababa;
-}
-
-
-/* About Us - What People Say */
-
-.peopleSayContainer{
-  display: flex;
-  flex-direction: column;
-  width: 66%;
-  margin: 45px auto 96px auto;
-  /* background: rebeccapurple; */
-}
-
-.peopleSayTitle{
-	font-size: 32px;
-	font-weight: bold;
-  color: #f5483a;
-  margin-bottom: 24px;
-}
-
-.peopleSayFeedBox{
-  width: 100%;
-	height: 91px;
-  background-color: #1e3089;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom: 22px;
-}
-
-.peopleSayFeedBoxArrow{
-  width: 24px;
-  height: 24px;
-  color: #ffffff;
-  -ms-transform: scale(2);
-  -webkit-transform: scale(2);
-  transform: scale(2);
-  display: flex;
   justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
 }
 
-.peopleSayFeedText{
-  width: 780px;
-	font-size: 16px;
-	font-weight: bold;
-	color: #ffffff;
-}
-
-.peopleSayTop{
-  display: flex;
-  flex-direction: row;
-  /* background: blueviolet; */
-  width: 90%;
-  justify-content: space-between;
-}
-
-.peopleSayLeftSec{
-  padding-left: 40px;
-}
-.peopleSayRightSec{
-  padding-top: 35px;
-}
-
-.peopleSaySubTitles{
-	font-size: 24px;
+/* Right Sec */
+.tuitionRightTitle{
+	font-size: 18px;
 	font-weight: bold;
   color: #f5483a;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
 }
-
-.peopleSayMidContainer{
-  display: flex;
-  flex-direction: column;
-  width: 98%;
-  align-items: center;
+.tuitionRightSubTitle, .tuitionRightCancelSubTitle{
+  margin-top: 8px;
 }
-
-.peopleSayText{
-  margin-top: 0px;
-  width: 540px;
+.tuitionRightSubTitleText{
+  margin: 0px;
+}
+.tuitionRightText{
+  margin-top: 4px;
   margin-bottom: 8px;
 }
 
-.peopleSayTextCredit{
+.rightBottom{
+  margin-top: 24px;
+}
+
+.tuitionRightCancelSubTitle{
+  margin-bottom: 8px;
+  width: 460px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1e3089;
+}
+
+.tuitionRightCancelSubText{
+  width: 460px;
+  height: 59px;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+.tuitionInnerBottom .tuitionTextTitles{
+  margin-top: 32px;
+}
+
+.tuitionTextDate{
+  margin: 0px;
+}
+
+.tuitionTextPara{
   margin-top: 8px;
-  margin-bottom: 23px;
-  font-style: italic;
+  width: 460px;
+	height: 38px;
 }
 
-.peopleSayImage {
-  background-repeat: no-repeat;
-  background-position: center;
-	width: 220px;
-	height: 200px;
-  /* margin-right: 20px; */
-}
-
-.peopleSayRightSec .RightImage{
-  background-image: url("assets/whatPeopleSay/kidTop.jpg"); 
-}
-.peopleSayLeftBottom .LeftImage{
-  background-image: url("assets/whatPeopleSay/homework.jpg"); 
-  margin-right: 20px;
-}
-
-.peopleSayMid, .peopleSayBottom{
-  width: 82%;
-}
-
-.peopleSayBottomSec{
-  display: flex;
-  margin-top: 10px;
-}
 /* Footer */
 
 .navbar .topBar {
@@ -1063,16 +1197,12 @@ border: solid 1px #f5483a;
   width: 100%;
 }
 
-
 /* SCHOOLS PAGE - MAP CONTAINER SETTING FOR DESKTOP */
 .leaflet-container {
   height: 400px;
   width: 80%;
   margin: 0 auto;
 }
-
-
-
 
 /* .App { */
 /* text-align: center; */
