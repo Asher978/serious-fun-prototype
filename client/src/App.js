@@ -25,6 +25,7 @@ import PeopleSay from './components/PeopleSay';
 import Overview from './components/Overview';
 import AfterSchoolLocation from './components/AfterSchoolLocation';
 import Classes from './components/Classes';
+import Tuition from './components/Tuition';
 
 // import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
@@ -121,6 +122,7 @@ class App extends Component {
           <Route exact path="/overview" component={Overview}/>
           <Route exact path="/locations" component={AfterSchoolLocation}/>
           <Route exact path="/classes" component={Classes}/>
+          <Route exact path="/tuition" component={Tuition}/>
           <Route exact path="/calendar" component={Calendar}/>
 
 
