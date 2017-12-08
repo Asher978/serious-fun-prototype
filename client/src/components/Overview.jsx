@@ -32,7 +32,7 @@ const Overview = props => {
         </div>
         <div className="overViewTextColumn">
           <p className="overViewTextColumnSubTitle">Transportation</p>
-          <p className="overViewTextColumnSubText">
+          <p className="overViewTextColumnSubText TransportationText">
             Your child can participate in Serious Fun’s after school program
             even if it is not offered in their school. We partner with a bus
             company for one way pickup from local Astoria schools that do not
@@ -43,8 +43,8 @@ const Overview = props => {
           </Link>
         </div>
         <div className="overViewTextColumn">
-          <p className="overViewTextColumnSubTitle">Register Your Child</p>
-          <p className="overViewTextColumnSubText">
+          <p className="overViewTextColumnSubTitle register">Register Your Child</p>
+          <p className="overViewTextColumnSubText registerText">
             To see classes by location and start your child’s enrollment, click
             below for more information.
           </p>
@@ -53,7 +53,7 @@ const Overview = props => {
           </Link>
         </div>
         <div className="overViewTextColumn">
-          <p className="overViewTextColumnSubText">
+          <p className="overViewTextColumnSubText moreInfo">
             At this time, we do not provide full day camps for the mid-winter
             recess in December/January, the Winter Recess in February, or the
             Spring Recess for Passover, Good Friday and Easter.
@@ -87,20 +87,20 @@ const Overview = props => {
         <div className="overViewTextColumn">
           <p className="overViewTextColumnSubTitle">3:15 - 4:15 PM</p>
           <p className="overViewTextColumnSubText">
-            Grades Pre-K through 1st: Enrichment class
+            Grades Pre-K through 1st:<br></br> Enrichment class
           </p>
           <p className="overViewTextColumnSubText Group">
-            Grades 2nd through 5th: Homework help and quiet time
+            Grades 2nd through 5th:<br></br> Homework help and quiet time
           </p>
         </div>
         <hr className="overViewHR" />
         <div className="overViewTextColumn">
           <p className="overViewTextColumnSubTitle">4:15 - 5:00 PM</p>
           <p className="overViewTextColumnSubText">
-            Grades Pre-K through 1st: Homework help and quiet time
+            Grades Pre-K through 1st:<br></br> Homework help and quiet time
           </p>
           <p className="overViewTextColumnSubText Group">
-            Grades 2nd through 5th: Homework help and quiet time
+            Grades 2nd through 5th:<br></br> Homework help and quiet time
           </p>
         </div>
         <hr className="overViewHR" />

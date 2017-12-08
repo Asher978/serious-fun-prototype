@@ -692,7 +692,7 @@ body {
   width:66%;
   flex-direction: column;
   margin: 13px auto 96px auto;
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
 }
 
 .overViewTitle p {
@@ -726,18 +726,41 @@ body {
 	font-size: 16px;
   font-weight: bold;
   margin-bottom: 2px;
+  
 }
+
+/* .TransportationText{
+  margin-bottom: 23px;
+} */
+
+.overViewLeftSec .overViewTextColumnSubTitle{
+      margin-top: 46px;
+}
+
+.overViewTextColumn .register{
+  margin-top: 32px;
+}
+
+.registerText{
+  margin-bottom: 23px;
+}
+
 
 .overViewTextColumnSubTextDate{
   margin-top: 0px;
 }
 
 .overViewTextColumnSubText{
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
   width: 460px;
   margin-top: 2px;
 
 }
+
+.moreInfo{
+  margin-top: 32px;
+}
+
 .overViewRightSec{
   margin-right: 35px;
 }
@@ -759,6 +782,9 @@ body {
 }
 
 .overViewTextColumnBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 32px;
   border-radius: 4px;
@@ -776,7 +802,7 @@ body {
 }
 
 .overViewRightSec .overViewTextColumnSubText{
-  margin: 0px 0px 0px 0px;
+  margin: 4px 0px 4px 0px;
 }
 .overViewHR{
   margin: 16px 0px 16px 0px;
