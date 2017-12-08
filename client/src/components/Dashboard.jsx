@@ -10,9 +10,7 @@ import AddClass from '../components/AddClass';
 import EditForm from './EditForm';
 
 class Dashboard extends Component {
-  constructor () {
-    super ();
-    this.state = {
+ state = {
       page: '',
       schoolName: '',
       st_Addr: '',
@@ -30,7 +28,6 @@ class Dashboard extends Component {
       coordinates: [],
       coordsLoaded: false
     }
-  }
 
   handleInputChange = (e) => {
     const name = e.target.name;
@@ -205,8 +202,8 @@ class Dashboard extends Component {
                     schools={this.state.schools}
                     handleRadioChange={this.handleRadioChange}
                  /> )
-      case 'home': 
-          return ( <EditForm />)
+      case 'Page': 
+          return ( <EditForm pages={this.props.pages} />)
       default:
         break
     }
@@ -230,7 +227,7 @@ class Dashboard extends Component {
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a type='button' onClick={() => this.setState({ page: 'school' })}>Add a School</a></li>
                     <li><a type='button' onClick={() => this.setState({ page: 'class' })}>Add a Class</a></li>
-                    <li><a type='button' onClick={() => this.setState({ page: 'home' })}>Edit Home Page</a></li>
+                    <li><a type='button' onClick={() => this.setState({ page: 'Page' })}>Edit a Page</a></li>
                   </ul>
                 </div>
               </div>
