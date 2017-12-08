@@ -4,7 +4,7 @@ import axios from 'axios';
 
 class AboutUs extends Component {
   state={
-    pageTitle:'AboutUS',
+    pageTitle:'AboutUs',
     content: null,
     dataLoaded:false
   }
