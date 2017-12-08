@@ -38,9 +38,9 @@ const pageController = {
         });
     },
     addPage : (req, res) => {
-        let { content, title } = req.body,
+        let { content, pageTitle } = req.body,
         newPage = new Page({
-            pageTitle : title,
+            pageTitle,
             pageContent : JSON.stringify(content)
         });
         newPage.save((err, page) => {
