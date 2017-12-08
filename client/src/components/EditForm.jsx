@@ -2,169 +2,106 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 class EditForm extends Component{
-    constructor(){
-        super();
-        this.state = {
-            data: null,
-            dataLoaded: false,
-            redirect: false,
-            title1 : '',
-            content1 : '',
-            title2 : '',
-            content2 : '',
-            title3 : '',
-            content3 : '',
-            bodyTitle1 : '',
-            bodyTitle2 : ''
-        }
+    state = {
+        selectedPage : this.props.pages[0],
+        fields : null,
+        dataLoaded:false
     }
-    componentDidMount(){
-        axios.get('/home_page').then(res=>{
-            console.log(res);
+    componentDidMount() {
+        this.fetchData(this.state.selectedPage.pageTitle);
+    }
+
+    fetchData = (title)=>{
+        axios.get(`/page/${title}`).then(res =>{
+            let { pageContent } = res.data,
+            fields = [];
+            for(let heading in pageContent){
+                fields.push({
+                    'headingName': heading,
+                    'value' : pageContent[heading]
+                });
+            }
             this.setState({
-                data: res.data.homePage,
-                dataLoaded: true,
-                title1 : res.data.homePage[0].title1,
-                content1 : res.data.homePage[0].content1,
-                title2 : res.data.homePage[0].title2,
-                content2 : res.data.homePage[0].content2,
-                title3 : res.data.homePage[0].title3,
-                content3 : res.data.homePage[0].content3,
-                bodyTitle1 : res.data.homePage[0].bodyTitle1,
-                bodyTitle2 : res.data.homePage[0].bodyTitle2
+                selectedPage: {
+                    pageTitle: title,
+                    _id :res.data._id 
+                },
+                fields,
+                dataLoaded: true
             });
-        }).catch(err => console.log(err));
-    }
-    handleInputChange = (e) => {
-        const name = e.target.name;
-        const value = e.target.value;
-        this.setState({
-            [name]: value,
         });
     }
-    handleHomeUpdate = (e)=>{
-        e.preventDefault();
-        axios.put('/home_page', {
-            'title1': this.state.title1,
-            'content1': this.state.content1,
-            'title2': this.state.title2,
-            'content2': this.state.content2,
-            'title3': this.state.title3,
-            'content3': this.state.content3,
-            'bodyTitle1': this.state.bodyTitle1,
-            'bodyTitle2': this.state.bodyTitle2
-        }).then(response => {
-            this.setState({
-                redirect: true
-            });
-        }).catch(err =>{
-            console.log(err);
-        })
-        
+    
+    handleSelect = (e) => {
+        this.setState({
+            selectedPage: {
+                'pageTitle':e.target.value,
+                '_id': e.target.key
+            },
+            dataLoaded: false
+        }, () => {
+            let { pageTitle } = this.state.selectedPage;
+            this.fetchData(pageTitle);
+        });
     }
-    renderHomeForm = () =>{
+
+    handleFormFields = (e) => {
+        let { dataset, value } = e.target,
+         newfields = this.state.fields;
+         e.preventDefault();
+        newfields[dataset.index]['value'] = value;
+        console.log(newfields);
+       this.setState({
+           fields: newfields
+       });
+
+    }
+
+    submitEdit = (e)=>{
+        e.preventDefault();
+        let { _id, pageTitle } = this.state.selectedPage,
+        newcontent = {};
+
+        this.state.fields.forEach((page)=> {
+            newcontent[`${page.headingName}`]=page.value;
+        });
+
+        axios.put(`/page/${_id}`,{
+            pageTitle,
+            'content':newcontent
+        }).then(res => {
+            console.log(res);
+        });
+    }
+    renderEditForm = () =>{
+        let { pages } = this.props,
+        { selectedPage, fields } = this.state;
         return (
-            <div className="register">
-                <div className="container">
-                    <ol className="breadcrumb main-color-bg">
-                        <li>Please edit the Home Page</li>
-                    </ol>
+            <div>
+                <select onChange={this.handleSelect}>
+                    <option key = {selectedPage._id}>{selectedPage.pageTitle}</option>
+                    {pages.map((page)=>{
+                        if(page.pageTitle === selectedPage.pageTitle){
+                           return null;
+                        } else {
+                            return <option key={page._id} value={page.pageTitle} >{page.pageTitle}</option>
+                        }
+                    })}
+                </select>
+                <div>
+                    <form onSubmit={this.submitEdit}> 
+                        {fields.map((heading,iterator) =>{
+                            return(
+                                <div key={iterator}>
+                                    {heading.headingName} <br/>
+                                    <input type="text" onChange={this.handleFormFields} data-index={iterator} name={heading.headingName} defaultValue={`${heading.value}`} />
+                                </div>)
+                        })}
+                        <button type="submit">update</button>
+                    </form>
                 </div>
-                <form className="container" onSubmit={this.handleHomeUpdate}>
-                    <div className='form-group'>
-                        <span className='input-group'>
-                            <span className='input-group-addon main-color-bg'>Title1</span>
-                            <input 
-                            className='form-control' 
-                            type="text"
-                            name="title1"
-                            value={this.state.title1}
-                            onChange={this.handleInputChange}
-                            required />
-                        </span>
-                        <span className='input-group'>
-                            <span className='input-group-addon main-color-bg'>Content1</span>
-                            <input 
-                            className='form-control' 
-                            type="text"
-                            name="content1"
-                            value={this.state.content1}
-                            onChange={this.handleInputChange}
-                            required />
-                        </span>
-                    </div>
-                    <div className='form-group'>
-                    <span className='input-group'>
-                        <span className='input-group-addon main-color-bg'>title2</span>
-                        <input 
-                        className='form-control' 
-                        type="text"
-                        name="title2"
-                        value={this.state.title2}
-                        onChange={this.handleInputChange}
-                        required />
-                    </span>
-                    <span className='input-group'>
-                        <span className='input-group-addon main-color-bg'>content2</span>
-                        <input 
-                        className='form-control' 
-                        type="text"
-                        name="content2"
-                        value={this.state.content2}
-                        onChange={this.handleInputChange}
-                        required />
-                    </span>
-                    </div>
-                    <div className='form-group'>
-                    <span className='input-group'>
-                        <span className='input-group-addon main-color-bg'>Title3</span>
-                        <input 
-                        className='form-control' 
-                        type="text"
-                        name="title3"
-                        value={this.state.title3}
-                        onChange={this.handleInputChange}
-                        required />
-                    </span>
-                    <span className='input-group'>
-                        <span className='input-group-addon main-color-bg'>Content3</span>
-                        <input 
-                        className='form-control' 
-                        type="text"
-                        name="content3"
-                        value={this.state.content3}
-                        onChange={this.handleInputChange}
-                        required />
-                    </span>
-                    </div>
-                    <div className='form-group'>
-                    <span className='input-group'>
-                        <span className='input-group-addon main-color-bg'>Body Title1</span>
-                        <input 
-                        className='form-control' 
-                        type="text"
-                        name="bodyTitle1"
-                        value={this.state.bodyTitle1}
-                        onChange={this.handleInputChange}
-                        required />
-                    </span>
-                    </div>
-                    <div className='form-group'>
-                    <span className='input-group'>
-                        <span className='input-group-addon main-color-bg'>Body Title2</span>
-                        <input 
-                        className='form-control' 
-                        type="text"
-                        name="bodyTitle2"
-                        value={this.state.bodyTitle2}
-                        onChange={this.handleInputChange}
-                        required />
-                    </span>
-                    </div>
-                    <input type="submit" value="Submit!" className="main-color-bg btn-lg btn-block" />
-                </form>
             </div>
-            )
+        )
     }
     render(){
         const { redirect } = this.state; 
@@ -173,7 +110,7 @@ class EditForm extends Component{
         }
         return(
         <div>
-            {this.state.dataLoaded ? this.renderHomeForm(): <h1>Loading....</h1> }
+            {this.state.dataLoaded ? this.renderEditForm(): <h1>Loading....</h1> }
         </div>)
     }
 }
