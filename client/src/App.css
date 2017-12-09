@@ -874,6 +874,217 @@ body {
   margin: 0px 16.8% 98px 16.5%;
 }
 
+/* AfterSchool Location - PS17Q */
+
+.PS17QContainer{
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  margin: 16px auto 96px auto;
+  background: rebeccapurple;
+}
+
+.PS17QAllLocation{
+	font-size: 14px;
+	font-weight: bold;
+  color: #6c6c6c;
+  display: flex;
+  justify-content: space-around;
+  width: 110px;
+  height: 24px;
+  text-decoration: none;
+}
+.PS17QLeftArrow{
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2);
+  opacity: 0.54;
+}
+
+.PS17QInnerContainerTop{
+  display: flex;
+  flex-direction: row;
+  background: rosybrown;
+  margin-top: 28px;
+  justify-content: space-between;
+}
+
+
+
+.PS17QLocationTitle, .PS17QLocationSubTitle {
+  margin-top: 0px;
+}
+
+.PS17QLocationTitle{
+	font-size: 28px;
+	font-weight: bold;
+  color: #f5483a;
+  margin-bottom: 16px;
+}
+
+.PS17QLocationBtn, .PS17QLinkBtn{
+  width: 160px;
+	height: 32px;
+	border-radius: 4px;
+  background-color: #1e3089;
+	font-size: 16px;
+	font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  
+}
+
+.PS17QLocationSubTitle, .PS17QSubTitles{
+  margin-bottom: 8px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #f5483a;
+}
+.PS17QLocationText{
+  margin: 0px;
+  width: 160px;
+	height: 66px;
+	font-size: 18px;
+}
+
+.PS17QLocationDropMenuTitle{
+  width: 220px;
+	height: 32px;
+  border: solid 1px #979797;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  
+  
+}
+
+.PS17QDownArrow{
+  -ms-transform: rotate(270deg) scale(2); /* IE 9 */
+  -webkit-transform: rotate(270deg) scale(2); /* Safari 3-8 */
+  transform: rotate(270deg) scale(2);
+  opacity: 0.54;
+  margin-right: 8px;
+}
+
+.PS17QInnerContainerMid{
+  margin: 40px 0px;
+  background: grey;
+}
+
+.PS17QLocationImageContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.PS17QLocationImage, .PS17QMapImage{
+  width: 460px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.PS17QLocationImage{
+  background-image: url("assets/locations/PS17QImage.jpg");
+  background: red;
+}
+.PS17QMapImage{
+  background-image: url("assets/locations/PS17QMap.png");
+  display: flex;
+}
+
+.PS17QAnnouncementBox,.PS17QInnerClassInfoBox{
+  margin-top: 24px;
+}
+
+.PS17QInfoMidContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ANOUNCEMENT BOX */
+
+.PS17QAnnouncementBox{
+	width: 460px;
+	/* height: 246px; */
+	background-color: #eeeeee;
+	border: solid 2px #f5483a;
+}
+
+.PS17QAnnounceTitle{
+	height: 40px;
+  background-color: #f5483a;
+	font-size: 24px;
+	font-weight: bold;
+  color: #ffffff;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.PS17QAnnounceGeneral, .PS17QAnnouncePS17Q{
+  width: 422px;
+	height: 78px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.PS17QAnnouncePS17QHere, .PS17QAnnounceGeneralHere{
+  margin: 0px;
+}
+
+.PS17QAnnounceGeneral{
+  margin: 8px 20px 26px 18px;
+}
+
+.PS17QAnnouncePS17Q{
+  margin: 16px 20px 26px 18px;
+}
+
+.PS17QAnnounceLists{
+  margin: 0px;
+}
+
+.PS17QClassInfoTitle{
+  margin: 0px;
+}
+
+.PS17QClassInfoText{
+  width: 219px;
+	height: 92px;
+  font-size: 14px;
+  margin: 40px 0px 27px 0px;
+}
+
+
+.PS17QClassInfoImage, .PS17QContactInfoImage{
+	width: 220px;
+	height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.PS17QClassInfoImage{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin-right: 20px;
+  margin-top: 16px;
+}
+
+
+.PS17QInnerClassInfoBox{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.PS17QClassInfoTextBtn{
+  width: 219px;
+	height: 32px;
+}
+
 /* After School - Classes */
 
 /* Top */

@@ -29,28 +29,38 @@ const PS17Q = props => {
     </div>
 
     <div className="PS17QInnerContainerMid">
+
+    <div className="PS17QLocationImageContainer">
     <div className="PS17QLocationImage"></div>
     <Link to="" className="PS17QMapImage"></Link>
+
+    </div>
     
+    <div className="PS17QInfoMidContainer">
+
     <div className="PS17QAnnouncementBox">
+
+
     <div className="PS17QAnnounceTitle">ANNOUNCEMENTS</div>
+    <div className="PS17QAnnouncementInnerContainer">
     <div className="PS17QAnnounceGeneral">
     <div className="PS17QAnnounceSubTitle">GENERAL</div>
-    <ul>
-    <li><p className="PS17QAnnounceGeneralHere"></p>•	(insert announcement here)</li>
-    <li><p className="PS17QAnnounceGeneralHere"></p>•	(insert announcement here)</li>
-    <li><p className="PS17QAnnounceGeneralHere"></p>•	(insert announcement here)</li>
+    <ul className="PS17QAnnounceLists">
+    <li><p className="PS17QAnnounceGeneralHere"></p>(insert announcement here)</li>
+    <li><p className="PS17QAnnounceGeneralHere"></p>(insert announcement here)</li>
+    <li><p className="PS17QAnnounceGeneralHere"></p>(insert announcement here)</li>
     </ul>
     </div>
     <div className="PS17QAnnouncePS17Q">
     <div className="PS17QAnnounceSubTitle">PS 17 Q</div>
-    <ul>
-    <li><p className="PS17QAnnouncePS17QHere"></p>•	(insert announcement here)</li>
-    <li><p className="PS17QAnnouncePS17QHere"></p>•	(insert announcement here)</li>
-    <li><p className="PS17QAnnouncePS17QHere"></p>•	(insert announcement here)</li>
+    <ul className="PS17QAnnounceLists">
+    <li><p className="PS17QAnnouncePS17QHere"></p>(insert announcement here)</li>
+    <li><p className="PS17QAnnouncePS17QHere"></p>(insert announcement here)</li>
+    <li><p className="PS17QAnnouncePS17QHere"></p>(insert announcement here)</li>
     </ul>
     </div>
     
+    </div>
     </div>
     <div className="PS17QInnerClassInfoBox">
     <div className="PS17QClassInfoTitle PS17QSubTitles">Enrichment Classes Offered</div>
@@ -59,6 +69,7 @@ const PS17Q = props => {
     <div className="PS17QClassInfoContainer">
     <p className="PS17QClassInfoText">Each location offers a unique set of daily enrichment classes. From art to music and theater, all Serious Fun programs aim to get arts back into schools for children.</p>
     <Link to="" id="PS17QClassInfoTextBtn" className="PS17QClassInfoTextBtn PS17QLinkBtn">CLASSES @ PS 166 Q</Link>
+    </div>
     </div>
     </div>
     </div>
