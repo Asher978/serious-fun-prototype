@@ -30,6 +30,9 @@ import Tuition from './components/Tuition';
 import Transportation from './components/Transportation';
 import Policies from './components/Policies';
 
+// Camps
+import Camps from './components/Camps';
+
 // import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
@@ -128,6 +131,7 @@ class App extends Component {
           <Route exact path="/tuition" component={Tuition}/>
           <Route exact path="/transportation" component={Transportation}/>
           <Route exact path="/policies" component={Policies}/>
+          <Route exact path="/Camps" component={Camps}/>
           <Route exact path="/calendar" component={Calendar}/>
 
 

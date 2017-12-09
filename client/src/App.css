@@ -1287,6 +1287,102 @@ td:last-child {
   text-decoration: none;
 }
 
+/* Camps */
+.campsContainer{
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  margin: 48px auto 96px auto;
+}
+
+.campsTop{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.campsMainTitle{
+  margin: 0px;
+	font-size: 32px;
+	font-weight: bold;
+	color: #f5483a;
+}
+
+.campsDropBtn{
+	font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 172px;
+	height: 32px;
+	background-color: #ffffff;
+	border: solid 1px #979797
+}
+.downMenuArrow{
+  -ms-transform: rotate(90deg) scale(2); /* IE 9 */
+  -webkit-transform: rotate(90deg) scale(2); /* Safari 3-8 */
+  transform: rotate(90deg) scale(2);
+	opacity: 0.54;
+}
+
+.campsInnerContainer{
+  width: 92%;
+  margin-left: auto;
+}
+
+.campsInnerContainerTop{
+  display: flex;
+  justify-content: space-between;
+  width: 88%;
+}
+
+.campsTopTitles{
+  margin-top: 0px;
+  margin-bottom: 24px;
+	font-size: 24px;
+	font-weight: bold;
+  color: #1e3089;
+  
+}
+
+.campsHR{
+  /* width: 890px; */
+  width: 96%;
+	border: solid 1px #bababa;
+}
+
+.campsRegisterBtn{
+  width: 220px;
+	height: 32px;
+	border-radius: 4px;
+  background-color: #1e3089;
+	font-size: 16px;
+	font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+}
+
+.bottomTitles{
+  margin-top: 28px;
+  margin-bottom: 25px;
+}
+
+.campsTopTitlesInfo{
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
+.campsInnerContainerBottom{
+  width: 92%;
+  margin-left: auto;
+}
 /* Footer */
 
 .navbar .topBar {
