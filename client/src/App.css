@@ -110,6 +110,7 @@ body {
 }
 .linkBox:hover .navLinks {
   background: #f5483a;
+  cursor: pointer;
 }
 
 /* Nav - Drop Menu */
@@ -764,6 +765,23 @@ body {
   font-weight: bold;
   color: #f5483a;
 }
+
+.afterSchoolTop .linkBox{
+  position: relative;
+}
+
+.afterSchoolTop .linkBox:hover .navLinks{
+  color: white !important;
+}
+
+.afterSchoolTop  .linkBox:hover .dropdownMenu{
+  height: 278px !important;
+}
+
+.afterSchoolTop .dropdownMenu{
+  width: 174px;
+  
+}
 .afterSchoolTop .afterSchoolBtn {
   width: 172px;
   height: 32px;
@@ -775,6 +793,8 @@ body {
   line-height: 30px;
   text-decoration: none;
   color: black;
+  display: flex;
+  justify-content: space-evenly;
 }
 .afterSchoolLocationContainer {
   display: flex;

@@ -33,9 +33,9 @@ const Nav = props => {
             </Link>
           </div>
           <div className="linkBox">
-            <Link to="" id="about" className="navLinks">
+            <div id="about" className="navLinks">
               about
-            </Link>
+            </div>
 
             <div className="dropdownMenu">
               <div className="aboutDrop">
@@ -58,9 +58,9 @@ const Nav = props => {
             </div>
           </div>
           <div className="linkBox">
-            <Link to="" id="afterSchool" className="navLinks">
+            <div to="" id="afterSchool" className="navLinks">
               After School
-            </Link>
+            </div>
 
             <div className="dropdownMenu">
             <div className="programDrop">
@@ -93,15 +93,15 @@ const Nav = props => {
           </div>
 
           <div className="linkBox">
-            <Link to="/calendar" id="calendar" className="navLinks">
+            <div to="/calendar" id="calendar" className="navLinks">
               calendar
-            </Link>
+            </div>
           </div>
 
           <div className="linkBox">
-            <Link to="" id="registration" className="navLinks">
+            <div to="" id="registration" className="navLinks">
               registration
-            </Link>
+            </div>
 
             <div className="dropdownMenu regis">
               <div className="registrationDrop">
