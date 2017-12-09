@@ -12,7 +12,7 @@ import RegisterForm from './components/RegisterForm';
 import LoginForm from './components/LoginForm';
 import Nav from './components/Nav';
 import Calendar from './components/Calendar';
-import Dashboard from './components/Dashboard';
+// import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 
 import AboutUs from './components/AboutUs';
@@ -26,8 +26,9 @@ import Overview from './components/Overview';
 import AfterSchoolLocation from './components/AfterSchoolLocation';
 import Classes from './components/Classes';
 import Tuition from './components/Tuition';
+import Transportation from './components/Transportation';
 
-import Schools from './components/Schools';
+// import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
 import Footer from './components/Footer';
@@ -123,13 +124,13 @@ class App extends Component {
           <Route exact path="/locations" component={AfterSchoolLocation}/>
           <Route exact path="/classes" component={Classes}/>
           <Route exact path="/tuition" component={Tuition}/>
+          <Route exact path="/transportation" component={Transportation}/>
           <Route exact path="/calendar" component={Calendar}/>
-          <Route exact path='/schools' render={() => <Schools />} />
 
 
 
-          <Route exact path="/dashboard" render={() =>
-            this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
+
+          
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
           
           <Route exact path='/editSchool/:school_id' component={EditSchool} />

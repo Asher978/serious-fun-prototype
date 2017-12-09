@@ -1126,6 +1126,122 @@ td:last-child{
 	height: 38px;
 }
 
+.transportationContainer{
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  /* background: rebeccapurple; */
+  margin: 48px auto 32px auto;
+}
+.transportationMainTitle{
+	font-size: 32px;
+	font-weight: bold;
+  color: #f5483a;
+  margin: 0px 0px 24px 0px;
+}
+
+.transportationInnerContainer{
+  /* background: green; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.transportationInnerTop{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.transportationInnerTopText{
+  margin-top: 0px;
+  width: 540px;
+	height: 57px;
+	font-size: 16px;
+}
+
+.transportationInnerMidTile{
+  margin: 8px 0px;
+  font-size: 22px;
+	font-weight: bold;
+	color: #f5483a;
+}
+
+.transportationInnerMidText{
+  margin-top: 0px;
+  width: 540px;
+	height: 38px;
+}
+
+.transportationInnerContactTitle{
+  margin: 0px;
+  font-weight: bold;
+}
+
+.transportationInnerContactPhone{
+  margin-top: 4px;
+  margin-bottom: 2px;
+
+}
+
+#transportationContactLink{
+	font-weight: bold;
+  color: #f5483a;
+
+}
+.transportationInnerBottom{
+  margin-right: auto;
+  margin-left: auto;
+  width: 96%;
+}
+
+.transportationInnerBottomTitle{
+  margin: 28px 0px 8px 0px;
+	font-size: 22px;
+	font-weight: bold;
+  color: #f5483a;
+
+}
+
+
+
+
+.transportationInnerImage{
+  background-image: url("assets/schoolBus.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 220px;
+  height: 200px;
+  /* margin: 0px 16.8% 98px 16.5%; */
+}
+
+
+.transportationInnerBottomText{
+  margin-top: 0px;
+  width: 780px;
+	height: 38px; 
+}
+
+.transportationInnerBottomSubText{
+  margin-bottom: 32px;
+  width: 780px;
+	height: 17px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+#transportationAuthorizationBtn{
+  display: flex;
+  width: 220px;
+	height: 32px;
+	border-radius: 4px;
+  background-color: #1e3089;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 /* Footer */
 
 .navbar .topBar {
