@@ -165,7 +165,7 @@ const Nav = props => {
                 </ul>
             ) : (
                 <ul className="nav navbar-nav navbar-right">
-                    <li><Link to="/">Home</Link></li>                      
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/schools">Schools</Link></li>
                     <li><Link to="/dashboard">My Dashboard</Link></li>
                     <li><Link to="/logout" onClick={props.handleLogout}>Log Out</Link></li>
