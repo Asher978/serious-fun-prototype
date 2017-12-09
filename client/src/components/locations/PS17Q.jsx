@@ -9,22 +9,6 @@ const PS17Q = props => {
         Locations
       </Link>
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className="PSInnerContainerTop PS17QInnerContainerTop">
         <div className="PSLocationBox PS17QLocationBox">
           <p className="PSLocationTitle PS17QLocationTitle">
@@ -53,61 +37,43 @@ const PS17Q = props => {
           <p className="PSLocationText PS17QLocationText">Pre-K through 5th</p>
         </div>
         <div className="PSLocationBox PS17QLocationBox">
-
-
-
           <div className="linkBox">
-          <div className="PSLocationDropMenuTitle PS17QLocationDropMenuTitle navLinks">Choose Another Location<span className="PSDownArrow PS17QDownArrow">&#8249;</span></div>
+            <div className="PSLocationDropMenuTitle PS17QLocationDropMenuTitle navLinks">
+              Choose Another Location<span className="PSDownArrow PS17QDownArrow">
+                &#8249;
+              </span>
+            </div>
 
-    
-          <div className="dropdownMenu">
-            <div className="locationDrop">
-              <Link to="/ps17q" id="PS17QDrop" className="dropLinks">
-                PS 17 Q
-              </Link>
-              <Link to="/ps85q" id="PS85QDrop" className="dropLinks">
-                PS 85 Q
-              </Link>
-              <Link to="/psis78qk1" id="PSIS78QK1Drop" className="dropLinks">
-              PS/IS 78 Q (K-1)
-              </Link>
-              <Link to="/psis78q" id="PSIS78Q25Drop" className="dropLinks">
-              PS/IS 78 Q (2-5)
-              </Link>
-              <Link to="/ps150q" id="PS150QDrop" className="dropLinks">
-              PS 150 Q
-              </Link>
-              <Link to="ps166q" id="PS166QDrop" className="dropLinks">
-              PS 166 Q
-              </Link>
-              <Link to="/ps33chelseaprep" id="PS33ChelseaPrepDrop" className="dropLinks">
-              PS 33 Chelsea Prep
-              </Link>
+            <div className="dropdownMenu">
+              <div className="locationDrop">
+                <Link to="/ps17q" id="PS17QDrop" className="dropLinks">
+                  PS 17 Q
+                </Link>
+                <Link to="/ps85q" id="PS85QDrop" className="dropLinks">
+                  PS 85 Q
+                </Link>
+                <Link to="/psis78qk1" id="PSIS78QK1Drop" className="dropLinks">
+                  PS/IS 78 Q (K-1)
+                </Link>
+                <Link to="/psis78q" id="PSIS78Q25Drop" className="dropLinks">
+                  PS/IS 78 Q (2-5)
+                </Link>
+                <Link to="/ps150q" id="PS150QDrop" className="dropLinks">
+                  PS 150 Q
+                </Link>
+                <Link to="ps166q" id="PS166QDrop" className="dropLinks">
+                  PS 166 Q
+                </Link>
+                <Link
+                  to="/ps33chelseaprep"
+                  id="PS33ChelseaPrepDrop"
+                  className="dropLinks"
+                >
+                  PS 33 Chelsea Prep
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
         </div>
       </div>
 
@@ -189,108 +155,104 @@ const PS17Q = props => {
       </div>
 
       <div className="PSInnerContainerBottom PS17QInnerContainerBottom">
-      <div className="PSOutterContainer PS17QOutterContainer">
+        <div className="PSOutterContainer PS17QOutterContainer">
+          <div className="PSContactInfo PS17QContactInfo">
+            <p className="PSContactInfoTitle PS17QContactInfoTitle PSSubTitles">
+              Site Director
+            </p>
 
-        <div className="PSContactInfo PS17QContactInfo">
-          <p className="PSContactInfoTitle PS17QContactInfoTitle PSSubTitles">
-            Site Director
-          </p>
-
-          <div className="PSContactInnerBox PS17QContactInnerBox">
-            <div className="PSContactInfoLeftSec PS17QContactInfoLeftSec">
-              <div className="PSContactInfoImage PS17QContactInfoImage SiteDirector" />
-              <Link
-                to=""
-                id="PSContactInfoEmail"
-                className="PSContactInfoEmail PS17QContactInfoEmail PSLinkBtn"
-              >
-                EMAIL
-              </Link>
-            </div>
-            <div className="PSContactInfoRightSec PS17QContactInfoRightSec">
-              <p className="PSContactInfoName PS17QContactInfoName">
-                Ms. Josette Jimenez
-              </p>
-              <p className="PSContactInfoText PS17QContactInfoText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="PSContactInfo PS17QContactInfo">
-          <p className="PS17QContactInfoTitle PSSubTitles">Site Supervisor</p>
-
-          <div className="PSContactInnerBox PS17QContactInnerBox">
-            <div className="PSContactInfoLeftSec PS17QContactInfoLeftSec">
-              <div className="PSContactInfoImage PS17QContactInfoImage SiteSupervisor" />
-              <Link
-                to=""
-                id="PSContactInfoEmail"
-                className="PSContactInfoEmail PS17QContactInfoEmail PSLinkBtn"
-              >
-                EMAIL
-              </Link>
-            </div>
-            <div className="PSContactInfoRightSec PS17QContactInfoRightSec">
-              <p className="PSContactInfoName PS17QContactInfoName">
-                Ms. Ana Holguin
-              </p>
-              <p className="PSContactInfoText PS17QContactInfoText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat
-              </p>
+            <div className="PSContactInnerBox PS17QContactInnerBox">
+              <div className="PSContactInfoLeftSec PS17QContactInfoLeftSec">
+                <div className="PSContactInfoImage PS17QContactInfoImage SiteDirector" />
+                <Link
+                  to=""
+                  id="PSContactInfoEmail"
+                  className="PSContactInfoEmail PS17QContactInfoEmail PSLinkBtn"
+                >
+                  EMAIL
+                </Link>
+              </div>
+              <div className="PSContactInfoRightSec PS17QContactInfoRightSec">
+                <p className="PSContactInfoName PS17QContactInfoName">
+                  Ms. Josette Jimenez
+                </p>
+                <p className="PSContactInfoText PS17QContactInfoText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
+          <div className="PSContactInfo PS17QContactInfo">
+            <p className="PS17QContactInfoTitle PSSubTitles">Site Supervisor</p>
+
+            <div className="PSContactInnerBox PS17QContactInnerBox">
+              <div className="PSContactInfoLeftSec PS17QContactInfoLeftSec">
+                <div className="PSContactInfoImage PS17QContactInfoImage SiteSupervisor" />
+                <Link
+                  to=""
+                  id="PSContactInfoEmail"
+                  className="PSContactInfoEmail PS17QContactInfoEmail PSLinkBtn"
+                >
+                  EMAIL
+                </Link>
+              </div>
+              <div className="PSContactInfoRightSec PS17QContactInfoRightSec">
+                <p className="PSContactInfoName PS17QContactInfoName">
+                  Ms. Ana Holguin
+                </p>
+                <p className="PSContactInfoText PS17QContactInfoText">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="PSBottomContainer PS17QBottomContainer">
-        <div className="PSCalendar PS17QCalendar">
-          <p className="PSCalendarTitle PS17QCalendarTitle PSSubTitles">
-            Calendar
-          </p>
-          <p className="PSCalendarText PS17QCalendarText">
-            Click below to access our after school calendar and calendar by
-            site.
-          </p>
-          <Link
-            to=""
-            id="PSCalendarLink"
-            className="PS17QCalendarLink PSLinkBtn"
-          >
-            CALENDAR
-          </Link>
-        </div>
+          <div className="PSCalendar PS17QCalendar">
+            <p className="PSCalendarTitle PS17QCalendarTitle PSSubTitles">
+              Calendar
+            </p>
+            <p className="PSCalendarText PS17QCalendarText">
+              Click below to access our after school calendar and calendar by
+              site.
+            </p>
+            <Link
+              to=""
+              id="PSCalendarLink"
+              className="PS17QCalendarLink PSLinkBtn"
+            >
+              CALENDAR
+            </Link>
+          </div>
 
-        <div className="PSReminder PS17QReminder">
-          <p className="PSReminderTitle PS17QReminderTitle PSSubTitles">
-            Reminders
-          </p>
-          <p className="PSReminderText PS17QReminderText">
-            With REMIND, you can receive reminders for this specific location.
-          </p>
-          <Link
-            to=""
-            id="PSReminderLink"
-            className="PSReminderLink PS17QReminderLink PSLinkBtn"
-          >
-            SIGN UP FOR REMIND
-          </Link>
+          <div className="PSReminder PS17QReminder">
+            <p className="PSReminderTitle PS17QReminderTitle PSSubTitles">
+              Reminders
+            </p>
+            <p className="PSReminderText PS17QReminderText">
+              With REMIND, you can receive reminders for this specific location.
+            </p>
+            <Link
+              to=""
+              id="PSReminderLink"
+              className="PSReminderLink PS17QReminderLink PSLinkBtn"
+            >
+              SIGN UP FOR REMIND
+            </Link>
+          </div>
         </div>
-        </div>
-
-
       </div>
     </div>
   );
