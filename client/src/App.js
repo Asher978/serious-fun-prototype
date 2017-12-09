@@ -15,18 +15,20 @@ import Calendar from './components/Calendar';
 // import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 
+// ABout
 import AboutUs from './components/AboutUs';
 import OurTeam from './components/OurTeam';
 import Careers from './components/Careers';
-
 import Supporters from './components/Supporters';
 import PeopleSay from './components/PeopleSay';
 
+// AfterSchool
 import Overview from './components/Overview';
 import AfterSchoolLocation from './components/AfterSchoolLocation';
 import Classes from './components/Classes';
 import Tuition from './components/Tuition';
 import Transportation from './components/Transportation';
+import Policies from './components/Policies';
 
 // import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
@@ -125,6 +127,7 @@ class App extends Component {
           <Route exact path="/classes" component={Classes}/>
           <Route exact path="/tuition" component={Tuition}/>
           <Route exact path="/transportation" component={Transportation}/>
+          <Route exact path="/policies" component={Policies}/>
           <Route exact path="/calendar" component={Calendar}/>
 
 

@@ -79,7 +79,7 @@ const Nav = props => {
               <Link to="/transportation" id="transportationDrop" className="dropLinks">
                 Transportation
               </Link>
-              <Link to="" id="policyDrop" className="dropLinks">
+              <Link to="/policies" id="policyDrop" className="dropLinks">
                 Polices
               </Link>
             </div>
