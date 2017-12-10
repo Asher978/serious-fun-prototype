@@ -3,11 +3,15 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const JobSchema = new Schema({
+    location: {
+        type: String,
+        require: true
+    },
     title : {
         type: String,
         require: true
     },
-    job_link: {
+    jobLink: {
         type: String,
         require: true
     }
