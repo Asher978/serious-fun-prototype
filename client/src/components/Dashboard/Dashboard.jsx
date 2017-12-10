@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
 
-import AddSchool from '../components/AddSchool';
-import AddClass from '../components/AddClass';
+import AddSchool from './AddSchool';
+import AddClass from './AddClass';
 import EditForm from './EditForm';
-import Upload from '../modules/Upload';
+import Upload from '../../modules/Upload';
 
 
 class Dashboard extends Component {
@@ -25,7 +25,8 @@ class Dashboard extends Component {
       schoolsLoaded: true,
       ids: [],
       coordinates: [],
-      coordsLoaded: false
+      coordsLoaded: false,
+      pages: null
     }
 
   handleInputChange = (e) => {
@@ -121,7 +122,8 @@ class Dashboard extends Component {
       }).catch(error => console.log('Error', error))
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+    console.log(this.props)
     axios.get('/schools/').then(res => {
       this.setState({
         schools : res.data,
@@ -129,7 +131,15 @@ class Dashboard extends Component {
       });
     }).catch(err=>{
       console.log(err);
-    })
+    });
+    await axios.get('/page/').then(res => {
+      this.setState({
+        pages: res.data.pages
+      },()=> {
+        console.log(this.state.pages)
+        return true;
+      });
+    });
   }
 
   handleDropImg = (file) => {
@@ -164,7 +174,7 @@ class Dashboard extends Component {
                     handleRadioChange={this.handleRadioChange}
                  /> )
       case 'Page': 
-          return ( <EditForm pages={this.props.pages} />)
+          return ( <EditForm pages={this.state.pages} />)
       default:
         break
     }

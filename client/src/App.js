@@ -8,11 +8,11 @@ import {
 } from 'react-router-dom';
 
 import Auth from './modules/Auth';
-import RegisterForm from './components/RegisterForm';
-import LoginForm from './components/LoginForm';
+import RegisterForm from './components/Dashboard/RegisterForm';
+import LoginForm from './components/Dashboard/LoginForm';
 import Nav from './components/Nav';
 import Calendar from './components/Calendar';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home';
 
 // ABout
@@ -42,7 +42,7 @@ import Camps from './components/Camps';
 
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
-import EditSchool from './components/EditSchool';
+import EditSchool from './components/Dashboard/EditSchool';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -52,17 +52,8 @@ class App extends Component {
       registerUsername: '',
       registerPassword: '',
       loginUsername: '',
-      loginPassword: '',
-      pages : null
+      loginPassword: ''
     }
-  
-  componentDidMount() {
-    axios.get('/page/').then(res => {
-      this.setState({
-        pages: res.data.pages
-      });
-    });
-  }
 
   // use of arrow functions to avoid bindings
   handleInputChange = (e) => {
@@ -156,16 +147,13 @@ class App extends Component {
           <Route exact path="/calendar" component={Calendar}/>
 
           <Route exact path='/schools' render={() => <Schools />} />
-          <Route exact path="/dashboard" render={() =>
-            this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
-
           
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
           
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
 
           <Route exact path="/dashboard" render={() =>
-              this.state.auth ? <Dashboard auth={this.state.auth} pages={this.state.pages} /> : <Redirect to="/login" />}/>
+              this.state.auth ? <Dashboard auth={this.state.auth}/> : <Redirect to="/login" />}/>
 
           <Route exact path='/login' 
           render={() =>
