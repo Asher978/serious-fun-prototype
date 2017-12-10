@@ -1195,6 +1195,8 @@ margin: 0px;
   width: 190px;
 }
 
+
+
 /* Locations - PSIS78Q25 */
 .PSIS78Q25ContactInfo .SiteDirector{
   background-image: url("assets/locations/girlPiano.jpg");
@@ -1205,6 +1207,41 @@ margin: 0px;
   margin: 18px 20px 16px 0px;
 }
 
+/* Locations - PS150Q */
+
+
+.PS150QContactInfo .SiteDirector{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+.PS150QContactInfo .SiteSupervisor{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+
+.PS150QLocationText{
+  width: 178px;
+}
+
+/* Locations - PS166Q */
+.PS166QContactInfo .SiteDirector{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+.PS166QContactInfo .SiteSupervisor{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+
+/* Locations - PS33ChelseaPrep */
+.PS33ChelseaPrepContactInfo .SiteDirector{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+.PS33ChelseaPrepContactInfo .SiteSupervisor{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
 /* After School - Classes */
 
 /* Top */
