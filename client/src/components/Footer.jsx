@@ -9,7 +9,9 @@ const Footer = props => {
           <div className="copyright">Serious Fun After School, Inc. © 2017</div>
 
           <div className="socialLink">
-            <Link to="" id="networkForGood" className="socialLinks" />
+            <Link to="" id="newsletter" className="socialLinks">
+              SIGN UP FOR NEWSLETTER
+            </Link>
             <Link to="" id="facebook" className="socialLinks" />
             <Link to="" id="twitter" className="socialLinks" />
             <Link to="" id="email" className="socialLinks" />
