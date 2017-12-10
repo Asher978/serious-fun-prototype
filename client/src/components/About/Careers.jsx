@@ -25,7 +25,7 @@ class Careers extends Component {
       <div className="careerPic"></div>
       <div className="careerContainer">
       <div className="careerInfoBox">
-      <div className="careerInfoTitle">{content.mainh}</div>
+      <div className="careerInfoTitle">{content.mainH}</div>
       <div className="careerInfoText">
       <p>{content.paragraph}</p>
       <p>{content.paragraph2}</p>
