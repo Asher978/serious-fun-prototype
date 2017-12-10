@@ -1687,6 +1687,32 @@ background-image: url("assets/classes/sportandfitness/music.jpg");
 
 }
 
+/* Afterschool Classes - Other */
+
+.otherContainer{
+  margin-bottom: 96px;
+}
+.otherMidInnerContainer{
+  justify-content: flex-start;
+}
+.otherInnerBottomPara{
+  height: auto;
+}
+
+
+ .otherAllergicSalad{
+background-image: url("assets/classes/other/music.jpg");
+}
+
+.otherChess{
+background-image: url("assets/classes/other/music.jpg");
+}
+
+.otherMakerSpace{
+background-image: url("assets/classes/other/music.jpg");
+
+}
+
 
 
 
