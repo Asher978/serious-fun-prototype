@@ -27,9 +27,9 @@ const UserSchema = new Schema({
     token: {
       type: String,
       required: true
-    }
+    },   
   }]
-});
+}, {usePushEach: true});
 
 UserSchema.pre('save', function(next) {
   const user = this;

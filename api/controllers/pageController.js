@@ -3,6 +3,16 @@ const mongoose = require('mongoose');
 const Page = mongoose.model('Page');
 
 const pageController = {
+    getAll  : (req, res) => {
+        var query = Page.find({}).select('pageTitle');
+        query.exec((err, pages) => {
+            console.log(pages)
+            res.send({
+                'message': 'ok',
+                pages
+            });
+        });
+    }, 
     findPage : (req, res) => {
         let { title } = req.params;
         Page.findOne({'pageTitle' : title },(err,page)=>{
@@ -28,9 +38,9 @@ const pageController = {
         });
     },
     addPage : (req, res) => {
-        let { content, title } = req.body,
+        let { content, pageTitle } = req.body,
         newPage = new Page({
-            pageTitle : title,
+            pageTitle,
             pageContent : JSON.stringify(content)
         });
         newPage.save((err, page) => {

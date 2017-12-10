@@ -8,16 +8,28 @@ User = require('./api/models/User'),
 School = require('./api/models/Schools'),
 Class = require('./api/models/Classes'),
 HomePage = require('./api/models/HomePage'),
-Page = require('./api/models/Page');
+Page = require('./api/models/Page'),
+PagesSeed = require('./db/pagesSeed.json');
 require('dotenv').config();
 
 mongoose.connect(config.database);
 mongoose.connection.on('connected', () => {
   console.log('Connected to DB', config.database);
-})
+  Page.find({}, (err, pages)=> {
+    if(pages.length<=0){
+      let pagesArray = [];
+        for(let page in PagesSeed){
+          let { pageContent, pageTitle } = PagesSeed[page];
+           PagesSeed[page].pageContent = JSON.stringify(pageContent);
+          pagesArray.push(PagesSeed[page]);
+        }
+      Page.insertMany(pagesArray);
+    }
+  });
+});
 mongoose.connection.on('error', err => {
   console.log('Database error', err);
-})
+});
 
 const app = express(),
 server = require('http').Server(app),

@@ -8,57 +8,56 @@ import {
 } from 'react-router-dom';
 
 import Auth from './modules/Auth';
-import RegisterForm from './components/RegisterForm';
-import LoginForm from './components/LoginForm';
+import RegisterForm from './components/Dashboard/RegisterForm';
+import LoginForm from './components/Dashboard/LoginForm';
 import Nav from './components/Nav';
 import Calendar from './components/Calendar';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home';
 
 // ABout
-import AboutUs from './components/AboutUs';
-import OurTeam from './components/OurTeam';
-import Careers from './components/Careers';
-import Supporters from './components/Supporters';
-import PeopleSay from './components/PeopleSay';
+import AboutUs from './components/About/AboutUs';
+import OurTeam from './components/About/OurTeam';
+import Careers from './components/About/Careers';
+import Supporters from './components/About/Supporters';
+import PeopleSay from './components/About/PeopleSay';
 
 // AfterSchool
-import Overview from './components/Overview';
-import AfterSchoolLocation from './components/AfterSchoolLocation';
-import PS17Q from './components/locations/PS17Q';
-import PS85Q from './components/locations/PS85Q';
-import PSIS78QK1 from './components/locations/PSIS78QK1';
-import PSIS78Q25 from './components/locations/PSIS78Q25';
-import PS150Q from './components/locations/PS150Q';
-import PS166Q from './components/locations/PS166Q';
-import PS33ChelseaPrep from './components/locations/PS33ChelseaPrep';
-import Classes from './components/Classes';
-import Tuition from './components/Tuition';
-import Transportation from './components/Transportation';
-import Policies from './components/Policies';
+import Overview from './components/AfterSchool/Overview';
+import AfterSchoolLocation from './components/AfterSchool/AfterSchoolLocation';
+import PS17Q from './components/AfterSchool/locations/PS17Q';
+import PS85Q from './components/AfterSchool/locations/PS85Q';
+import PSIS78QK1 from './components/AfterSchool/locations/PSIS78QK1';
+import PSIS78Q25 from './components/AfterSchool/locations/PSIS78Q25';
+import PS150Q from './components/AfterSchool/locations/PS150Q';
+import PS166Q from './components/AfterSchool/locations/PS166Q';
+import PS33ChelseaPrep from './components/AfterSchool/locations/PS33ChelseaPrep';
+import Classes from './components/AfterSchool/Classes';
+import Tuition from './components/AfterSchool/Tuition';
+import Transportation from './components/AfterSchool/Transportation';
+import Policies from './components/AfterSchool/Policies';
 
 // Camps
-import Camps from './components/Camps';
+import Camps from './components/Camps/Camps';
 
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
-import EditSchool from './components/EditSchool';
+import EditSchool from './components/Dashboard/EditSchool';
 import Footer from './components/Footer';
 import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
 
 class App extends Component {
-  constructor () {
-    super ();
-    this.state = {
+  
+  state = {
       auth: Auth.isUserAuthenticated(),
       registerUsername: '',
       registerPassword: '',
       loginUsername: '',
       loginPassword: '',
       open: false,
+      loginPassword: ''
     }
-  }
 
   // use of arrow functions to avoid bindings
   handleInputChange = (e) => {
@@ -161,14 +160,13 @@ class App extends Component {
 
 
           <Route exact path='/schools' render={() => <Schools />} />
-          <Route exact path="/dashboard" render={() =>
-            this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
-
+          
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
           
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
 
-
+          <Route exact path="/dashboard" render={() =>
+              this.state.auth ? <Dashboard auth={this.state.auth}/> : <Redirect to="/login" />}/>
 
           <Route exact path='/login'
           render={() =>
