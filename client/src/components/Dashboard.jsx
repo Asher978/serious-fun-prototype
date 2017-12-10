@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
-import superagent from 'superagent';
-import sha1 from 'sha1';
-import PlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
+import { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
 
 import AddSchool from '../components/AddSchool';
 import AddClass from '../components/AddClass';
 import EditForm from './EditForm';
+import Upload from '../modules/Upload';
+
 
 class Dashboard extends Component {
   constructor () {
@@ -80,7 +79,7 @@ class Dashboard extends Component {
           state: '',
           zipcode: '',
           description: '',
-          picture_url: '',
+          picture_url: Upload.removeUrl(),
           coordinates: [],
           coordsLoaded: false
         })
@@ -104,7 +103,7 @@ class Dashboard extends Component {
         classname: '',
         desc: '',
         price: '',
-        picture_url: ''
+        picture_url: Upload.removeUrl()
       })
     }).catch(err => {
       console.log(err);
@@ -127,7 +126,6 @@ class Dashboard extends Component {
 
   componentDidMount() {
     axios.get('/schools/').then(res => {
-      console.log(res.data)
       this.setState({
         schools : res.data,
         schoolsLoaded: true
@@ -137,45 +135,8 @@ class Dashboard extends Component {
     })
   }
 
-  handleDrop = file => {
-    const image = file[0]
-
-    const cloudName = 'dnixq4nvb';
-    const url = 'https://api.cloudinary.com/v1_1/'+cloudName+'/image/upload';
-
-    // cloudinary API requires timestamp in milli seconds
-    const timestamp = Date.now()/1000;
-    const uploadPreset = 'gsolnxvn';
-
-    // prepping the string for the upload
-    const paramsStr = 'timestamp='+timestamp+'&upload_preset='+uploadPreset+'e-1DajckQfu24NBJcwTcAvNtlYM';
-    
-    //encrypting the string before sending it to API
-    const signature = sha1(paramsStr); 
-    const params = {
-      'api_key': '862335133837131',
-      'timestamp': timestamp,
-      'upload_preset': uploadPreset,
-      'signature': signature
-    }
-
-    let uploadRequest = superagent.post(url)
-    uploadRequest.attach('file', image)
-
-    Object.keys(params).forEach((key) => {
-      uploadRequest.field(key, params[key])
-    })
-
-    uploadRequest.end((err, res) => {
-      if (err) {
-        console.log(err)
-        return
-      } else {
-        var imgUrl = res.body.secure_url
-        console.log(imgUrl)
-        this.setState({ picture_url: imgUrl })
-      }
-    })
+  handleDropImg = (file) => {
+    this.setState({ picture_url: Upload.getUrl(file) });
   }
 
   decideWhichForm = () => {
@@ -191,7 +152,7 @@ class Dashboard extends Component {
                     description={this.state.description}
                     picture_url={this.state.picture_url}
                     handleAddSchool={this.handleAddSchool}
-                    handleDrop={this.handleDrop}
+                    handleDrop={this.handleDropImg}
                  /> )
       case 'class':
         return ( <AddClass 
@@ -201,7 +162,7 @@ class Dashboard extends Component {
                     price={this.state.price}
                     picture_url={this.state.picture_url}
                     handleAddClass={this.handleAddClass}
-                    handleDrop={this.handleDrop}
+                    handleDrop={this.handleDropImg}
                     schools={this.state.schools}
                     handleRadioChange={this.handleRadioChange}
                  /> )
@@ -255,7 +216,7 @@ class Dashboard extends Component {
                   <li className="list-group-item main-color-bg">
                   <span className='glyphicon glyphicon-arrow-down' aria-hidden='true'></span>&nbsp;Link To
                   </li>
-                  <a href="#" className="list-group-item"><span className='glyphicon glyphicon-education' aria-hidden='true'></span>&nbsp; Schools <span className='badge'> 7 </span></a>
+                  <a href="/schools" className="list-group-item"><span className='glyphicon glyphicon-education' aria-hidden='true'></span>&nbsp; Schools <span className='badge'> 7 </span></a>
                   <a href="#" className="list-group-item"><span className='glyphicon glyphicon-folder-open' aria-hidden='true'></span>&nbsp; Classes <span className='badge'> 10 </span></a>
                 </div>
               </div>
