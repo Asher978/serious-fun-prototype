@@ -1,42 +1,72 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
-const Transportation = props => {
-  return (
-    <div className="transportationContainer">
-    <p className="transportationMainTitle">Transportation</p>
-    <div className="transportationInnerContainer">
-    
-    <div className="transportationInnerTop">
-    <div className="transportationInnerLeftSec">
-    
-    <p className="transportationInnerTopText">All bussing costs and agreements (including cost of transportation) are made directly between the transportation company and the parent.  Any child being transported by bus will need a School Authorization Letter.</p>
-    <p className="transportationInnerTopText">Serious Fun’s Transportation Coordinator rides on the bus with the children every day to make sure all children are accounted for and have a safe and happy ride to their Serious Fun site!</p>
-    <p className="transportationInnerMidTile">Astoria Express Transit</p>
-    <p className="transportationInnerMidText">Please contact Astoria Express directly for  information regarding service and pricing on bus transportation.</p>
-    <p className="transportationInnerContactTitle">Contact</p>
-    <p className="transportationInnerContactPhone">(718) 626-3369</p>
-    <Link to="http://www.astoriaexpress.com" id="transportationContactLink"className="transportationInnerContactLink">Visit their website</Link>
-    </div>
-    <div className="transportationInnerRightSec">
-    <div className="transportationInnerImage"></div>
-    </div>
-    </div>
+class Transportation extends Component {
+  state={
+    pageTitle:'Transportation',
+    content: null,
+    dataLoaded:false
+  }
 
-    <div className="transportationInnerBottom">
-    <p className="transportationInnerBottomTitle">School Authorization Letter</p>
-    <p className="transportationInnerBottomText">A School Authorization Letter is available from Serious Fun upon receipt of your registration.  Please note that the transportation company cannot pick up your child without the School Authorization Letter.</p>
-    <p className="transportationInnerBottomSubText">It is the responsibility of the parent to arrange transportation for his/her child at the conclusion of the Serious Fun program.</p>
-    <Link to="" id="transportationAuthorizationBtn" className="transportationInnerBottomBtn">OPEN PDF LETTER</Link>
-    
-    </div>
-    </div>
-     
+  componentDidMount() {
+    axios.get(`/page/${this.state.pageTitle}`).then(res => {
+      let { pageContent } = res.data;
+      console.log(pageContent);
+      this.setState({
+        content: pageContent,
+        dataLoaded: true
+      });
+    });
+  }
+
+  renderTransportationPage = () => {
+    let { content } = this.state;
+    return (
+      <div className="transportationContainer">
+      <p className="transportationMainTitle">{content.mainH}</p>
+      <div className="transportationInnerContainer">
+      
+      <div className="transportationInnerTop">
+      <div className="transportationInnerLeftSec">
+      
+      <p className="transportationInnerTopText">{content.mainPara}</p>
+      <p className="transportationInnerTopText">{content.mainPara2}</p>
+      <p className="transportationInnerMidTile">{content.subH}</p>
+      <p className="transportationInnerMidText">{content.subcont}</p>
+      <p className="transportationInnerContactTitle">{content.contactH}t</p>
+      <p className="transportationInnerContactPhone">{content.contactNumber}</p>
+      <Link to="http://www.astoriaexpress.com" id="transportationContactLink"className="transportationInnerContactLink">Visit their website</Link>
+      </div>
+      <div className="transportationInnerRightSec">
+      <div className="transportationInnerImage"></div>
+      </div>
+      </div>
+
+      <div className="transportationInnerBottom">
+      <p className="transportationInnerBottomTitle">{content.subH2}</p>
+      <p className="transportationInnerBottomText">{content.subcont2}</p>
+      <p className="transportationInnerBottomSubText">{content.disclaimer}</p>
+      <Link to="" id="transportationAuthorizationBtn" className="transportationInnerBottomBtn">OPEN PDF LETTER</Link>
+      
+      </div>
+      </div>
+      
 
 
 
-    </div>
-  );
+      </div>
+    );
+  }
+
+  render(){
+    let { dataLoaded } = this.state;
+    return (
+      <div>
+        {dataLoaded ? this.renderTransportationPage() : <h1>Loading.....</h1> }
+      </div>
+    )
+  }
 };
 
 export default Transportation;
