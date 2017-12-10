@@ -30,6 +30,7 @@ import EditSchool from './components/EditSchool';
 import Footer from './components/Footer';
 import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
+import FAQ from './components/FAQ';
 
 class App extends Component {
   constructor () {
@@ -129,7 +130,7 @@ class App extends Component {
           <Route exact path="/classes" component={Classes}/>
           <Route exact path="/calendar" component={Calendar}/>
           <Route exact path="/contact" component={Contact}/>
-
+          <Route exact path="/faq" component={FAQ}/>
 
 
 

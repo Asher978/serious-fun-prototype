@@ -1034,8 +1034,9 @@ body {
 /***************************MOBILE END*********************/
 /***************************MOBILE END*********************/
 
-/***********************CONTACT US**********************/
-
+/***************************CONTACT US**********************/
+/***************************CONTACT US**********************/
+/***************************CONTACT US**********************/
 .contactContainer {
 
 }
@@ -1148,3 +1149,106 @@ body {
   margin: 0px 40px;
   height: 608px;
 }
+
+/***************************CONTACT US END**********************/
+/***************************CONTACT US END**********************/
+/***************************CONTACT US END**********************/
+
+/****************************FAQ*****************************/
+/****************************FAQ*****************************/
+/****************************FAQ*****************************/
+
+.faqContainer {
+  width: 65.5%;
+  margin: 18px auto 18px auto;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-around;*/
+  /*align-items: flex-start;*/
+}
+.FAQ {
+  margin-top: 48px;
+  width: 282px;
+  height: 39px;
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.faqLogos {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+.faqLogosText{
+  /*margin: auto;*/
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #1e3089;
+}
+.faqLogosText img {
+  padding-top: 8px;
+  padding-right: 6px;
+  height: 30%;
+}
+.line-2 {
+  width: 890px;
+  height: 2px;
+  border: solid 1px #bababa;
+}
+.faqMainTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 28px auto;
+}
+.faqBtn {
+  width: 220px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.faqQuestion {
+  margin-bottom: 6px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.faqAnswer {
+  font-family: Lato;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+  margin-top: 0;
+}
+.faqQuestionExtra {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.faqAnswerExtra {
+  margin-top: 0;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  color: #000000;
+}
+
+
+
