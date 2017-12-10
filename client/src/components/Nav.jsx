@@ -139,7 +139,7 @@ const Nav = props => {
           </div>
 
           <div className="linkBox">
-            <Link to="" id="contact" className="navLinks">
+            <Link to="/contact" id="contact" className="navLinks">
               contact
             </Link>
           </div>

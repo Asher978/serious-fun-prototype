@@ -29,6 +29,7 @@ import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
 import Footer from './components/Footer';
 import HamburgerMenu from './components/HamburgerMenu';
+import Contact from './components/Contact';
 
 class App extends Component {
   constructor () {
@@ -103,6 +104,7 @@ class App extends Component {
       })
     })
   }
+  //isOpen event function for Hamburger Menu(mobile)
   handleClick() {
     this.setState({
       open: !this.state.open
@@ -113,17 +115,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <HamburgerMenu
-            isOpen={this.state.open}
-            menuClicked={this.handleClick.bind(this)}
-            width={21}
-            height={14}
-            strokeWidth={3}
-            rotate={0}
-            color='black'
-            borderRadius={0}
-            animationDuration='0.5'
-          />
+
           <Nav handleLogout={this.handleLogout} />
 
           <Route exact path="/" component={Home}/>
@@ -136,6 +128,7 @@ class App extends Component {
           <Route exact path="/locations" component={AfterSchoolLocation}/>
           <Route exact path="/classes" component={Classes}/>
           <Route exact path="/calendar" component={Calendar}/>
+          <Route exact path="/contact" component={Contact}/>
 
 
 
