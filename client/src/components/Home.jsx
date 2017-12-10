@@ -28,18 +28,18 @@ class Home extends Component {
     return (
       <div className="homeContainer">
       <div className="slide"></div>
-      
+
       <div className="ourInfo">
       <div className="textTitle">{content.mainH}</div>
       <div className="textPara">{content.mainB}</div>
-      
+
       <div className="ourContainer">
- 
+
       <div className="ourClass">
       <div className="ourTitle">{content.subH}</div>
       <div className="ourPic"></div>
       <div className="ourText">{content.subBod}</div>
-      
+
       </div>
       <div className="ourHomeTeam">
       <div className="ourTitle">{content.subH2}</div>
@@ -51,21 +51,21 @@ class Home extends Component {
       <div className="ourPic"></div>
       <div className="ourText">{content.subBod3}</div>
       </div>
-      
+
       </div>
-      
+
       <div className="ourMoreInfo">
       <div className="ourMoreInfoText">{content.lastH}</div>
       <Link to="" className="ourMoreInfoBtn">PROGRAM OVERVIEW</Link>
       </div>
-      
-      </div>
-
 
       </div>
 
 
-      
+      </div>
+
+
+
   )
   }
   render(){
