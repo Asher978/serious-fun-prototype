@@ -38,7 +38,7 @@ import Transportation from './components/AfterSchool/Transportation';
 import Policies from './components/AfterSchool/Policies';
 
 // Camps
-import Camps from './components/Camps';
+import Camps from './components/Camps/Camps';
 
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
