@@ -44,6 +44,8 @@ import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
 import Footer from './components/Footer';
+import HamburgerMenu from './components/HamburgerMenu';
+import Contact from './components/Contact';
 
 class App extends Component {
   
@@ -53,7 +55,8 @@ class App extends Component {
       registerPassword: '',
       loginUsername: '',
       loginPassword: '',
-      pages : null
+      pages : null,
+      open: false,
     }
   
   componentDidMount() {
@@ -124,11 +127,18 @@ class App extends Component {
       })
     })
   }
+  //isOpen event function for Hamburger Menu(mobile)
+  handleClick() {
+    this.setState({
+      open: !this.state.open
+    });
+  }
 
   render() {
     return (
       <Router>
         <div className="App">
+
           <Nav handleLogout={this.handleLogout} />
 
           <Route exact path="/" component={Home}/>
@@ -154,12 +164,13 @@ class App extends Component {
           <Route exact path="/policies" component={Policies}/>
           <Route exact path="/Camps" component={Camps}/>
           <Route exact path="/calendar" component={Calendar}/>
+          <Route exact path="/contact" component={Contact}/>
+
 
           <Route exact path='/schools' render={() => <Schools />} />
           <Route exact path="/dashboard" render={() =>
             this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
 
-          
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
           
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
@@ -167,7 +178,7 @@ class App extends Component {
           <Route exact path="/dashboard" render={() =>
               this.state.auth ? <Dashboard auth={this.state.auth} pages={this.state.pages} /> : <Redirect to="/login" />}/>
 
-          <Route exact path='/login' 
+          <Route exact path='/login'
           render={() =>
               !this.state.auth ? (
                 <LoginForm
