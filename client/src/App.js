@@ -23,19 +23,19 @@ import Supporters from './components/About/Supporters';
 import PeopleSay from './components/About/PeopleSay';
 
 // AfterSchool
-import Overview from './components/Overview';
-import AfterSchoolLocation from './components/AfterSchoolLocation';
-import PS17Q from './components/locations/PS17Q';
-import PS85Q from './components/locations/PS85Q';
-import PSIS78QK1 from './components/locations/PSIS78QK1';
-import PSIS78Q25 from './components/locations/PSIS78Q25';
-import PS150Q from './components/locations/PS150Q';
-import PS166Q from './components/locations/PS166Q';
-import PS33ChelseaPrep from './components/locations/PS33ChelseaPrep';
-import Classes from './components/Classes';
-import Tuition from './components/Tuition';
-import Transportation from './components/Transportation';
-import Policies from './components/Policies';
+import Overview from './components/AfterSchool/Overview';
+import AfterSchoolLocation from './components/AfterSchool/AfterSchoolLocation';
+import PS17Q from './components/AfterSchool/locations/PS17Q';
+import PS85Q from './components/AfterSchool/locations/PS85Q';
+import PSIS78QK1 from './components/AfterSchool/locations/PSIS78QK1';
+import PSIS78Q25 from './components/AfterSchool/locations/PSIS78Q25';
+import PS150Q from './components/AfterSchool/locations/PS150Q';
+import PS166Q from './components/AfterSchool/locations/PS166Q';
+import PS33ChelseaPrep from './components/AfterSchool/locations/PS33ChelseaPrep';
+import Classes from './components/AfterSchool/Classes';
+import Tuition from './components/AfterSchool/Tuition';
+import Transportation from './components/AfterSchool/Transportation';
+import Policies from './components/AfterSchool/Policies';
 
 // Camps
 import Camps from './components/Camps';
