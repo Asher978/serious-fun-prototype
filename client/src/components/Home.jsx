@@ -13,7 +13,6 @@ class Home extends Component {
       <div className="slide"></div>
       
       <div className="ourInfo">
-      <div className="textTitle">A Creative Space for Curious Kids</div>
       <div className="textPara">Serious Fun is a licensed in-school after care program committed to providing a safe environment and engaging classes for children to learn, play, and have fun.</div>
       
       <div className="ourContainer">
