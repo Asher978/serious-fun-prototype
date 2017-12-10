@@ -40,7 +40,7 @@ class Overview extends Component {
               {content.subDate}
             </p>
             <p className="overViewTextColumnSubText">
-             {content.subContent}
+             {content.subpageContent}
             </p>
             <p className="overViewTextColumnSubTextCalendar">
               {content.subCalendar}
@@ -52,7 +52,7 @@ class Overview extends Component {
           <div className="overViewTextColumn">
             <p className="overViewTextColumnSubTitle">{content.subH2}</p>
             <p className="overViewTextColumnSubText TransportationText">
-              {content.subContent2}
+              {content.subpageContent2}
             </p>
             <Link to="" className="overViewTextColumnBtn">
               LEARN MORE
@@ -61,7 +61,7 @@ class Overview extends Component {
           <div className="overViewTextColumn">
             <p className="overViewTextColumnSubTitle register">{content.subH3}</p>
             <p className="overViewTextColumnSubText registerText">
-              {content.subContent3}
+              {content.subpageContent3}
             </p>
             <Link to="" className="overViewTextColumnBtn">
               REGISTER NOW
