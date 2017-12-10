@@ -110,7 +110,7 @@ const PS85Q = props => {
               </div>
               <div className="AnnounceSchool PS85QAnnouncePS85Q">
                 <div className="AnnounceSubTitle PS85QAnnounceSubTitle">
-                  PS 17 Q
+                PS 85 Q
                 </div>
                 <ul className="AnnounceLists PS85QAnnounceLists">
                   <li>

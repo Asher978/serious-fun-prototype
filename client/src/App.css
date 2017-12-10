@@ -938,7 +938,7 @@ body {
 }
 
 .PSLocationSubTitle, .PSSubTitles{
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 	font-size: 24px;
 	font-weight: bold;
 	color: #f5483a;
@@ -1123,7 +1123,7 @@ body {
 
 
 .PSContactInfoName{
-  margin-top: 0px;
+  margin-top: 16px;
   margin-bottom: 7px;
 }
 
@@ -1187,9 +1187,13 @@ margin: 0px;
   margin: 18px 20px 16px 0px;
 }
 
+.PSIS78QK1LocationText{
+  height: auto;
+}
 
-
-
+.PSIS78QK1LocationText{
+  width: 190px;
+}
 
 /* After School - Classes */
 
