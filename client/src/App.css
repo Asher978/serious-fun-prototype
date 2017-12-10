@@ -1602,6 +1602,28 @@ background-image: url("assets/classes/language/music.jpg");
 background-image: url("assets/classes/language/music.jpg");
 }
 
+/* Afterschool Classes - VisualArts */
+.visualArtsContainer{
+  margin-bottom: 96px;
+}
+.visualArtsMidInnerContainer{
+  justify-content: flex-start;
+}
+.visualArtsInnerBottomPara{
+  height: auto;
+}
+
+.visualArtsCartooning{
+background-image: url("assets/classes/visualArts/music.jpg");
+}
+
+.visualArtsDrawing{
+background-image: url("assets/classes/visualArts/music.jpg");
+}
+.visualArtsSculpture{
+background-image: url("assets/classes/visualArts/music.jpg");
+}
+
 
 
 
