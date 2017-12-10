@@ -8,10 +8,13 @@ const Nav = props => {
       <div className="topHead" />
       <div className="midHead">
         <div className="container">
-          <Link to="/" className="mainLogo" />
+          <div className="headerLeft">
+            <Link to="/" className="mainLogo" />
+            <p className="mainSubTitle">A Creative Space for Curious Kids</p>
+          </div>
 
           <Link to="" className="helpBtn">
-            support
+            Donate
           </Link>
 
           <div className="user">
@@ -33,9 +36,9 @@ const Nav = props => {
             </Link>
           </div>
           <div className="linkBox">
-            <Link to="" id="about" className="navLinks">
+            <div id="about" className="navLinks">
               about
-            </Link>
+            </div>
 
             <div className="dropdownMenu">
               <div className="aboutDrop">
@@ -58,67 +61,67 @@ const Nav = props => {
             </div>
           </div>
           <div className="linkBox">
-            <Link to="" id="afterSchool" className="navLinks">
+            <div to="" id="afterSchool" className="navLinks">
               After School
-            </Link>
-
-            <div className="dropdownMenu">
-            <div className="programDrop">
-              <Link to="" id="overviewDrop" className="dropLinks">
-                Overview
-              </Link>
-              <Link to="/locations" id="locationDrop" className="dropLinks">
-                Locations
-              </Link>
-              <Link to="" id="tuitionDrop" className="dropLinks">
-                Tuition
-              </Link>
-              <Link to="/classes" id="tuitionDrop" className="dropLinks">
-                Classes
-              </Link>
-              <Link to="" id="transportationDrop" className="dropLinks">
-                Transportation
-              </Link>
-              <Link to="" id="policyDrop" className="dropLinks">
-                Polices
-              </Link>
             </div>
-          </div>
-          </div>
-
-          <div className="linkBox">
-            <Link to="" id="program" className="navLinks">
-              program
-            </Link>
 
             <div className="dropdownMenu">
               <div className="programDrop">
-                <Link to="" id="overviewDrop" className="dropLinks">
+                <Link to="/overview" id="overviewDrop" className="dropLinks">
                   Overview
                 </Link>
-                <Link to="" id="classDrop" className="dropLinks">
+                <Link to="/locations" id="locationDrop" className="dropLinks">
+                  Locations
+                </Link>
+                <Link to="/classes" id="tuitionDrop" className="dropLinks">
                   Classes
                 </Link>
-                <Link to="" id="tuitionDrop" className="dropLinks">
+                <Link to="/tuition" id="tuitionDrop" className="dropLinks">
                   Tuition
                 </Link>
-                <Link to="" id="transportationDrop" className="dropLinks">
+                <Link
+                  to="/transportation"
+                  id="transportationDrop"
+                  className="dropLinks"
+                >
                   Transportation
+                </Link>
+                <Link to="/policies" id="policyDrop" className="dropLinks">
+                  Policies
                 </Link>
               </div>
             </div>
           </div>
 
           <div className="linkBox">
-            <Link to="/calendar" id="calendar" className="navLinks">
-              calendar
+            <Link to="/camps" id="camps" className="navLinks">
+              Camps
             </Link>
           </div>
 
           <div className="linkBox">
-            <Link to="" id="registration" className="navLinks">
+            <div to="/calendar" id="calendar" className="navLinks">
+              calendar
+            </div>
+            <div className="dropdownMenu calendarDropMenu">
+              <div className="calendarDrop">
+                <Link to="" id="afterSchoolDrop" className="dropLinks">
+                  After School
+                </Link>
+                <Link to="" id="campsDrop" className="dropLinks">
+                  Camps
+                </Link>
+                <Link to="" id="eventsDrop" className="dropLinks">
+                  Special Events
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="linkBox">
+            <div to="" id="registration" className="navLinks">
               registration
-            </Link>
+            </div>
 
             <div className="dropdownMenu regis">
               <div className="registrationDrop">
