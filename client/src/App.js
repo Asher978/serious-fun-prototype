@@ -25,6 +25,7 @@ import PeopleSay from './components/PeopleSay';
 // AfterSchool
 import Overview from './components/Overview';
 import AfterSchoolLocation from './components/AfterSchoolLocation';
+  // All Locations
 import PS17Q from './components/locations/PS17Q';
 import PS85Q from './components/locations/PS85Q';
 import PSIS78QK1 from './components/locations/PSIS78QK1';
@@ -33,9 +34,11 @@ import PS150Q from './components/locations/PS150Q';
 import PS166Q from './components/locations/PS166Q';
 import PS33ChelseaPrep from './components/locations/PS33ChelseaPrep';
 import Classes from './components/Classes';
+  // All Classes
 import Music from './components/AfterSchool/classes/Music';
 import Language from './components/AfterSchool/classes/Language';
 import VisualArts from './components/AfterSchool/classes/VisualArts';
+import PerformingArts from './components/AfterSchool/classes/PerformingArts';
 import Tuition from './components/Tuition';
 import Transportation from './components/Transportation';
 import Policies from './components/Policies';
@@ -158,6 +161,7 @@ class App extends Component {
           <Route exact path="/music" component={Music}/>
           <Route exact path="/language" component={Language}/>
           <Route exact path="/visualarts" component={VisualArts}/>
+          <Route exact path="/performingarts" component={PerformingArts}/>
           <Route exact path="/tuition" component={Tuition}/>
           <Route exact path="/transportation" component={Transportation}/>
           <Route exact path="/policies" component={Policies}/>

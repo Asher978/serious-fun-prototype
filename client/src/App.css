@@ -1624,10 +1624,43 @@ background-image: url("assets/classes/visualArts/music.jpg");
 background-image: url("assets/classes/visualArts/music.jpg");
 }
 
+/* Afterschool Classes - PerformingArts */
+.performingArtsContainer{
+  margin-bottom: 96px;
+}
+.performingArtsMidInnerContainer{
+  justify-content: flex-start;
+}
+.performingArtsInnerBottomPara{
+  height: auto;
+}
 
+ .performingArtsBeatGlobal{
+background-image: url("assets/classes/performingArts/music.jpg");
+}
 
+.performingArtsBroadwayJazz{
+background-image: url("assets/classes/performingArts/music.jpg");
+}
 
+.performingArtsClowning{
+background-image: url("assets/classes/performingArts/music.jpg");
+}
 
+.performingArtsPerformanceImprov{
+background-image: url("assets/classes/performingArts/music.jpg");
+}
+
+.performingArtsTheater{
+background-image: url("assets/classes/performingArts/music.jpg");
+}
+.performingArtsTraditionalDance{
+background-image: url("assets/classes/performingArts/music.jpg");
+}
+
+.performingArtsWorldDance{
+background-image: url("assets/classes/performingArts/music.jpg");
+}
 
 
 
