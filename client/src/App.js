@@ -39,6 +39,7 @@ import Music from './components/AfterSchool/classes/Music';
 import Language from './components/AfterSchool/classes/Language';
 import VisualArts from './components/AfterSchool/classes/VisualArts';
 import PerformingArts from './components/AfterSchool/classes/PerformingArts';
+import SportAndFitness from './components/AfterSchool/classes/SportAndFitness';
 import Tuition from './components/Tuition';
 import Transportation from './components/Transportation';
 import Policies from './components/Policies';
@@ -162,6 +163,7 @@ class App extends Component {
           <Route exact path="/language" component={Language}/>
           <Route exact path="/visualarts" component={VisualArts}/>
           <Route exact path="/performingarts" component={PerformingArts}/>
+          <Route exact path="/sportandfitness" component={SportAndFitness}/>
           <Route exact path="/tuition" component={Tuition}/>
           <Route exact path="/transportation" component={Transportation}/>
           <Route exact path="/policies" component={Policies}/>

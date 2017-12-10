@@ -1662,8 +1662,30 @@ background-image: url("assets/classes/performingArts/music.jpg");
 background-image: url("assets/classes/performingArts/music.jpg");
 }
 
+/* Afterschool Classes - SportAndFitness */
+.sportandfitnessContainer{
+  margin-bottom: 96px;
+}
+.sportandfitnessMidInnerContainer{
+  justify-content: flex-start;
+}
+.sportandfitnessInnerBottomPara{
+  height: auto;
+}
 
 
+ .sportandfitnessMartialArts{
+background-image: url("assets/classes/sportandfitness/music.jpg");
+}
+
+.sportandfitnessYoga{
+background-image: url("assets/classes/sportandfitness/music.jpg");
+}
+
+.sportandfitnessSoccer{
+background-image: url("assets/classes/sportandfitness/music.jpg");
+
+}
 
 
 
