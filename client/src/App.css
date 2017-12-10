@@ -516,11 +516,11 @@ body {
 .afterSchoolLocationInfoColumnContainer  .afterSchoolLocationInfo, .afterSchoolLocationInfo{
   padding: 13.5px 0px;
       /* margin: 10px 0px; */
-      
+
 }
  .secLast{
   padding: 0px 10px 42px 0px;
-      
+
 }
 .afterSchoolLocationInfoColumnContainer  .last{
   /* padding: 13.5px 0px; */
@@ -601,37 +601,37 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+
 }
 
 .classTopPictures{
   width: 301px;
   height: 164px;
-  background-color: rgba(0, 0, 0, 0.25); 
+  background-color: rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-position: center;
   margin: 10px 8px 10px 0px;
   /* padding: 20px; */
-  
-} 
+
+}
 .music{
   background-image: url("assets/classes/music.jpg");
-} 
+}
 .language{
   background-image: url("assets/classes/writing.jpg");
-} 
+}
 .visualarts{
   background-image: url("assets/classes/arts.jpg");
-} 
+}
 .performingarts{
   background-image: url("assets/classes/performance.jpg");
-} 
+}
 .sportandfitness{
   background-image: url("assets/classes/sport.jpg");
-} 
+}
 .other{
   background-image: url("assets/classes/other.jpg");
-} 
+}
 .classTopPicText{
   width: 100%;
   height: 100%;
@@ -644,10 +644,10 @@ body {
   font-weight: bold;
   color: #ffffff;
 
-} 
+}
 .classTopPictures  a{
   text-decoration: none;
-} 
+}
 
 /* Bottom */
 
@@ -670,7 +670,7 @@ body {
   height: 200px;
   display: flex;
   /* flex-direction: row; */
-  margin-right:20px; 
+  margin-right:20px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -784,7 +784,7 @@ body {
   font-size: 1.1em;
   border: 0; */
 /* } */
-/* 
+/*
 .navbar-brand  {
   float: left;
   min-height: 65px;
@@ -938,7 +938,7 @@ body {
 /* FEATURETTE SETTINGS */
 
 /* .featurette-divider {
-  margin: 80px 0; 
+  margin: 80px 0;
 }
 
 
@@ -957,7 +957,7 @@ body {
       font-size: 21px;
       line-height: 1.4;
     }
-  
+
     .featurette-heading {
       font-size: 50px;
     }
@@ -975,3 +975,176 @@ body {
 /* .editSchool {
   margin-top: 10px;
 } */
+/***************************MOBILE*************************/
+/***************************MOBILE*************************/
+/***************************MOBILE*************************/
+
+@media (max-width: 320px) {
+  .topHead {
+    /*display: hidden;*/
+    background-size: contain;
+    height: 41px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navLink {
+    display: none;
+  }
+  .hamburgerMenuDiv  {
+    width: 21px;
+    height: 14px;
+    z-index: 9;
+    top: 0;
+  }
+  .midHead .mainLogo {
+    height: 29px;
+    width: 117px;
+    background-size: contain;
+    background-position: center;
+  }
+  .midHead .helpBtn {
+    display: none;
+  }
+  .textTitle {
+    display: none;
+  }
+  .ourInfo .textPara {
+    width: 288px;
+    height: 76px;
+    font-size: 16px;
+  }
+  .ourContainer {
+    flex-direction: column;
+  }
+  .ourMoreInfo {
+    flex-direction: column;
+  }
+  .ourMoreInfo .ourMoreInfoText {
+    width: 288px;
+    height: 52px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .navbar .topBar .container .copyright {
+    display: none;
+  }
+}
+/***************************MOBILE END*********************/
+/***************************MOBILE END*********************/
+/***************************MOBILE END*********************/
+
+/***********************CONTACT US**********************/
+
+.contactContainer {
+
+}
+.contactTop {
+  width: 65.5%;
+  margin: 18px auto 18px auto;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-around;*/
+  /*align-items: flex-start;*/
+}
+.contactPhoneFaxContainer{
+  margin-left: 140px;
+  display: flex;
+  flex-direction: column;
+
+}
+.Phone, .Fax {
+  width: 100%;
+  height: 22px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.contactPhoneNumber, .contactFaxNumber {
+  width: 125px;
+  height: 22px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: normal;
+  /*text-align: left;*/
+  color: #000000;
+  margin-left: 8px;
+}
+.contactFaxNumber {
+  margin-top: 6px;
+  margin-left: 30px;
+}
+.Contact-Serious-Fun {
+  width: 410px;
+  height: 39px;
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+  margin-top: 45px;
+  margin-bottom: 24px;
+}
+.Contact-A-Program-Lo {
+  width: 430px;
+  height: 34px;
+  font-family: Lato;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+  margin-top: 56px;
+  margin-bottom: -48px;
+}
+.contactTop .contactEmailBtn, .contactEmailSignupBtn {
+  width: 160px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  line-height: 32px;
+  margin-top: 14px;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+.Sign-up-for-Serious {
+  width: 640px;
+  height: 46px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+}
+.afterSchoolLocationInfo .contactEmailBtn {
+  width: 160px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  line-height: 32px;
+/*  margin-bottom: 24px;*/
+  /*padding: 6px 50px;*/
+  text-decoration: none;
+}
+.contactEmailContainer {
+  display: flex;
+  margin-top: 16px;
+}
+.contactSchoolLocationInfoText {
+  width: 240px;
+  height: 85px;
+  font-size: 14px;
+}
+.contactHRVerticalLine{
+  margin: 0px 40px;
+  height: 608px;
+}
