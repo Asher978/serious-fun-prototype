@@ -122,7 +122,7 @@ const Nav = props => {
           </div>
 
           <div className="linkBox">
-            <Link to="" id="contact" className="navLinks">
+            <Link to="/contact" id="contact" className="navLinks">
               contact
             </Link>
           </div>
@@ -148,7 +148,7 @@ const Nav = props => {
                 </ul>
             ) : (
                 <ul className="nav navbar-nav navbar-right">
-                    <li><Link to="/">Home</Link></li>                      
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/schools">Schools</Link></li>
                     <li><Link to="/dashboard">My Dashboard</Link></li>
                     <li><Link to="/logout" onClick={props.handleLogout}>Log Out</Link></li>
