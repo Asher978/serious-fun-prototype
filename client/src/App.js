@@ -16,11 +16,11 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Home from './components/Home';
 
 // ABout
-import AboutUs from './components/AboutUs';
-import OurTeam from './components/OurTeam';
-import Careers from './components/Careers';
-import Supporters from './components/Supporters';
-import PeopleSay from './components/PeopleSay';
+import AboutUs from './components/About/AboutUs';
+import OurTeam from './components/About/OurTeam';
+import Careers from './components/About/Careers';
+import Supporters from './components/About/Supporters';
+import PeopleSay from './components/About/PeopleSay';
 
 // AfterSchool
 import Overview from './components/Overview';
