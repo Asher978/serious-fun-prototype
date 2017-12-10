@@ -146,7 +146,7 @@ const PS17Q = props => {
                   id="PSClassInfoTextBtn"
                   className="PSClassInfoTextBtn PS17QClassInfoTextBtn PSLinkBtn"
                 >
-                  CLASSES @ PS 166 Q
+                  CLASSES @ PS 17 Q
                 </Link>
               </div>
             </div>

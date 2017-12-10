@@ -874,7 +874,7 @@ body {
   margin: 0px 16.8% 98px 16.5%;
 }
 
-/* AfterSchool Location Template - */
+/* AfterSchool Location Template - PS17Q */
 
 .PSContainer{
   display: flex;
@@ -1166,6 +1166,31 @@ margin: 0px;
   width: 220px;
 	height: 32px;
 }
+
+/* Locations - PS85Q */
+.PS85QContactInfo .SiteDirector{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+.PS85QContactInfo .SiteSupervisor{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+
+/* Locations - PSIS78QK1 */
+.PSIS78QK1ContactInfo .SiteDirector{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+.PSIS78QK1ContactInfo .SiteSupervisor{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+
+
+
+
+
 /* After School - Classes */
 
 /* Top */
