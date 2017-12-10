@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Auth from "../modules/Auth";
+// import Auth from "../modules/Auth";
 
 const Nav = props => {
   return (
@@ -8,10 +8,13 @@ const Nav = props => {
       <div className="topHead" />
       <div className="midHead">
         <div className="container">
-          <Link to="/" className="mainLogo" />
+          <div className="headerLeft">
+            <Link to="/" className="mainLogo" />
+            <p className="mainSubTitle">A Creative Space for Curious Kids</p>
+          </div>
 
           <Link to="" className="helpBtn">
-            support
+            Donate
           </Link>
 
           <div className="user">
@@ -63,38 +66,55 @@ const Nav = props => {
             </div>
 
             <div className="dropdownMenu">
-            <div className="programDrop">
-              <Link to="/overview" id="overviewDrop" className="dropLinks">
-                Overview
-              </Link>
-              <Link to="/locations" id="locationDrop" className="dropLinks">
-                Locations
-              </Link>
-              <Link to="/classes" id="tuitionDrop" className="dropLinks">
-                Classes
-              </Link>
-              <Link to="/tuition" id="tuitionDrop" className="dropLinks">
-                Tuition
-              </Link>
-              <Link to="/transportation" id="transportationDrop" className="dropLinks">
-                Transportation
-              </Link>
-              <Link to="/policies" id="policyDrop" className="dropLinks">
-                Polices
-              </Link>
+              <div className="programDrop">
+                <Link to="/overview" id="overviewDrop" className="dropLinks">
+                  Overview
+                </Link>
+                <Link to="/locations" id="locationDrop" className="dropLinks">
+                  Locations
+                </Link>
+                <Link to="/classes" id="tuitionDrop" className="dropLinks">
+                  Classes
+                </Link>
+                <Link to="/tuition" id="tuitionDrop" className="dropLinks">
+                  Tuition
+                </Link>
+                <Link
+                  to="/transportation"
+                  id="transportationDrop"
+                  className="dropLinks"
+                >
+                  Transportation
+                </Link>
+                <Link to="/policies" id="policyDrop" className="dropLinks">
+                  Policies
+                </Link>
+              </div>
             </div>
-          </div>
           </div>
 
           <div className="linkBox">
             <Link to="/camps" id="camps" className="navLinks">
-            Camps
+              Camps
             </Link>
           </div>
 
           <div className="linkBox">
             <div to="/calendar" id="calendar" className="navLinks">
               calendar
+            </div>
+            <div className="dropdownMenu calendarDropMenu">
+              <div className="calendarDrop">
+                <Link to="" id="afterSchoolDrop" className="dropLinks">
+                  After School
+                </Link>
+                <Link to="" id="campsDrop" className="dropLinks">
+                  Camps
+                </Link>
+                <Link to="" id="eventsDrop" className="dropLinks">
+                  Special Events
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -116,7 +136,7 @@ const Nav = props => {
           </div>
 
           <div className="linkBox">
-            <Link to="" id="faq" className="navLinks">
+            <Link to="/faq" id="faq" className="navLinks">
               faq
             </Link>
           </div>

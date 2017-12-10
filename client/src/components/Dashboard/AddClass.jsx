@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
 
 class AddClass extends Component {
-    constructor (props) {
-        super (props);
-    }
-
+    
     renderRadios = () => {
         var schools = this.props.schools;
         if(schools.length > 0) {

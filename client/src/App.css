@@ -30,7 +30,7 @@ body {
 /* Logo, Search and Login/Registration */
 .midHead {
   width: 100%;
-  height: 124px;
+  height: 140px;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -44,6 +44,26 @@ body {
   width: 65%;
 }
 
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  /* background: red; */
+  margin-right: auto;
+}
+
+.mainSubTitle {
+  width: 249px;
+  height: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: #f5483a;
+  margin: 0px;
+}
+
 .midHead .mainLogo {
   background-image: url("assets/nav/dskp-logo.jpg");
   background-repeat: no-repeat;
@@ -55,6 +75,15 @@ body {
 
 .midHead .user {
   display: flex;
+
+  width: 160px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 1px #1e3089;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .midHead .user > * {
@@ -62,13 +91,12 @@ body {
 }
 
 .midHead .userAuth {
-  font-size: 16px;
   text-decoration: none;
   color: #1e3089;
   font-weight: bold;
 }
 .midHead .helpBtn {
-  width: 133px;
+  width: 136px;
   height: 40px;
   border-radius: 4px;
   border: none;
@@ -78,7 +106,7 @@ body {
   font-size: 18px;
   font-weight: 800;
   line-height: 40px;
-  margin-right: 45px;
+  margin-right: 16px;
   text-align: center;
   background-color: #f5483a;
 }
@@ -185,6 +213,7 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #000000;
+  margin-top: 24px;
 }
 
 .ourContainer {
@@ -766,21 +795,20 @@ body {
   color: #f5483a;
 }
 
-.afterSchoolTop .linkBox{
+.afterSchoolTop .linkBox {
   position: relative;
 }
 
-.afterSchoolTop .linkBox:hover .navLinks{
+.afterSchoolTop .linkBox:hover .navLinks {
   color: white !important;
 }
 
-.afterSchoolTop  .linkBox:hover .dropdownMenu{
+.afterSchoolTop .linkBox:hover .dropdownMenu {
   height: 278px !important;
 }
 
-.afterSchoolTop .dropdownMenu{
+.afterSchoolTop .dropdownMenu {
   width: 174px;
-  
 }
 .afterSchoolTop .afterSchoolBtn {
   width: 172px;
@@ -876,7 +904,7 @@ body {
 
 /* AfterSchool Location Template - PS17Q */
 
-.PSContainer{
+.PSContainer {
   display: flex;
   flex-direction: column;
   width: 66%;
@@ -884,9 +912,9 @@ body {
   /* background: rebeccapurple; */
 }
 
-.PSAllLocations{
-	font-size: 14px;
-	font-weight: bold;
+.PSAllLocations {
+  font-size: 14px;
+  font-weight: bold;
   color: #6c6c6c;
   display: flex;
   justify-content: space-around;
@@ -894,14 +922,14 @@ body {
   height: 24px;
   text-decoration: none;
 }
-.PSLeftArrow{
+.PSLeftArrow {
   -ms-transform: scale(2); /* IE 9 */
   -webkit-transform: scale(2); /* Safari 3-8 */
   transform: scale(2);
   opacity: 0.54;
 }
 
-.PSInnerContainerTop{
+.PSInnerContainerTop {
   display: flex;
   flex-direction: row;
   /* background: rosybrown; */
@@ -909,7 +937,7 @@ body {
   justify-content: space-between;
 }
 
-.classTopPictures{
+.classTopPictures {
   width: 301px;
   height: 164px;
   background-color: rgba(0, 0, 0, 0.25);
@@ -918,25 +946,25 @@ body {
   margin: 10px 8px 10px 0px;
   /* padding: 20px; */
 }
-.music{
+.music {
   background-image: url("assets/classes/music.jpg");
 }
-.language{
+.language {
   background-image: url("assets/classes/writing.jpg");
 }
-.visualarts{
+.visualarts {
   background-image: url("assets/classes/arts.jpg");
 }
-.performingarts{
+.performingarts {
   background-image: url("assets/classes/performance.jpg");
 }
-.sportandfitness{
+.sportandfitness {
   background-image: url("assets/classes/sport.jpg");
 }
-.other{
+.other {
   background-image: url("assets/classes/other.jpg");
 }
-.classTopPicText{
+.classTopPicText {
   width: 100%;
   height: 100%;
   display: flex;
@@ -947,80 +975,77 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #ffffff;
-
 }
-.classTopPictures  a{
+.classTopPictures a {
   text-decoration: none;
 }
 
-.PSLocationTitle, .PSLocationSubTitle {
+.PSLocationTitle,
+.PSLocationSubTitle {
   margin-top: 0px;
 }
 
-.PSLocationTitle{
-	font-size: 28px;
-	font-weight: bold;
+.PSLocationTitle {
+  font-size: 28px;
+  font-weight: bold;
   color: #f5483a;
   margin-bottom: 16px;
 }
 
-.PSLocationBtn, .PSLinkBtn{
+.PSLocationBtn,
+.PSLinkBtn {
   width: 160px;
-	height: 32px;
-	border-radius: 4px;
+  height: 32px;
+  border-radius: 4px;
   background-color: #1e3089;
-	font-size: 16px;
-	font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  
 }
 
-.PSLocationSubTitle, .PSSubTitles{
+.PSLocationSubTitle,
+.PSSubTitles {
   margin-bottom: 0px;
-	font-size: 24px;
-	font-weight: bold;
-	color: #f5483a;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f5483a;
 }
-.PSLocationText{
+.PSLocationText {
   margin: 0px;
   width: 160px;
-	height: 66px;
-	font-size: 18px;
+  height: 66px;
+  font-size: 18px;
 }
 
-.PSLocationDropMenuTitle{
+.PSLocationDropMenuTitle {
   width: 220px;
-	height: 32px;
+  height: 32px;
   border: solid 1px #979797;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-weight: bold;
-  
-  
 }
-.PSLocationBox{
+.PSLocationBox {
   position: relative;
 }
 
 .PSLocationBox .linkBox:hover .dropdownMenu {
   visibility: visible;
   height: 260px;
-
 }
 .PSLocationBox .dropdownMenu {
   width: 221px;
-
 }
 
 .PSLocationBox .linkBox:hover .navLinks {
   color: white !important;
 }
-.PSDownArrow{
+.PSDownArrow {
   -ms-transform: rotate(270deg) scale(2); /* IE 9 */
   -webkit-transform: rotate(270deg) scale(2); /* Safari 3-8 */
   transform: rotate(270deg) scale(2);
@@ -1028,168 +1053,167 @@ body {
   margin-right: 8px;
 }
 
-.PSInnerContainerMid{
+.PSInnerContainerMid {
   margin: 40px 0px;
   /* background: grey; */
 }
 
-.PSLocationImageContainer{
+.PSLocationImageContainer {
   display: flex;
   justify-content: space-between;
 }
 
-.PSLocationImage, .PSMapImage{
+.PSLocationImage,
+.PSMapImage {
   width: 460px;
   height: 140px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.PSLocationImage{
+.PSLocationImage {
   background-image: url("assets/locations/PS17QImage.jpg");
   background: red;
 }
-.PSMapImage{
+.PSMapImage {
   background-image: url("assets/locations/PS17QMap.png");
   display: flex;
 }
 
-.AnnouncementBox,.PSInnerClassInfoBox{
+.AnnouncementBox,
+.PSInnerClassInfoBox {
   margin-top: 24px;
 }
 
-.PSInfoMidContainer{
+.PSInfoMidContainer {
   display: flex;
   justify-content: space-between;
 }
 
 /* ANOUNCEMENT BOX */
 
-.AnnouncementBox{
-	width: 460px;
-	height: 255px;
-	background-color: #eeeeee;
-	border: solid 2px #f5483a;
+.AnnouncementBox {
+  width: 460px;
+  height: 255px;
+  background-color: #eeeeee;
+  border: solid 2px #f5483a;
 }
 
-.AnnounceTitle{
-	height: 40px;
+.AnnounceTitle {
+  height: 40px;
   background-color: #f5483a;
-	font-size: 24px;
-	font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
   color: #ffffff;
   padding-left: 16px;
   display: flex;
   align-items: center;
 }
 
-.AnnounceGeneral, .AnnounceSchool{
+.AnnounceGeneral,
+.AnnounceSchool {
   width: 422px;
-	height: 78px;
-	font-size: 16px;
-	font-weight: bold;
+  height: 78px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.AnnounceSchoolHere, .AnnounceGeneralHere{
+.AnnounceSchoolHere,
+.AnnounceGeneralHere {
   margin: 0px;
 }
 
-.AnnounceGeneral{
+.AnnounceGeneral {
   margin: 8px 20px 26px 18px;
 }
 
-.AnnounceSchool{
+.AnnounceSchool {
   margin: 16px 20px 26px 18px;
 }
 
-.AnnounceLists{
+.AnnounceLists {
   margin: 0px;
 }
 
 /* Announcement box ends */
-.PSOutterContainer{
+.PSOutterContainer {
   display: flex;
   justify-content: space-between;
 }
-.PSClassInfoTitle{
+.PSClassInfoTitle {
   margin: 0px;
 }
 
-.PSClassInfoText{
+.PSClassInfoText {
   width: 219px;
-	height: 92px;
+  height: 92px;
   font-size: 14px;
   margin: 40px 0px 27px 0px;
 }
 
-
-.PSClassInfoImage, .PSContactInfoImage{
-	width: 220px;
-	height: 200px;
+.PSClassInfoImage,
+.PSContactInfoImage {
+  width: 220px;
+  height: 200px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.PSClassInfoImage{
+.PSClassInfoImage {
   background-image: url("assets/locations/girlPiano.jpg");
   margin-right: 20px;
   margin-top: 16px;
 }
 
-
-.PSInnerClassInfoBox{
+.PSInnerClassInfoBox {
   display: flex;
   flex-direction: column;
 }
 
-
-.PSClassInfoTextBtn{
+.PSClassInfoTextBtn {
   width: 219px;
-	height: 32px;
+  height: 32px;
 }
 
-.PSClassInfoBottom{
+.PSClassInfoBottom {
   display: flex;
 }
 
-
-
-.PS17QContactInfo .SiteDirector{
+.PS17QContactInfo .SiteDirector {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
-.PS17QContactInfo .SiteSupervisor{
+.PS17QContactInfo .SiteSupervisor {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
 
-
-.PSContactInfoName{
+.PSContactInfoName {
   margin-top: 16px;
   margin-bottom: 7px;
 }
 
-.PSContactInnerBox{
+.PSContactInnerBox {
   display: flex;
 }
 
-.PSContactInfoName{
+.PSContactInfoName {
   font-size: 16px;
-	font-weight: bold;
+  font-weight: bold;
 }
 
-.PSContactInfoText{
-margin: 0px;
+.PSContactInfoText {
+  margin: 0px;
   width: 220px;
-	height: 223px;
-	font-size: 14px; 
+  height: 223px;
+  font-size: 14px;
 }
-.PSContactInfoEmail{
+.PSContactInfoEmail {
   width: 220px;
-	height: 32px;
+  height: 32px;
 }
 
-.PSBottomContainer{
+.PSBottomContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1197,90 +1221,89 @@ margin: 0px;
   width: 94%;
 }
 
-
-.PSCalendarText, .PSReminderText{
+.PSCalendarText,
+.PSReminderText {
   margin-top: 8px;
   margin-bottom: 24px;
   font-size: 14px;
 }
 
-.PSCalendarLink, .PSReminderLink{
+.PSCalendarLink,
+.PSReminderLink {
   width: 220px;
-	height: 32px;
+  height: 32px;
 }
 
 /* Locations - PS85Q */
-.PS85QContactInfo .SiteDirector{
+.PS85QContactInfo .SiteDirector {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
-.PS85QContactInfo .SiteSupervisor{
+.PS85QContactInfo .SiteSupervisor {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
 
 /* Locations - PSIS78QK1 */
-.PSIS78QK1ContactInfo .SiteDirector{
+.PSIS78QK1ContactInfo .SiteDirector {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
-.PSIS78QK1ContactInfo .SiteSupervisor{
+.PSIS78QK1ContactInfo .SiteSupervisor {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
 
-.PSIS78QK1LocationText{
+.PSIS78QK1LocationText {
   height: auto;
 }
 
-.PSIS78QK1LocationText, .PSIS78Q25LocationText{
+.PSIS78QK1LocationText,
+.PSIS78Q25LocationText {
   width: 190px;
 }
 
-
-
 /* Locations - PSIS78Q25 */
-.PSIS78Q25ContactInfo .SiteDirector{
+.PSIS78Q25ContactInfo .SiteDirector {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
-.PSIS78Q25ContactInfo .SiteSupervisor{
+.PSIS78Q25ContactInfo .SiteSupervisor {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
 
 /* Locations - PS150Q */
 
-
-.PS150QContactInfo .SiteDirector{
+.PS150QContactInfo .SiteDirector {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
-.PS150QContactInfo .SiteSupervisor{
+.PS150QContactInfo .SiteSupervisor {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
 
-.PS150QLocationText{
+.PS150QLocationText {
   width: 178px;
 }
 
 /* Locations - PS166Q */
-.PS166QContactInfo .SiteDirector{
+.PS166QContactInfo .SiteDirector {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
-.PS166QContactInfo .SiteSupervisor{
+.PS166QContactInfo .SiteSupervisor {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
 
 /* Locations - PS33ChelseaPrep */
-.PS33ChelseaPrepContactInfo .SiteDirector{
+.PS33ChelseaPrepContactInfo .SiteDirector {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
-.PS33ChelseaPrepContactInfo .SiteSupervisor{
+.PS33ChelseaPrepContactInfo .SiteSupervisor {
   background-image: url("assets/locations/girlPiano.jpg");
   margin: 18px 20px 16px 0px;
 }
@@ -1893,98 +1916,96 @@ td:last-child {
 }
 
 /* Camps */
-.campsContainer{
+.campsContainer {
   display: flex;
   flex-direction: column;
   width: 66%;
   margin: 48px auto 96px auto;
 }
 
-.campsTop{
+.campsTop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 36px;
 }
 
-.campsMainTitle{
+.campsMainTitle {
   margin: 0px;
-	font-size: 32px;
-	font-weight: bold;
-	color: #f5483a;
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
 }
 
-.campsDropBtn{
-	font-size: 18px;
+.campsDropBtn {
+  font-size: 18px;
   font-weight: bold;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 172px;
-	height: 32px;
-	background-color: #ffffff;
-	border: solid 1px #979797
+  height: 32px;
+  background-color: #ffffff;
+  border: solid 1px #979797;
 }
-.downMenuArrow{
+.downMenuArrow {
   -ms-transform: rotate(90deg) scale(2); /* IE 9 */
   -webkit-transform: rotate(90deg) scale(2); /* Safari 3-8 */
   transform: rotate(90deg) scale(2);
-	opacity: 0.54;
+  opacity: 0.54;
 }
 
-.campsInnerContainer{
+.campsInnerContainer {
   width: 92%;
   margin-left: auto;
 }
 
-.campsInnerContainerTop{
+.campsInnerContainerTop {
   display: flex;
   justify-content: space-between;
   width: 88%;
 }
 
-.campsTopTitles{
+.campsTopTitles {
   margin-top: 0px;
   margin-bottom: 24px;
-	font-size: 24px;
-	font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
   color: #1e3089;
-  
 }
 
-.campsHR{
+.campsHR {
   /* width: 890px; */
   width: 96%;
-	border: solid 1px #bababa;
+  border: solid 1px #bababa;
 }
 
-.campsRegisterBtn{
+.campsRegisterBtn {
   width: 220px;
-	height: 32px;
-	border-radius: 4px;
+  height: 32px;
+  border-radius: 4px;
   background-color: #1e3089;
-	font-size: 16px;
-	font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   margin-bottom: 20px;
-
 }
 
-.bottomTitles{
+.bottomTitles {
   margin-top: 28px;
   margin-bottom: 25px;
 }
 
-.campsTopTitlesInfo{
+.campsTopTitlesInfo {
   margin-top: 0px;
   margin-bottom: 45px;
 }
 
-.campsInnerContainerBottom{
+.campsInnerContainerBottom {
   width: 92%;
   margin-left: auto;
 }
@@ -2016,17 +2037,27 @@ td:last-child {
   align-items: center;
 }
 .navbar .topBar .container .socialLinks {
-  margin: 0px 5px;
+  margin: 0px 8px;
   width: 40px;
   height: 40px;
   border-radius: 8px;
 }
-.navbar .topBar .container .socialLink #networkForGood {
-  background-image: url("assets/nav/donate-now.jpg");
+.navbar .topBar .container .socialLink #newsletter {
+  /* background-image: url("assets/nav/donate-now.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  width: 117px;
-  height: 39.8px;
+  background-position: center; */
+  width: 214px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  border: solid 1px #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .navbar .topBar .container .socialLink #facebook {
   background-image: url("assets/nav/facebook-icon.jpg");
@@ -2294,7 +2325,7 @@ td:last-child {
   .navLink {
     display: none;
   }
-  .hamburgerMenuDiv  {
+  .hamburgerMenuDiv {
     width: 21px;
     height: 14px;
     z-index: 9;
@@ -2306,6 +2337,7 @@ td:last-child {
     background-size: contain;
     background-position: center;
   }
+
   .midHead .helpBtn {
     display: none;
   }
@@ -2337,10 +2369,10 @@ td:last-child {
 /***************************MOBILE END*********************/
 /***************************MOBILE END*********************/
 
-/***********************CONTACT US**********************/
-
+/***************************CONTACT US**********************/
+/***************************CONTACT US**********************/
+/***************************CONTACT US**********************/
 .contactContainer {
-
 }
 .contactTop {
   width: 65.5%;
@@ -2350,13 +2382,13 @@ td:last-child {
   /*justify-content: space-around;*/
   /*align-items: flex-start;*/
 }
-.contactPhoneFaxContainer{
+.contactPhoneFaxContainer {
   margin-left: 140px;
   display: flex;
   flex-direction: column;
-
 }
-.Phone, .Fax {
+.Phone,
+.Fax {
   width: 100%;
   height: 22px;
   font-family: Lato;
@@ -2365,7 +2397,8 @@ td:last-child {
   text-align: left;
   color: #f5483a;
 }
-.contactPhoneNumber, .contactFaxNumber {
+.contactPhoneNumber,
+.contactFaxNumber {
   width: 125px;
   height: 22px;
   font-family: Lato;
@@ -2401,7 +2434,8 @@ td:last-child {
   margin-top: 56px;
   margin-bottom: -48px;
 }
-.contactTop .contactEmailBtn, .contactEmailSignupBtn {
+.contactTop .contactEmailBtn,
+.contactEmailSignupBtn {
   width: 160px;
   height: 32px;
   border-radius: 4px;
@@ -2434,7 +2468,7 @@ td:last-child {
   text-align: center;
   color: #ffffff;
   line-height: 32px;
-/*  margin-bottom: 24px;*/
+  /*  margin-bottom: 24px;*/
   /*padding: 6px 50px;*/
   text-decoration: none;
 }
@@ -2447,7 +2481,110 @@ td:last-child {
   height: 85px;
   font-size: 14px;
 }
-.contactHRVerticalLine{
+.contactHRVerticalLine {
   margin: 0px 40px;
   height: 608px;
 }
+
+/***************************CONTACT US END**********************/
+/***************************CONTACT US END**********************/
+/***************************CONTACT US END**********************/
+
+/****************************FAQ*****************************/
+/****************************FAQ*****************************/
+/****************************FAQ*****************************/
+
+.faqContainer {
+  width: 65.5%;
+  margin: 18px auto 18px auto;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-around;*/
+  /*align-items: flex-start;*/
+}
+.FAQ {
+  margin-top: 48px;
+  width: 282px;
+  height: 39px;
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.faqLogos {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+}
+.faqLogosText{
+  /*margin: auto;*/
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #1e3089;
+}
+.faqLogosText img {
+  padding-top: 8px;
+  padding-right: 6px;
+  height: 30%;
+}
+.line-2 {
+  width: 890px;
+  height: 2px;
+  border: solid 1px #bababa;
+}
+.faqMainTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 28px auto;
+}
+.faqBtn {
+  width: 220px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.faqQuestion {
+  margin-bottom: 6px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.faqAnswer {
+  font-family: Lato;
+  font-size: 14px;
+  text-align: left;
+  color: #000000;
+  margin-top: 0;
+}
+.faqQuestionExtra {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.faqAnswerExtra {
+  margin-top: 0;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  color: #000000;
+}
+
+
+
