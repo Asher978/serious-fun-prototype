@@ -28,6 +28,7 @@ import AfterSchoolLocation from './components/AfterSchoolLocation';
 import PS17Q from './components/locations/PS17Q';
 import PS85Q from './components/locations/PS85Q';
 import PSIS78QK1 from './components/locations/PSIS78QK1';
+import PSIS78Q25 from './components/locations/PSIS78Q25';
 import Classes from './components/Classes';
 import Tuition from './components/Tuition';
 import Transportation from './components/Transportation';
@@ -133,6 +134,7 @@ class App extends Component {
           <Route exact path="/ps17q" component={PS17Q}/>
           <Route exact path="/ps85q" component={PS85Q}/>
           <Route exact path="/psis78qk1" component={PSIS78QK1}/>
+          <Route exact path="/psis78q" component={PSIS78Q25}/>
           <Route exact path="/classes" component={Classes}/>
           <Route exact path="/tuition" component={Tuition}/>
           <Route exact path="/transportation" component={Transportation}/>

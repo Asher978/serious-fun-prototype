@@ -1191,8 +1191,18 @@ margin: 0px;
   height: auto;
 }
 
-.PSIS78QK1LocationText{
+.PSIS78QK1LocationText, .PSIS78Q25LocationText{
   width: 190px;
+}
+
+/* Locations - PSIS78Q25 */
+.PSIS78Q25ContactInfo .SiteDirector{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
+}
+.PSIS78Q25ContactInfo .SiteSupervisor{
+  background-image: url("assets/locations/girlPiano.jpg");
+  margin: 18px 20px 16px 0px;
 }
 
 /* After School - Classes */
