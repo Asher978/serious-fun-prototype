@@ -1420,10 +1420,8 @@ body {
   background-image: url("assets/classes/education.jpg");
 }
 
-
-
 /* AfterSchool - Classes Template */
-.ClassesContainer{
+.ClassesContainer {
   width: 66%;
   display: flex;
   flex-direction: column;
@@ -1431,61 +1429,59 @@ body {
   /* background: rebeccapurple; */
 }
 
-.AllClassesLinks{
+.AllClassesLinks {
   /* background: red; */
   width: 94px;
   height: 24px;
-	font-size: 14px;
-	font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
   color: #6c6c6c;
   display: flex;
   justify-content: space-around;
   text-decoration: none;
 }
 
-.ClassesLeftArrow{
--ms-transform: scale(2); /* IE 9 */
--webkit-transform: scale(2); /* Safari 3-8 */
-transform: scale(2);
-opacity: 0.54;
-
+.ClassesLeftArrow {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2);
+  opacity: 0.54;
 }
 
-.ClassesTopInnerContainer{
+.ClassesTopInnerContainer {
   display: flex;
   margin: 24px 0px 16px 0px;
   background: greenyellowf;
 }
 
-.ClassesMainTitle{
-  margin:0px auto 0px 0px;
-	font-size: 32px;
-	font-weight: bold;
+.ClassesMainTitle {
+  margin: 0px auto 0px 0px;
+  font-size: 32px;
+  font-weight: bold;
   color: #f5483a;
   /* background: blue; */
-
 }
 
-.ClassesRightTopText{
+.ClassesRightTopText {
   width: 272px;
-	height: 34px;
+  height: 34px;
   font-size: 14px;
   margin: 0px 8px 0px 0px;
 }
 
-.ClassesRightTop{
+.ClassesRightTop {
   /* background: aliceblue; */
   display: flex;
   align-items: center;
 }
 
-.ClassesRightTopLocationBtn{
+.ClassesRightTopLocationBtn {
   width: 220px;
-	height: 32px;
-	border-radius: 4px;
+  height: 32px;
+  border-radius: 4px;
   background-color: #1e3089;
 
-	font-size: 16px;
+  font-size: 16px;
   font-weight: bold;
   color: white;
   display: flex;
@@ -1494,7 +1490,7 @@ opacity: 0.54;
   text-decoration: none;
 }
 
-.ClassesMidInnerContainer{
+.ClassesMidInnerContainer {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -1504,217 +1500,205 @@ opacity: 0.54;
   /* background: aqua; */
 }
 
-.ClassesBox{
+.ClassesBox {
   display: flex;
   flex-direction: column;
   width: 301px;
   margin-right: 26px;
 }
 
-.ClassesSubTitle{
+.ClassesSubTitle {
   width: 292.7955px;
-	height: 32px;
+  height: 32px;
   background-color: #f5483a;
   margin: 0px;
   font-family: Arial;
-	font-size: 18px;
-	font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
   color: #ffffff;
   display: flex;
   align-items: center;
   padding-left: 8px;
   /* padding-right: 8px; */
-
 }
-.ClassesMidImages{
+.ClassesMidImages {
   width: 301px;
   height: 148px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.ClassesInnerTextBox{
+.ClassesInnerTextBox {
   padding-left: 8px;
   display: flex;
   justify-content: space-between;
   margin-top: 9px;
 }
 
-.ClassesInnerSubTitle{
+.ClassesInnerSubTitle {
   margin: 0px;
   width: 49px;
-	height: 17px;
-	font-size: 14px;
-	font-weight: bold;
+  height: 17px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.ClassesInnerSubText{
+.ClassesInnerSubText {
   margin: 0px;
   width: 229px;
-	height: 32px;
-	font-family: Arial;
-	font-size: 14px;
+  height: 32px;
+  font-family: Arial;
+  font-size: 14px;
 }
 
-.ClassesInnerBottomPara{
+.ClassesInnerBottomPara {
   padding-left: 8px;
   margin-top: 8px;
   margin-bottom: 0px;
   width: 288px;
-	height: 153px;
-	font-size: 14px;
+  height: 153px;
+  font-size: 14px;
 }
 
 /* Afterschool Classes - Music */
-.MusicGuiter{
-background-image: url("assets/classes/music/music.jpg");
-
+.MusicGuiter {
+  background-image: url("assets/classes/music/music.jpg");
 }
-.MusicMakingMusic{
-background-image: url("assets/classes/music/music.jpg");
-
+.MusicMakingMusic {
+  background-image: url("assets/classes/music/music.jpg");
 }
-.MusicKeyboards{
-background-image: url("assets/classes/music/music.jpg");
-
+.MusicKeyboards {
+  background-image: url("assets/classes/music/music.jpg");
 }
-.MusicViolin{
-background-image: url("assets/classes/music/music.jpg");
-
+.MusicViolin {
+  background-image: url("assets/classes/music/music.jpg");
 }
 
 /* Afterschool Classes - Language */
-.languageContainer{
+.languageContainer {
   margin-bottom: 96px;
 }
-.languageMidInnerContainer{
+.languageMidInnerContainer {
   justify-content: flex-start;
 }
-.languageInnerBottomPara{
+.languageInnerBottomPara {
   height: auto;
 }
 
-.languageSpanish{
-background-image: url("assets/classes/language/music.jpg");
+.languageSpanish {
+  background-image: url("assets/classes/language/music.jpg");
 }
 
-.languageWritopia{
-background-image: url("assets/classes/language/music.jpg");
+.languageWritopia {
+  background-image: url("assets/classes/language/music.jpg");
 }
 
 /* Afterschool Classes - VisualArts */
-.visualArtsContainer{
+.visualArtsContainer {
   margin-bottom: 96px;
 }
-.visualArtsMidInnerContainer{
+.visualArtsMidInnerContainer {
   justify-content: flex-start;
 }
-.visualArtsInnerBottomPara{
+.visualArtsInnerBottomPara {
   height: auto;
 }
 
-.visualArtsCartooning{
-background-image: url("assets/classes/visualArts/music.jpg");
+.visualArtsCartooning {
+  background-image: url("assets/classes/visualArts/music.jpg");
 }
 
-.visualArtsDrawing{
-background-image: url("assets/classes/visualArts/music.jpg");
+.visualArtsDrawing {
+  background-image: url("assets/classes/visualArts/music.jpg");
 }
-.visualArtsSculpture{
-background-image: url("assets/classes/visualArts/music.jpg");
+.visualArtsSculpture {
+  background-image: url("assets/classes/visualArts/music.jpg");
 }
 
 /* Afterschool Classes - PerformingArts */
-.performingArtsContainer{
+.performingArtsContainer {
   margin-bottom: 96px;
 }
-.performingArtsMidInnerContainer{
+.performingArtsMidInnerContainer {
   justify-content: flex-start;
 }
-.performingArtsInnerBottomPara{
+.performingArtsInnerBottomPara {
   height: auto;
 }
 
- .performingArtsBeatGlobal{
-background-image: url("assets/classes/performingArts/music.jpg");
+.performingArtsBeatGlobal {
+  background-image: url("assets/classes/performingArts/music.jpg");
 }
 
-.performingArtsBroadwayJazz{
-background-image: url("assets/classes/performingArts/music.jpg");
+.performingArtsBroadwayJazz {
+  background-image: url("assets/classes/performingArts/music.jpg");
 }
 
-.performingArtsClowning{
-background-image: url("assets/classes/performingArts/music.jpg");
+.performingArtsClowning {
+  background-image: url("assets/classes/performingArts/music.jpg");
 }
 
-.performingArtsPerformanceImprov{
-background-image: url("assets/classes/performingArts/music.jpg");
+.performingArtsPerformanceImprov {
+  background-image: url("assets/classes/performingArts/music.jpg");
 }
 
-.performingArtsTheater{
-background-image: url("assets/classes/performingArts/music.jpg");
+.performingArtsTheater {
+  background-image: url("assets/classes/performingArts/music.jpg");
 }
-.performingArtsTraditionalDance{
-background-image: url("assets/classes/performingArts/music.jpg");
+.performingArtsTraditionalDance {
+  background-image: url("assets/classes/performingArts/music.jpg");
 }
 
-.performingArtsWorldDance{
-background-image: url("assets/classes/performingArts/music.jpg");
+.performingArtsWorldDance {
+  background-image: url("assets/classes/performingArts/music.jpg");
 }
 
 /* Afterschool Classes - SportAndFitness */
-.sportandfitnessContainer{
+.sportandfitnessContainer {
   margin-bottom: 96px;
 }
-.sportandfitnessMidInnerContainer{
+.sportandfitnessMidInnerContainer {
   justify-content: flex-start;
 }
-.sportandfitnessInnerBottomPara{
+.sportandfitnessInnerBottomPara {
   height: auto;
 }
 
-
- .sportandfitnessMartialArts{
-background-image: url("assets/classes/sportandfitness/music.jpg");
+.sportandfitnessMartialArts {
+  background-image: url("assets/classes/sportandfitness/music.jpg");
 }
 
-.sportandfitnessYoga{
-background-image: url("assets/classes/sportandfitness/music.jpg");
+.sportandfitnessYoga {
+  background-image: url("assets/classes/sportandfitness/music.jpg");
 }
 
-.sportandfitnessSoccer{
-background-image: url("assets/classes/sportandfitness/music.jpg");
-
+.sportandfitnessSoccer {
+  background-image: url("assets/classes/sportandfitness/music.jpg");
 }
 
 /* Afterschool Classes - Other */
 
-.otherContainer{
+.otherContainer {
   margin-bottom: 96px;
 }
-.otherMidInnerContainer{
+.otherMidInnerContainer {
   justify-content: flex-start;
 }
-.otherInnerBottomPara{
+.otherInnerBottomPara {
   height: auto;
 }
 
-
- .otherAllergicSalad{
-background-image: url("assets/classes/other/music.jpg");
+.otherAllergicSalad {
+  background-image: url("assets/classes/other/music.jpg");
 }
 
-.otherChess{
-background-image: url("assets/classes/other/music.jpg");
+.otherChess {
+  background-image: url("assets/classes/other/music.jpg");
 }
 
-.otherMakerSpace{
-background-image: url("assets/classes/other/music.jpg");
-
+.otherMakerSpace {
+  background-image: url("assets/classes/other/music.jpg");
 }
-
-
-
 
 /* AfterSchool - Tuition Page */
 
