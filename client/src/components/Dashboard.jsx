@@ -9,9 +9,7 @@ import Upload from '../modules/Upload';
 
 
 class Dashboard extends Component {
-  constructor () {
-    super ();
-    this.state = {
+ state = {
       page: '',
       schoolName: '',
       st_Addr: '',
@@ -29,7 +27,6 @@ class Dashboard extends Component {
       coordinates: [],
       coordsLoaded: false
     }
-  }
 
   handleInputChange = (e) => {
     const name = e.target.name;
@@ -166,8 +163,8 @@ class Dashboard extends Component {
                     schools={this.state.schools}
                     handleRadioChange={this.handleRadioChange}
                  /> )
-      case 'home': 
-          return ( <EditForm />)
+      case 'Page': 
+          return ( <EditForm pages={this.props.pages} />)
       default:
         break
     }
@@ -191,7 +188,7 @@ class Dashboard extends Component {
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a type='button' onClick={() => this.setState({ page: 'school' })}>Add a School</a></li>
                     <li><a type='button' onClick={() => this.setState({ page: 'class' })}>Add a Class</a></li>
-                    <li><a type='button' onClick={() => this.setState({ page: 'home' })}>Edit Home Page</a></li>
+                    <li><a type='button' onClick={() => this.setState({ page: 'Page' })}>Edit a Page</a></li>
                   </ul>
                 </div>
               </div>
@@ -216,8 +213,8 @@ class Dashboard extends Component {
                   <li className="list-group-item main-color-bg">
                   <span className='glyphicon glyphicon-arrow-down' aria-hidden='true'></span>&nbsp;Link To
                   </li>
-                  <a href="/schools" className="list-group-item"><span className='glyphicon glyphicon-education' aria-hidden='true'></span>&nbsp; Schools <span className='badge'> 7 </span></a>
-                  <a href="#" className="list-group-item"><span className='glyphicon glyphicon-folder-open' aria-hidden='true'></span>&nbsp; Classes <span className='badge'> 10 </span></a>
+                  <a href="" className="list-group-item"><span className='glyphicon glyphicon-education' aria-hidden='true'></span>&nbsp; Schools <span className='badge'> 7 </span></a>
+                  <a href="" className="list-group-item"><span className='glyphicon glyphicon-folder-open' aria-hidden='true'></span>&nbsp; Classes <span className='badge'> 10 </span></a>
                 </div>
               </div>
   
