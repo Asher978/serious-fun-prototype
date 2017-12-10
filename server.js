@@ -9,6 +9,7 @@ School = require('./api/models/Schools'),
 Class = require('./api/models/Classes'),
 HomePage = require('./api/models/HomePage'),
 Page = require('./api/models/Page'),
+Job = require('./api/models/Job'),
 PagesSeed = require('./db/pagesSeed.json');
 require('dotenv').config();
 
@@ -56,9 +57,6 @@ app.use('/schools', schoolRoutes);
 
 const classesRoutes =  require('./api/routes/classRoutes');
 app.use('/classes', classesRoutes);
-
-const homePageRoutes = require('./api/routes/homePageRoutes');
-app.use('/home_page', homePageRoutes);
 
 const pageRoutes = require('./api/routes/pageRoutes');
 app.use('/page', pageRoutes);
