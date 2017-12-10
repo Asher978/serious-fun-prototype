@@ -11,7 +11,7 @@ const JobSchema = new Schema({
         type: String,
         require: true
     },
-    job_link: {
+    jobLink: {
         type: String,
         require: true
     }

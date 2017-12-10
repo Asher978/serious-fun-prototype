@@ -7,7 +7,6 @@ config = require('./db/config'),
 User = require('./api/models/User'),
 School = require('./api/models/Schools'),
 Class = require('./api/models/Classes'),
-HomePage = require('./api/models/HomePage'),
 Page = require('./api/models/Page'),
 Job = require('./api/models/Job'),
 PagesSeed = require('./db/pagesSeed.json');
@@ -60,6 +59,9 @@ app.use('/classes', classesRoutes);
 
 const pageRoutes = require('./api/routes/pageRoutes');
 app.use('/page', pageRoutes);
+
+const jobRoutes = require('./api/routes/jobRoutes');
+app.use('/careers', jobRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
