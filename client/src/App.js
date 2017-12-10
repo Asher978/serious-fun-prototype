@@ -34,6 +34,7 @@ import PS166Q from './components/locations/PS166Q';
 import PS33ChelseaPrep from './components/locations/PS33ChelseaPrep';
 import Classes from './components/Classes';
 import Music from './components/AfterSchool/classes/Music';
+import Language from './components/AfterSchool/classes/Language';
 import Tuition from './components/Tuition';
 import Transportation from './components/Transportation';
 import Policies from './components/Policies';
@@ -154,6 +155,7 @@ class App extends Component {
           <Route exact path="/ps33chelseaprep" component={PS33ChelseaPrep}/>
           <Route exact path="/classes" component={Classes}/>
           <Route exact path="/music" component={Music}/>
+          <Route exact path="/language" component={Language}/>
           <Route exact path="/tuition" component={Tuition}/>
           <Route exact path="/transportation" component={Transportation}/>
           <Route exact path="/policies" component={Policies}/>
