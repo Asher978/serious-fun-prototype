@@ -12,7 +12,7 @@ import RegisterForm from './components/RegisterForm';
 import LoginForm from './components/LoginForm';
 import Nav from './components/Nav';
 import Calendar from './components/Calendar';
-// import Dashboard from './components/Dashboard';
+import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 
 // ABout
@@ -40,7 +40,7 @@ import Policies from './components/Policies';
 // Camps
 import Camps from './components/Camps';
 
-// import Schools from './components/Schools';
+import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/EditSchool';
 import Footer from './components/Footer';
@@ -148,8 +148,9 @@ class App extends Component {
           <Route exact path="/Camps" component={Camps}/>
           <Route exact path="/calendar" component={Calendar}/>
 
-
-
+          <Route exact path='/schools' render={() => <Schools />} />
+          <Route exact path="/dashboard" render={() =>
+            this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
 
           
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
