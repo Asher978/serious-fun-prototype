@@ -36,7 +36,7 @@ class AboutUs extends Component {
             </div>
 
             <div className="aboutUsInfoDifference">
-              <div className="infoOurTitle">{content.mainH2}</div>
+              <div className="infoOurTitle">{content.mainH3}</div>
               <div className="infoOurText">{content.subCont3}</div>
             </div>
 
