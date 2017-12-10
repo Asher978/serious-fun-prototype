@@ -8,6 +8,7 @@ class EditForm extends Component{
         dataLoaded:false
     }
     componentDidMount() {
+        console.log(this.props)
         this.fetchData(this.state.selectedPage.pageTitle);
     }
 
