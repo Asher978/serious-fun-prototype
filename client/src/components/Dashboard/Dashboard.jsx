@@ -5,6 +5,7 @@ import { geocodeByAddress, getLatLng } from 'react-places-autocomplete';
 import AddSchool from './AddSchool';
 import AddClass from './AddClass';
 import EditForm from './EditForm';
+import CareersUI from './CareersUI';
 import Upload from '../../modules/Upload';
 
 
@@ -175,6 +176,8 @@ class Dashboard extends Component {
                  /> )
       case 'Page': 
           return ( <EditForm pages={this.state.pages} />)
+      case 'Careers': 
+          return ( <CareersUI />)
       default:
         break
     }
@@ -199,6 +202,7 @@ class Dashboard extends Component {
                     <li><a type='button' onClick={() => this.setState({ page: 'school' })}>Add a School</a></li>
                     <li><a type='button' onClick={() => this.setState({ page: 'class' })}>Add a Class</a></li>
                     <li><a type='button' onClick={() => this.setState({ page: 'Page' })}>Edit a Page</a></li>
+                    <li><a type='button' onClick={() => this.setState({ page: 'Careers' })}>Manage Careers</a></li>
                   </ul>
                 </div>
               </div>
