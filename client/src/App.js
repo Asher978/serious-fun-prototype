@@ -15,14 +15,30 @@ import Calendar from './components/Calendar';
 import Dashboard from './components/Dashboard';
 import Home from './components/Home';
 
+// ABout
 import AboutUs from './components/AboutUs';
 import OurTeam from './components/OurTeam';
 import Careers from './components/Careers';
-// import Supporters from './components/Supporters';
+import Supporters from './components/Supporters';
 import PeopleSay from './components/PeopleSay';
 
+// AfterSchool
+import Overview from './components/Overview';
 import AfterSchoolLocation from './components/AfterSchoolLocation';
+import PS17Q from './components/locations/PS17Q';
+import PS85Q from './components/locations/PS85Q';
+import PSIS78QK1 from './components/locations/PSIS78QK1';
+import PSIS78Q25 from './components/locations/PSIS78Q25';
+import PS150Q from './components/locations/PS150Q';
+import PS166Q from './components/locations/PS166Q';
+import PS33ChelseaPrep from './components/locations/PS33ChelseaPrep';
 import Classes from './components/Classes';
+import Tuition from './components/Tuition';
+import Transportation from './components/Transportation';
+import Policies from './components/Policies';
+
+// Camps
+import Camps from './components/Camps';
 
 import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
@@ -123,23 +139,36 @@ class App extends Component {
           <Route exact path="/ourteam" component={OurTeam}/>
           <Route exact path="/careers" component={Careers}/>
 
+          <Route exact path="/supporters" component={Supporters}/>
           <Route exact path="/peoplesay" component={PeopleSay}/>
 
+          <Route exact path="/overview" component={Overview}/>
           <Route exact path="/locations" component={AfterSchoolLocation}/>
+          <Route exact path="/ps17q" component={PS17Q}/>
+          <Route exact path="/ps85q" component={PS85Q}/>
+          <Route exact path="/psis78qk1" component={PSIS78QK1}/>
+          <Route exact path="/psis78q" component={PSIS78Q25}/>
+          <Route exact path="/ps150q" component={PS150Q}/>
+          <Route exact path="/ps166q" component={PS166Q}/>
+          <Route exact path="/ps33chelseaprep" component={PS33ChelseaPrep}/>
           <Route exact path="/classes" component={Classes}/>
+          <Route exact path="/tuition" component={Tuition}/>
+          <Route exact path="/transportation" component={Transportation}/>
+          <Route exact path="/policies" component={Policies}/>
+          <Route exact path="/Camps" component={Camps}/>
           <Route exact path="/calendar" component={Calendar}/>
           <Route exact path="/contact" component={Contact}/>
 
 
-
-
+          <Route exact path='/schools' render={() => <Schools />} />
+          <Route exact path="/dashboard" render={() =>
+            this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
 
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
-          <Route exact path='/schools' render={() => <Schools />} />
+          
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
 
-          <Route exact path="/dashboard" render={() =>
-              this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
+
 
           <Route exact path='/login'
           render={() =>
@@ -179,3 +208,11 @@ class App extends Component {
 }
 
 export default App;
+
+
+// Line 127  <Route exact path='/schools' render={() => <Schools />} />
+
+// Line 131           <Route exact path="/dashboard" render={() =>
+// this.state.auth ? <Dashboard auth={this.state.auth} /> : <Redirect to="/login" />}/>
+
+// Causing erorr ^^

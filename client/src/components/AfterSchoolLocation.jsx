@@ -6,7 +6,40 @@ const AfterSchoolLocations = props => {
     <div className="afterSchoolContainer">
       <div className="afterSchoolTop">
       <div className="afterSchoolTitle">Serious Fun Locations</div>
-      <Link to="/" className="afterSchoolBtn">Select Location</Link>
+
+
+
+      <div className="linkBox">
+      <div className="afterSchoolBtn navLinks">Select Location <span className="downMenuArrow">&#8250;</span></div>
+
+      <div className="dropdownMenu">
+        <div className="locationDrop">
+          <Link to="/ps17q" id="PS17QDrop" className="dropLinks">
+            PS 17 Q
+          </Link>
+          <Link to="/ps85q" id="PS85QDrop" className="dropLinks">
+            PS 85 Q
+          </Link>
+          <Link to="/psis78qk1" id="PSIS78QK1Drop" className="dropLinks">
+          PS/IS 78 Q (K-1)
+          </Link>
+          <Link to="/psis78q" id="PSIS78Q25Drop" className="dropLinks">
+          PS/IS 78 Q (2-5)
+          </Link>
+          <Link to="/ps150q" id="PS150QDrop" className="dropLinks">
+          PS 150 Q
+          </Link>
+          <Link to="ps166q" id="PS166QDrop" className="dropLinks">
+          PS 166 Q
+          </Link>
+          <Link to="/ps33chelseaprep" id="PS33ChelseaPrepDrop" className="dropLinks">
+          PS 33 Chelsea Prep
+          </Link>
+        </div>
+      </div>
+    </div>
+
+
 
       </div>
 
