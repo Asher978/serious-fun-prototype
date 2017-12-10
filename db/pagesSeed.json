@@ -1,0 +1,112 @@
+{
+    "Home" :{
+        "pageTitle" : "Home",
+        "pageContent" : {
+            "mainH" : "A Creative Space for Curious Kids",
+            "mainB" : "Serious Fun is a licensed in-school after care program committed to providing a safe environment and engaging classes for children to learn, play, and have fun.",
+            "subH" : "Our Classes",
+            "subBod" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.",
+            "subH2" : "Our Team",
+            "subBod2" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.",
+            "subH3" : "Our Difference",
+            "subBod3" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.",
+            "lastH" : "Learn more about Serious Fun in-school after care programs!"
+        }
+    },
+    "AboutUs": {
+        "pageTitle" : "AboutUs",
+        "pageContent" : {
+            "mainH" : "Our Mission",
+            "subCont":"Serious Fun After School, Inc. is a non-profit organization dedicated to providing arts enrichment during after school time at affordable rates, so that our children have the opportunity to participate in the best that New York has to offer. Our priority is providing our students with the highest quality pageContent while overseeing the safety and security of our students.",
+            "mainH2" : "Our Staff",
+            "subCont2": "In order to provide the highest quality pageContent, Serious Fun partners with professionals of their trade, from art to music and more, who are dedicated to providing age-appropriate experiences for our students. Class sizes are limited for more individualized attention.",
+            "mainH3": "Our Difference",
+            "subCont3": "Unlike traditional drop-off classes, Serious Fun is registered with New York State as a licensed School Age Child Care (SACC) center. Registration as a licensed SACC center requires that all of our staff, both Supervisory Staff and Teaching Artists, undergo a thorough background check through the New York State Central Register and participate in ongoing child care training, including child abuse recognition and reporting. Registration certifies that Serious Fun has met all the conditions set by New York State and the City of New York to qualify as a child care center.",
+            "lastCont" : "As a registered child care provider, the cost of the Serious Fun program and transportation can be deducted from federal income taxes for families that qualify. ",
+            "lastCont2" : " for information on the Child Care Tax Deduction. ",
+            "lastCont3": " for information on using employer Dependent Care Savings Accounts to pay for your child care expenses. If you have any questions or would like to learn more, please contact us!"
+        }
+    },
+    "Careers": {
+        "pageTitle" : "Careers",
+        "pageContent" : {
+            "mainH" : "Who We’re Looking For…",
+            "paragraph" : "Serious Fun After School, Inc. is a non-profit organization dedicated to providing arts enrichment during out of school time at affordable rates so that our children have the opportunity to participate in the best that New York has to offer.",
+            "paragraph2" : "Our priority is providing our students with the highest quality pageContent while overseeing the safety and security of our students. To provide the highest quality pageContent, Serious Fun partners with professional artists who are dedicated to providing age-appropriate experiences for our students and class sizes are limited for more individualized attention. Daily enrichment includes Dance, Drama, Music, STEM, Science, and Art, as well as academic support, social engagement and active play, during out of school time.",
+            "paragraph3" : "Our passion is to provide the children in our care a chance to explore their creativity, move and stretch their bodies, and engage with their peers in a safe, caring and fun environment.",
+            "Heading2": "Current Job Openings"
+        }
+    },
+    "OurTeam" :{
+        "pageTitle" : "OurTeam",
+        "pageContent" : {
+            "mainH" : "Our Team",
+            "founderName" : "Sylvia Ramsaywak",
+            "founderTitle": "Founder",
+            "founderBio" : "Sylvia Ramsaywak is the founder alvia hammock irony selvage lyft vexillologist. Cold-pressed copper mug whatever, yuccie pok pok franzen pop-up hell of lumbersexual slow-carb brooklyn. Waistcoat vaporware shaman, meditation live-edge biodiesel whatever wayfarers cray PBR&B meh messenger bag microdosing forage. Health goth la croix chia shabby chic venmo bushwick. 8-bit paleo thundercats helvetica",
+            "mainH2" : "Serious Fun Executive Staff",
+            "mainH3": "Serious Fun Board Members",
+            "lastpageContent": "To view Serious Fun Site Supervisors and Directors, vist your location page."
+        }
+    },
+    "Supporters" : {
+        "pageTitle" : "Supporters",
+        "pageContent" : {
+            "mainH" : "Our Supporters",
+            "subCont" : "Serious Fun is grateful for our private, public, foundation and government supporters.",
+            "mainH2" : "Individual Donors"
+        }
+    },
+    "PeopleSay" : {
+        "pageTitle" : "PeopleSay",
+        "pageContent" : {
+            "mainH" : "What Parents Say",
+            "subH" : "What Parents Say About Serious Fun",
+            "subH2" : "What Parents Say About Our Classes",
+            "subH3" : "What Parents Say about Our Homewok Help"
+        }
+    },
+    "Overview" : {
+        "pageTitle" : "Overview",
+        "pageContent" : {
+            "mainH" : "Program Overview",
+            "secondaryH" : "After School Arts Program",
+            "subH" : "Current Program Dates:",
+            "subDate" : "Sept 11, 2017 - June 1, 2018",
+            "subpageContent": "Open on all public school days, except for District holidays, ½ days and clerical days.",
+            "subCalendar": "View our 2017-2018 Program Calendar",
+            "subH2" : "Transportation",
+            "subpageContent2": "Your child can participate in Serious Fun’s after school program even if it is not offered in their school. We partner with a bus company for one way pickup from local Astoria schools that do not have Serious Fun on-site.",
+            "subH3" : "Register Your Child",
+            "subpageContent3": "To see classes by location and start your child’s enrollment, click below for more information.",
+            "lastParagraph" : "At this time, we do not provide full day camps for the mid-winter recess in December/January, the Winter Recess in February, or the Spring Recess for Passover, Good Friday and Easter."
+        }
+    },
+    "Locations" : {
+        "pageTitle" : "Locations",
+        "pageContent" : {
+            "mainH" : "Serious Fun Locations",
+            "location1" : "Queens",
+            "location2" : "Manhattan",
+            "mapMessage" : "Serious Fun has programs at these sites, but will accept children from other locations provided they coordinate their transportation."
+        }
+    },
+    "Transportation" : {
+        "pageTitle" : "Transportation",
+        "pageContent" : {
+            "mainH" : "Transportation",
+            "mainPara" : "All bussing costs and agreements (including cost of transportation) are made directly between the transportation company and the parent. Any child being transported by bus will need a School Authorization Letter.",
+            "mainPara2" : "Serious Fun’s Transportation Coordinator rides on the bus with the children every day to make sure all children are accounted for and have a safe and happy ride to their Serious Fun site!",
+            "subH" : "Astoria Express Transit",
+            "subcont" : "Please contact Astoria Express directly for information regarding service and pricing on bus transportation.",
+            "contactH" : "Contact",
+            "contactNumber" : "(718) 626-3369",
+            "subH2" : "School Authorization Letter",
+            "subcont2" : "A School Authorization Letter is available from Serious Fun upon receipt of your registration. Please note that the transportation company cannot pick up your child without the School Authorization Letter.",
+            "disclaimer": "It is the responsibility of the parent to arrange transportation for his/her child at the conclusion of the Serious Fun program."
+    
+        }
+    }
+    
+    
+}

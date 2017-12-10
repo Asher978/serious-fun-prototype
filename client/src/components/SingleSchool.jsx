@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 class SingleSChool  extends Component {
-    constructor(){
-        super();
-    }
+    
     handleButton = () =>{
         console.log('this button works');
     }
