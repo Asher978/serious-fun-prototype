@@ -9,6 +9,7 @@ School = require('./api/models/Schools'),
 Class = require('./api/models/Classes'),
 Page = require('./api/models/Page'),
 Job = require('./api/models/Job'),
+Review = require('./api/models/Review'),
 PagesSeed = require('./db/pagesSeed.json');
 require('dotenv').config();
 
@@ -62,6 +63,9 @@ app.use('/page', pageRoutes);
 
 const jobRoutes = require('./api/routes/jobRoutes');
 app.use('/careers', jobRoutes);
+
+const reviewRoutes = require('./api/routes/reviewRoutes');
+app.use('/reviews', reviewRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
