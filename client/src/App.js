@@ -7,7 +7,9 @@ import Auth from "./modules/Auth";
 import RegisterForm from "./components/Dashboard/RegisterForm";
 import LoginForm from "./components/Dashboard/LoginForm";
 import Nav from "./components/Nav";
-import Calendar from "./components/Calendar";
+
+
+
 import Dashboard from "./components/Dashboard/Dashboard";
 import Home from "./components/Home";
 
@@ -44,6 +46,9 @@ import Policies from "./components/AfterSchool/Policies";
 
 // Camps
 import Camps from "./components/Camps/Camps";
+
+// Calendar
+import AfterSchoolCalendar from "./components/Calendar/AfterSchoolCalendar";
 
 import Schools from "./components/Schools";
 import DetailedSchool from "./components/DetailedSchool";
@@ -173,7 +178,7 @@ class App extends Component {
           <Route exact path="/transportation" component={Transportation} />
           <Route exact path="/policies" component={Policies} />
           <Route exact path="/Camps" component={Camps} />
-          <Route exact path="/calendar" component={Calendar} />
+          <Route exact path="/afterschoolcalendar" component={AfterSchoolCalendar} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/faq" component={FAQ} />
 

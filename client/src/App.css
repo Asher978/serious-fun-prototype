@@ -2116,6 +2116,94 @@ td:last-child {
   width: 92%;
   margin-left: auto;
 }
+
+
+.CalendarContainer{
+  display: flex;
+  width: 65%;
+  margin: 48px auto 308px auto;
+  flex-direction: column;
+  /* background: rebeccapurple; */
+}
+
+.CalendarMainTitle{
+  margin:  0px;	
+  width: 320px;
+	height: 34px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #f5483a;
+  /* background: purple; */
+}
+
+.CalendarTopInnerContainer{
+  margin: 24px 0px 16px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: green; */
+}
+
+.CalendarSubDate{
+margin: 0px;
+	font-size: 18px;
+}
+
+
+.CalendarLocationDropMenu{
+  width: 185px;
+	height: 32px;
+	background-color: #ffffff;
+	border: solid 1px #979797;
+	font-size: 18px;
+  font-weight: bold;
+  border-radius: 0px;
+  cursor: pointer;
+  /* -webkit-appearance: none;
+  -moz-appearance:none;
+  -o-appearance:none;
+  -ms-appearance:none; */
+
+}
+
+.fc-head .fc-widget-header tr{
+  display: flex;
+  flex-direction: row;
+}
+
+.fc-today-button{
+  display: none;
+}
+
+.fc-header-toolbar{
+  margin: 0px !important;
+  width: 941px;
+  height: 80px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fc-center{
+  order: 1;
+  margin: 0px 54px 0px 54px;
+}
+.fc-right{
+  order: 2;
+}
+
+
+.fc-center h2{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.fc-view-container{
+  width: 941px;
+}
+/* .styled-select {
+  background: url(new_arrow.png) no-repeat right #fff;
+} */
 /* Footer */
 
 .navbar .topBar {

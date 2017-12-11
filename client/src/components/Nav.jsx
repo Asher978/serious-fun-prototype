@@ -105,7 +105,7 @@ const Nav = props => {
             </div>
             <div className="dropdownMenu calendarDropMenu">
               <div className="calendarDrop">
-                <Link to="" id="afterSchoolDrop" className="dropLinks">
+                <Link to="/afterschoolcalendar" id="afterSchoolDrop" className="dropLinks">
                   After School
                 </Link>
                 <Link to="" id="campsDrop" className="dropLinks">
