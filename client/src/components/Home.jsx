@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import axios from 'axios';
 
@@ -15,6 +17,7 @@ class Home extends Component {
   componentDidMount(){
     let { pageTitle } = this.state;
     axios.get(`/page/${pageTitle}`).then(res =>{
+      console.log(res.data);
         this.setState({
           data: res.data,
           content: res.data.pageContent,
@@ -27,7 +30,25 @@ class Home extends Component {
     let { content } = this.state;
     return (
       <div className="homeContainer">
-      <div className="slide"></div>
+      <div className="slide">
+        <Carousel
+          showStatus={false}
+          showThumbs={false}
+          showArrows
+          autoPlay
+          infiniteLoop
+          dynamicHeight >
+          <div>
+            <img  />
+          </div>
+          <div>
+            <img  />
+          </div>
+          <div>
+            <img  />
+          </div>
+        </Carousel>
+      </div>
 
       <div className="ourInfo">
       <div className="textTitle">{content.mainH}</div>

@@ -11,6 +11,7 @@
     "react-hamburger-menu": "^1.0.0",
     "react-leaflet": "^1.7.8",
     "react-places-autocomplete": "^5.4.3",
+    "react-responsive-carousel": "^3.1.30",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "sha1": "^1.1.1",
