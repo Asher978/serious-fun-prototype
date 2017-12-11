@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const FAQ = props => {
   return(
@@ -8,28 +8,28 @@ const FAQ = props => {
       </div>
       <div className="faqLogos">
         <span className="faqLogosText">
-          <img src={require("../assets/faq/image-mbl-faq-register-icon@2x.png")} />
+          <img alt='' src={require("../assets/faq/image-mbl-faq-register-icon@2x.png")} />
           A. Registration </span>
         <span className="faqLogosText">
-          <img src={require("../assets/faq/image-mbl-faq-tuition-icon@2x.png")} />
+          <img alt='' src={require("../assets/faq/image-mbl-faq-tuition-icon@2x.png")} />
           B. Tuition & Fees </span>
         <span className="faqLogosText">
-          <img src={require("../assets/faq/image-mbl-faq-program-icon@2x.png")} />
+          <img alt='' src={require("../assets/faq/image-mbl-faq-program-icon@2x.png")} />
           C. Program </span>
         <span className="faqLogosText">
-          <img src={require("../assets/faq/image-mbl-faq-transportation-icon@2x.png")} />
+          <img alt='' src={require("../assets/faq/image-mbl-faq-transportation-icon@2x.png")} />
           D. Transportation </span>
       </div>
       <hr className="line-2"/>
       <div className="faqMainTextContainer">
         <span className="faqLogosText">
-          <img src={require("../assets/faq/image-mbl-faq-register-icon@2x.png")} />
+          <img alt='' src={require("../assets/faq/image-mbl-faq-register-icon@2x.png")} />
           A. Registration </span>
         <h3 className="faqQuestion">How do I register my child?</h3>
         <p className="faqAnswer">State law requires that we have a full Registration Packet on file before any child can attend our program. After enrolling your child(ren) in enrichment class(es), you must book an in-person registration appointment with your child’s Site Director. No later than two (2) days prior to your in-person appointment, you will receive an email with your completed forms to review, print, sign, and bring to your in-person appointment. Your child will not be admitted to the program until we have these registration materials on file, even if your tuition is paid in full.</p>
         <h3 className="faqQuestion">When is registration?</h3>
         <p className="faqAnswer">Registration appointments will be held on September 5, 6, and 7th for a September 11 start date.  Ongoing registration appointments for new students will be held from 3:30-5pm in the 2nd and 4th week of each month, to start on the 1st or 15th of the month (or the next day Serious Run is in session).  Registration must be made in person, and BY APPOINTMENT ONLY throughout the school year.  See our Registration Page for more information on enrollment dates after September 11.</p>
-        <button class="faqBtn">HOW TO REGISTER</button>
+        <button className="faqBtn">HOW TO REGISTER</button>
         <h3 className="faqQuestion">What do I need to bring to in-person registration?</h3>
         <p className="faqAnswer">To prepare for your registration appointment, please go to our Online Registration Page to create a new account and fill out your registration information. Your child will not be admitted to the program until we have these Registration materials on file, even if your tuition is paid in full.</p>
         <h4 className="faqQuestionExtra">Special Healthcare Needs</h4>
@@ -58,7 +58,7 @@ const FAQ = props => {
 
       <div className="faqMainTextContainer">
         <span className="faqLogosText">
-          <img src={require("../assets/faq/image-mbl-faq-tuition-icon@2x.png")} />
+          <img alt='' src={require("../assets/faq/image-mbl-faq-tuition-icon@2x.png")} />
           B. Tuition & Fees </span>
         <h3 className="faqQuestion">Is the $50 registration fee per child?</h3>
         <p className="faqAnswer">No. The $50 Registration Fee is per family.</p>
@@ -68,7 +68,7 @@ const FAQ = props => {
         <p className="faqAnswer">Yes. To set up a recurring charge to your credit card or Echeck (ACH), please store your payment information under your secure online profile at our Online Registration Page.</p>
         <h3 className="faqQuestion">Can I cancel after submitting payment ?</h3>
         <p className="faqAnswer">Insert response here.</p>
-        <button class="faqBtn">POLICIES</button>
+        <button className="faqBtn">POLICIES</button>
       </div>
 
 
@@ -77,7 +77,7 @@ const FAQ = props => {
 
       <div className="faqMainTextContainer">
         <span className="faqLogosText">
-          <img src={require("../assets/faq/image-mbl-faq-program-icon@2x.png")} />
+          <img alt='' src={require("../assets/faq/image-mbl-faq-program-icon@2x.png")} />
           C. Program </span>
         <h3 className="faqQuestion">What do the children do each day?</h3>
         <p className="faqAnswer">Each day Serious Fun provides children with a snack, child-choice time, a 40 minute enrichment class, homework help, and a minimum of 30 minutes active play.</p>
@@ -95,7 +95,7 @@ const FAQ = props => {
 
       <div className="faqMainTextContainer">
         <span className="faqLogosText">
-          <img src={require("../assets/faq/image-mbl-faq-transportation-icon@2x.png")} />
+          <img alt='' src={require("../assets/faq/image-mbl-faq-transportation-icon@2x.png")} />
           D. Transportation </span>
         <h3 className="faqQuestion">How do I arrange transportation for my child from his school to a Serious Fun site?</h3>
         <p className="faqAnswer">If your child is in need of bus transportation to Serious Fun at PS 166, PS 17 or PS 85, please contact Astoria Express (visit www.astoriaexpress.com or call 718-626-3369) for more information regarding service and pricing.  While Serious Fun recommends Astoria Express, we are happy to accept children from any other transportation company as well. Any child being transported by bus will need a School Authorization Letter which is available from Serious Fun upon receipt of your registration. Please note that the transportation company cannot pick up your child without the School Authorization Letter.</p>

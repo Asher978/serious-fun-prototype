@@ -30,7 +30,7 @@ body {
 /* Logo, Search and Login/Registration */
 .midHead {
   width: 100%;
-  height: 140px;
+  height: 180px;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
@@ -2954,4 +2954,97 @@ margin: 0px;
   margin-bottom: 21px;
 }
 
+/****************************REGISTER-HOW END**************************/
+/****************************REGISTER-HOW END**************************/
+/****************************REGISTER-HOW END**************************/
 
+
+/****************************REGISTER-ONGOING**************************/
+/****************************REGISTER-ONGOING**************************/
+/****************************REGISTER-ONGOING**************************/
+.registerOngoingContainer {
+  width: 65.5%;
+  margin: 18px auto 18px auto;
+  display: flex;
+  /*flex-direction: column;*/
+  text-align: left;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  /*align-content: flex-start;*/
+}
+
+.registerTable {
+  margin-top: 30px;
+  border-collapse: collapse;
+  /*width: 620px;*/
+}
+.registerTable, td, th {
+  border: 1px solid #999;
+  /*padding: 0.5rem;*/
+  text-align: center;
+}
+.registerTable tr {
+  vertical-align: ;
+}
+.registerTable th {
+  /*width: 100%;*/
+  display: table-cell;
+  color: white;
+  background-color: #f5483a;
+}
+.registerTable thead{
+  /*width: 100%;*/
+}
+.registerTable td:last-child {
+  font-weight: normal;
+  text-align: center;
+}
+.registerTable td, .registerTable th {
+  width: 30%;
+}
+.ongoing-Registration {
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+  flex-basis: 100%;
+}
+.registerOngoingSubtitleSmall {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.registerOngoingText {
+  margin-top: 0;
+  font-family: Lato;
+  font-size: 16px;
+  text-align: left;
+  color: #000000;
+  flex-basis: 35%;
+}
+.registerOngoingBtn {
+  width: 220px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  align-self: left;
+  margin-top: 24px;
+  margin-bottom: 46px;
+}
+.registerLeftColumn {
+  flex-basis: 35%;
+}
+.registerRightColumn {
+  flex-basis: 50%;
+  margin-left: 35px;
+}
