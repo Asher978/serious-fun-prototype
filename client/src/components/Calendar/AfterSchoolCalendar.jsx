@@ -47,35 +47,3 @@ export default AfterSchoolCalendar;
 // height="415"
 // />
 
-// <div className="eventInfoContainer">
-//   <div className="eventOffBox">
-//     <div className="eventOffTitle">Closures:</div>
-//     <div className="eventOffText">
-//       <ul>
-//         <li>
-//           <p>Mon., Dec 25 - Mon., Jan 1</p>
-//           <p>Winter Recess</p>
-//           <p>ALL Locations</p>
-//         </li>
-//       </ul>
-//     </div>
-//   </div>
-
-//   <div className="eventBox">
-//     <div className="eventTitle">Events:</div>
-//     <div className="eventText">
-//       <ul>
-//         <li>
-//           <p>Fri. Dec 1, 4:00 PM</p>
-//           <p>PS 85 Violin and Guitar Show</p>
-//           <p>PS 85 Cafeteria</p>
-//         </li>
-//         <li>
-//           <p>Tues. Dec 12, 5:00 PM</p>
-//           <p>PS 166 School Gym</p>
-//           <p>PS 166 Piano Concert</p>
-//         </li>
-//       </ul>
-//     </div>
-//   </div>
-// </div>;

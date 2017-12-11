@@ -2118,6 +2118,8 @@ td:last-child {
 }
 
 
+
+/* Canlender Template */
 .CalendarContainer{
   display: flex;
   width: 65%;
@@ -2201,9 +2203,57 @@ margin: 0px;
 .fc-view-container{
   width: 941px;
 }
-/* .styled-select {
-  background: url(new_arrow.png) no-repeat right #fff;
-} */
+
+/* Calendar Special Events  */
+.eventInfoContainer{
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  /* background: rebeccapurple; */
+  min-height: 1104px;
+  margin: auto;
+}
+
+.eventInfoMainTitle{
+  margin: 48px 0px 24px 0px;
+  width: 245px;
+	height: 34px;
+
+	font-size: 28px;
+	font-weight: bold;
+  color: #f5483a;
+  
+}
+
+.eventInfoSubTitle{
+  margin: 0px 0px 24px 0px;
+  font-size: 18px;
+	font-weight: bold;
+}
+
+.eventInfoTextTitle{
+  margin: 0px 0px 15px 0px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #1e3089;
+}
+
+.eventInfoBox{
+  width: 70%;
+  margin: auto;
+}
+
+.eventInfoText p:nth-child(1) {
+  margin: 0px;
+}
+.eventInfoText p:nth-child(2) {
+  font-weight: bold;
+  margin: 0px;
+}
+.eventInfoText p:nth-child(3) {
+  font-style: italic;
+  margin: 0px;
+}
 /* Footer */
 
 .navbar .topBar {

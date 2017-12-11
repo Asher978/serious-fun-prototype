@@ -49,6 +49,8 @@ import Camps from "./components/Camps/Camps";
 
 // Calendar
 import AfterSchoolCalendar from "./components/Calendar/AfterSchoolCalendar";
+import CampCalendar from "./components/Calendar/CampCalendar";
+import SpecialEvents from "./components/Calendar/SpecialEvents";
 
 import Schools from "./components/Schools";
 import DetailedSchool from "./components/DetailedSchool";
@@ -179,6 +181,8 @@ class App extends Component {
           <Route exact path="/policies" component={Policies} />
           <Route exact path="/Camps" component={Camps} />
           <Route exact path="/afterschoolcalendar" component={AfterSchoolCalendar} />
+          <Route exact path="/campCalendar" component={CampCalendar} />
+          <Route exact path="/specialevents" component={SpecialEvents} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/faq" component={FAQ} />
 

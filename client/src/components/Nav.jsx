@@ -108,10 +108,10 @@ const Nav = props => {
                 <Link to="/afterschoolcalendar" id="afterSchoolDrop" className="dropLinks">
                   After School
                 </Link>
-                <Link to="" id="campsDrop" className="dropLinks">
+                <Link to="/campCalendar" id="campsDrop" className="dropLinks">
                   Camps
                 </Link>
-                <Link to="" id="eventsDrop" className="dropLinks">
+                <Link to="/specialevents" id="eventsDrop" className="dropLinks">
                   Special Events
                 </Link>
               </div>
