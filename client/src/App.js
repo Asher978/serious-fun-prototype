@@ -60,7 +60,7 @@ import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import RegisterHowTo from './components/RegisterHowTo';
-import registerOngoing from './components/RegisterOngoing';
+import RegisterOngoing from './components/RegisterOngoing';
 class App extends Component {
 
   state = {
