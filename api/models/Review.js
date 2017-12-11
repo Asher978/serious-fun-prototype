@@ -8,11 +8,11 @@ const ReviewSchema = new Schema({
         require: true,
         unique : true
     },
-    reviwer : {
+    reviewer : {
         type: String,
         require: true
     },
-    typeOf :{
+    typeOfR :{
         type: String,
         require: true
     } 
