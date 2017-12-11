@@ -60,7 +60,7 @@ import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import RegisterHowTo from './components/RegisterHowTo';
-
+import RegisterOngoing from './components/RegisterOngoing';
 class App extends Component {
 
   state = {
@@ -188,7 +188,7 @@ class App extends Component {
           <Route exact path="/register" component={RegisterHowTo}/>
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/faq" component={FAQ} />
-
+          <Route exact path="/registerOngoing" component={RegisterOngoing}/>
           <Route exact path="/schools" render={() => <Schools />} />
 
           <Route path="/detailedSchool/:school_id" component={DetailedSchool} />

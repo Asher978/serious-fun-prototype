@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const registerHowTo = props => {
   return(
@@ -8,19 +8,19 @@ const registerHowTo = props => {
       <h2 className="sign-up-your-child">Sign Your Child Up For Serious Fun After School</h2>
       <div className="registerHowToLogos">
         <div>
-          <img src={require("../assets/register/image-dskp-reg-registration-icon.png")}/>
+          <img alt='' src={require("../assets/register/image-dskp-reg-registration-icon.png")}/>
           <p className="registerLogosSteps">Step 1</p>
           <p className="registerLogosStepsText">Register</p>
         </div>
-        <img src={require("../assets/register/image-dskp-reg-arrow-icon.png")}/>
+        <img alt='' src={require("../assets/register/image-dskp-reg-arrow-icon.png")}/>
         <div>
-          <img src={require("../assets/register/image-dskp-reg-enroll-icon.png")}/>
+          <img alt='' src={require("../assets/register/image-dskp-reg-enroll-icon.png")}/>
           <p className="registerLogosSteps">Step 2</p>
           <p className="registerLogosStepsText">Enroll</p>
         </div>
-        <img src={require("../assets/register/image-dskp-reg-arrow-icon.png")}/>
+        <img alt='' src={require("../assets/register/image-dskp-reg-arrow-icon.png")}/>
         <div>
-          <img src={require("../assets/register/image-dskp-reg-meet-icon.png")}/>
+          <img alt='' src={require("../assets/register/image-dskp-reg-meet-icon.png")}/>
           <p className="registerLogosSteps">Step 3</p>
           <p className="registerLogosStepsText">Meet</p>
         </div>
@@ -42,7 +42,7 @@ const registerHowTo = props => {
 
       <div className="registerMainTextContainer">
         <div className="registerNumberContainer">
-          <img src={require("../assets/register/image-dsktp-step-1.png")}/>
+          <img alt='' src={require("../assets/register/image-dsktp-step-1.png")}/>
           <span className="registerSubtitleBig">Register Your Child</span>
         </div>
         <div className="registerMainInnerTextContainer">
@@ -69,7 +69,7 @@ const registerHowTo = props => {
 
       <div className="registerMainTextContainer">
         <div className="registerNumberContainer">
-          <img src={require("../assets/register/image-dsktp-step-2.png")}/>
+          <img alt='' src={require("../assets/register/image-dsktp-step-2.png")}/>
           <span className="registerSubtitleBig">Enroll in Enrichment Classes</span>
         </div>
         <div className="registerMainInnerTextContainer">
@@ -84,7 +84,7 @@ const registerHowTo = props => {
 
       <div className="registerMainTextContainer">
         <div className="registerNumberContainer">
-          <img src={require("../assets/register/image-dsktp-step-3.png")}/>
+          <img alt='' src={require("../assets/register/image-dsktp-step-3.png")}/>
           <span className="registerSubtitleBig">Meet the Site Director</span>
         </div>
         <div className="registerMainInnerTextContainer">
