@@ -32,7 +32,7 @@ class PeopleSay extends Component{
       
         <div className="peopleSayLeftSec">
           <div className="peopleSaySubTitles">{content.subH}</div>
-            {reviews.map((review) => review.typeOfR == 'SeriousFun' ? <div key={review._id}><p className="peopleSayText">"{review.quote}"</p><p className="peopleSayTextCredit">-{review.reviewer}</p></div> : null)}
+            {reviews.map((review) => review.typeOfR === 'SeriousFun' ? <div key={review._id}><p className="peopleSayText">"{review.quote}"</p><p className="peopleSayTextCredit">-{review.reviewer}</p></div> : null)}
         </div>
 
       <div className="peopleSayRightSec">
@@ -41,7 +41,7 @@ class PeopleSay extends Component{
       </div>
       <div className="peopleSayMid">
       <div className="peopleSaySubTitles">{content.subH2}</div>
-        {reviews.map((review) => review.typeOfR == 'Classes' ? <div key={review._id}><p className="peopleSayText">"{review.quote}"</p><p className="peopleSayTextCredit">-{review.reviewer}</p></div> : null)}
+        {reviews.map((review) => review.typeOfR === 'Classes' ? <div key={review._id}><p className="peopleSayText">"{review.quote}"</p><p className="peopleSayTextCredit">-{review.reviewer}</p></div> : null)}
 
       </div>
       <div className="peopleSayBottom">
@@ -54,7 +54,7 @@ class PeopleSay extends Component{
       </div>
 
       <div className="peopleSayRightBottom">
-        {reviews.map((review) => review.typeOfR == 'HW' ? <div key={review._id}><p className="peopleSayText">"{review.quote}"</p><p className="peopleSayTextCredit">-{review.reviewer}</p></div> : null)}
+        {reviews.map((review) => review.typeOfR === 'HW' ? <div key={review._id}><p className="peopleSayText">"{review.quote}"</p><p className="peopleSayTextCredit">-{review.reviewer}</p></div> : null)}
 
       </div>
 
@@ -76,7 +76,7 @@ class PeopleSay extends Component{
           <div className="peopleSayFeedText">“It’s a fantastic after school program and offers so much for the price. It’s worth every penny… The teachers are caring, compassionate and creative. I know my daughter is in good hands – and I appreciate the active nature of the program as well.”</div>
           <div className="peopleSayFeedBoxArrow RightArrow"> &#8250; </div>
         </div>
-        {reviews.length == 0 ? <h3>No reviews posted</h3> : this.handleReviews()}
+        {reviews.length === 0 ? <h3>No reviews posted</h3> : this.handleReviews()}
        
       </div>
     );

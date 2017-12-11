@@ -61,7 +61,7 @@ class ReviewsUI extends Component{
     }
 
     renderReviewsPortal = ()=> {
-        let { newQuote, newReviewer, newType} = this.state;
+        let { newQuote, newReviewer} = this.state;
         return(
             <div>
                 <div>
