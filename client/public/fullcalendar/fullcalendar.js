@@ -2292,9 +2292,9 @@ exports.globalDefaults = {
     defaultView: 'month',
     aspectRatio: 1.35,
     header: {
-        left: 'title',
-        center: '',
-        right: 'today prev,next'
+        left: 'prev',
+        center: 'title',
+        right: ',next'
     },
     weekends: true,
     weekNumbers: false,
