@@ -1420,6 +1420,288 @@ body {
   background-image: url("assets/classes/education.jpg");
 }
 
+/* AfterSchool - Classes Template */
+.ClassesContainer {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  margin: 19px auto 46px auto;
+  /* background: rebeccapurple; */
+}
+
+.AllClassesLinks {
+  /* background: red; */
+  width: 94px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6c6c6c;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.ClassesLeftArrow {
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2);
+  opacity: 0.54;
+}
+
+.ClassesTopInnerContainer {
+  display: flex;
+  margin: 24px 0px 16px 0px;
+  background: greenyellowf;
+}
+
+.ClassesMainTitle {
+  margin: 0px auto 0px 0px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
+  /* background: blue; */
+}
+
+.ClassesRightTopText {
+  width: 272px;
+  height: 34px;
+  font-size: 14px;
+  margin: 0px 8px 0px 0px;
+}
+
+.ClassesRightTop {
+  /* background: aliceblue; */
+  display: flex;
+  align-items: center;
+}
+
+.ClassesRightTopLocationBtn {
+  width: 220px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ClassesMidInnerContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  margin-top: 24px;
+  /* background: aqua; */
+}
+
+.ClassesBox {
+  display: flex;
+  flex-direction: column;
+  width: 301px;
+  margin-right: 26px;
+}
+
+.ClassesSubTitle {
+  width: 292.7955px;
+  height: 32px;
+  background-color: #f5483a;
+  margin: 0px;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  /* padding-right: 8px; */
+}
+.ClassesMidImages {
+  width: 301px;
+  height: 148px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ClassesInnerTextBox {
+  padding-left: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+}
+
+.ClassesInnerSubTitle {
+  margin: 0px;
+  width: 49px;
+  height: 17px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ClassesInnerSubText {
+  margin: 0px;
+  width: 229px;
+  height: 32px;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.ClassesInnerBottomPara {
+  padding-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  width: 288px;
+  height: 153px;
+  font-size: 14px;
+}
+
+/* Afterschool Classes - Music */
+.MusicGuiter {
+  background-image: url("assets/classes/music/music.jpg");
+}
+.MusicMakingMusic {
+  background-image: url("assets/classes/music/music.jpg");
+}
+.MusicKeyboards {
+  background-image: url("assets/classes/music/music.jpg");
+}
+.MusicViolin {
+  background-image: url("assets/classes/music/music.jpg");
+}
+
+/* Afterschool Classes - Language */
+.languageContainer {
+  margin-bottom: 96px;
+}
+.languageMidInnerContainer {
+  justify-content: flex-start;
+}
+.languageInnerBottomPara {
+  height: auto;
+}
+
+.languageSpanish {
+  background-image: url("assets/classes/language/music.jpg");
+}
+
+.languageWritopia {
+  background-image: url("assets/classes/language/music.jpg");
+}
+
+/* Afterschool Classes - VisualArts */
+.visualArtsContainer {
+  margin-bottom: 96px;
+}
+.visualArtsMidInnerContainer {
+  justify-content: flex-start;
+}
+.visualArtsInnerBottomPara {
+  height: auto;
+}
+
+.visualArtsCartooning {
+  background-image: url("assets/classes/visualArts/music.jpg");
+}
+
+.visualArtsDrawing {
+  background-image: url("assets/classes/visualArts/music.jpg");
+}
+.visualArtsSculpture {
+  background-image: url("assets/classes/visualArts/music.jpg");
+}
+
+/* Afterschool Classes - PerformingArts */
+.performingArtsContainer {
+  margin-bottom: 96px;
+}
+.performingArtsMidInnerContainer {
+  justify-content: flex-start;
+}
+.performingArtsInnerBottomPara {
+  height: auto;
+}
+
+.performingArtsBeatGlobal {
+  background-image: url("assets/classes/performingArts/music.jpg");
+}
+
+.performingArtsBroadwayJazz {
+  background-image: url("assets/classes/performingArts/music.jpg");
+}
+
+.performingArtsClowning {
+  background-image: url("assets/classes/performingArts/music.jpg");
+}
+
+.performingArtsPerformanceImprov {
+  background-image: url("assets/classes/performingArts/music.jpg");
+}
+
+.performingArtsTheater {
+  background-image: url("assets/classes/performingArts/music.jpg");
+}
+.performingArtsTraditionalDance {
+  background-image: url("assets/classes/performingArts/music.jpg");
+}
+
+.performingArtsWorldDance {
+  background-image: url("assets/classes/performingArts/music.jpg");
+}
+
+/* Afterschool Classes - SportAndFitness */
+.sportandfitnessContainer {
+  margin-bottom: 96px;
+}
+.sportandfitnessMidInnerContainer {
+  justify-content: flex-start;
+}
+.sportandfitnessInnerBottomPara {
+  height: auto;
+}
+
+.sportandfitnessMartialArts {
+  background-image: url("assets/classes/sportandfitness/music.jpg");
+}
+
+.sportandfitnessYoga {
+  background-image: url("assets/classes/sportandfitness/music.jpg");
+}
+
+.sportandfitnessSoccer {
+  background-image: url("assets/classes/sportandfitness/music.jpg");
+}
+
+/* Afterschool Classes - Other */
+
+.otherContainer {
+  margin-bottom: 96px;
+}
+.otherMidInnerContainer {
+  justify-content: flex-start;
+}
+.otherInnerBottomPara {
+  height: auto;
+}
+
+.otherAllergicSalad {
+  background-image: url("assets/classes/other/music.jpg");
+}
+
+.otherChess {
+  background-image: url("assets/classes/other/music.jpg");
+}
+
+.otherMakerSpace {
+  background-image: url("assets/classes/other/music.jpg");
+}
+
+/* AfterSchool - Tuition Page */
+
 .tuitionContainer {
   display: flex;
   flex-direction: column;
@@ -1833,6 +2115,144 @@ td:last-child {
 .campsInnerContainerBottom {
   width: 92%;
   margin-left: auto;
+}
+
+
+
+/* Canlender Template */
+.CalendarContainer{
+  display: flex;
+  width: 65%;
+  margin: 48px auto 308px auto;
+  flex-direction: column;
+  /* background: rebeccapurple; */
+}
+
+.CalendarMainTitle{
+  margin:  0px;	
+  width: 320px;
+	height: 34px;
+	font-size: 28px;
+	font-weight: bold;
+	color: #f5483a;
+  /* background: purple; */
+}
+
+.CalendarTopInnerContainer{
+  margin: 24px 0px 16px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: green; */
+}
+
+.CalendarSubDate{
+margin: 0px;
+	font-size: 18px;
+}
+
+
+.CalendarLocationDropMenu{
+  width: 185px;
+	height: 32px;
+	background-color: #ffffff;
+	border: solid 1px #979797;
+	font-size: 18px;
+  font-weight: bold;
+  border-radius: 0px;
+  cursor: pointer;
+  /* -webkit-appearance: none;
+  -moz-appearance:none;
+  -o-appearance:none;
+  -ms-appearance:none; */
+
+}
+
+.fc-head .fc-widget-header tr{
+  display: flex;
+  flex-direction: row;
+}
+
+.fc-today-button{
+  display: none;
+}
+
+.fc-header-toolbar{
+  margin: 0px !important;
+  width: 941px;
+  height: 80px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fc-center{
+  order: 1;
+  margin: 0px 54px 0px 54px;
+}
+.fc-right{
+  order: 2;
+}
+
+
+.fc-center h2{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.fc-view-container{
+  width: 941px;
+}
+
+/* Calendar Special Events  */
+.eventInfoContainer{
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  /* background: rebeccapurple; */
+  min-height: 1104px;
+  margin: auto;
+}
+
+.eventInfoMainTitle{
+  margin: 48px 0px 24px 0px;
+  width: 245px;
+	height: 34px;
+
+	font-size: 28px;
+	font-weight: bold;
+  color: #f5483a;
+  
+}
+
+.eventInfoSubTitle{
+  margin: 0px 0px 24px 0px;
+  font-size: 18px;
+	font-weight: bold;
+}
+
+.eventInfoTextTitle{
+  margin: 0px 0px 15px 0px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #1e3089;
+}
+
+.eventInfoBox{
+  width: 70%;
+  margin: auto;
+}
+
+.eventInfoText p:nth-child(1) {
+  margin: 0px;
+}
+.eventInfoText p:nth-child(2) {
+  font-weight: bold;
+  margin: 0px;
+}
+.eventInfoText p:nth-child(3) {
+  font-style: italic;
+  margin: 0px;
 }
 /* Footer */
 
@@ -2329,8 +2749,8 @@ td:last-child {
 }
 .FAQ {
   margin-top: 48px;
-  width: 282px;
-  height: 39px;
+  /*width: 282px;*/
+  /*height: 39px;*/
   font-family: Lato;
   font-size: 32px;
   font-weight: bold;
@@ -2410,6 +2830,128 @@ td:last-child {
   text-align: left;
   color: #000000;
 }
+/*********************************FAQ END******************************/
+/*********************************FAQ END******************************/
+/*********************************FAQ END******************************/
 
+/******************************REGISTER-HOW****************************/
+/******************************REGISTER-HOW****************************/
+/******************************REGISTER-HOW****************************/
+.registerHowToContainer {
+  width: 65.5%;
+  margin: 18px auto 18px auto;
+  display: flex;
+  flex-direction: column;
+}
+.how-To-Register {
+  margin-top: 48px;
+  /*height: 39px;*/
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.sign-up-your-child{
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.registerHowToLogos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.registerLogosSteps {
+  font-family: Lato;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.registerLogosStepsText {
+  margin-top: 2px;
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3089;
+}
+.registerHowToLogos img:nth-child(even){
+  margin-bottom: 115px;
+}
+.registerMainTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 28px auto;
+  text-align: center;
+  align-items: flex-start;
+}
+.registerBottomText {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  color: #000000;
+}
+.registerSubtitle{
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+.registerSubtitleSmall {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+}
+.registerText {
+  margin-top: 0px;
+  font-family: Lato;
+  font-size: 16px;
+  text-align: left;
+  color: #000000;
+}
+.registerBtn {
+  width: 220px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  align-self: center;
+  margin-top: 32px;
+}
+.registerListItems {
+  text-align: left;
+}
+.registerSubtitleBig {
+  padding-left: 8px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.registerNumberContainer{
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+}
 
 
