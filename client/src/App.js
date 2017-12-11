@@ -48,6 +48,7 @@ import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import RegisterHowTo from './components/RegisterHowTo';
+import RegisterOngoing from './components/RegisterOngoing'
 
 class App extends Component {
 
@@ -162,7 +163,7 @@ class App extends Component {
           <Route exact path="/faq" component={FAQ}/>
           <Route exact path="/register" component={RegisterHowTo}/>
           <Route exact path='/schools' render={() => <Schools />} />
-
+          <Route exact path="/RegisterOngoing" component={RegisterOngoing}/>
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
 
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
