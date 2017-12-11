@@ -125,7 +125,7 @@ const Nav = props => {
 
             <div className="dropdownMenu regis">
               <div className="registrationDrop">
-                <Link to="" id="registerDrop" className="dropLinks">
+                <Link to="/register" id="registerDrop" className="dropLinks">
                   How-To Register
                 </Link>
                 <Link to="" id="onGoingDrop" className="dropLinks">
