@@ -2749,8 +2749,8 @@ margin: 0px;
 }
 .FAQ {
   margin-top: 48px;
-  width: 282px;
-  height: 39px;
+  /*width: 282px;*/
+  /*height: 39px;*/
   font-family: Lato;
   font-size: 32px;
   font-weight: bold;
@@ -2830,6 +2830,128 @@ margin: 0px;
   text-align: left;
   color: #000000;
 }
+/*********************************FAQ END******************************/
+/*********************************FAQ END******************************/
+/*********************************FAQ END******************************/
 
+/******************************REGISTER-HOW****************************/
+/******************************REGISTER-HOW****************************/
+/******************************REGISTER-HOW****************************/
+.registerHowToContainer {
+  width: 65.5%;
+  margin: 18px auto 18px auto;
+  display: flex;
+  flex-direction: column;
+}
+.how-To-Register {
+  margin-top: 48px;
+  /*height: 39px;*/
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.sign-up-your-child{
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.registerHowToLogos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.registerLogosSteps {
+  font-family: Lato;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.registerLogosStepsText {
+  margin-top: 2px;
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3089;
+}
+.registerHowToLogos img:nth-child(even){
+  margin-bottom: 115px;
+}
+.registerMainTextContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 28px auto;
+  text-align: center;
+  align-items: flex-start;
+}
+.registerBottomText {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  color: #000000;
+}
+.registerSubtitle{
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+.registerSubtitleSmall {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #000000;
+}
+.registerText {
+  margin-top: 0px;
+  font-family: Lato;
+  font-size: 16px;
+  text-align: left;
+  color: #000000;
+}
+.registerBtn {
+  width: 220px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #1e3089;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  align-self: center;
+  margin-top: 32px;
+}
+.registerListItems {
+  text-align: left;
+}
+.registerSubtitleBig {
+  padding-left: 8px;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #f5483a;
+}
+.registerNumberContainer{
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+}
 
 

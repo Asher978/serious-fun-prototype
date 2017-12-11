@@ -7,8 +7,8 @@ config = require('./db/config'),
 User = require('./api/models/User'),
 School = require('./api/models/Schools'),
 Class = require('./api/models/Classes'),
-HomePage = require('./api/models/HomePage'),
 Page = require('./api/models/Page'),
+Job = require('./api/models/Job'),
 PagesSeed = require('./db/pagesSeed.json');
 require('dotenv').config();
 
@@ -57,11 +57,11 @@ app.use('/schools', schoolRoutes);
 const classesRoutes =  require('./api/routes/classRoutes');
 app.use('/classes', classesRoutes);
 
-const homePageRoutes = require('./api/routes/homePageRoutes');
-app.use('/home_page', homePageRoutes);
-
 const pageRoutes = require('./api/routes/pageRoutes');
 app.use('/page', pageRoutes);
+
+const jobRoutes = require('./api/routes/jobRoutes');
+app.use('/careers', jobRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
