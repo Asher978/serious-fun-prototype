@@ -48,9 +48,10 @@ import Footer from './components/Footer';
 import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
+import RegisterHowTo from './components/RegisterHowTo';
 
 class App extends Component {
-  
+
   state = {
       auth: Auth.isUserAuthenticated(),
       registerUsername: '',
@@ -161,11 +162,11 @@ class App extends Component {
           <Route exact path="/calendar" component={Calendar}/>
           <Route exact path="/contact" component={Contact}/>
           <Route exact path="/faq" component={FAQ}/>
-
+          <Route exact path="/register" component={RegisterHowTo}/>
           <Route exact path='/schools' render={() => <Schools />} />
-          
+
           <Route path='/detailedSchool/:school_id' component={DetailedSchool}/>
-          
+
           <Route exact path='/editSchool/:school_id' component={EditSchool} />
 
           <Route exact path="/dashboard" render={() =>
