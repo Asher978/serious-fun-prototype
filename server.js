@@ -53,19 +53,19 @@ const userRoutes = require('./api/routes/userRoutes');
 app.use('/user', userRoutes);
 
 const schoolRoutes = require('./api/routes/schoolRoutes');
-app.use('/schools', schoolRoutes);
+app.use('/api/schools', schoolRoutes);
 
 const classesRoutes =  require('./api/routes/classRoutes');
-app.use('/classes', classesRoutes);
+app.use('/api/classes', classesRoutes);
 
 const pageRoutes = require('./api/routes/pageRoutes');
-app.use('/page', pageRoutes);
+app.use('/api/page', pageRoutes);
 
 const jobRoutes = require('./api/routes/jobRoutes');
-app.use('/careers', jobRoutes);
+app.use('/api/careers', jobRoutes);
 
 const reviewRoutes = require('./api/routes/reviewRoutes');
-app.use('/reviews', reviewRoutes);
+app.use('/api/reviews', reviewRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).send('not found!');
