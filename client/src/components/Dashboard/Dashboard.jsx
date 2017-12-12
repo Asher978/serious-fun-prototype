@@ -61,7 +61,7 @@ class Dashboard extends Component {
     this.getSchoolCoords();
 
     if (this.state.coordsLoaded) {
-      axios.post('/schools/add', {
+      axios.post('/api/schools/add', {
         'schoolName': this.state.schoolName,
         'st_Addr': this.state.st_Addr,
         'city': this.state.city,
@@ -91,7 +91,7 @@ class Dashboard extends Component {
 
   handleAddClass = e => {
     e.preventDefault();
-    axios.post('/classes', {
+    axios.post('/api/classes', {
       'className': this.state.classname,
       'desc': this.state.desc,
       'price': this.state.price,
@@ -126,7 +126,7 @@ class Dashboard extends Component {
 
   async componentDidMount() {
     console.log(this.props)
-    axios.get('/schools/').then(res => {
+    axios.get('/api/schools/').then(res => {
       this.setState({
         schools : res.data,
         schoolsLoaded: true
@@ -134,7 +134,7 @@ class Dashboard extends Component {
     }).catch(err=>{
       console.log(err);
     });
-    await axios.get('/page/').then(res => {
+    await axios.get('/api/page/').then(res => {
       this.setState({
         pages: res.data.pages
       },()=> {

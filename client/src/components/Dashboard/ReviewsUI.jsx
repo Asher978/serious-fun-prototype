@@ -10,7 +10,7 @@ class ReviewsUI extends Component{
         newType: 'SeriousFun',
     } 
     componentDidMount() {
-        axios.get('/reviews').then(res=>{
+        axios.get('/api/reviews').then(res=>{
             this.setState({
                 reviews: res.data.reviews,
                 dataLoaded: true
@@ -30,7 +30,7 @@ class ReviewsUI extends Component{
         let { newQuote, newReviewer, newType} = this.state;
         
         e.preventDefault();
-        axios.post('/reviews', {
+        axios.post('/api/reviews', {
             quote: newQuote,
             reviewer: newReviewer,
             typeOfR : newType
@@ -44,7 +44,7 @@ class ReviewsUI extends Component{
         }).catch(err => console.log(err)); 
     }
     removeReview = (id) => {
-        axios.delete(`/reviews/${id}`).then(res => {
+        axios.delete(`/api/reviews/${id}`).then(res => {
  
             let { _id } = res.data.review,
             newArr = this.state.reviews;

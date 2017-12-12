@@ -85,7 +85,7 @@ class App extends Component {
   handleRegister = e => {
     e.preventDefault();
     axios
-      .post("/user", {
+      .post("/api/user", {
         username: this.state.registerUsername,
         password: this.state.registerPassword
       })
@@ -106,7 +106,7 @@ class App extends Component {
   handleLogin = e => {
     e.preventDefault();
     axios
-      .post("/user/login", {
+      .post("/api/user/login", {
         username: this.state.loginUsername,
         password: this.state.loginPassword
       })
@@ -127,7 +127,7 @@ class App extends Component {
 
   handleLogout = () => {
     axios
-      .delete("/user/logout", {
+      .delete("/api/user/logout", {
         headers: {
           "x-auth": Auth.getToken()
         }
