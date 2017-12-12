@@ -11,7 +11,7 @@ class CareersUI extends Component{
         jobLink : ''
     } 
     componentDidMount() {
-        axios.get('/careers').then(res=>{
+        axios.get('/api/careers').then(res=>{
             this.setState({
                 careers: res.data.jobs,
                 dataLoaded: true
@@ -34,7 +34,7 @@ class CareersUI extends Component{
                 'state' : newState
             };
         e.preventDefault();
-        axios.post('/careers',{
+        axios.post('/api/careers',{
             'location': JSON.stringify(concatLocation),
             'title': newTitle,
             jobLink
@@ -50,7 +50,7 @@ class CareersUI extends Component{
         }).catch(err => console.log(err));
     }
     removeJob = (id) => {
-        axios.delete(`/careers/${id}`).then(res => {
+        axios.delete(`/api/careers/${id}`).then(res => {
  
             let { _id } = res.data.job,
             newArr = this.state.careers;

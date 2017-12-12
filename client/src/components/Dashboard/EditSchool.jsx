@@ -72,7 +72,7 @@ class EditSchool extends Component {
   editSchool = e => {
     e.preventDefault();
     axios
-      .put(`/schools/${this.props.match.params.school_id}`, {
+      .put(`/api/schools/${this.props.match.params.school_id}`, {
         schoolName: this.state.schoolName,
         st_Addr: this.state.st_Addr,
         city: this.state.city,
@@ -92,7 +92,7 @@ class EditSchool extends Component {
   }
 
   componentDidMount() {
-    axios.get(`/schools/${this.props.match.params.school_id}`)
+    axios.get(`/api/schools/${this.props.match.params.school_id}`)
       .then(res => {
         console.log(res);
         const school = res.data.school;

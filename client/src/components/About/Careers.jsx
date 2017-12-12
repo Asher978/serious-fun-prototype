@@ -12,8 +12,8 @@ class Careers extends Component {
 
   componentDidMount() {
     axios.all([
-      axios.get(`/page/${this.state.pageTitle}`),
-      axios.get('/careers')
+      axios.get(`/api/page/${this.state.pageTitle}`),
+      axios.get('/api/careers')
     ]).then(axios.spread((pageRes, careersRes) => {
       let cities =[],
         parseCareers = careersRes.data.jobs.map((job)=>{

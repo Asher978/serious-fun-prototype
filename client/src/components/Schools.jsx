@@ -14,7 +14,7 @@ class Schools extends Component{
     }
   }
   componentDidMount(){
-    axios.get('/schools/').then(schools => {
+    axios.get('/api/schools/').then(schools => {
       this.setState({
         schools : schools.data,
         dataLoaded: true

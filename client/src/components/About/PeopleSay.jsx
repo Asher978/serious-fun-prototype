@@ -12,8 +12,8 @@ class PeopleSay extends Component{
 
   componentDidMount() {
       axios.all([
-        axios.get(`/page/${this.state.pageTitle}`),
-        axios.get('/reviews')
+        axios.get(`/api/page/${this.state.pageTitle}`),
+        axios.get('/api/reviews')
       ])
       .then(axios.spread((pageRes, revRes) => {
           this.setState({
