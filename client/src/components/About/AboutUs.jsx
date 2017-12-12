@@ -9,7 +9,7 @@ class AboutUs extends Component {
     dataLoaded:false
   }
   componentDidMount() {
-    axios.get(`/page/${this.state.pageTitle}`).then(res => {
+    axios.get(`/api/page/${this.state.pageTitle}`).then(res => {
       let { pageContent } = res.data;
       console.log(pageContent);
       this.setState({

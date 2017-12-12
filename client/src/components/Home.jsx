@@ -16,7 +16,7 @@ class Home extends Component {
 
   componentDidMount(){
     let { pageTitle } = this.state;
-    axios.get(`/page/${pageTitle}`).then(res =>{
+    axios.get(`/api/page/${pageTitle}`).then(res =>{
       console.log(res.data);
         this.setState({
           data: res.data,

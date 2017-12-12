@@ -13,7 +13,7 @@ class EditForm extends Component{
     }
 
     fetchData = (title)=>{
-        axios.get(`/page/${title}`).then(res =>{
+        axios.get(`/api/page/${title}`).then(res =>{
             let { pageContent } = res.data,
             fields = [];
             for(let heading in pageContent){
@@ -67,7 +67,7 @@ class EditForm extends Component{
             newcontent[`${page.headingName}`]=page.value;
         });
 
-        axios.put(`/page/${_id}`,{
+        axios.put(`/api/page/${_id}`,{
             pageTitle,
             'content':newcontent
         }).then(res => {
