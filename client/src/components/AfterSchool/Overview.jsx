@@ -45,7 +45,7 @@ class Overview extends Component {
             <p className="overViewTextColumnSubTextCalendar">
               {content.subCalendar}
             </p>
-            <Link to="" className="overViewTextColumnBtn">
+            <Link to="/afterschoolcalendar" className="overViewTextColumnBtn">
               CALENDAR
             </Link>
           </div>
@@ -54,7 +54,7 @@ class Overview extends Component {
             <p className="overViewTextColumnSubText TransportationText">
               {content.subpageContent2}
             </p>
-            <Link to="" className="overViewTextColumnBtn">
+            <Link to="/transportation" className="overViewTextColumnBtn">
               LEARN MORE
             </Link>
           </div>
@@ -63,9 +63,9 @@ class Overview extends Component {
             <p className="overViewTextColumnSubText registerText">
               {content.subpageContent3}
             </p>
-            <Link to="" className="overViewTextColumnBtn">
+            <a href="https://seriousfunnyc.asapconnected.com/Login" className="overViewTextColumnBtn">
               REGISTER NOW
-            </Link>
+            </a>
           </div>
           <div className="overViewTextColumn">
             <p className="overViewTextColumnSubText moreInfo">
