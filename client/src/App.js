@@ -56,7 +56,7 @@ import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/Dashboard/EditSchool';
 import Footer from './components/Footer';
-import HamburgerMenu from './components/HamburgerMenu';
+// import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import RegisterHowTo from './components/RegisterHowTo';
@@ -70,7 +70,6 @@ class App extends Component {
     loginUsername: "",
     loginPassword: "",
     open: false,
-    loginPassword: ""
   };
 
   // use of arrow functions to avoid bindings
@@ -185,7 +184,7 @@ class App extends Component {
           <Route exact path="/afterschoolcalendar" component={AfterSchoolCalendar} />
           <Route exact path="/campCalendar" component={CampCalendar} />
           <Route exact path="/specialevents" component={SpecialEvents} />
-          <Route exact path="/register" component={RegisterHowTo}/>
+          <Route exact path="/registerhowto" component={RegisterHowTo}/>
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/faq" component={FAQ} />
           <Route exact path="/registerOngoing" component={RegisterOngoing}/>

@@ -17,7 +17,6 @@ class Home extends Component {
   componentDidMount(){
     let { pageTitle } = this.state;
     axios.get(`/api/page/${pageTitle}`).then(res =>{
-      console.log(res.data);
         this.setState({
           data: res.data,
           content: res.data.pageContent,
@@ -39,13 +38,13 @@ class Home extends Component {
           infiniteLoop
           dynamicHeight >
           <div>
-            <img  />
+            <img alt='' />
           </div>
           <div>
-            <img  />
+            <img alt='' />
           </div>
           <div>
-            <img  />
+            <img alt='' />
           </div>
         </Carousel>
       </div>
