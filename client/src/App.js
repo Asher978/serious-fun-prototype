@@ -185,7 +185,7 @@ class App extends Component {
           <Route exact path="/afterschoolcalendar" component={AfterSchoolCalendar} />
           <Route exact path="/campCalendar" component={CampCalendar} />
           <Route exact path="/specialevents" component={SpecialEvents} />
-          <Route exact path="/register" component={RegisterHowTo}/>
+          <Route exact path="/registerhowto" component={RegisterHowTo}/>
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/faq" component={FAQ} />
           <Route exact path="/registerOngoing" component={RegisterOngoing}/>
