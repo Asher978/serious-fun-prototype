@@ -40,6 +40,7 @@ port = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
 app.use(logger('dev'));
+app.use(express.static('public'));
 
 server.listen(port, () => {
   console.log(`Dont listen to my port ${port}`);
@@ -50,7 +51,7 @@ app.get('/', (req,res) => {
 });
 
 const userRoutes = require('./api/routes/userRoutes');
-app.use('/user', userRoutes);
+app.use('/api/user', userRoutes);
 
 const schoolRoutes = require('./api/routes/schoolRoutes');
 app.use('/api/schools', schoolRoutes);
