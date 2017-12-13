@@ -70,6 +70,5 @@ const reviewRoutes = require('./api/routes/reviewRoutes');
 app.use('/api/reviews', reviewRoutes);
 
 app.get('*', (req, res) => {
-  const index = path.join(__dirname, '/public', 'index.html');
-  res.sendFile(index);
+  res.status(404).send('not found!');
 })
