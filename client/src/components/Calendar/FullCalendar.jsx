@@ -10,9 +10,17 @@ class FullCalendar extends Component {
   componentDidMount() {
     $("#fullCalendar").fullCalendar({
       googleCalendarApiKey: "AIzaSyDU_CakcARBmp2KzTSfDe7TO2Ta5jzaLS4",
-      events: {
-        googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
-      }
+
+      eventSources: [
+        {
+            googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
+        },
+        {
+            googleCalendarId: "55161l7ed74nkj2ifm41mcu8ao@group.calendar.google.com",
+            className: 'nice-event'
+        }
+    ]
+
     });
   }
 
@@ -22,3 +30,4 @@ class FullCalendar extends Component {
 }
 
 export default FullCalendar;
+
