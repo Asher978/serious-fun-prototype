@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./App.css";
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
-import { browserHistory } from 'react-router';
 
 import Auth from "./modules/Auth";
 import RegisterForm from "./components/Dashboard/RegisterForm";
@@ -150,7 +149,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router history={browserHistory}>
+      <Router>
         <div className="App">
           <Nav handleLogout={this.handleLogout} />
 
