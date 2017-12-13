@@ -1803,6 +1803,21 @@ th {
   width: 240px;
   /* border: solid 1px #f5483a; */
 }
+.MidContainerTopHR th{
+  border :none;
+  border-bottom:solid 1px #f5483a;
+  
+  
+}
+.tuitionLeftMidTable tbody:last-child tr td{
+  border: none;
+  text-align: start;
+  
+}
+.tuitionLeftMidTable tbody:last-child tr td:last-child{
+  text-align: end;
+  
+}
 
 .BottomHR th {
   width: 140%;
@@ -2816,6 +2831,11 @@ margin: 0px;
   color: #ffffff;
   text-decoration: none;
 }
+
+.faqBtn a{
+  text-decoration: none;
+  color: white;
+}
 .faqQuestion {
   margin-bottom: 6px;
   font-family: Lato;
@@ -3067,6 +3087,11 @@ margin: 0px;
   align-self: left;
   margin-top: 24px;
   margin-bottom: 46px;
+}
+
+.registerOngoingBtn a{
+  text-decoration: none;
+  color: white;
 }
 .registerLeftColumn {
   flex-basis: 35%;

@@ -121,7 +121,7 @@ const Tuition = props => {
     <p className="tuitionTextTitles">Current Program Dates:</p>
     <p className="tuitionTextDate">Sept 11, 2017 - June 1, 2018</p>
     <p className="tuitionTextPara">You may register your child at any point throughout the school year. The tuition will be pro-rated.</p>
-    <a href="https://seriousfunnyc.asapconnected.com/Login" id="tuitionRegisterBtn" className="tuitionTextBtn">REGISTER NOW</a>
+    <Link to="/registerhowto" id="tuitionRegisterBtn" className="tuitionTextBtn">REGISTER NOW</Link>
     </div>
     </div>
     
