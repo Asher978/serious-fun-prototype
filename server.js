@@ -70,6 +70,6 @@ const reviewRoutes = require('./api/routes/reviewRoutes');
 app.use('/api/reviews', reviewRoutes);
 
 app.get('*', (req, res) => {
-  const index = path.join(__dirname, 'build', 'index.html');
+  const index = path.join(__dirname, '../client/build', 'index.html');
   res.sendFile(index);
 })
