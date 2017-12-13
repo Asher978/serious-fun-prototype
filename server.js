@@ -52,7 +52,7 @@ app.get('/', (req,res) => {
 app.use(express.static('public'));
 
 const userRoutes = require('./api/routes/userRoutes');
-app.use('/user', userRoutes);
+app.use('/api/user', userRoutes);
 
 const schoolRoutes = require('./api/routes/schoolRoutes');
 app.use('/api/schools', schoolRoutes);
