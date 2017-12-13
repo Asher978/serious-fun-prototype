@@ -45,11 +45,11 @@ server.listen(port, () => {
   console.log(`Dont listen to my port ${port}`);
 });
 
-// app.get('/', (req,res) => {
-//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
-// });
+app.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
-app.use(express.static(__dirname + '../client/build'));
+app.use(express.static('public'));
 
 const userRoutes = require('./api/routes/userRoutes');
 app.use('/user', userRoutes);
@@ -70,6 +70,6 @@ const reviewRoutes = require('./api/routes/reviewRoutes');
 app.use('/api/reviews', reviewRoutes);
 
 app.get('*', (req, res) => {
-  const index = path.join(__dirname, '../client/build', 'index.html');
+  const index = path.join(__dirname, '/public', 'index.html');
   res.sendFile(index);
 })
