@@ -46,7 +46,7 @@ server.listen(port, () => {
 });
 
 app.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
 
 const userRoutes = require('./api/routes/userRoutes');
@@ -72,5 +72,5 @@ app.use('/api/reviews', reviewRoutes);
 // })
 
 app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+  response.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
