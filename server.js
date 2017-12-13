@@ -72,5 +72,5 @@ app.use('/api/reviews', reviewRoutes);
 // })
 
 app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+  response.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
