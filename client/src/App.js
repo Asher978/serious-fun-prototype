@@ -7,6 +7,7 @@ import Auth from "./modules/Auth";
 import RegisterForm from "./components/Dashboard/RegisterForm";
 import LoginForm from "./components/Dashboard/LoginForm";
 import Nav from "./components/Nav";
+import Donate from "./components/Donate/Donate";
 
 
 
@@ -155,6 +156,7 @@ class App extends Component {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/aboutus" component={AboutUs} />
+          <Route exact path="/donate" component={Donate} />
           <Route exact path="/ourteam" component={OurTeam} />
           <Route exact path="/careers" component={Careers} />
 

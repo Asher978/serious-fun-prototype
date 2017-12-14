@@ -19,7 +19,7 @@ const Camps = props => {
     </div>
     <hr className="campsHR"></hr>
     <div className="campsInnerContainer">
-    <Link to="" id="campsRegisterBtn" className="campsRegisterBtn">REGISTER</Link>
+    <a href="https://seriousfunnyc.asapconnected.com/Login" id="campsRegisterBtn" className="campsRegisterBtn">REGISTER</a>
     </div>
     <div className="campsInnerContainerBottom">
     <p className="campsTopTitles bottomTitles">A. Overview</p>

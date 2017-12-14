@@ -111,6 +111,21 @@ body {
   background-color: #f5483a;
 }
 
+  /* Donate - Help Page */
+  .donateContainer{
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+    margin: 0 auto;
+  }
+  .donateMainTitle{
+    font-size: 32px;
+    font-weight: bold;
+    color: #f5483a;
+    margin-top: 48px;
+  }
+
 /* Navbar link */
 
 .navLink {
@@ -2586,6 +2601,9 @@ margin: 0px;
   .midHead .helpBtn {
     display: none;
   }
+
+
+
   .textTitle {
     display: none;
   }
@@ -2865,6 +2883,10 @@ margin: 0px;
   justify-content: space-evenly;
   align-items: center;
 }
+
+.registerHowToLogos a{
+  text-decoration: none;
+}
 .registerLogosSteps {
   font-family: Lato;
   font-size: 18px;
@@ -2936,6 +2958,11 @@ margin: 0px;
   text-decoration: none;
   align-self: center;
   margin-top: 32px;
+}
+
+.registerBtn a{
+  text-decoration: none;
+  color: #ffffff;
 }
 .registerListItems {
   text-align: left;
@@ -3048,3 +3075,6 @@ margin: 0px;
   flex-basis: 50%;
   margin-left: 35px;
 }
+
+
+

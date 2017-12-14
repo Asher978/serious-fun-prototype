@@ -86,7 +86,7 @@ const Tuition = props => {
     </div>
 
     <p className="tuitionLeftMidText"> Material and Premium Partner annual fees are non discountable and non refundable.</p>
-    <Link to="" id="tuitionClassesBtn" className="tuitionTextBtn">SEE CLASSES</Link>
+    <Link to="/classes" id="tuitionClassesBtn" className="tuitionTextBtn">SEE CLASSES</Link>
     </div>
 
 
@@ -111,7 +111,7 @@ const Tuition = props => {
     <p className="tuitionRightTitle rightBottom">Cancellation Policy</p>
     <p className="tuitionRightCancelSubTitle">Must be submitted in writing by 1st of month prior to cancellation month.</p>
     <p className="tuitionRightCancelSubText">No cash or credit card refunds will be provided. Credits may be applied to child care services for up to one year following cancellation.</p>
-    <Link to="" id="tuitionPolicyBtn" className="tuitionTextBtn">READ POLICIES</Link>
+    <Link to="/policies" id="tuitionPolicyBtn" className="tuitionTextBtn">READ POLICIES</Link>
     </div>
     </div>
 
@@ -121,7 +121,7 @@ const Tuition = props => {
     <p className="tuitionTextTitles">Current Program Dates:</p>
     <p className="tuitionTextDate">Sept 11, 2017 - June 1, 2018</p>
     <p className="tuitionTextPara">You may register your child at any point throughout the school year. The tuition will be pro-rated.</p>
-    <Link to="" id="tuitionRegisterBtn" className="tuitionTextBtn">REGISTER NOW</Link>
+    <a href="https://seriousfunnyc.asapconnected.com/Login" id="tuitionRegisterBtn" className="tuitionTextBtn">REGISTER NOW</a>
     </div>
     </div>
     
