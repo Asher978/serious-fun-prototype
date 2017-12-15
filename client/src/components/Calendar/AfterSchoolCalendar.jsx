@@ -20,7 +20,7 @@ class AfterSchoolCalendar extends Component {
     this.afterSchoolCalendar = this.afterSchoolCalendar.bind(this);
   }
   componentDidMount() {
-    this.SchoolCalendar(allEvents);
+    this.SchoolFullCalendar(allEvents);
     console.log(allEvents);
   }
 
@@ -32,15 +32,15 @@ class AfterSchoolCalendar extends Component {
 
   componentWillUpdate(newProps, newState) {
     if (newState.value === "SelectOrAll") {
-      this.SchoolCalendar(allEvents);
+      this.SchoolFullCalendar(allEvents);
     } else if (newState.value === "PS17Q") {
-      this.SchoolCalendar([allEvents[0]]);
+      this.SchoolFullCalendar([allEvents[0]]);
     } else if (newState.value === "PS85Q") {
-      this.SchoolCalendar([allEvents[1]]);
+      this.SchoolFullCalendar([allEvents[1]]);
     }
   }
 
-  SchoolCalendar(e) {
+  SchoolFullCalendar(e) {
     $("#fullCalendar").remove();
     $("#fullCalendarContainer").append('<div id="fullCalendar"></div>');
 
