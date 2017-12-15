@@ -39,8 +39,8 @@ class AfterSchoolCalendar extends Component {
             value={this.state.value}
 
           >
-            <option value="Select Location" defaultValue>
-              Select Location
+            <option value="SelectOrAll" defaultValue>
+              Select All Locations
             </option>
             <option value="PS17Q">PS 17 Q</option>
             <option value="PS85Q">PS 85 Q</option>

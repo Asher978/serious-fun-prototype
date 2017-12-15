@@ -25,7 +25,10 @@ class FullCalendar extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.value === "PS17Q") {
+    if(nextProps.value === "SelectOrAll"){
+      this.SchoolCalendar(allEvents);
+    }
+    else if (nextProps.value === "PS17Q") {
       this.SchoolCalendar([allEvents[0]]);
     } else if (nextProps.value === "PS85Q") {
       this.SchoolCalendar([allEvents[1]]);
