@@ -2650,8 +2650,8 @@ margin: 0px;
 /***************************CONTACT US**********************/
 /***************************CONTACT US**********************/
 /***************************CONTACT US**********************/
-.contactContainer {
-}
+/* .contactContainer {
+} */
 .contactTop {
   width: 65.5%;
   margin: 18px auto 18px auto;
@@ -3030,18 +3030,19 @@ margin: 0px;
   /*padding: 0.5rem;*/
   text-align: center;
 }
-.registerTable tr {
+/* .registerTable tr {
   vertical-align: ;
-}
+} */
+
 .registerTable th {
   /*width: 100%;*/
   display: table-cell;
   color: white;
   background-color: #f5483a;
 }
-.registerTable thead{
+/* .registerTable thead{
   /*width: 100%;*/
-}
+/* }  */
 .registerTable td:last-child {
   font-weight: normal;
   text-align: center;
