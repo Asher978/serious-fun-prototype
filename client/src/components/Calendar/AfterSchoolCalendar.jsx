@@ -1,5 +1,15 @@
-import FullCalendar from "./FullCalendar";
 import React, { Component } from "react";
+
+var $ = window.$;
+let allEvents = [
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
+  },
+  {
+    googleCalendarId: "55161l7ed74nkj2ifm41mcu8ao@group.calendar.google.com",
+    className: "nice-event"
+  }
+];
 
 class AfterSchoolCalendar extends Component {
   constructor(props) {
@@ -9,14 +19,35 @@ class AfterSchoolCalendar extends Component {
     };
     this.afterSchoolCalendar = this.afterSchoolCalendar.bind(this);
   }
-  componentDidMount() {}
+  componentDidMount() {
+    this.SchoolCalendar(allEvents);
+    console.log(allEvents);
+  }
 
   afterSchoolCalendar(e) {
     this.setState({
       value: e
     });
-    // console.log(this.state.value, "Value");
-    // console.log(e.target.value, "Event");
+  }
+
+  componentWillUpdate(newProps, newState) {
+    if (newState.value === "SelectOrAll") {
+      this.SchoolCalendar(allEvents);
+    } else if (newState.value === "PS17Q") {
+      this.SchoolCalendar([allEvents[0]]);
+    } else if (newState.value === "PS85Q") {
+      this.SchoolCalendar([allEvents[1]]);
+    }
+  }
+
+  SchoolCalendar(e) {
+    $("#fullCalendar").remove();
+    $("#fullCalendarContainer").append('<div id="fullCalendar"></div>');
+
+    $("#fullCalendar").fullCalendar({
+      googleCalendarApiKey: "AIzaSyDU_CakcARBmp2KzTSfDe7TO2Ta5jzaLS4",
+      eventSources: e
+    });
   }
 
   render() {
@@ -37,7 +68,6 @@ class AfterSchoolCalendar extends Component {
             className="CalendarLocationDropMenu afterSchoolCalendarLocationDropMenu"
             onChange={e => this.afterSchoolCalendar(e.target.value)}
             value={this.state.value}
-
           >
             <option value="SelectOrAll" defaultValue>
               Select All Locations
@@ -53,14 +83,12 @@ class AfterSchoolCalendar extends Component {
             <option value="PS33ChelseaPrep">PS 33 Chelsea Prep</option>
           </select>
         </div>
-
-        <FullCalendar value={this.state.value}/>
+        <div id="fullCalendarContainer">
+          <div id="fullCalendar" />
+        </div>
       </div>
     );
   }
 }
 
 export default AfterSchoolCalendar;
-
-
-// SchoolCalendar={this.props.SchoolCalendar} value={this.state.value}

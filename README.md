@@ -4,6 +4,7 @@
 - Oswaldo Almazo
 - Asher Shaheen
 - Muhammad Abubakar 
+- Yan Zhuk
 
 ## Description 
 The proto-type is a CMS interface allowing the Admins of the website to make changes to their websites. In this case, the content is different schools and classes. The CMS gives the admin full _CRUD_ ability to manage their content.
