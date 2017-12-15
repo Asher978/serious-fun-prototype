@@ -38,13 +38,13 @@ class Home extends Component {
           infiniteLoop
           dynamicHeight >
           <div>
-            <img alt='' />
+            <img alt='' src={require("../assets/slide/mountains.jpg")}/>
           </div>
           <div>
-            <img alt='' />
+            <img alt='' src={require("../assets/slide/contact.jpg")}/>
           </div>
           <div>
-            <img alt='' />
+            <img alt='' src={require("../assets/slide/bridge.jpg")}/>
           </div>
         </Carousel>
       </div>
