@@ -13,7 +13,7 @@ class AfterSchoolCalendar extends Component {
 
   afterSchoolCalendar(e) {
     this.setState({
-      value: e.target.value
+      value: e
     });
     // console.log(this.state.value, "Value");
     // console.log(e.target.value, "Event");
@@ -35,8 +35,9 @@ class AfterSchoolCalendar extends Component {
           <select
             name="CalendarAfterSchool"
             className="CalendarLocationDropMenu afterSchoolCalendarLocationDropMenu"
-            onChange={e => this.afterSchoolCalendar(e)}
+            onChange={e => this.afterSchoolCalendar(e.target.value)}
             value={this.state.value}
+
           >
             <option value="Select Location" defaultValue>
               Select Location
@@ -53,13 +54,13 @@ class AfterSchoolCalendar extends Component {
           </select>
         </div>
 
-        <FullCalendar
-          SchoolCalendar={this.props.SchoolCalendar}
-          value={this.state.value}
-        />
+        <FullCalendar value={this.state.value}/>
       </div>
     );
   }
 }
 
 export default AfterSchoolCalendar;
+
+
+// SchoolCalendar={this.props.SchoolCalendar} value={this.state.value}
