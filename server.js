@@ -46,9 +46,7 @@ server.listen(port, () => {
   console.log(`Dont listen to my port ${port}`);
 });
 
-app.get('/', (req,res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
+app.use(express.static('public'));
 
 const userRoutes = require('./api/routes/userRoutes');
 app.use('/api/user', userRoutes);
@@ -68,6 +66,7 @@ app.use('/api/careers', jobRoutes);
 const reviewRoutes = require('./api/routes/reviewRoutes');
 app.use('/api/reviews', reviewRoutes);
 
-app.get('*', (req, res) => {
-  res.status(404).send('not found!');
-})
+app.get('/*', (req,res) => {
+res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
