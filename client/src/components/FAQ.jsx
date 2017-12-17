@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const FAQ = props => {
   return(
@@ -29,7 +29,7 @@ const FAQ = props => {
         <p className="faqAnswer">State law requires that we have a full Registration Packet on file before any child can attend our program. After enrolling your child(ren) in enrichment class(es), you must book an in-person registration appointment with your child’s Site Director. No later than two (2) days prior to your in-person appointment, you will receive an email with your completed forms to review, print, sign, and bring to your in-person appointment. Your child will not be admitted to the program until we have these registration materials on file, even if your tuition is paid in full.</p>
         <h3 className="faqQuestion">When is registration?</h3>
         <p className="faqAnswer">Registration appointments will be held on September 5, 6, and 7th for a September 11 start date.  Ongoing registration appointments for new students will be held from 3:30-5pm in the 2nd and 4th week of each month, to start on the 1st or 15th of the month (or the next day Serious Run is in session).  Registration must be made in person, and BY APPOINTMENT ONLY throughout the school year.  See our Registration Page for more information on enrollment dates after September 11.</p>
-        <button className="faqBtn">HOW TO REGISTER</button>
+        <button className="faqBtn"><Link to="/registerhowto">HOW TO REGISTER</Link></button>
         <h3 className="faqQuestion">What do I need to bring to in-person registration?</h3>
         <p className="faqAnswer">To prepare for your registration appointment, please go to our Online Registration Page to create a new account and fill out your registration information. Your child will not be admitted to the program until we have these Registration materials on file, even if your tuition is paid in full.</p>
         <h4 className="faqQuestionExtra">Special Healthcare Needs</h4>
@@ -68,7 +68,7 @@ const FAQ = props => {
         <p className="faqAnswer">Yes. To set up a recurring charge to your credit card or Echeck (ACH), please store your payment information under your secure online profile at our Online Registration Page.</p>
         <h3 className="faqQuestion">Can I cancel after submitting payment ?</h3>
         <p className="faqAnswer">Insert response here.</p>
-        <button className="faqBtn">POLICIES</button>
+        <button className="faqBtn"><Link to="/policies">POLICIES</Link></button>
       </div>
 
 
