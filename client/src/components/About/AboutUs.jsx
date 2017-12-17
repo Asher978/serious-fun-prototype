@@ -9,7 +9,7 @@ class AboutUs extends Component {
     dataLoaded:false
   }
   componentDidMount() {
-    axios.get(`/page/${this.state.pageTitle}`).then(res => {
+    axios.get(`/api/page/${this.state.pageTitle}`).then(res => {
       let { pageContent } = res.data;
       console.log(pageContent);
       this.setState({
@@ -40,7 +40,7 @@ class AboutUs extends Component {
               <div className="infoOurText">{content.subCont3}</div>
             </div>
 
-            <div className="infoOurMoreInfo">{content.lastCont}<Link to="" className="infoOurMoreInfoLinks">Click Here</Link>{content.lastCont2}<Link to="" className="infoOurMoreInfoLinks">Click Here</Link>{content.lastCont3}</div>
+            <div className="infoOurMoreInfo">{content.lastCont}<Link to="/locations" className="infoOurMoreInfoLinks">Click Here</Link>{content.lastCont2}<Link to="" className="infoOurMoreInfoLinks">Click Here</Link>{content.lastCont3}</div>
           </div>
         </div>
       );

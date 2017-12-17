@@ -111,6 +111,21 @@ body {
   background-color: #f5483a;
 }
 
+/* Donate - Help Page */
+.donateContainer {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  height: 630px;
+  margin: 0 auto;
+}
+.donateMainTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: #f5483a;
+  margin-top: 48px;
+}
+
 /* Navbar link */
 
 .navLink {
@@ -185,14 +200,14 @@ body {
 
 /* Home Page Slides */
 
-.slide {
+/* .slide {
   background-image: url("assets/slide/mountains.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 466px;
   margin: auto;
-}
+} */
 
 .ourInfo {
   display: flex;
@@ -373,7 +388,7 @@ body {
   .ourTeamFounderInfo
   .ourTeamFounderPicContainer
   .ourTeamFounderPic {
-  background-image: url("assets/ourTeam/founder.jpg");
+  background-image: url("assets/ourTeam/staff.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 221px;
@@ -430,10 +445,12 @@ body {
   background-color: #1e3089;
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
   color: #ffffff;
-  line-height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 8px 0px;
+  text-decoration: none;
 }
 
 /* About Us Work With Us */
@@ -1788,6 +1805,17 @@ th {
   width: 240px;
   /* border: solid 1px #f5483a; */
 }
+.MidContainerTopHR th {
+  border: none;
+  border-bottom: solid 1px #f5483a;
+}
+.tuitionLeftMidTable tbody:last-child tr td {
+  border: none;
+  text-align: start;
+}
+.tuitionLeftMidTable tbody:last-child tr td:last-child {
+  text-align: end;
+}
 
 .BottomHR th {
   width: 140%;
@@ -2117,10 +2145,8 @@ td:last-child {
   margin-left: auto;
 }
 
-
-
 /* Canlender Template */
-.CalendarContainer{
+.CalendarContainer {
   display: flex;
   width: 65%;
   margin: 48px auto 308px auto;
@@ -2128,17 +2154,17 @@ td:last-child {
   /* background: rebeccapurple; */
 }
 
-.CalendarMainTitle{
-  margin:  0px;	
+.CalendarMainTitle {
+  margin: 0px;
   width: 320px;
-	height: 34px;
-	font-size: 28px;
-	font-weight: bold;
-	color: #f5483a;
+  height: 34px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #f5483a;
   /* background: purple; */
 }
 
-.CalendarTopInnerContainer{
+.CalendarTopInnerContainer {
   margin: 24px 0px 16px 0px;
   display: flex;
   justify-content: space-between;
@@ -2146,18 +2172,17 @@ td:last-child {
   /* background: green; */
 }
 
-.CalendarSubDate{
-margin: 0px;
-	font-size: 18px;
+.CalendarSubDate {
+  margin: 0px;
+  font-size: 18px;
 }
 
-
-.CalendarLocationDropMenu{
-  width: 185px;
-	height: 32px;
-	background-color: #ffffff;
-	border: solid 1px #979797;
-	font-size: 18px;
+.CalendarLocationDropMenu {
+  width: 210px;
+  height: 32px;
+  background-color: #ffffff;
+  border: solid 1px #979797;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 0px;
   cursor: pointer;
@@ -2165,19 +2190,18 @@ margin: 0px;
   -moz-appearance:none;
   -o-appearance:none;
   -ms-appearance:none; */
-
 }
 
-.fc-head .fc-widget-header tr{
+.fc-head .fc-widget-header tr {
   display: flex;
   flex-direction: row;
 }
 
-.fc-today-button{
+.fc-today-button {
   display: none;
 }
 
-.fc-header-toolbar{
+.fc-header-toolbar {
   margin: 0px !important;
   width: 941px;
   height: 80px;
@@ -2186,26 +2210,25 @@ margin: 0px;
   justify-content: center;
   align-items: center;
 }
-.fc-center{
+.fc-center {
   order: 1;
   margin: 0px 54px 0px 54px;
 }
-.fc-right{
+.fc-right {
   order: 2;
 }
 
-
-.fc-center h2{
-	font-size: 24px;
-	font-weight: bold;
+.fc-center h2 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.fc-view-container{
+.fc-view-container {
   width: 941px;
 }
 
 /* Calendar Special Events  */
-.eventInfoContainer{
+.eventInfoContainer {
   display: flex;
   flex-direction: column;
   width: 66%;
@@ -2214,31 +2237,30 @@ margin: 0px;
   margin: auto;
 }
 
-.eventInfoMainTitle{
+.eventInfoMainTitle {
   margin: 48px 0px 24px 0px;
   width: 245px;
-	height: 34px;
+  height: 34px;
 
-	font-size: 28px;
-	font-weight: bold;
+  font-size: 28px;
+  font-weight: bold;
   color: #f5483a;
-  
 }
 
-.eventInfoSubTitle{
+.eventInfoSubTitle {
   margin: 0px 0px 24px 0px;
   font-size: 18px;
-	font-weight: bold;
+  font-weight: bold;
 }
 
-.eventInfoTextTitle{
+.eventInfoTextTitle {
   margin: 0px 0px 15px 0px;
-	font-size: 22px;
-	font-weight: bold;
-	color: #1e3089;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e3089;
 }
 
-.eventInfoBox{
+.eventInfoBox {
   width: 70%;
   margin: auto;
 }
@@ -2342,218 +2364,6 @@ margin: 0px;
   margin: 0 auto;
 }
 
-/* .App { */
-/* text-align: center; */
-/* } */
-
-/* CUSTOM COLOR USED FOR FORMS */
-/* .main-color-bg  {
-  background-color: rgb(25, 40, 134) !important;
-  border-color: black !important;
-  color: #ffffff !important;
-}
- */
-
-/* NAVBAR SETTINGS */
-
-/* .navbar  { */
-/* margin-bottom: 0;
-  border-radius: 0;
-  padding: .5% 0;
-  font-size: 1.1em;
-  border: 0; */
-/* } */
-/*
-.navbar-brand  {
-  float: left;
-  min-height: 65px;
-  padding: 0 15px 5px;
-}
-
-.navbar-brand img  {
-  height: 70px;
-}
- */
-
-/* Color Settings for Nav Bar */
-
-/* .navbar { */
-/* background-color: rgb(25, 40, 134);
-  border-color: white; */
-/* }
-.navbar .navbar-brand {
-  color: #f2f5f6;
-}
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus {
-  color: #ffbbbc;
-}
-.navbar .navbar-text {
-  color: #f2f5f6;
-  font-weight: 500;
-}
-.navbar .navbar-nav > li > a {
-  color: #f2f5f6;
-}
-.navbar .navbar-nav > li > a:hover,
-.navbar .navbar-nav > li > a:focus {
-  color: rgb(240, 68, 45);
-}
-.navbar .navbar-nav > li > .dropdown-menu {
-  background-color: #e74c3c;
-}
-.navbar .navbar-nav > li > .dropdown-menu > li > a {
-  color: #f2f5f6;
-}
-.navbar .navbar-nav > li > .dropdown-menu > li > a:hover,
-.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-  color: #ffbbbc;
-  background-color: #c0392b;
-}
-.navbar .navbar-nav > li > .dropdown-menu > li.divider {
-  background-color: #c0392b;
-}
-.navbar .navbar-nav .open .dropdown-menu > .active > a,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
-.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #ffbbbc;
-  background-color: #c0392b;
-}
-.navbar .navbar-nav > .active > a,
-.navbar .navbar-nav > .active > a:hover,
-.navbar .navbar-nav > .active > a:focus {
-  color: #ffbbbc;
-  background-color: #c0392b;
-}
-.navbar .navbar-nav > .open > a,
-.navbar .navbar-nav > .open > a:hover,
-.navbar .navbar-nav > .open > a:focus {
-  color: #ffbbbc;
-  background-color: #c0392b;
-}
-.navbar-default .navbar-toggle {
-  border-color: #c0392b;
-}
-.navbar .navbar-toggle:hover,
-.navbar .navbar-toggle:focus {
-  background-color: #c0392b;
-}
-.navbar .navbar-toggle .icon-bar {
-  background-color: #f2f5f6;
-}
-.navbar .navbar-collapse,
-.navbar .navbar-form {
-  border: 0px;
-}
-.navbar .navbar-link {
-  color: #f2f5f6;
-}
-.navbar .navbar-link:hover {
-  color: #ffbbbc;
-} */
-
-/* HOME PAGE IMAGE SETTINGS */
-
-/* .homeImage {
-  height: 100vh;
-  width: 100vw;
-} */
-
-/* ADMIN PAGE SETTINGS */
-
-/* HEADER */
-/* #header {
-  background: #333333;
-  color: #ffffff;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-}
-
-#header .create {
- padding-top: 20px;
-} */
-
-/* BREADCRUMB */
-/* .breadcrumb {
-  background: #cccccc;
-  color: #333333;
-}
-
-.breadcrumb a {
-  color: #333333;
-} */
-
-/* WEBSITE OVERVIEW */
-/* .overview {
-  text-align: center;
-
-} */
-
-/* HOME PAGE SETTINGS */
-
-/* .carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-
-.carousel-caption {
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-} */
-
-/* FEATURETTE SETTINGS */
-
-/* .featurette-divider {
-  margin: 80px 0;
-}
-
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px; */
-/* } */
-
-/* RESPONSIVE SETTINGS */
-
-/* @media (min-width: 768px) { */
-
-/* .carousel-caption p {
-      margin-bottom: 20px;
-      font-size: 21px;
-      line-height: 1.4;
-    }
-
-    .featurette-heading {
-      font-size: 50px;
-    }
-  } */
-
-/* @media (min-width: 992px) {
-    .featurette-heading {
-      margin-top: 120px;
-    }
-  }
-   */
-
-/* SCHOOL EDIT PAGE */
-
-/* .editSchool {
-  margin-top: 10px;
-} */
 /***************************MOBILE*************************/
 /***************************MOBILE*************************/
 /***************************MOBILE*************************/
@@ -2586,6 +2396,7 @@ margin: 0px;
   .midHead .helpBtn {
     display: none;
   }
+
   .textTitle {
     display: none;
   }
@@ -2617,8 +2428,8 @@ margin: 0px;
 /***************************CONTACT US**********************/
 /***************************CONTACT US**********************/
 /***************************CONTACT US**********************/
-.contactContainer {
-}
+/* .contactContainer {
+} */
 .contactTop {
   width: 65.5%;
   margin: 18px auto 18px auto;
@@ -2762,7 +2573,7 @@ margin: 0px;
   display: flex;
   justify-content: center;
 }
-.faqLogosText{
+.faqLogosText {
   /*margin: auto;*/
   font-family: Lato;
   font-size: 24px;
@@ -2797,6 +2608,11 @@ margin: 0px;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+}
+
+.faqBtn a {
+  text-decoration: none;
+  color: white;
 }
 .faqQuestion {
   margin-bottom: 6px;
@@ -2852,7 +2668,7 @@ margin: 0px;
   text-align: left;
   color: #f5483a;
 }
-.sign-up-your-child{
+.sign-up-your-child {
   font-family: Lato;
   font-size: 24px;
   font-weight: bold;
@@ -2864,6 +2680,10 @@ margin: 0px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.registerHowToLogos a {
+  text-decoration: none;
 }
 .registerLogosSteps {
   font-family: Lato;
@@ -2880,7 +2700,7 @@ margin: 0px;
   text-align: center;
   color: #1e3089;
 }
-.registerHowToLogos img:nth-child(even){
+.registerHowToLogos img:nth-child(even) {
   margin-bottom: 115px;
 }
 .registerMainTextContainer {
@@ -2898,7 +2718,7 @@ margin: 0px;
   text-align: left;
   color: #000000;
 }
-.registerSubtitle{
+.registerSubtitle {
   font-family: Lato;
   font-size: 18px;
   font-weight: bold;
@@ -2937,6 +2757,11 @@ margin: 0px;
   align-self: center;
   margin-top: 32px;
 }
+
+.registerBtn a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .registerListItems {
   text-align: left;
 }
@@ -2948,7 +2773,7 @@ margin: 0px;
   text-align: left;
   color: #f5483a;
 }
-.registerNumberContainer{
+.registerNumberContainer {
   display: flex;
   align-items: center;
   margin-bottom: 21px;
@@ -2957,7 +2782,6 @@ margin: 0px;
 /****************************REGISTER-HOW END**************************/
 /****************************REGISTER-HOW END**************************/
 /****************************REGISTER-HOW END**************************/
-
 
 /****************************REGISTER-ONGOING**************************/
 /****************************REGISTER-ONGOING**************************/
@@ -2978,28 +2802,32 @@ margin: 0px;
   border-collapse: collapse;
   /*width: 620px;*/
 }
-.registerTable, td, th {
+.registerTable,
+td,
+th {
   border: 1px solid #999;
   /*padding: 0.5rem;*/
   text-align: center;
 }
-.registerTable tr {
+/* .registerTable tr {
   vertical-align: ;
-}
+} */
+
 .registerTable th {
   /*width: 100%;*/
   display: table-cell;
   color: white;
   background-color: #f5483a;
 }
-.registerTable thead{
+/* .registerTable thead{
   /*width: 100%;*/
-}
+/* }  */
 .registerTable td:last-child {
   font-weight: normal;
   text-align: center;
 }
-.registerTable td, .registerTable th {
+.registerTable td,
+.registerTable th {
   width: 30%;
 }
 .ongoing-Registration {
@@ -3040,6 +2868,11 @@ margin: 0px;
   align-self: left;
   margin-top: 24px;
   margin-bottom: 46px;
+}
+
+.registerOngoingBtn a {
+  text-decoration: none;
+  color: white;
 }
 .registerLeftColumn {
   flex-basis: 35%;

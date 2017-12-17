@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import axios from 'axios';
 
 class OurTeam extends Component {
@@ -9,7 +10,7 @@ class OurTeam extends Component {
   }
 
   componentDidMount() {
-    axios.get(`/page/${this.state.pageTitle}`).then(res => {
+    axios.get(`/api/page/${this.state.pageTitle}`).then(res => {
       let { pageContent } = res.data;
       console.log(pageContent);
       this.setState({
@@ -101,7 +102,7 @@ class OurTeam extends Component {
   
       <div className="ourTeamInfo">
       <div className="ourTeamInfoText">{content.lastContent}</div>
-      <div className="ourTeamInfoBtn">LOCATIONS</div>
+      <Link to="/locations" className="ourTeamInfoBtn">LOCATIONS</Link>
       
       </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const registerHowTo = props => {
   return(
@@ -8,21 +8,22 @@ const registerHowTo = props => {
       <h2 className="sign-up-your-child">Sign Your Child Up For Serious Fun After School</h2>
       <div className="registerHowToLogos">
         <div>
-          <img alt='' src={require("../assets/register/image-dskp-reg-registration-icon.png")}/>
+          <a href="#regisIDOne"><img alt='' src={require("../assets/register/image-dskp-reg-registration-icon.png")}/>
           <p className="registerLogosSteps">Step 1</p>
-          <p className="registerLogosStepsText">Register</p>
+          <p className="registerLogosStepsText">Register</p></a>
         </div>
         <img alt='' src={require("../assets/register/image-dskp-reg-arrow-icon.png")}/>
         <div>
-          <img alt='' src={require("../assets/register/image-dskp-reg-enroll-icon.png")}/>
+        <a href="#regisIDTwo"><img alt='' src={require("../assets/register/image-dskp-reg-enroll-icon.png")}/>
           <p className="registerLogosSteps">Step 2</p>
-          <p className="registerLogosStepsText">Enroll</p>
+          <p className="registerLogosStepsText">Enroll</p></a>
         </div>
         <img alt='' src={require("../assets/register/image-dskp-reg-arrow-icon.png")}/>
         <div>
+        <a href="#regisIDThree">
           <img alt='' src={require("../assets/register/image-dskp-reg-meet-icon.png")}/>
           <p className="registerLogosSteps">Step 3</p>
-          <p className="registerLogosStepsText">Meet</p>
+          <p className="registerLogosStepsText">Meet</p></a>
         </div>
       </div>
 
@@ -35,7 +36,7 @@ const registerHowTo = props => {
         <br></br>
         <h4 className="registerSubtitleSmall">Ongoing Registration:</h4>
         <p className="registerText">Children can start in a Serious Fun program at any point during the school year at a prorated tuition. The start dates for ongoing registration are every 1st and 15th of the month (or the following Monday if the 1st or 15th falls during the weekend.</p>
-        <button class="registerBtn">ONGOING REGISTRATION</button>
+        <button  class="registerBtn"><Link to="/registerOngoing">ONGOING REGISTRATION</Link></button>
       </div>
 
       <hr className="line-2"/>
@@ -43,7 +44,7 @@ const registerHowTo = props => {
       <div className="registerMainTextContainer">
         <div className="registerNumberContainer">
           <img alt='' src={require("../assets/register/image-dsktp-step-1.png")}/>
-          <span className="registerSubtitleBig">Register Your Child</span>
+          <span id="regisIDOne" className="registerSubtitleBig">Register Your Child</span>
         </div>
         <div className="registerMainInnerTextContainer">
           <p className="registerText">You must first complete a full Registration Packet before enrolling your child in a Serious Fun After School Program. This step should be completed online. To register your child, you will need to provide the following:</p>
@@ -60,7 +61,7 @@ const registerHowTo = props => {
             <li>Individual Health Care Plan</li>
             <li>Medication Consent Form</li>
           </ul>
-          <button class="registerBtn">REGISTER NOW</button>
+          <button  className="registerBtn"><Link to="/registerOngoing">REGISTER NOW</Link></button>
         </div>
       </div>
 
@@ -70,11 +71,11 @@ const registerHowTo = props => {
       <div className="registerMainTextContainer">
         <div className="registerNumberContainer">
           <img alt='' src={require("../assets/register/image-dsktp-step-2.png")}/>
-          <span className="registerSubtitleBig">Enroll in Enrichment Classes</span>
+          <span id="regisIDTwo" className="registerSubtitleBig">Enroll in Enrichment Classes</span>
         </div>
         <div className="registerMainInnerTextContainer">
           <p className="registerText">Once you have completed the full Registration Packet, you should review and select the daily enrichment classes you would like to enroll your child in. </p>
-          <button class="registerBtn">CHOOSE CLASSES</button>
+          <button class="registerBtn"><Link to="/registerOngoing">CHOOSE CLASSES</Link></button>
         </div>
       </div>
 
@@ -85,11 +86,11 @@ const registerHowTo = props => {
       <div className="registerMainTextContainer">
         <div className="registerNumberContainer">
           <img alt='' src={require("../assets/register/image-dsktp-step-3.png")}/>
-          <span className="registerSubtitleBig">Meet the Site Director</span>
+          <span id="regisIDThree" className="registerSubtitleBig">Meet the Site Director</span>
         </div>
         <div className="registerMainInnerTextContainer">
           <p className="registerText">To complete signing your child up, book an in-person appointment to meet with the site director of the Serious Fun location your child will attend.</p>
-          <button class="registerBtn">BOOK APPOINTMENT</button>
+          <button class="registerBtn"><a href="http://seriousfunnyc.simplybook.me/v2"> BOOK APPOINTMENT</a></button>
         </div>
       </div>
 

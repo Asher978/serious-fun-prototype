@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import axios from "axios";
 
 class Supporters extends Component{
@@ -10,7 +10,7 @@ class Supporters extends Component{
   }
 
   componentDidMount() {
-    axios.get(`/page/${this.state.pageTitle}`).then(res => {
+    axios.get(`/api/page/${this.state.pageTitle}`).then(res => {
       let { pageContent } = res.data;
       console.log(pageContent);
       this.setState({

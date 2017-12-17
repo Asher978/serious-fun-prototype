@@ -50,7 +50,7 @@ const registerOngoing = props => {
       </table>
 
       <div className="registerLeftColumn">
-        <button className="registerOngoingBtn">REGISTER NOW</button>
+        <button className="registerOngoingBtn"><a href="https://seriousfunnyc.asapconnected.com/Login">REGISTER NOW</a></button>
         <h4 className="registerOngoingSubtitleSmall">Tuition:</h4>
         <p className="registerOngoingText">You may register your child at any point throughout the school year. The tuition will be pro-rated. Contact Serious Fun to find out your rates.</p>
         <button className="registerOngoingBtn">EMAIL</button>

@@ -6,6 +6,7 @@ import AddSchool from './AddSchool';
 import AddClass from './AddClass';
 import EditForm from './EditForm';
 import CareersUI from './CareersUI';
+import ReviewsUI from './ReviewsUI';
 import Upload from '../../modules/Upload';
 
 
@@ -60,7 +61,7 @@ class Dashboard extends Component {
     this.getSchoolCoords();
 
     if (this.state.coordsLoaded) {
-      axios.post('/schools/add', {
+      axios.post('/api/schools/add', {
         'schoolName': this.state.schoolName,
         'st_Addr': this.state.st_Addr,
         'city': this.state.city,
@@ -90,7 +91,7 @@ class Dashboard extends Component {
 
   handleAddClass = e => {
     e.preventDefault();
-    axios.post('/classes', {
+    axios.post('/api/classes', {
       'className': this.state.classname,
       'desc': this.state.desc,
       'price': this.state.price,
@@ -125,7 +126,7 @@ class Dashboard extends Component {
 
   async componentDidMount() {
     console.log(this.props)
-    axios.get('/schools/').then(res => {
+    axios.get('/api/schools/').then(res => {
       this.setState({
         schools : res.data,
         schoolsLoaded: true
@@ -133,7 +134,7 @@ class Dashboard extends Component {
     }).catch(err=>{
       console.log(err);
     });
-    await axios.get('/page/').then(res => {
+    await axios.get('/api/page/').then(res => {
       this.setState({
         pages: res.data.pages
       },()=> {
@@ -178,6 +179,8 @@ class Dashboard extends Component {
           return ( <EditForm pages={this.state.pages} />)
       case 'Careers': 
           return ( <CareersUI />)
+      case 'Reviews': 
+          return ( <ReviewsUI />)    
       default:
         break
     }
@@ -201,8 +204,9 @@ class Dashboard extends Component {
                   <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
                     <li><a type='button' onClick={() => this.setState({ page: 'school' })}>Add a School</a></li>
                     <li><a type='button' onClick={() => this.setState({ page: 'class' })}>Add a Class</a></li>
-                    <li><a type='button' onClick={() => this.setState({ page: 'Page' })}>Edit a Page</a></li>
-                    <li><a type='button' onClick={() => this.setState({ page: 'Careers' })}>Manage Careers</a></li>
+                    <li><input type='button' value="Manage Pages" onClick={() => this.setState({ page: 'Page' })}/></li>
+                    <li><input type='button' value="Manage Careers"onClick={() => this.setState({ page: 'Careers' })}/></li>
+                    <li><input type='button' value="Manage Reviews" onClick={() => this.setState({ page: 'Reviews' })}/></li>
                   </ul>
                 </div>
               </div>

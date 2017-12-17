@@ -13,18 +13,18 @@ const Nav = props => {
             <p className="mainSubTitle">A Creative Space for Curious Kids</p>
           </div>
 
-          <Link to="" className="helpBtn">
+          <Link to="/donate" className="helpBtn">
             Donate
           </Link>
 
           <div className="user">
-            <Link to="" id="login" className="userAuth">
+            <a href="https://seriousfunnyc.asapconnected.com/Login" id="login" className="userAuth">
               Login
-            </Link>
+            </a>
             <div className="userAuth">|</div>
-            <Link to="" id="signUp" className="userAuth">
+            <a href="https://seriousfunnyc.asapconnected.com/Login" id="signUp" className="userAuth">
               Sign Up
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@ const Nav = props => {
 
             <div className="dropdownMenu regis">
               <div className="registrationDrop">
-                <Link to="/register" id="registerDrop" className="dropLinks">
+                <Link to="/registerhowto" id="registerDrop" className="dropLinks">
                   How-To Register
                 </Link>
                 <Link to="/registerOngoing" id="onGoingDrop" className="dropLinks">

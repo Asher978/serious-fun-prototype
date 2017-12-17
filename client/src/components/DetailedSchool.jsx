@@ -12,7 +12,7 @@ class DetailedSChool  extends Component {
 
     componentDidMount() {
         let id = this.props.match.params.school_id;
-        axios.get(`/schools/${id}`).then(response => {
+        axios.get(`/api/schools/${id}`).then(response => {
             console.log(response)
             this.setState({
                 data: response.data.school,

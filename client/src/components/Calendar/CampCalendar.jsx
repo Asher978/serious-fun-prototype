@@ -1,9 +1,59 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { Component } from "react";
 
-import FullCalendar from "./FullCalendar";
+var $ = window.$;
+let allEvents = [
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
+  },
+  {
+    googleCalendarId: "55161l7ed74nkj2ifm41mcu8ao@group.calendar.google.com",
+    className: "nice-event"
+  }
+];
+class CampCalendar extends Component {
 
-const CampCalendar = props => {
+
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: ""
+    };
+    this.campsCalendar = this.campsCalendar.bind(this);
+  }
+  componentDidMount() {
+    this.CampFullCalendar(allEvents);
+    console.log(allEvents);
+  }
+
+  campsCalendar(e) {
+    this.setState({
+      value: e
+    });
+  }
+
+  componentWillUpdate(newProps, newState) {
+    if (newState.value === "SelectOrAll") {
+      this.CampFullCalendar(allEvents);
+    } else if (newState.value === "Summer") {
+      this.CampFullCalendar([allEvents[0]]);
+    } else if (newState.value === "Autumn") {
+      this.CampFullCalendar([allEvents[1]]);
+    }
+  }
+
+  CampFullCalendar(e) {
+    $("#fullCalendar").remove();
+    $("#fullCalendarContainer").append('<div id="fullCalendar"></div>');
+
+    $("#fullCalendar").fullCalendar({
+      googleCalendarApiKey: "AIzaSyDU_CakcARBmp2KzTSfDe7TO2Ta5jzaLS4",
+      eventSources: e
+    });
+  }
+
+
+render(){
   return (
     <div className="CalendarContainer campCalendarCalendar">
       <p className="CalendarMainTitle campCalendarCalendarMainTitle">
@@ -18,9 +68,11 @@ const CampCalendar = props => {
         <select
           name="CalendarAfterSchool"
           className="CalendarLocationDropMenu campCalendarCalendarLocationDropMenu"
+          onChange={e => this.campsCalendar(e.target.value)}
+          value={this.state.value}
         >
-          <option value="Select Location" selected>
-            Select Season
+          <option value="SelectOrAll" selected>
+            Select All Seasons
           </option>
           <option value="Summer">Summer</option>
           <option value="Autumn">Autumn</option>
@@ -30,9 +82,12 @@ const CampCalendar = props => {
         </select>
       </div>
 
-      <FullCalendar />
+      <div id="fullCalendarContainer">
+      <div id="fullCalendar" />
     </div>
-  );
+
+    </div>
+  )};
 };
 
 export default CampCalendar;

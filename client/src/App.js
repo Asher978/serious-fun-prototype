@@ -7,6 +7,7 @@ import Auth from "./modules/Auth";
 import RegisterForm from "./components/Dashboard/RegisterForm";
 import LoginForm from "./components/Dashboard/LoginForm";
 import Nav from "./components/Nav";
+import Donate from "./components/Donate/Donate";
 
 
 
@@ -56,7 +57,7 @@ import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/Dashboard/EditSchool';
 import Footer from './components/Footer';
-import HamburgerMenu from './components/HamburgerMenu';
+// import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import RegisterHowTo from './components/RegisterHowTo';
@@ -70,7 +71,6 @@ class App extends Component {
     loginUsername: "",
     loginPassword: "",
     open: false,
-    loginPassword: ""
   };
 
   // use of arrow functions to avoid bindings
@@ -85,7 +85,7 @@ class App extends Component {
   handleRegister = e => {
     e.preventDefault();
     axios
-      .post("/user", {
+      .post("/api/user", {
         username: this.state.registerUsername,
         password: this.state.registerPassword
       })
@@ -106,7 +106,7 @@ class App extends Component {
   handleLogin = e => {
     e.preventDefault();
     axios
-      .post("/user/login", {
+      .post("/api/user/login", {
         username: this.state.loginUsername,
         password: this.state.loginPassword
       })
@@ -127,7 +127,7 @@ class App extends Component {
 
   handleLogout = () => {
     axios
-      .delete("/user/logout", {
+      .delete("/api/user/logout", {
         headers: {
           "x-auth": Auth.getToken()
         }
@@ -156,6 +156,7 @@ class App extends Component {
 
           <Route exact path="/" component={Home} />
           <Route exact path="/aboutus" component={AboutUs} />
+          <Route exact path="/donate" component={Donate} />
           <Route exact path="/ourteam" component={OurTeam} />
           <Route exact path="/careers" component={Careers} />
 
@@ -185,7 +186,7 @@ class App extends Component {
           <Route exact path="/afterschoolcalendar" component={AfterSchoolCalendar} />
           <Route exact path="/campCalendar" component={CampCalendar} />
           <Route exact path="/specialevents" component={SpecialEvents} />
-          <Route exact path="/register" component={RegisterHowTo}/>
+          <Route exact path="/registerhowto" component={RegisterHowTo}/>
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/faq" component={FAQ} />
           <Route exact path="/registerOngoing" component={RegisterOngoing}/>

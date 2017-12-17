@@ -12,14 +12,14 @@ class Careers extends Component {
 
   componentDidMount() {
     axios.all([
-      axios.get(`/page/${this.state.pageTitle}`),
-      axios.get('/careers')
+      axios.get(`/api/page/${this.state.pageTitle}`),
+      axios.get('/api/careers')
     ]).then(axios.spread((pageRes, careersRes) => {
       let cities =[],
         parseCareers = careersRes.data.jobs.map((job)=>{
           job.location = JSON.parse(job.location); 
           let { city } = job.location;
-          (cities.indexOf(city) == -1)? cities.push(city) : null;
+          if(cities.indexOf(city) === -1) cities.push(city);
           return job;
        });
        console.log(cities);
@@ -40,14 +40,14 @@ class Careers extends Component {
           return (
             <div key={iterator}>
               <div className="careerInfoTextLocationTitle">{city}, NY</div>
-          {careers.map( job => (job.location.city == city) ? <Link className="careerInfoTextLocationText" key={job._id} to={job.jobLink} target='_blank'>{job.title}</Link> : null)}
+            {careers.map( job =>(job.location.city === city) ? <Link className="careerInfoTextLocationText" key={job._id} to={job.jobLink} target='_blank'>{job.title}</Link> : null)}
             </div>)
         })}
       </div>
     )
   }
   renderCareersPage = () => {
-    let { content, careers, cities } = this.state;
+    let { content, careers } = this.state;
     return (
       <div className="career">
       <div className="careerPic"></div>
