@@ -8,6 +8,12 @@ let allEvents = [
   {
     googleCalendarId: "55161l7ed74nkj2ifm41mcu8ao@group.calendar.google.com",
     className: "nice-event"
+  },
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
+  },
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
   }
 ];
 class CampCalendar extends Component {
@@ -39,6 +45,12 @@ class CampCalendar extends Component {
       this.CampFullCalendar([allEvents[0]]);
     } else if (newState.value === "Autumn") {
       this.CampFullCalendar([allEvents[1]]);
+    
+    } else if (newState.value === "Winter") {
+      this.CampFullCalendar([allEvents[2]]);
+    
+    } else if (newState.value === "Spring") {
+      this.CampFullCalendar([allEvents[3]]);
     }
   }
 
