@@ -14,12 +14,12 @@ class CalendarLists extends Component {
     this.authenticate = this.authenticate.bind(this);
     this.loadClient = this.loadClient.bind(this);
     this.execute = this.execute.bind(this);
-    this.SettingState = this.SettingState.bind(this);
   }
 
   componentDidMount() {
     window.gapi.load("client:auth2", function() {
       window.gapi.auth2.init({ client_id: CLIENT_ID, scope: SCOPES });
+      console.log("Gapi Auth Init");
     });
   }
 
@@ -41,8 +41,9 @@ class CalendarLists extends Component {
     return window.gapi.client
       .load("https://content.googleapis.com/discovery/v1/apis/calendar/v3/rest")
       .then(
-        function() {
+        () => {
           console.log("GAPI client loaded for API");
+          this.execute();
         },
         function(error) {
           console.error("Error loading GAPI client for API");
@@ -52,13 +53,13 @@ class CalendarLists extends Component {
 
   // Make sure the client is loaded and sign-in is complete before calling this method.
   execute() {
-    let IDs = [];
-    this.SettingState(IDs);
-    return window.gapi.client.calendar.calendarList.list({}).then(
-      function(response) {
+    window.gapi.client.calendar.calendarList.list({}).then(
+      response => {
         // Handle the results here (response.result has the parsed body).
         response.result.items.forEach(e => {
-          return IDs.push(e.id);
+          return this.setState({
+            calendarIds: e.id
+          });
         }, this);
       },
       function(error) {
@@ -67,21 +68,14 @@ class CalendarLists extends Component {
     );
   }
 
-  SettingState(ids) {
-    this.setState({
-      calendarIds: ids
-    });
-  }
-
   render() {
     console.log("calendarIds", this.state.calendarIds);
     return (
       <div id="authorize-div" style={{ display: "" }}>
         <span>Authorize access to Google Calendar API</span>
         <button onClick={this.authenticate ? this.loadClient : ""}>
-          authorize and load
+          <h3>CLICK HERE to Console Log All THE CALENDAR IDs</h3>
         </button>
-        <button onClick={this.execute}>execute</button>
       </div>
     );
   }
