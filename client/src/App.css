@@ -2367,6 +2367,57 @@ td:last-child {
 /***************************MOBILE*************************/
 /***************************MOBILE*************************/
 /***************************MOBILE*************************/
+@media (max-width: 1024px) {
+  .navbar .container,
+  .navbar .topBar .container,
+  .classContainer,
+  .overViewContainer,
+  .tuitionContainer,
+  .PSContainer,
+  .ourTeam,
+  .supportersContainer,
+  .peopleSayContainer,
+  .transportationContainer,
+  .policiesContainer,
+  .campsContainer,
+  .CalendarContainer,
+  .eventInfoContainer,
+  .registerHowToContainer,
+  .registerOngoingContainer,
+  .faqContainer,
+  .contactTop,
+  .ClassesContainer,
+  .donateContainer {
+    width: 89% !important;
+  }
+
+  .overViewRightSec {
+    margin-right: 0px;
+  }
+
+  .ourContainer {
+    width: 84%;
+  }
+  .afterSchoolTop {
+    width: 92%;
+  }
+  .infoLocationBottomMap {
+    margin: 0px auto 98px auto;
+  }
+  .fc-header-toolbar,
+  .fc-view-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .faqLogos {
+    justify-content: space-between !important;
+  }
+
+  .contactHRVerticalLine {
+    margin: 0px 3% !important;
+  }
+}
 
 @media (max-width: 320px) {
   .topHead {
@@ -2421,6 +2472,7 @@ td:last-child {
     display: none;
   }
 }
+
 /***************************MOBILE END*********************/
 /***************************MOBILE END*********************/
 /***************************MOBILE END*********************/
