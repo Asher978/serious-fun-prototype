@@ -53,22 +53,22 @@ class CalendarLists extends Component {
 
   // Make sure the client is loaded and sign-in is complete before calling this method.
   execute() {
-    return window.gapi.client.calendar.calendarList.list({}).then(
+    let IDs = [];
+    window.gapi.client.calendar.calendarList.list({}).then(
       function(response) {
         // Handle the results here (response.result has the parsed body).
         response.result.items.map(function(ids) {
           console.log(ids.id);
-
-          this.setState({
+          return this.setState({
             calendarListIDs: ids.id
           });
         });
-        console.log("Response", this.state.calendarListIDs);
       },
       function(error) {
         console.error("Execute error", error);
       }
     );
+    console.log(this.state.calendarListIDs, "checking");
   }
 
   render() {
