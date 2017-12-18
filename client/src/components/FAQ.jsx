@@ -68,7 +68,7 @@ const FAQ = props => {
         <p className="faqAnswer">Yes. To set up a recurring charge to your credit card or Echeck (ACH), please store your payment information under your secure online profile at our Online Registration Page.</p>
         <h3 className="faqQuestion">Can I cancel after submitting payment ?</h3>
         <p className="faqAnswer">Insert response here.</p>
-        <button className="faqBtn"><Link to="/policies">POLICIES</Link></button>
+        <Link to="/policies"><button className="faqBtn">POLICIES</button></Link>
       </div>
 
 
