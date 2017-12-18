@@ -3018,8 +3018,8 @@ th {
 
   .transportationInnerBottomText,
   .transportationInnerBottomSubText {
-    width: 100% !important;
-    height: auto !important;
+    width: 100% ;
+    height: auto ;
   }
   .transportationInnerBottom {
     margin-right: 0px;
@@ -3038,13 +3038,13 @@ th {
     font-size: 17px;
   }
   .fc-scroller {
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
+    overflow-x: hidden ;
+    overflow-y: hidden ;
   }
 
   /* Register */
   .line-2 {
-    width: 100% !important;
+    width: 100% ;
   }
 
   .registerOngoingContainer {
@@ -3095,6 +3095,13 @@ th {
   .afterSchoolLocationInfoColumn{
     width: 67%;
   }
+}
+
+@media (max-width: 700px) {
+.ourClass,.ourHomeTeam,.ourDifference{
+  align-items: center;
+  margin-bottom: 30px;
+}
 }
 
 @media (max-width: 320px) {
