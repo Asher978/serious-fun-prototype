@@ -238,6 +238,11 @@ body {
   margin: 40px 0px 43px 0px;
 }
 
+.ourClass, .ourHomeTeam,.ourDifference{
+  display: flex;
+  flex-direction: column;
+}
+
 .ourContainer .ourPic {
   background-repeat: no-repeat;
   background-position: center;
@@ -2304,7 +2309,7 @@ td:last-child {
   align-items: center;
 }
 .navbar .topBar .container .socialLinks {
-  margin: 0px 8px;
+  margin: 0px 6px;
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -2416,6 +2421,63 @@ td:last-child {
 
   .contactHRVerticalLine {
     margin: 0px 3% !important;
+  }
+}
+
+@media (max-width: 768px){
+  .ourContainer{
+    width: 95%;
+  }
+  .ourInfo .textPara{
+    width: 82%;
+    height: auto;
+  }
+
+  .ourMoreInfo{
+    width: 84%;
+  }
+
+  .ourMoreInfoBtn{
+    width: 300px !important;
+  }
+
+  .aboutUsInfoContainer, .careerInfoBox{
+    width: 93%;
+  }
+  .aboutUs .aboutUsInfoContainer .infoOurText, .infoOurMoreInfo, .careerInfoText {
+    width: auto !important;
+  }
+
+  .overViewTextColumnSubText{
+    width: 95%;
+  }
+  .overViewHR{
+    width: 314px;
+  }
+
+  .afterSchoolLocationContainer{
+    width: auto;
+    margin: auto;
+  }
+  .hrVerticalLine{
+    margin: 0px 20px;
+  }
+
+  .afterSchoolLocationInfoColumnContainer .afterSchoolLocationInfoColumn {
+    margin-right: 0px;
+  }
+
+  .afterSchoolLocation first, .afterSchoolLocationContainer .first{
+    margin-left: 0px;
+  }
+
+  .afterSchoolLocation .afterSchoolLocationInfoText{
+    width: 200px;
+  }
+
+
+  .infoLocationBottomMap{
+    width: 100%;
   }
 }
 
