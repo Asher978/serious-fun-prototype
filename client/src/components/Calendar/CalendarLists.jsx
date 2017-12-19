@@ -18,7 +18,7 @@ class CalendarLists extends Component {
 
   componentDidMount() {
     window.gapi.load("client:auth2", function() {
-      window.gapi.auth2.init({ client_id: CLIENT_ID, scope: SCOPES });
+      window.gapi.auth2.init({ client_id: CLIENT_ID });
       console.log("Gapi Auth Init");
     });
   }
@@ -26,13 +26,13 @@ class CalendarLists extends Component {
   authenticate() {
     return window.gapi.auth2
       .getAuthInstance()
-      .signIn()
+      .signIn({scope: "https://www.googleapis.com/auth/calendar.readonly"})
       .then(
-        function() {
+        ()=> {
           console.log("Sign-in successful");
           this.loadClient();
         },
-        function(error) {
+        (error) => {
           console.error("Error signing in", error);
         }
       );
@@ -73,7 +73,7 @@ class CalendarLists extends Component {
     return (
       <div id="authorize-div" style={{ display: "" }}>
         <span>Authorize access to Google Calendar API</span>
-        <button onClick={this.authenticate ? this.loadClient : ""}>
+        <button onClick={this.authenticate}>
           <h3>CLICK HERE to Console Log All THE CALENDAR IDs</h3>
         </button>
       </div>
