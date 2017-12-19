@@ -3028,7 +3028,7 @@ th {
 
   /* Poilcies */
   .policiesInnerText {
-    width: 674px;
+    width: 100%;
     height: auto;
   }
 
@@ -3038,8 +3038,8 @@ th {
     font-size: 17px;
   }
   .fc-scroller {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
   }
 
   /* Register */
@@ -3097,11 +3097,23 @@ th {
 }
 
 @media (max-width: 700px) {
+
+  .ourContainer,.ourTeamMemberInfo,.classTopPicContainerTOP,.classTopPicContainerBottom{
+    flex-wrap: wrap;
+  }
+
   .ourClass,
   .ourHomeTeam,
   .ourDifference {
-    align-items: center;
+    /* align-items: center; */
     margin-bottom: 30px;
+  }
+
+  .hrVerticalLine{
+    height: 2px;
+  }
+  .classTopPicContainerTOP,.classTopPicContainerBottom{
+    justify-content: center;
   }
 }
 
