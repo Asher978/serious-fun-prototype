@@ -36,7 +36,7 @@ const registerHowTo = props => {
         <br></br>
         <h4 className="registerSubtitleSmall">Ongoing Registration:</h4>
         <p className="registerText">Children can start in a Serious Fun program at any point during the school year at a prorated tuition. The start dates for ongoing registration are every 1st and 15th of the month (or the following Monday if the 1st or 15th falls during the weekend.</p>
-        <button  class="registerBtn"><Link to="/registerOngoing">ONGOING REGISTRATION</Link></button>
+        <button  className="registerBtn"><Link to="/registerOngoing">ONGOING REGISTRATION</Link></button>
       </div>
 
       <hr className="line-2"/>
