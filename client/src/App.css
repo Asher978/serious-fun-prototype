@@ -238,6 +238,13 @@ body {
   margin: 40px 0px 43px 0px;
 }
 
+.ourClass,
+.ourHomeTeam,
+.ourDifference {
+  display: flex;
+  flex-direction: column;
+}
+
 .ourContainer .ourPic {
   background-repeat: no-repeat;
   background-position: center;
@@ -2304,7 +2311,7 @@ td:last-child {
   align-items: center;
 }
 .navbar .topBar .container .socialLinks {
-  margin: 0px 8px;
+  margin: 0px 6px;
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -2364,70 +2371,6 @@ td:last-child {
   margin: 0 auto;
 }
 
-/***************************MOBILE*************************/
-/***************************MOBILE*************************/
-/***************************MOBILE*************************/
-
-@media (max-width: 320px) {
-  .topHead {
-    /*display: hidden;*/
-    background-size: contain;
-    height: 41px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .navLink {
-    display: none;
-  }
-  .hamburgerMenuDiv {
-    width: 21px;
-    height: 14px;
-    z-index: 9;
-    top: 0;
-  }
-  .midHead .mainLogo {
-    height: 29px;
-    width: 117px;
-    background-size: contain;
-    background-position: center;
-  }
-
-  .midHead .helpBtn {
-    display: none;
-  }
-
-  .textTitle {
-    display: none;
-  }
-  .ourInfo .textPara {
-    width: 288px;
-    height: 76px;
-    font-size: 16px;
-  }
-  .ourContainer {
-    flex-direction: column;
-  }
-  .ourMoreInfo {
-    flex-direction: column;
-  }
-  .ourMoreInfo .ourMoreInfoText {
-    width: 288px;
-    height: 52px;
-    font-size: 18px;
-    text-align: center;
-  }
-  .navbar .topBar .container .copyright {
-    display: none;
-  }
-}
-/***************************MOBILE END*********************/
-/***************************MOBILE END*********************/
-/***************************MOBILE END*********************/
-
-/***************************CONTACT US**********************/
-/***************************CONTACT US**********************/
-/***************************CONTACT US**********************/
 /* .contactContainer {
 } */
 .contactTop {
@@ -2881,3 +2824,344 @@ th {
   flex-basis: 50%;
   margin-left: 35px;
 }
+
+/***************************MOBILE*************************/
+/***************************MOBILE*************************/
+/***************************MOBILE*************************/
+@media (max-width: 1024px) {
+  .navbar .container,
+  .navbar .topBar .container,
+  .classContainer,
+  .overViewContainer,
+  .tuitionContainer,
+  .PSContainer,
+  .ourTeam,
+  .supportersContainer,
+  .peopleSayContainer,
+  .transportationContainer,
+  .policiesContainer,
+  .campsContainer,
+  .CalendarContainer,
+  .eventInfoContainer,
+  .registerHowToContainer,
+  .registerOngoingContainer,
+  .faqContainer,
+  .contactTop,
+  .ClassesContainer,
+  .donateContainer {
+    width: 89% !important;
+  }
+
+  .overViewRightSec {
+    margin-right: 0px;
+  }
+
+  .ourContainer {
+    width: 84%;
+  }
+  .afterSchoolTop {
+    width: 92%;
+  }
+  .infoLocationBottomMap {
+    margin: 0px auto 98px auto;
+  }
+  .fc-header-toolbar,
+  .fc-view-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .faqLogos {
+    justify-content: space-between !important;
+  }
+
+  .contactHRVerticalLine {
+    margin: 0px 3% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ourContainer {
+    width: 95%;
+  }
+  .ourInfo .textPara {
+    width: 82%;
+    height: auto;
+  }
+
+  .ourMoreInfo {
+    width: 84%;
+  }
+
+  .ourMoreInfoBtn {
+    width: 300px !important;
+  }
+
+  .aboutUsInfoContainer,
+  .careerInfoBox {
+    width: 93%;
+  }
+  .aboutUs .aboutUsInfoContainer .infoOurText,
+  .infoOurMoreInfo,
+  .careerInfoText {
+    width: auto !important;
+  }
+
+  .overViewTextColumnSubText {
+    width: 95%;
+  }
+  .overViewHR {
+    width: 314px;
+  }
+
+  .afterSchoolLocationContainer {
+    width: auto;
+    margin: auto;
+  }
+  .hrVerticalLine {
+    margin: 0px 20px;
+  }
+
+  .afterSchoolLocationInfoColumnContainer .afterSchoolLocationInfoColumn {
+    margin-right: 0px;
+  }
+
+  .afterSchoolLocation first,
+  .afterSchoolLocationContainer .first {
+    margin-left: 0px;
+  }
+
+  .afterSchoolLocation .afterSchoolLocationInfoText {
+    width: 200px;
+  }
+
+  .PSInnerContainerTop {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .PSInnerContainerTop div:last-child {
+    margin-right: 0px;
+  }
+  .PSLocationBox {
+    margin-right: auto;
+  }
+  .infoLocationBottomMap {
+    width: 100%;
+  }
+  .PSLocationTitle ps17qlocationtitle {
+    font-size: 24px;
+  }
+  .PSSubTitles {
+    font-size: 18px;
+  }
+
+  .PSLocationText {
+    font-size: 14px;
+  }
+  .PSLocationImageContainer {
+    justify-content: center;
+  }
+  .PSLocationImage {
+    display: none;
+  }
+
+  .PSLocationImage,
+  .PSMapImage {
+    width: 100%;
+    height: 220px;
+  }
+  .PSInfoMidContainer,
+  .PSOutterContainer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .PSBottomContainer {
+    width: 100%;
+  }
+
+  .PSCalendarText,
+  .PSReminderText {
+    width: 75%;
+  }
+  .classBottomPicContainer a {
+    width: 250px;
+    height: 150px;
+  }
+
+  /* Classes */
+  .ClassesTopInnerContainer {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .ClassesRightTop {
+    justify-content: space-between;
+  }
+
+  .ClassesMidInnerContainer {
+    flex-wrap: wrap;
+  }
+
+  .transportationInnerContainer {
+    width: 100%;
+  }
+
+  .tuitionRightCancelSubTitle,
+  .tuitionRightCancelSubText {
+    width: 350px;
+  }
+
+  .transportationInnerTopText,
+  .transportationInnerMidText {
+    width: 450px;
+  }
+
+  .transportationInnerBottomText,
+  .transportationInnerBottomSubText {
+    width: 100% ;
+    height: auto ;
+  }
+  .transportationInnerBottom {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* Poilcies */
+  .policiesInnerText {
+    width: 674px;
+    height: auto;
+  }
+
+  /* Calendar */
+  .CalendarSubDate,
+  .CalendarLocationDropMenu {
+    font-size: 17px;
+  }
+  .fc-scroller {
+    overflow-x: hidden ;
+    overflow-y: hidden ;
+  }
+
+  /* Register */
+  .line-2 {
+    width: 100% ;
+  }
+
+  .registerOngoingContainer {
+    flex-direction: column;
+  }
+
+  .registerRightColumn {
+    margin-left: 0px;
+  }
+
+  /* FAQ */
+  .faqLogos{
+    flex-wrap: wrap;
+  }
+
+  .faqLogosText{
+    flex-basis: 50%;
+  }
+
+  .faqMainTextContainer{
+    width: 100%;
+  }
+
+  /* Contact */
+
+  .Sign-up-for-Serious{
+    width: 500px;
+  }
+  .afterSchoolLocationContainer{
+    flex-direction: column;
+  }
+
+  .afterSchoolLocation{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .afterSchoolLocationTitle{
+    width: 67%;
+  }
+  .contactHRVerticalLine{
+    height: 1px;
+    /* width: 100%; */
+
+  }
+  .afterSchoolLocationInfoColumn{
+    width: 67%;
+  }
+}
+
+@media (max-width: 700px) {
+.ourClass,.ourHomeTeam,.ourDifference{
+  align-items: center;
+  margin-bottom: 30px;
+}
+}
+
+@media (max-width: 320px) {
+  .topHead {
+    /*display: hidden;*/
+    background-size: contain;
+    height: 41px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .navLink {
+    display: none;
+  }
+  .hamburgerMenuDiv {
+    width: 21px;
+    height: 14px;
+    z-index: 9;
+    top: 0;
+  }
+  .midHead .mainLogo {
+    height: 29px;
+    width: 117px;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .midHead .helpBtn {
+    display: none;
+  }
+
+  .textTitle {
+    display: none;
+  }
+  .ourInfo .textPara {
+    width: 288px;
+    height: 76px;
+    font-size: 16px;
+  }
+  .ourContainer {
+    flex-direction: column;
+  }
+  .ourMoreInfo {
+    flex-direction: column;
+  }
+  .ourMoreInfo .ourMoreInfoText {
+    width: 288px;
+    height: 52px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .navbar .topBar .container .copyright {
+    display: none;
+  }
+}
+
+/***************************MOBILE END*********************/
+/***************************MOBILE END*********************/
+/***************************MOBILE END*********************/
+
+/***************************CONTACT US**********************/
+/***************************CONTACT US**********************/
+/***************************CONTACT US**********************/

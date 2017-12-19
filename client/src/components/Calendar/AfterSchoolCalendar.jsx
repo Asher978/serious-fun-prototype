@@ -8,6 +8,21 @@ let allEvents = [
   {
     googleCalendarId: "55161l7ed74nkj2ifm41mcu8ao@group.calendar.google.com",
     className: "nice-event"
+  },
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
+  },
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
+  },
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
+  },
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
+  },
+  {
+    googleCalendarId: "l9dlc6er0krfdqto253o5384r4@group.calendar.google.com"
   }
 ];
 
@@ -37,6 +52,21 @@ class AfterSchoolCalendar extends Component {
       this.SchoolFullCalendar([allEvents[0]]);
     } else if (newState.value === "PS85Q") {
       this.SchoolFullCalendar([allEvents[1]]);
+    }
+     else if (newState.value === "PSIS78QK1") {
+      this.SchoolFullCalendar([allEvents[2]]);
+    }
+     else if (newState.value === "PSIS78Q25") {
+      this.SchoolFullCalendar([allEvents[3]]);
+    }
+     else if (newState.value === "PS150Q") {
+      this.SchoolFullCalendar([allEvents[4]]);
+    }
+     else if (newState.value === "PS166Q") {
+      this.SchoolFullCalendar([allEvents[5]]);
+    
+    } else if (newState.value === "PS33ChelseaPrep") {
+      this.SchoolFullCalendar([allEvents[6]]);
     }
   }
 
