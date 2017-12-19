@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 var CLIENT_ID =
   "981678339715-j3nk504vphs1v4tvcgjf61et7ied2bhr.apps.googleusercontent.com";
-var SCOPES = "https://www.googleapis.com/auth/calendar";
 
 class CalendarLists extends Component {
   constructor(props) {
@@ -26,13 +25,13 @@ class CalendarLists extends Component {
   authenticate() {
     return window.gapi.auth2
       .getAuthInstance()
-      .signIn({scope: "https://www.googleapis.com/auth/calendar.readonly"})
+      .signIn({ scope: "https://www.googleapis.com/auth/calendar.readonly" })
       .then(
-        ()=> {
+        () => {
           console.log("Sign-in successful");
           this.loadClient();
         },
-        (error) => {
+        error => {
           console.error("Error signing in", error);
         }
       );
