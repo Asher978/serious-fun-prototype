@@ -3403,16 +3403,16 @@ th {
     height: auto;
   }
 
-  .transportationInnerTopText,.transportationInnerMidText{
+  .transportationInnerTopText,.transportationInnerMidText,.Sign-up-for-Serious,.Contact-A-Program-Lo,.Contact-Serious-Fun{
     width: auto;
     height: auto;
   }
 
-  .ourTeam .ourTeamContainer .ourTeamTitle, .supportTitle,.peopleSayTitle,.overViewTitle p,.PSLocationTitle,.transportationMainTitle,.policiesMainTitle,.campsMainTitle{
+  .ourTeam .ourTeamContainer .ourTeamTitle, .supportTitle,.peopleSayTitle,.overViewTitle p,.PSLocationTitle,.transportationMainTitle,.policiesMainTitle,.campsMainTitle,.CalendarMainTitle,.CalendarMainTitle,.eventInfoMainTitle,.how-To-Register,.FAQ,.Contact-Serious-Fun,.donateMainTitle{
     font-size: 24px;
   }
 
-  .ourTeam .ourTeamContainer .ourTeamFounderInfo,.transportationInnerTop{
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo,.transportationInnerTop,.campsTop,.CalendarTopInnerContainer,.registerHowToLogos,.faqLogos{
     flex-direction: column;
   }
 
@@ -3432,11 +3432,11 @@ th {
     height: 128px !important;
   }
 
-  .ourTeamMid .ourTeamTitle, .ourTeamBottom .ourTeamTitle,.supportBottomTitle, .overViewSubTitle p,.afterSchoolLocationTitle,.PSLocationSubTitle,.AnnounceTitle,.ClassesMainTitle,.tuitionMainTitle,.transportationInnerBottomTitle,.policiesInnerText{
+  .ourTeamMid .ourTeamTitle, .ourTeamBottom .ourTeamTitle,.supportBottomTitle, .overViewSubTitle p,.afterSchoolLocationTitle,.PSLocationSubTitle,.AnnounceTitle,.ClassesMainTitle,.tuitionMainTitle,.transportationInnerBottomTitle,.policiesInnerText,.fc-center *,.eventInfoSubTitle,.sign-up-your-child,#regisIDOne, #regisIDTwo,#regisIDThree,.registerSubtitle, .faqLogos *,.faqLogosText,.Contact-A-Program-Lo{
     font-size: 18px !important;
   }
 
-  .ourTeamMemberPicContainer{
+  .ourTeamMemberPicContainer,.CalendarSubDate{
     margin-bottom: 20px;
   }
 
@@ -3473,7 +3473,7 @@ th {
   flex-direction: column;
 }
 
-.overViewTextColumn *,.moreInfo, .overViewSubTitle *,.overViewSubTitleSubTitle,.afterSchoolLocationInfoTitle,.afterSchoolLocationInfoText,.PSLocationText,.AnnounceSubTitle,.AnnounceLists,.languageRightTopText,.languageRightTopLocationBtn,.tuitionLeftSec *, .tuitionRightSec *,.tuitionInnerBottom *,.transportationInnerLeftSec *,.transportationInnerBottomText{
+.overViewTextColumn *,.moreInfo, .overViewSubTitle *,.overViewSubTitleSubTitle,.afterSchoolLocationInfoTitle,.afterSchoolLocationInfoText,.PSLocationText,.AnnounceSubTitle,.AnnounceLists,.languageRightTopText,.languageRightTopLocationBtn,.tuitionLeftSec *, .tuitionRightSec *,.tuitionInnerBottom *,.transportationInnerLeftSec *,.transportationInnerBottomText,.eventInfoEvents *,.registerMainInnerTextContainer *,.registerMainTextContainer *,.faqAnswer,.contactPhoneFaxContainer *,.afterSchoolLocationInfo *{
   font-size: 14px !important;
 }
 .overViewHR{
@@ -3521,7 +3521,7 @@ th {
   padding: 0px !important;
 }
 
-.afterSchoolTop .linkBox{
+.afterSchoolTop .linkBoxs{
   align-self: flex-end;
 }
 
@@ -3533,7 +3533,7 @@ th {
   width: auto;
 }
 
-.PSClassInfoBottom,.PSContactInnerBox,.PSBottomContainer{
+.PSClassInfoBottom,.PSContactInnerBox,.PSBottomContainer,.campsInnerContainerTop{
   flex-direction: column;
 }
 
@@ -3547,6 +3547,28 @@ th {
 .transportationInnerLeftSec{
   margin-bottom: 20px;
 }
+
+.campsDropBtn{
+  align-self: center;
+}
+
+.registerSubtitle{
+  font-size: 18px !important;
+}
+
+.registerHowToLogos img:nth-child(even){
+  margin-bottom: 10px;
+}
+
+.faqLogosText{
+  display: flex;
+  align-items: center;
+}
+
+.contactPhoneFaxContainer{
+      margin-left: 0px;
+}
+
   .bottombar {
     height: 41px !important;
   }
