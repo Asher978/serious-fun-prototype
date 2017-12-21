@@ -2902,33 +2902,30 @@ th {
     background-image: url("assets/nav/imageMblHeader@3x.png");
   }
 
-  .headerLeft{
+  .headerLeft {
     align-items: flex-end;
   }
 
-
-  .midHead .mainLogo{
+  .midHead .mainLogo {
     background-image: url("assets/imageMblSfLogo@2x.png");
-
   }
 
-  .mainSubTitle{
+  .mainSubTitle {
     font-size: 14px;
   }
 
-  
   .bottombar {
     background-image: url("assets/nav/imageMblFooter@3x.png") !important;
   }
-  .userAuth{
+  .userAuth {
     font-size: 13px;
   }
 
-  .user{
+  .user {
     width: 118px !important;
     height: 30px !important;
   }
-  
+
   .helpBtn {
     width: 87px !important;
     height: 30px !important;
@@ -3190,17 +3187,16 @@ th {
   }
 }
 
-
-@media (max-width: 570px){
-  .userAuth{
+@media (max-width: 570px) {
+  .userAuth {
     font-size: 12px;
   }
 
-  .user{
+  .user {
     width: 100px !important;
     height: 30px !important;
   }
-  
+
   .helpBtn {
     width: 70px !important;
     height: 30px !important;
@@ -3215,15 +3211,15 @@ th {
     transform: scale(0.7);
   } */
 
-  .userAuth{
+  .userAuth {
     font-size: 10px;
   }
 
-  .user{
+  .user {
     width: 100px !important;
     height: 30px !important;
   }
-  
+
   .helpBtn {
     width: 70px !important;
     height: 30px !important;
@@ -3242,27 +3238,22 @@ th {
 }
 
 @media (max-width: 470px) {
-  .midHead{
+  .midHead {
     height: 94px;
   }
-
 
   .topHead {
     background-image: url("assets/nav/imageMblHeader.png");
   }
 
-    .headerLeft{
-      height: 54px;
-    }
-  .midHead .mainLogo{
+  .headerLeft {
+    height: 54px;
+  }
+  .midHead .mainLogo {
     background-image: url("assets/imageMblSfLogo.png");
-
   }
 
-
-  
-
-  .mainSubTitle{
+  .mainSubTitle {
     font-size: 8px;
     display: flex;
     justify-content: center;
@@ -3289,19 +3280,18 @@ th {
 
   .topHead {
     height: 70px;
-
   }
 
-  .navbar .container{
+  .navbar .container {
     width: 89% !important;
   }
-  .headerLeft{
+  .headerLeft {
     align-items: center;
     width: 50%;
   }
 
-  .mainLogo{
-        margin-right: 0px !important;
+  .mainLogo {
+    margin-right: 0px !important;
   }
   .bottombar {
     background-image: url("assets/nav/imageMblFooter.png") !important;
@@ -3309,31 +3299,29 @@ th {
   }
 }
 @media (max-width: 448px) {
-.topHead{
-  height: 41px;
-}
-
+  .topHead {
+    height: 41px;
+  }
 }
 @media (max-width: 350px) {
-.topHead{
-  height: 41px;
-}
-.midHead{
-  height: 65px;
-}
+  .topHead {
+    height: 41px;
+  }
+  .midHead {
+    height: 65px;
+  }
 
-.user {
-  width: 86px !important;
-  height: 21px !important;
-}
+  .user {
+    width: 86px !important;
+    height: 21px !important;
+  }
 
-.helpBtn{
-  margin-right: 0px !important;
-  width: 53px !important;
-  height: 23px !important;
-  line-height: 24px !important;
-}
-
+  .helpBtn {
+    margin-right: 0px !important;
+    width: 53px !important;
+    height: 23px !important;
+    line-height: 24px !important;
+  }
 }
 
 @media (max-width: 320px) {
@@ -3348,18 +3336,18 @@ th {
 
   .navbar .container {
     height: 58px;
-}
+  }
 
-.midHead {
-  height: 49px;
-}
+  .midHead {
+    height: 49px;
+  }
 
   .navbar .container {
     width: 94% !important;
-}
-  .navLink {
-    display: none;
   }
+  /* .navLink {
+    display: none;
+  } */
   .hamburgerMenuDiv {
     width: 21px;
     height: 14px;
@@ -3373,15 +3361,14 @@ th {
     background-position: center;
   }
 
-  .helpBtn{
+  .helpBtn {
     margin-right: 5px !important;
   }
 
-.headerLeft {
-
-  align-items: center;
-  width: 39%;
-}
+  .headerLeft {
+    align-items: center;
+    width: 39%;
+  }
   .textTitle {
     display: none;
   }
@@ -3391,7 +3378,9 @@ th {
     font-size: 16px;
   }
 
-  .ourClass,.ourHomeTeam,.ourDifference{
+  .ourClass,
+  .ourHomeTeam,
+  .ourDifference {
     align-items: center;
   }
   .ourContainer {
@@ -3408,36 +3397,185 @@ th {
   }
   .navbar .topBar .container {
     height: auto;
+  }
+
+  .aboutUs .aboutUsInfoContainer .infoOurMoreInfo{
+    height: auto;
+  }
+
+  .transportationInnerTopText,.transportationInnerMidText{
+    width: auto;
+    height: auto;
+  }
+
+  .ourTeam .ourTeamContainer .ourTeamTitle, .supportTitle,.peopleSayTitle,.overViewTitle p,.PSLocationTitle,.transportationMainTitle,.policiesMainTitle,.campsMainTitle{
+    font-size: 24px;
+  }
+
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo,.transportationInnerTop{
+    flex-direction: column;
+  }
+
+
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderText{
+    width: auto;
+    height: auto;
+    padding: 8px 0px 30px 12px;
+  }
+
+  .ourTeam
+  .ourTeamContainer
+  .ourTeamFounderInfo
+  .ourTeamFounderPicContainer
+  .ourTeamFounderPic, .ourTeamMemberPic,.supportLogos{
+    width: 140px !important;
+    height: 128px !important;
+  }
+
+  .ourTeamMid .ourTeamTitle, .ourTeamBottom .ourTeamTitle,.supportBottomTitle, .overViewSubTitle p,.afterSchoolLocationTitle,.PSLocationSubTitle,.AnnounceTitle,.ClassesMainTitle,.tuitionMainTitle,.transportationInnerBottomTitle,.policiesInnerText{
+    font-size: 18px !important;
+  }
+
+  .ourTeamMemberPicContainer{
+    margin-bottom: 20px;
+  }
+
+  .careerInfoTitle{
+    font-size: 22px !important;
+  }
+
+  .supportBottomContainer{
+    flex-direction: column-reverse;
+  }
+
+  .supportBottomHR{
+    height: 0px;
+  }
+
+  .supportDonors{
+    height: auto;
+  }
+
+  .supportBottomSubTitle{
+    margin-top: 12px;
+  }
+
+  .peopleSayFeedBox{
+    height: auto;
+  }
+
+  .peopleSayFeedText {
+    font-size: 14px;
+    padding: 15px;
 }
 
-  .bottombar{
+.overViewSmallContainer,.tuitionInnerTop{
+  flex-direction: column;
+}
+
+.overViewTextColumn *,.moreInfo, .overViewSubTitle *,.overViewSubTitleSubTitle,.afterSchoolLocationInfoTitle,.afterSchoolLocationInfoText,.PSLocationText,.AnnounceSubTitle,.AnnounceLists,.languageRightTopText,.languageRightTopLocationBtn,.tuitionLeftSec *, .tuitionRightSec *,.tuitionInnerBottom *,.transportationInnerLeftSec *,.transportationInnerBottomText{
+  font-size: 14px !important;
+}
+.overViewHR{
+  width: 100%;
+}
+.overViewRightSec .overViewTextColumnSubText,.tuitionLeftMidText,.tuitionRightCancelSubTitle,.tuitionRightCancelSubText,.tuitionTextPara{
+  width:auto  ;
+}
+
+.afterSchoolTitle{
+  font-size: 24px !important;
+}
+
+.afterSchoolTop{
+  flex-direction: column;
+}
+
+.afterSchoolTitle{
+  margin-bottom: 20px;
+}
+.afterSchoolLocation{
+  align-items: flex-start; 
+}
+.afterSchoolLocationInfoColumnContainer{
+  flex-direction: column;
+}
+
+.afterSchoolLocation{
+  padding-left: 24px !important;
+}
+.second{
+  padding-left: 0px !important;
+}
+
+.afterSchoolLocationInfo{
+  width: 123%;
+}
+
+.infoLocationBottomText{
+  margin: 0px 3.8% 40px 3.8%;
+  font-size: 14px;
+}
+
+.afterSchoolLocationContainer .second{
+  padding: 0px !important;
+}
+
+.afterSchoolTop .linkBox{
+  align-self: flex-end;
+}
+
+.PSLocationBox{
+  margin-bottom: 20px;
+}
+
+.AnnounceGeneral, .AnnounceSchool{
+  width: auto;
+}
+
+.PSClassInfoBottom,.PSContactInnerBox,.PSBottomContainer{
+  flex-direction: column;
+}
+
+.ClassesRightTop{
+      display: block;
+}
+
+.ClassesMainTitle,.ClassesRightTopText,.ClassesBox{
+  margin-bottom: 20px;
+}
+.transportationInnerLeftSec{
+  margin-bottom: 20px;
+}
+  .bottombar {
     height: 41px !important;
   }
 
   .navbar .topBar {
     height: 149px;
-}
-.socialLink{
-  height: auto !important;
-  flex-wrap: wrap;
-  justify-content: space-evenly !important;
-  margin-bottom: 13px;
-}
+  }
+  .socialLink {
+    height: auto !important;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    margin-bottom: 13px;
+  }
 
-.socialLinks{
-  flex-basis: 100%;
-}
+  .socialLinks {
+    flex-basis: 100%;
+  }
 
-#newsletter{
-  margin-bottom: 22px;
-}
-#facebook, #twitter, #email{
-  flex-basis: 14%;
-}
-#email {
-
-  margin-right: 0px !important;
-}
+  #newsletter {
+    margin-bottom: 22px;
+  }
+  #facebook,
+  #twitter,
+  #email {
+    flex-basis: 14%;
+  }
+  #email {
+    margin-right: 0px !important;
+  }
 }
 
 /***************************MOBILE END*********************/
