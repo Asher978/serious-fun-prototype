@@ -3345,9 +3345,9 @@ th {
   .navbar .container {
     width: 94% !important;
   }
-  /* .navLink {
+  .navLink {
     display: none;
-  } */
+  }
   .hamburgerMenuDiv {
     width: 21px;
     height: 14px;
