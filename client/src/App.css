@@ -2887,14 +2887,10 @@ th {
 }
 
 @media (max-width: 991px) {
-  /* .headerLeft,
-  .helpBtn,
-  .user {
-    transform: scale(0.9);
+  .navLink .navLinks {
+    font-size: 14px;
+    font-weight: 100;
   }
-  .helpBtn {
-    margin-right: -10px !important;
-  } */
 }
 
 @media (max-width: 768px) {
@@ -3399,175 +3395,252 @@ th {
     height: auto;
   }
 
-  .aboutUs .aboutUsInfoContainer .infoOurMoreInfo{
+  .aboutUs .aboutUsInfoContainer .infoOurMoreInfo {
     height: auto;
   }
 
-  .transportationInnerTopText,.transportationInnerMidText,.Sign-up-for-Serious,.Contact-A-Program-Lo,.Contact-Serious-Fun{
+  .transportationInnerTopText,
+  .transportationInnerMidText,
+  .Sign-up-for-Serious,
+  .Contact-A-Program-Lo,
+  .Contact-Serious-Fun {
     width: auto;
     height: auto;
   }
 
-  .ourTeam .ourTeamContainer .ourTeamTitle, .supportTitle,.peopleSayTitle,.overViewTitle p,.PSLocationTitle,.transportationMainTitle,.policiesMainTitle,.campsMainTitle,.CalendarMainTitle,.CalendarMainTitle,.eventInfoMainTitle,.how-To-Register,.FAQ,.Contact-Serious-Fun,.donateMainTitle{
+  .ourTeam .ourTeamContainer .ourTeamTitle,
+  .supportTitle,
+  .peopleSayTitle,
+  .overViewTitle p,
+  .PSLocationTitle,
+  .transportationMainTitle,
+  .policiesMainTitle,
+  .campsMainTitle,
+  .CalendarMainTitle,
+  .CalendarMainTitle,
+  .eventInfoMainTitle,
+  .how-To-Register,
+  .FAQ,
+  .Contact-Serious-Fun,
+  .donateMainTitle {
     font-size: 24px;
   }
 
-  .ourTeam .ourTeamContainer .ourTeamFounderInfo,.transportationInnerTop,.campsTop,.CalendarTopInnerContainer,.registerHowToLogos,.faqLogos{
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo,
+  .transportationInnerTop,
+  .campsTop,
+  .CalendarTopInnerContainer,
+  .registerHowToLogos,
+  .faqLogos {
     flex-direction: column;
   }
 
-
-  .ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderText{
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderText {
     width: auto;
     height: auto;
     padding: 8px 0px 30px 12px;
   }
 
   .ourTeam
-  .ourTeamContainer
-  .ourTeamFounderInfo
-  .ourTeamFounderPicContainer
-  .ourTeamFounderPic, .ourTeamMemberPic,.supportLogos{
+    .ourTeamContainer
+    .ourTeamFounderInfo
+    .ourTeamFounderPicContainer
+    .ourTeamFounderPic,
+  .ourTeamMemberPic,
+  .supportLogos {
     width: 140px !important;
     height: 128px !important;
   }
 
-  .ourTeamMid .ourTeamTitle, .ourTeamBottom .ourTeamTitle,.supportBottomTitle, .overViewSubTitle p,.afterSchoolLocationTitle,.PSLocationSubTitle,.AnnounceTitle,.ClassesMainTitle,.tuitionMainTitle,.transportationInnerBottomTitle,.policiesInnerText,.fc-center *,.eventInfoSubTitle,.sign-up-your-child,#regisIDOne, #regisIDTwo,#regisIDThree,.registerSubtitle, .faqLogos *,.faqLogosText,.Contact-A-Program-Lo{
+  .ourTeamMid .ourTeamTitle,
+  .ourTeamBottom .ourTeamTitle,
+  .supportBottomTitle,
+  .overViewSubTitle p,
+  .afterSchoolLocationTitle,
+  .PSLocationSubTitle,
+  .AnnounceTitle,
+  .ClassesMainTitle,
+  .tuitionMainTitle,
+  .transportationInnerBottomTitle,
+  .policiesInnerText,
+  .fc-center *,
+  .eventInfoSubTitle,
+  .sign-up-your-child,
+  #regisIDOne,
+  #regisIDTwo,
+  #regisIDThree,
+  .registerSubtitle,
+  .faqLogos *,
+  .faqLogosText,
+  .Contact-A-Program-Lo {
     font-size: 18px !important;
   }
 
-  .ourTeamMemberPicContainer,.CalendarSubDate{
+  .ourTeamMemberPicContainer,
+  .CalendarSubDate {
     margin-bottom: 20px;
   }
 
-  .careerInfoTitle{
+  .careerInfoTitle {
     font-size: 22px !important;
   }
 
-  .supportBottomContainer{
+  .supportBottomContainer {
     flex-direction: column-reverse;
   }
 
-  .supportBottomHR{
+  .supportBottomHR {
     height: 0px;
   }
 
-  .supportDonors{
+  .supportDonors {
     height: auto;
   }
 
-  .supportBottomSubTitle{
+  .supportBottomSubTitle {
     margin-top: 12px;
   }
 
-  .peopleSayFeedBox{
+  .peopleSayFeedBox {
     height: auto;
   }
 
   .peopleSayFeedText {
     font-size: 14px;
     padding: 15px;
-}
+  }
 
-.overViewSmallContainer,.tuitionInnerTop{
-  flex-direction: column;
-}
+  .overViewSmallContainer,
+  .tuitionInnerTop {
+    flex-direction: column;
+  }
 
-.overViewTextColumn *,.moreInfo, .overViewSubTitle *,.overViewSubTitleSubTitle,.afterSchoolLocationInfoTitle,.afterSchoolLocationInfoText,.PSLocationText,.AnnounceSubTitle,.AnnounceLists,.languageRightTopText,.languageRightTopLocationBtn,.tuitionLeftSec *, .tuitionRightSec *,.tuitionInnerBottom *,.transportationInnerLeftSec *,.transportationInnerBottomText,.eventInfoEvents *,.registerMainInnerTextContainer *,.registerMainTextContainer *,.faqAnswer,.contactPhoneFaxContainer *,.afterSchoolLocationInfo *{
-  font-size: 14px !important;
-}
-.overViewHR{
-  width: 100%;
-}
-.overViewRightSec .overViewTextColumnSubText,.tuitionLeftMidText,.tuitionRightCancelSubTitle,.tuitionRightCancelSubText,.tuitionTextPara{
-  width:auto  ;
-}
+  .overViewTextColumn *,
+  .moreInfo,
+  .overViewSubTitle *,
+  .overViewSubTitleSubTitle,
+  .afterSchoolLocationInfoTitle,
+  .afterSchoolLocationInfoText,
+  .PSLocationText,
+  .AnnounceSubTitle,
+  .AnnounceLists,
+  .languageRightTopText,
+  .languageRightTopLocationBtn,
+  .tuitionLeftSec *,
+  .tuitionRightSec *,
+  .tuitionInnerBottom *,
+  .transportationInnerLeftSec *,
+  .transportationInnerBottomText,
+  .eventInfoEvents *,
+  .registerMainInnerTextContainer *,
+  .registerMainTextContainer *,
+  .faqAnswer,
+  .contactPhoneFaxContainer *,
+  .afterSchoolLocationInfo * {
+    font-size: 14px !important;
+  }
+  .overViewHR {
+    width: 100%;
+  }
+  .overViewRightSec .overViewTextColumnSubText,
+  .tuitionLeftMidText,
+  .tuitionRightCancelSubTitle,
+  .tuitionRightCancelSubText,
+  .tuitionTextPara {
+    width: auto;
+  }
 
-.afterSchoolTitle{
-  font-size: 24px !important;
-}
+  .afterSchoolTitle {
+    font-size: 24px !important;
+  }
 
-.afterSchoolTop{
-  flex-direction: column;
-}
+  .afterSchoolTop {
+    flex-direction: column;
+  }
 
-.afterSchoolTitle{
-  margin-bottom: 20px;
-}
-.afterSchoolLocation{
-  align-items: flex-start; 
-}
-.afterSchoolLocationInfoColumnContainer{
-  flex-direction: column;
-}
+  .afterSchoolTitle {
+    margin-bottom: 20px;
+  }
+  .afterSchoolLocation {
+    align-items: flex-start;
+  }
+  .afterSchoolLocationInfoColumnContainer {
+    flex-direction: column;
+  }
 
-.afterSchoolLocation{
-  padding-left: 24px !important;
-}
-.second{
-  padding-left: 0px !important;
-}
+  .afterSchoolLocation {
+    padding-left: 24px !important;
+  }
+  .second {
+    padding-left: 0px !important;
+  }
 
-.afterSchoolLocationInfo{
-  width: 123%;
-}
+  .afterSchoolLocationInfo {
+    width: 123%;
+  }
 
-.infoLocationBottomText{
-  margin: 0px 3.8% 40px 3.8%;
-  font-size: 14px;
-}
+  .infoLocationBottomText {
+    margin: 0px 3.8% 40px 3.8%;
+    font-size: 14px;
+  }
 
-.afterSchoolLocationContainer .second{
-  padding: 0px !important;
-}
+  .afterSchoolLocationContainer .second {
+    padding: 0px !important;
+  }
 
-.afterSchoolTop .linkBoxs{
-  align-self: flex-end;
-}
+  .afterSchoolTop .linkBoxs {
+    align-self: flex-end;
+  }
 
-.PSLocationBox{
-  margin-bottom: 20px;
-}
+  .PSLocationBox {
+    margin-bottom: 20px;
+  }
 
-.AnnounceGeneral, .AnnounceSchool{
-  width: auto;
-}
+  .AnnounceGeneral,
+  .AnnounceSchool {
+    width: auto;
+  }
 
-.PSClassInfoBottom,.PSContactInnerBox,.PSBottomContainer,.campsInnerContainerTop{
-  flex-direction: column;
-}
+  .PSClassInfoBottom,
+  .PSContactInnerBox,
+  .PSBottomContainer,
+  .campsInnerContainerTop {
+    flex-direction: column;
+  }
 
-.ClassesRightTop{
-      display: block;
-}
+  .ClassesRightTop {
+    display: block;
+  }
 
-.ClassesMainTitle,.ClassesRightTopText,.ClassesBox{
-  margin-bottom: 20px;
-}
-.transportationInnerLeftSec{
-  margin-bottom: 20px;
-}
+  .ClassesMainTitle,
+  .ClassesRightTopText,
+  .ClassesBox {
+    margin-bottom: 20px;
+  }
+  .transportationInnerLeftSec {
+    margin-bottom: 20px;
+  }
 
-.campsDropBtn{
-  align-self: center;
-}
+  .campsDropBtn {
+    align-self: center;
+  }
 
-.registerSubtitle{
-  font-size: 18px !important;
-}
+  .registerSubtitle {
+    font-size: 18px !important;
+  }
 
-.registerHowToLogos img:nth-child(even){
-  margin-bottom: 10px;
-}
+  .registerHowToLogos img:nth-child(even) {
+    margin-bottom: 10px;
+  }
 
-.faqLogosText{
-  display: flex;
-  align-items: center;
-}
+  .faqLogosText {
+    display: flex;
+    align-items: center;
+  }
 
-.contactPhoneFaxContainer{
-      margin-left: 0px;
-}
+  .contactPhoneFaxContainer {
+    margin-left: 0px;
+  }
 
   .bottombar {
     height: 41px !important;
