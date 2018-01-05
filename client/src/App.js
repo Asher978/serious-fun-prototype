@@ -57,7 +57,7 @@ import Schools from './components/Schools';
 import DetailedSchool from './components/DetailedSchool';
 import EditSchool from './components/Dashboard/EditSchool';
 import Footer from './components/Footer';
-// import HamburgerMenu from './components/HamburgerMenu';
+import HamburgerMenu from './components/HamburgerMenu';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import RegisterHowTo from './components/RegisterHowTo';
@@ -71,6 +71,7 @@ class App extends Component {
     loginUsername: "",
     loginPassword: "",
     open: false,
+    display: false,
   };
 
   // use of arrow functions to avoid bindings
@@ -141,19 +142,35 @@ class App extends Component {
         });
       });
   };
+
   //isOpen event function for Hamburger Menu(mobile)
   handleClick() {
     this.setState({
-      open: !this.state.open
+      open: !this.state.open,
+      display: !this.state.display,
     });
   }
+
 
   render() {
     return (
       <Router>
         <div className="App">
+          <div className="hamburger">
+            <HamburgerMenu
+              display={this.state.display}
+              isOpen={this.state.open}
+              menuClicked={this.handleClick.bind(this)}
+              width={21}
+              height={14}
+              strokeWidth={5}
+              rotate={0}
+              color={'#f5483a'}
+              borderRadius={2.5}
+              animationDuration={0.5}
+            />
+          </div>
           <Nav handleLogout={this.handleLogout} />
-
           <Route exact path="/" component={Home} />
           <Route exact path="/aboutus" component={AboutUs} />
           <Route exact path="/donate" component={Donate} />
