@@ -2828,6 +2828,12 @@ th {
 /***************************MOBILE*************************/
 /***************************MOBILE*************************/
 /***************************MOBILE*************************/
+@media (max-width: 1306px) {
+  .midHead .container {
+    width: 79%;
+  }
+}
+
 @media (max-width: 1024px) {
   .navbar .container,
   .navbar .topBar .container,
@@ -2880,7 +2886,49 @@ th {
   }
 }
 
+@media (max-width: 991px) {
+  .navLink .navLinks {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
+
 @media (max-width: 768px) {
+  .topHead {
+    background-image: url("assets/nav/imageMblHeader@3x.png");
+  }
+
+  .headerLeft {
+    align-items: flex-end;
+  }
+
+  .midHead .mainLogo {
+    background-image: url("assets/imageMblSfLogo@2x.png");
+  }
+
+  .mainSubTitle {
+    font-size: 14px;
+  }
+
+  .bottombar {
+    background-image: url("assets/nav/imageMblFooter@3x.png") !important;
+  }
+  .userAuth {
+    font-size: 13px;
+  }
+
+  .user {
+    width: 118px !important;
+    height: 30px !important;
+  }
+
+  .helpBtn {
+    width: 87px !important;
+    height: 30px !important;
+    font-size: 13px !important;
+
+    line-height: 30px !important;
+  }
   .ourContainer {
     width: 95%;
   }
@@ -3018,8 +3066,8 @@ th {
 
   .transportationInnerBottomText,
   .transportationInnerBottomSubText {
-    width: 100% ;
-    height: auto ;
+    width: 100%;
+    height: auto;
   }
   .transportationInnerBottom {
     margin-right: 0px;
@@ -3028,7 +3076,7 @@ th {
 
   /* Poilcies */
   .policiesInnerText {
-    width: 674px;
+    width: 100%;
     height: auto;
   }
 
@@ -3038,13 +3086,13 @@ th {
     font-size: 17px;
   }
   .fc-scroller {
-    overflow-x: hidden ;
-    overflow-y: hidden ;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
   }
 
   /* Register */
   .line-2 {
-    width: 100% ;
+    width: 100%;
   }
 
   .registerOngoingContainer {
@@ -3056,62 +3104,242 @@ th {
   }
 
   /* FAQ */
-  .faqLogos{
+  .faqLogos {
     flex-wrap: wrap;
   }
 
-  .faqLogosText{
+  .faqLogosText {
     flex-basis: 50%;
   }
 
-  .faqMainTextContainer{
+  .faqMainTextContainer {
     width: 100%;
   }
 
   /* Contact */
 
-  .Sign-up-for-Serious{
+  .Sign-up-for-Serious {
     width: 500px;
   }
-  .afterSchoolLocationContainer{
+  .afterSchoolLocationContainer {
     flex-direction: column;
   }
 
-  .afterSchoolLocation{
+  .afterSchoolLocation {
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .afterSchoolLocationTitle{
+  .afterSchoolLocationTitle {
     width: 67%;
   }
-  .contactHRVerticalLine{
+  .contactHRVerticalLine {
     height: 1px;
     /* width: 100%; */
-
   }
-  .afterSchoolLocationInfoColumn{
+  .afterSchoolLocationInfoColumn {
     width: 67%;
   }
 }
 
 @media (max-width: 700px) {
-.ourClass,.ourHomeTeam,.ourDifference{
-  align-items: center;
-  margin-bottom: 30px;
+  .navbar .container {
+    width: 100% !important;
+  }
+  .ourContainer,
+  .ourTeamMemberInfo,
+  .classTopPicContainerTOP,
+  .classTopPicContainerBottom {
+    flex-wrap: wrap;
+  }
+
+  .ourClass,
+  .ourHomeTeam,
+  .ourDifference {
+    /* align-items: center; */
+    margin-bottom: 30px;
+  }
+
+  .hrVerticalLine {
+    height: 2px;
+  }
+  .classTopPicContainerTOP,
+  .classTopPicContainerBottom {
+    justify-content: center;
+  }
+
+  .navbar .topBar {
+    height: 80px;
+  }
+
+  .navbar .topBar .container {
+    flex-direction: column-reverse;
+    margin-bottom: 7px;
+  }
+  .copyright {
+    margin-right: 0px !important;
+  }
 }
+
+@media (max-width: 570px) {
+  .userAuth {
+    font-size: 12px;
+  }
+
+  .user {
+    width: 100px !important;
+    height: 30px !important;
+  }
+
+  .helpBtn {
+    width: 70px !important;
+    height: 30px !important;
+    font-size: 10px !important;
+
+    line-height: 30px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  /* .headerLeft {
+    transform: scale(0.7);
+  } */
+
+  .userAuth {
+    font-size: 10px;
+  }
+
+  .user {
+    width: 100px !important;
+    height: 30px !important;
+  }
+
+  .helpBtn {
+    width: 70px !important;
+    height: 30px !important;
+    font-size: 10px !important;
+
+    line-height: 30px !important;
+  }
+  .topHead {
+    background-image: url("assets/nav/imageMblHeader@2x.png");
+    height: 100px;
+  }
+  .bottombar {
+    background-image: url("assets/nav/imageMblFooter@2x.png") !important;
+    height: 100px !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .midHead {
+    height: 94px;
+  }
+
+  .topHead {
+    background-image: url("assets/nav/imageMblHeader.png");
+  }
+
+  .headerLeft {
+    height: 54px;
+  }
+  .midHead .mainLogo {
+    background-image: url("assets/imageMblSfLogo.png");
+  }
+
+  .mainSubTitle {
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* .userAuth{
+    font-size: 10px;
+  }
+
+  .user{
+    width: 87px !important;
+    height: 30px !important;
+  } */
+
+  .bottombar {
+    background-image: url("assets/nav/imageMblFooter.png") !important;
+  }
+}
+@media (max-width: 470px) {
+  /* .headerLeft {
+    transform: scale(0.6);
+  } */
+
+  .topHead {
+    height: 70px;
+  }
+
+  .navbar .container {
+    width: 89% !important;
+  }
+  .headerLeft {
+    align-items: center;
+    width: 50%;
+  }
+
+  .mainLogo {
+    margin-right: 0px !important;
+  }
+  .bottombar {
+    background-image: url("assets/nav/imageMblFooter.png") !important;
+    height: 70px !important;
+  }
+}
+@media (max-width: 448px) {
+  .topHead {
+    height: 41px;
+  }
+}
+@media (max-width: 350px) {
+  .topHead {
+    height: 41px;
+  }
+  .midHead {
+    height: 65px;
+  }
+
+  .user {
+    width: 86px !important;
+    height: 21px !important;
+  }
+
+  .helpBtn {
+    margin-right: 0px !important;
+    width: 53px !important;
+    height: 23px !important;
+    line-height: 24px !important;
+  }
 }
 
 @media (max-width: 320px) {
   .topHead {
     /*display: hidden;*/
-    background-size: contain;
+    background-size: cover;
     height: 41px;
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
     width: 100%;
+  }
+
+  .navbar .container {
+    height: 58px;
+  }
+
+  .midHead {
+    height: 49px;
+  }
+
+  .navbar .container {
+    width: 94% !important;
   }
   .navLink {
     display: none;
@@ -3129,10 +3357,14 @@ th {
     background-position: center;
   }
 
-  .midHead .helpBtn {
-    display: none;
+  .helpBtn {
+    margin-right: 5px !important;
   }
 
+  .headerLeft {
+    align-items: center;
+    width: 39%;
+  }
   .textTitle {
     display: none;
   }
@@ -3140,6 +3372,12 @@ th {
     width: 288px;
     height: 76px;
     font-size: 16px;
+  }
+
+  .ourClass,
+  .ourHomeTeam,
+  .ourDifference {
+    align-items: center;
   }
   .ourContainer {
     flex-direction: column;
@@ -3153,8 +3391,285 @@ th {
     font-size: 18px;
     text-align: center;
   }
-  .navbar .topBar .container .copyright {
-    display: none;
+  .navbar .topBar .container {
+    height: auto;
+  }
+
+  .aboutUs .aboutUsInfoContainer .infoOurMoreInfo {
+    height: auto;
+  }
+
+  .transportationInnerTopText,
+  .transportationInnerMidText,
+  .Sign-up-for-Serious,
+  .Contact-A-Program-Lo,
+  .Contact-Serious-Fun {
+    width: auto;
+    height: auto;
+  }
+
+  .ourTeam .ourTeamContainer .ourTeamTitle,
+  .supportTitle,
+  .peopleSayTitle,
+  .overViewTitle p,
+  .PSLocationTitle,
+  .transportationMainTitle,
+  .policiesMainTitle,
+  .campsMainTitle,
+  .CalendarMainTitle,
+  .CalendarMainTitle,
+  .eventInfoMainTitle,
+  .how-To-Register,
+  .FAQ,
+  .Contact-Serious-Fun,
+  .donateMainTitle {
+    font-size: 24px;
+  }
+
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo,
+  .transportationInnerTop,
+  .campsTop,
+  .CalendarTopInnerContainer,
+  .registerHowToLogos,
+  .faqLogos {
+    flex-direction: column;
+  }
+
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderText {
+    width: auto;
+    height: auto;
+    padding: 8px 0px 30px 12px;
+  }
+
+  .ourTeam
+    .ourTeamContainer
+    .ourTeamFounderInfo
+    .ourTeamFounderPicContainer
+    .ourTeamFounderPic,
+  .ourTeamMemberPic,
+  .supportLogos {
+    width: 140px !important;
+    height: 128px !important;
+  }
+
+  .ourTeamMid .ourTeamTitle,
+  .ourTeamBottom .ourTeamTitle,
+  .supportBottomTitle,
+  .overViewSubTitle p,
+  .afterSchoolLocationTitle,
+  .PSLocationSubTitle,
+  .AnnounceTitle,
+  .ClassesMainTitle,
+  .tuitionMainTitle,
+  .transportationInnerBottomTitle,
+  .policiesInnerText,
+  .fc-center *,
+  .eventInfoSubTitle,
+  .sign-up-your-child,
+  #regisIDOne,
+  #regisIDTwo,
+  #regisIDThree,
+  .registerSubtitle,
+  .faqLogos *,
+  .faqLogosText,
+  .Contact-A-Program-Lo {
+    font-size: 18px !important;
+  }
+
+  .ourTeamMemberPicContainer,
+  .CalendarSubDate {
+    margin-bottom: 20px;
+  }
+
+  .careerInfoTitle {
+    font-size: 22px !important;
+  }
+
+  .supportBottomContainer {
+    flex-direction: column-reverse;
+  }
+
+  .supportBottomHR {
+    height: 0px;
+  }
+
+  .supportDonors {
+    height: auto;
+  }
+
+  .supportBottomSubTitle {
+    margin-top: 12px;
+  }
+
+  .peopleSayFeedBox {
+    height: auto;
+  }
+
+  .peopleSayFeedText {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .overViewSmallContainer,
+  .tuitionInnerTop {
+    flex-direction: column;
+  }
+
+  .overViewTextColumn *,
+  .moreInfo,
+  .overViewSubTitle *,
+  .overViewSubTitleSubTitle,
+  .afterSchoolLocationInfoTitle,
+  .afterSchoolLocationInfoText,
+  .PSLocationText,
+  .AnnounceSubTitle,
+  .AnnounceLists,
+  .languageRightTopText,
+  .languageRightTopLocationBtn,
+  .tuitionLeftSec *,
+  .tuitionRightSec *,
+  .tuitionInnerBottom *,
+  .transportationInnerLeftSec *,
+  .transportationInnerBottomText,
+  .eventInfoEvents *,
+  .registerMainInnerTextContainer *,
+  .registerMainTextContainer *,
+  .faqAnswer,
+  .contactPhoneFaxContainer *,
+  .afterSchoolLocationInfo * {
+    font-size: 14px !important;
+  }
+  .overViewHR {
+    width: 100%;
+  }
+  .overViewRightSec .overViewTextColumnSubText,
+  .tuitionLeftMidText,
+  .tuitionRightCancelSubTitle,
+  .tuitionRightCancelSubText,
+  .tuitionTextPara {
+    width: auto;
+  }
+
+  .afterSchoolTitle {
+    font-size: 24px !important;
+  }
+
+  .afterSchoolTop {
+    flex-direction: column;
+  }
+
+  .afterSchoolTitle {
+    margin-bottom: 20px;
+  }
+  .afterSchoolLocation {
+    align-items: flex-start;
+  }
+  .afterSchoolLocationInfoColumnContainer {
+    flex-direction: column;
+  }
+
+  .afterSchoolLocation {
+    padding-left: 24px !important;
+  }
+  .second {
+    padding-left: 0px !important;
+  }
+
+  .afterSchoolLocationInfo {
+    width: 123%;
+  }
+
+  .infoLocationBottomText {
+    margin: 0px 3.8% 40px 3.8%;
+    font-size: 14px;
+  }
+
+  .afterSchoolLocationContainer .second {
+    padding: 0px !important;
+  }
+
+  .afterSchoolTop .linkBoxs {
+    align-self: flex-end;
+  }
+
+  .PSLocationBox {
+    margin-bottom: 20px;
+  }
+
+  .AnnounceGeneral,
+  .AnnounceSchool {
+    width: auto;
+  }
+
+  .PSClassInfoBottom,
+  .PSContactInnerBox,
+  .PSBottomContainer,
+  .campsInnerContainerTop {
+    flex-direction: column;
+  }
+
+  .ClassesRightTop {
+    display: block;
+  }
+
+  .ClassesMainTitle,
+  .ClassesRightTopText,
+  .ClassesBox {
+    margin-bottom: 20px;
+  }
+  .transportationInnerLeftSec {
+    margin-bottom: 20px;
+  }
+
+  .campsDropBtn {
+    align-self: center;
+  }
+
+  .registerSubtitle {
+    font-size: 18px !important;
+  }
+
+  .registerHowToLogos img:nth-child(even) {
+    margin-bottom: 10px;
+  }
+
+  .faqLogosText {
+    display: flex;
+    align-items: center;
+  }
+
+  .contactPhoneFaxContainer {
+    margin-left: 0px;
+  }
+
+  .bottombar {
+    height: 41px !important;
+  }
+
+  .navbar .topBar {
+    height: 149px;
+  }
+  .socialLink {
+    height: auto !important;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    margin-bottom: 13px;
+  }
+
+  .socialLinks {
+    flex-basis: 100%;
+  }
+
+  #newsletter {
+    margin-bottom: 22px;
+  }
+  #facebook,
+  #twitter,
+  #email {
+    flex-basis: 14%;
+  }
+  #email {
+    margin-right: 0px !important;
   }
 }
 
