@@ -30,7 +30,7 @@ export class Section extends React.Component{
   render() {
     return (
       <div className={this.state.class}>
-        <button>toggle</button>
+        <button></button>
         <div className="sectionhead" onClick={this.handleClick}>{this.props.title}</div>
         <div className="articlewrap">
           <div className="article">
@@ -46,11 +46,14 @@ const HamburgerMenuNav = (props) => {
     let { display } = props;
     return (
       <div className="main" style={display}>
-        <div title="Home">
+        <div title="Home" className="linkBoxMobile">
           <Link to="/" id="homeMobile" className="navLinksMobile">
             home
           </Link>
         </div>
+
+        <hr className="mobileHR"/>
+
         <Section title="About">
           <Link to="/aboutus" id="aboutDropMobile" className="dropLinksMobile">
             About Us
@@ -68,6 +71,9 @@ const HamburgerMenuNav = (props) => {
             What People Say
           </Link>
         </Section>
+
+        <hr className="mobileHR"/>
+
         <Section title="After School">
           <Link to="/overview" id="overviewDropMobile" className="dropLinksMobile">
             Overview
@@ -88,11 +94,18 @@ const HamburgerMenuNav = (props) => {
             Policies
           </Link>
         </Section>
-        <div title="Section Title Four">
+
+        <hr className="mobileHR"/>
+
+        <div title="Camps" className="linkBoxMobile">
           <Link to="/camps" id="campsMobile" className="navLinksMobile">
             Camps
           </Link>
         </div>
+
+        <hr className="mobileHR"/>
+
+
         <Section title="Calendar">
           <Link to="/afterschoolcalendar" id="afterSchoolDropMobile" className="dropLinksMobile">
             After School
@@ -104,6 +117,9 @@ const HamburgerMenuNav = (props) => {
             Special Events
           </Link>
         </Section>
+
+        <hr className="mobileHR"/>
+
         <Section title="Registration">
           <Link to="/registerhowto" id="registerDropMobile" className="dropLinksMobile">
             How-To Register
@@ -112,12 +128,18 @@ const HamburgerMenuNav = (props) => {
             Ongoing Register
           </Link>
         </Section>
-        <div title="Faq">
+
+        <hr className="mobileHR"/>
+
+        <div title="Faq" className="linkBoxMobile">
           <Link to="/faq" id="faq" className="navLinksMobile">
             faq
           </Link>
         </div>
-        <div title="Contact">
+
+        <hr className="mobileHR"/>
+
+        <div title="Contact" className="linkBoxMobile">
           <Link to="/contact" id="contactMobile" className="navLinksMobile">
             contact
           </Link>
