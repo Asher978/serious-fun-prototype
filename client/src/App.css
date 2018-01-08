@@ -238,6 +238,13 @@ body {
   margin: 40px 0px 43px 0px;
 }
 
+.ourClass,
+.ourHomeTeam,
+.ourDifference {
+  display: flex;
+  flex-direction: column;
+}
+
 .ourContainer .ourPic {
   background-repeat: no-repeat;
   background-position: center;
@@ -2304,7 +2311,7 @@ td:last-child {
   align-items: center;
 }
 .navbar .topBar .container .socialLinks {
-  margin: 0px 8px;
+  margin: 0px 6px;
   width: 40px;
   height: 40px;
   border-radius: 8px;
@@ -2364,11 +2371,6 @@ td:last-child {
   margin: 0 auto;
 }
 
-
-
-/***************************CONTACT US**********************/
-/***************************CONTACT US**********************/
-/***************************CONTACT US**********************/
 /* .contactContainer {
 } */
 .contactTop {
@@ -2822,202 +2824,521 @@ th {
   flex-basis: 50%;
   margin-left: 35px;
 }
-.hamburger {
-  display: none;
+
+/***************************MOBILE*************************/
+/***************************MOBILE*************************/
+/***************************MOBILE*************************/
+@media (max-width: 1306px) {
+  .midHead .container {
+    width: 79%;
+  }
 }
 
-/************************* MEDIA PAD VERSION ***********************/
-/************************* MEDIA PAD VERSION ***********************/
-/************************* MEDIA PAD VERSION ***********************/
-
-
-@media (max-width: 768px) and (min-width: 321px) {
-.hamburger {
-    display: inline-block;
-    position: fixed;
-    top: 28px;
-    left: 28px;
-    z-index: 2;
-  }
-  .navLink {
-    display: none;
-  }
-  /*
-  .narrowLinks{
-    display: none;
-    font-family: Lato;
-    z-index: 999;
-    background-color: rgb(30, 48, 137);
-    width: 80vh;
-    height: 90vh;
-    top: 55px;
-    margin-left: -8px;
-    font-weight: lighter;
-    position: absolute;
-    color: white;
-    text-transform: uppercase;
-    font-size: 18px;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }*/
-  .navLinksMobile {
-    text-decoration: none;
-    color: white;
-    font-family: Lato;
-    font-weight: lighter;
-    margin-left: 25px;
-    margin-top: 25px;
+@media (max-width: 1024px) {
+  .navbar .container,
+  .navbar .topBar .container,
+  .classContainer,
+  .overViewContainer,
+  .tuitionContainer,
+  .PSContainer,
+  .ourTeam,
+  .supportersContainer,
+  .peopleSayContainer,
+  .transportationContainer,
+  .policiesContainer,
+  .campsContainer,
+  .CalendarContainer,
+  .eventInfoContainer,
+  .registerHowToContainer,
+  .registerOngoingContainer,
+  .faqContainer,
+  .contactTop,
+  .ClassesContainer,
+  .donateContainer {
+    width: 89% !important;
   }
 
-  .dropdownMenuMobile {
-  width: 100%;
-  color: white;
-  background-color: rgb(30, 48, 137);
-  position: absolute;
-  left: 0;
-  -webkit-transition: height 0.2s;
-  -moz-transition: height 0.2s;
-  transition: height 0.2s;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  .overViewRightSec {
+    margin-right: 0px;
   }
-  .section.open a {
-    display: block;
-   text-decoration: none;
-   text-transform: none;
-   font-size: 16px;
-   font-weight: lighter;
-   padding-left: 48px;
-   color: white;
+
+  .ourContainer {
+    width: 84%;
   }
-  .mobileHR {
-    color: rgb(238, 238, 238);
+  .afterSchoolTop {
+    width: 92%;
+  }
+  .infoLocationBottomMap {
+    margin: 0px auto 98px auto;
+  }
+  .fc-header-toolbar,
+  .fc-view-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .faqLogos {
+    justify-content: space-between !important;
+  }
+
+  .contactHRVerticalLine {
+    margin: 0px 3% !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navLink .navLinks {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  .topHead {
+    background-image: url("assets/nav/imageMblHeader@3x.png");
+  }
+
+  .headerLeft {
+    align-items: flex-end;
+  }
+
+  .midHead .mainLogo {
+    background-image: url("assets/imageMblSfLogo@2x.png");
+  }
+
+  .mainSubTitle {
+    font-size: 14px;
+  }
+
+  .bottombar {
+    background-image: url("assets/nav/imageMblFooter@3x.png") !important;
+  }
+  .userAuth {
+    font-size: 13px;
+  }
+
+  .user {
+    width: 118px !important;
+    height: 30px !important;
+  }
+
+  .helpBtn {
+    width: 87px !important;
+    height: 30px !important;
+    font-size: 13px !important;
+
+    line-height: 30px !important;
+  }
+  .ourContainer {
     width: 95%;
   }
-  .linkBoxMobile {
-   margin: 24px auto;
+  .ourInfo .textPara {
+    width: 82%;
+    height: auto;
   }
-  * {
-    box-sizing: border-box;
+
+  .ourMoreInfo {
+    width: 84%;
   }
-  *:before, *:after {
-    box-sizing: border-box;
+
+  .ourMoreInfoBtn {
+    width: 300px !important;
   }
-  .main {
-    /*display: none;*/
-    font-family: Lato;
-    z-index: 999;
-    position: absolute;
-    background-color: rgb(30, 48, 137);
-    top: 55px;
-    left: -28px;
-    width: 80vh;
-    height: 90vh;
-    overflow: auto;
-    text-transform: uppercase;
-    color: white;
+
+  .aboutUsInfoContainer,
+  .careerInfoBox {
+    width: 93%;
+  }
+  .aboutUs .aboutUsInfoContainer .infoOurText,
+  .infoOurMoreInfo,
+  .careerInfoText {
+    width: auto !important;
+  }
+
+  .overViewTextColumnSubText {
+    width: 95%;
+  }
+  .overViewHR {
+    width: 314px;
+  }
+
+  .afterSchoolLocationContainer {
+    width: auto;
+    margin: auto;
+  }
+  .hrVerticalLine {
+    margin: 0px 20px;
+  }
+
+  .afterSchoolLocationInfoColumnContainer .afterSchoolLocationInfoColumn {
+    margin-right: 0px;
+  }
+
+  .afterSchoolLocation first,
+  .afterSchoolLocationContainer .first {
+    margin-left: 0px;
+  }
+
+  .afterSchoolLocation .afterSchoolLocationInfoText {
+    width: 200px;
+  }
+
+  .PSInnerContainerTop {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .PSInnerContainerTop div:last-child {
+    margin-right: 0px;
+  }
+  .PSLocationBox {
+    margin-right: auto;
+  }
+  .infoLocationBottomMap {
+    width: 100%;
+  }
+  .PSLocationTitle ps17qlocationtitle {
+    font-size: 24px;
+  }
+  .PSSubTitles {
     font-size: 18px;
-    text-decoration: none;
-  }
-  .main .title {
-    color: white;
-    background-color: rgb(30, 48, 137);
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.2em;
-    padding: 1em;
   }
 
-  .section {
-    position: relative;
+  .PSLocationText {
+    font-size: 14px;
+  }
+  .PSLocationImageContainer {
+    justify-content: center;
+  }
+  .PSLocationImage {
+    display: none;
+  }
+
+  .PSLocationImage,
+  .PSMapImage {
     width: 100%;
-    border: none;
-    color: white;
-    background-color: rgb(30, 48, 137);
+    height: 220px;
   }
-  .section button {
-    position: absolute;
-    right: 5vh;
-    margin: 0;
-    padding: 0;
-    height: 3em;
-    width: 5em;
-    outline: 0;
-    border: 0;
-    background: none;
-    /*text-indent: -9999%;*/
-    pointer-events: none;
-  }
-  .section button:before {
-  }
-  .section button:after {
-    color: white;
-    content: '+'; /* Unicode character for "plus" sign (+) */
-    font-size: 20px;
-    float: right;
-    margin-left: 5px;
-    display: block;
-    position: absolute;
+  .PSInfoMidContainer,
+  .PSOutterContainer {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .section.open button:before, .section.open button:after {
-    height: 14px;
-    color: white;
-  }
-  .section.open button:before {
-    transform: translate(0%, -50%) rotate(-45deg);
-    color: white;
-  }
-  .section.open button:after {
-    transform: translate(0%, -50%) rotate(45deg);
-    color: white;
-  }
-  .section.open .articlewrap {
-    height: 120px;
-    color: white;
-  }
-
-  .articlewrap {
-    height: 0;
-    overflow: hidden;
-    transition: all .2s ease-in;
-  }
-
-  .sectionhead {
+  .PSBottomContainer {
     width: 100%;
-    overflow: hidden;
-    background-color: rgb(30, 48, 137);
-    cursor: pointer;
-    font-weight: 700;
-    color: white;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-weight: lighter;
-    padding: 1em;
-    padding-right: 2.1em;
   }
 
-  .article {
-    padding: 0em;
-    color: #333;
-    line-height: 1.3;
+  .PSCalendarText,
+  .PSReminderText {
+    width: 75%;
+  }
+  .classBottomPicContainer a {
+    width: 250px;
+    height: 150px;
+  }
 
+  /* Classes */
+  .ClassesTopInnerContainer {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .ClassesRightTop {
+    justify-content: space-between;
+  }
+
+  .ClassesMidInnerContainer {
+    flex-wrap: wrap;
+  }
+
+  .transportationInnerContainer {
+    width: 100%;
+  }
+
+  .tuitionRightCancelSubTitle,
+  .tuitionRightCancelSubText {
+    width: 350px;
+  }
+
+  .transportationInnerTopText,
+  .transportationInnerMidText {
+    width: 450px;
+  }
+
+  .transportationInnerBottomText,
+  .transportationInnerBottomSubText {
+    width: 100%;
+    height: auto;
+  }
+  .transportationInnerBottom {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* Poilcies */
+  .policiesInnerText {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Calendar */
+  .CalendarSubDate,
+  .CalendarLocationDropMenu {
+    font-size: 17px;
+  }
+  .fc-scroller {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+  }
+
+  /* Register */
+  .line-2 {
+    width: 100%;
+  }
+
+  .registerOngoingContainer {
+    flex-direction: column;
+  }
+
+  .registerRightColumn {
+    margin-left: 0px;
+  }
+
+  /* FAQ */
+  .faqLogos {
+    flex-wrap: wrap;
+  }
+
+  .faqLogosText {
+    flex-basis: 50%;
+  }
+
+  .faqMainTextContainer {
+    width: 100%;
+  }
+
+  /* Contact */
+
+  .Sign-up-for-Serious {
+    width: 500px;
+  }
+  .afterSchoolLocationContainer {
+    flex-direction: column;
+  }
+
+  .afterSchoolLocation {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .afterSchoolLocationTitle {
+    width: 67%;
+  }
+  .contactHRVerticalLine {
+    height: 1px;
+    /* width: 100%; */
+  }
+  .afterSchoolLocationInfoColumn {
+    width: 67%;
   }
 }
-/***************************MOBILE*************************/
-/***************************MOBILE*************************/
-/***************************MOBILE*************************/
+
+@media (max-width: 700px) {
+  .navbar .container {
+    width: 100% !important;
+  }
+  .ourContainer,
+  .ourTeamMemberInfo,
+  .classTopPicContainerTOP,
+  .classTopPicContainerBottom {
+    flex-wrap: wrap;
+  }
+
+  .ourClass,
+  .ourHomeTeam,
+  .ourDifference {
+    /* align-items: center; */
+    margin-bottom: 30px;
+  }
+
+  .hrVerticalLine {
+    height: 2px;
+  }
+  .classTopPicContainerTOP,
+  .classTopPicContainerBottom {
+    justify-content: center;
+  }
+
+  .navbar .topBar {
+    height: 80px;
+  }
+
+  .navbar .topBar .container {
+    flex-direction: column-reverse;
+    margin-bottom: 7px;
+  }
+  .copyright {
+    margin-right: 0px !important;
+  }
+}
+
+@media (max-width: 570px) {
+  .userAuth {
+    font-size: 12px;
+  }
+
+  .user {
+    width: 100px !important;
+    height: 30px !important;
+  }
+
+  .helpBtn {
+    width: 70px !important;
+    height: 30px !important;
+    font-size: 10px !important;
+
+    line-height: 30px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  /* .headerLeft {
+    transform: scale(0.7);
+  } */
+
+  .userAuth {
+    font-size: 10px;
+  }
+
+  .user {
+    width: 100px !important;
+    height: 30px !important;
+  }
+
+  .helpBtn {
+    width: 70px !important;
+    height: 30px !important;
+    font-size: 10px !important;
+
+    line-height: 30px !important;
+  }
+  .topHead {
+    background-image: url("assets/nav/imageMblHeader@2x.png");
+    height: 100px;
+  }
+  .bottombar {
+    background-image: url("assets/nav/imageMblFooter@2x.png") !important;
+    height: 100px !important;
+  }
+}
+
+@media (max-width: 470px) {
+  .midHead {
+    height: 94px;
+  }
+
+  .topHead {
+    background-image: url("assets/nav/imageMblHeader.png");
+  }
+
+  .headerLeft {
+    height: 54px;
+  }
+  .midHead .mainLogo {
+    background-image: url("assets/imageMblSfLogo.png");
+  }
+
+  .mainSubTitle {
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* .userAuth{
+    font-size: 10px;
+  }
+  .user{
+    width: 87px !important;
+    height: 30px !important;
+  } */
+
+  .bottombar {
+    background-image: url("assets/nav/imageMblFooter.png") !important;
+  }
+}
+@media (max-width: 470px) {
+  /* .headerLeft {
+    transform: scale(0.6);
+  } */
+
+  .topHead {
+    height: 70px;
+  }
+
+  .navbar .container {
+    width: 89% !important;
+  }
+  .headerLeft {
+    align-items: center;
+    width: 50%;
+  }
+
+  .mainLogo {
+    margin-right: 0px !important;
+  }
+  .bottombar {
+    background-image: url("assets/nav/imageMblFooter.png") !important;
+    height: 70px !important;
+  }
+}
+@media (max-width: 448px) {
+  .topHead {
+    height: 41px;
+  }
+}
+@media (max-width: 350px) {
+  .topHead {
+    height: 41px;
+  }
+  .midHead {
+    height: 65px;
+  }
+
+  .user {
+    width: 86px !important;
+    height: 21px !important;
+  }
+
+  .helpBtn {
+    margin-right: 0px !important;
+    width: 53px !important;
+    height: 23px !important;
+    line-height: 24px !important;
+  }
+}
 
 @media (max-width: 320px) {
   .topHead {
     /*display: hidden;*/
-    background-size: contain;
-    height: 44px;
-    position: fixed;
-    top: 0;
+    background-size: cover;
+    height: 41px;
+    /* position: fixed;
+    top: 0; */
     width: 100%;
+  }
+
+  .navbar .container {
+    height: 58px;
+  }
+
+  .midHead {
+    height: 49px;
+  }
+
+  .navbar .container {
+    width: 94% !important;
   }
   .navLink {
     display: none;
@@ -3026,7 +3347,6 @@ th {
     width: 21px;
     height: 14px;
     z-index: 9;
-    position: fixed;
     top: 0;
   }
   .midHead .mainLogo {
@@ -3036,10 +3356,14 @@ th {
     background-position: center;
   }
 
-  .midHead .helpBtn {
-    display: none;
+  .helpBtn {
+    margin-right: 5px !important;
   }
 
+  .headerLeft {
+    align-items: center;
+    width: 39%;
+  }
   .textTitle {
     display: none;
   }
@@ -3047,6 +3371,12 @@ th {
     width: 288px;
     height: 76px;
     font-size: 16px;
+  }
+
+  .ourClass,
+  .ourHomeTeam,
+  .ourDifference {
+    align-items: center;
   }
   .ourContainer {
     flex-direction: column;
@@ -3060,170 +3390,292 @@ th {
     font-size: 18px;
     text-align: center;
   }
-  .navbar .topBar .container .copyright {
-    display: none;
-  }
-  /* HAMUBRGER MENU CSS*/
-    /* HAMUBRGER MENU CSS*/
-      /* HAMUBRGER MENU CSS*/
-  .hamburger {
-    display: inline-block;
-    position: fixed;
-    top: 8px;
-    left: 8px;
-    z-index: 2;
-  }
-  .navLink {
-    display: none;
-  }
-  .navLinksMobile {
-    text-decoration: none;
-    color: white;
-    font-family: Lato;
-    font-weight: lighter;
-    margin-left: 25px;
-    margin-top: 25px;
+  .navbar .topBar .container {
+    height: auto;
   }
 
-  .dropdownMenuMobile {
-  width: 100%;
-  color: white;
-  background-color: rgb(30, 48, 137);
-  position: absolute;
-  left: 0;
-  -webkit-transition: height 0.2s;
-  -moz-transition: height 0.2s;
-  transition: height 0.2s;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  }
-  .section.open a {
-    display: block;
-   text-decoration: none;
-   text-transform: none;
-   font-size: 16px;
-   font-weight: lighter;
-   padding-left: 48px;
-   color: white;
-  }
-  .mobileHR {
-    color: rgb(238, 238, 238);
-    width: 95%;
-  }
-  .linkBoxMobile {
-   margin: 24px auto;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  *:before, *:after {
-    box-sizing: border-box;
-  }
-  .main {
-    /*display: none;*/
-    font-family: Lato;
-    z-index: 999;
-    position: absolute;
-    background-color: rgb(30, 48, 137);
-    top: 55px;
-    left: -8px;
-    width: 80vh;
-    height: 90vh;
-    overflow: auto;
-    text-transform: uppercase;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-  }
-  .main .title {
-    color: white;
-    background-color: rgb(30, 48, 137);
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.2em;
-    padding: 1em;
+  .aboutUs .aboutUsInfoContainer .infoOurMoreInfo {
+    height: auto;
   }
 
-  .section {
-    position: relative;
+  .transportationInnerTopText,
+  .transportationInnerMidText,
+  .Sign-up-for-Serious,
+  .Contact-A-Program-Lo,
+  .Contact-Serious-Fun {
+    width: auto;
+    height: auto;
+  }
+
+  .ourTeam .ourTeamContainer .ourTeamTitle,
+  .supportTitle,
+  .peopleSayTitle,
+  .overViewTitle p,
+  .PSLocationTitle,
+  .transportationMainTitle,
+  .policiesMainTitle,
+  .campsMainTitle,
+  .CalendarMainTitle,
+  .CalendarMainTitle,
+  .eventInfoMainTitle,
+  .how-To-Register,
+  .FAQ,
+  .Contact-Serious-Fun,
+  .donateMainTitle {
+    font-size: 24px;
+  }
+
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo,
+  .transportationInnerTop,
+  .campsTop,
+  .CalendarTopInnerContainer,
+  .registerHowToLogos,
+  .faqLogos {
+    flex-direction: column;
+  }
+
+  .ourTeam .ourTeamContainer .ourTeamFounderInfo .ourTeamFounderText {
+    width: auto;
+    height: auto;
+    padding: 8px 0px 30px 12px;
+  }
+
+  .ourTeam
+    .ourTeamContainer
+    .ourTeamFounderInfo
+    .ourTeamFounderPicContainer
+    .ourTeamFounderPic,
+  .ourTeamMemberPic,
+  .supportLogos {
+    width: 140px !important;
+    height: 128px !important;
+  }
+
+  .ourTeamMid .ourTeamTitle,
+  .ourTeamBottom .ourTeamTitle,
+  .supportBottomTitle,
+  .overViewSubTitle p,
+  .afterSchoolLocationTitle,
+  .PSLocationSubTitle,
+  .AnnounceTitle,
+  .ClassesMainTitle,
+  .tuitionMainTitle,
+  .transportationInnerBottomTitle,
+  .policiesInnerText,
+  .fc-center *,
+  .eventInfoSubTitle,
+  .sign-up-your-child,
+  #regisIDOne,
+  #regisIDTwo,
+  #regisIDThree,
+  .registerSubtitle,
+  .faqLogos *,
+  .faqLogosText,
+  .Contact-A-Program-Lo {
+    font-size: 18px !important;
+  }
+
+  .ourTeamMemberPicContainer,
+  .CalendarSubDate {
+    margin-bottom: 20px;
+  }
+
+  .careerInfoTitle {
+    font-size: 22px !important;
+  }
+
+  .supportBottomContainer {
+    flex-direction: column-reverse;
+  }
+
+  .supportBottomHR {
+    height: 0px;
+  }
+
+  .supportDonors {
+    height: auto;
+  }
+
+  .supportBottomSubTitle {
+    margin-top: 12px;
+  }
+
+  .peopleSayFeedBox {
+    height: auto;
+  }
+
+  .peopleSayFeedText {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .overViewSmallContainer,
+  .tuitionInnerTop {
+    flex-direction: column;
+  }
+
+  .overViewTextColumn *,
+  .moreInfo,
+  .overViewSubTitle *,
+  .overViewSubTitleSubTitle,
+  .afterSchoolLocationInfoTitle,
+  .afterSchoolLocationInfoText,
+  .PSLocationText,
+  .AnnounceSubTitle,
+  .AnnounceLists,
+  .languageRightTopText,
+  .languageRightTopLocationBtn,
+  .tuitionLeftSec *,
+  .tuitionRightSec *,
+  .tuitionInnerBottom *,
+  .transportationInnerLeftSec *,
+  .transportationInnerBottomText,
+  .eventInfoEvents *,
+  .registerMainInnerTextContainer *,
+  .registerMainTextContainer *,
+  .faqAnswer,
+  .contactPhoneFaxContainer *,
+  .afterSchoolLocationInfo * {
+    font-size: 14px !important;
+  }
+  .overViewHR {
     width: 100%;
-    border: none;
-    color: white;
-    background-color: rgb(30, 48, 137);
   }
-  .section button {
-    position: absolute;
-    right: 5vh;
-    margin: 0;
-    padding: 0;
-    height: 3em;
-    width: 5em;
-    outline: 0;
-    border: 0;
-    background: none;
-    /*text-indent: -9999%;*/
-    pointer-events: none;
+  .overViewRightSec .overViewTextColumnSubText,
+  .tuitionLeftMidText,
+  .tuitionRightCancelSubTitle,
+  .tuitionRightCancelSubText,
+  .tuitionTextPara {
+    width: auto;
   }
-  .section button:before {
+
+  .afterSchoolTitle {
+    font-size: 24px !important;
   }
-  .section button:after {
-    color: white;
-    content: '+'; /* Unicode character for "plus" sign (+) */
-    font-size: 20px;
-    float: right;
-    margin-left: 5px;
+
+  .afterSchoolTop {
+    flex-direction: column;
+  }
+
+  .afterSchoolTitle {
+    margin-bottom: 20px;
+  }
+  .afterSchoolLocation {
+    align-items: flex-start;
+  }
+  .afterSchoolLocationInfoColumnContainer {
+    flex-direction: column;
+  }
+
+  .afterSchoolLocation {
+    padding-left: 24px !important;
+  }
+  .second {
+    padding-left: 0px !important;
+  }
+
+  .afterSchoolLocationInfo {
+    width: 123%;
+  }
+
+  .infoLocationBottomText {
+    margin: 0px 3.8% 40px 3.8%;
+    font-size: 14px;
+  }
+
+  .afterSchoolLocationContainer .second {
+    padding: 0px !important;
+  }
+
+  .afterSchoolTop .linkBoxs {
+    align-self: flex-end;
+  }
+
+  .PSLocationBox {
+    margin-bottom: 20px;
+  }
+
+  .AnnounceGeneral,
+  .AnnounceSchool {
+    width: auto;
+  }
+
+  .PSClassInfoBottom,
+  .PSContactInnerBox,
+  .PSBottomContainer,
+  .campsInnerContainerTop {
+    flex-direction: column;
+  }
+
+  .ClassesRightTop {
     display: block;
-    position: absolute;
   }
 
-  .section.open button:before, .section.open button:after {
-    height: 14px;
-    color: white;
+  .ClassesMainTitle,
+  .ClassesRightTopText,
+  .ClassesBox {
+    margin-bottom: 20px;
   }
-  .section.open button:before {
-    transform: translate(0%, -50%) rotate(-45deg);
-    color: white;
-  }
-  .section.open button:after {
-    transform: translate(0%, -50%) rotate(45deg);
-    color: white;
-  }
-  .section.open .articlewrap {
-    height: 120px;
-    color: white;
+  .transportationInnerLeftSec {
+    margin-bottom: 20px;
   }
 
-  .articlewrap {
-    height: 0;
-    overflow: hidden;
-    transition: all .2s ease-in;
+  .campsDropBtn {
+    align-self: center;
   }
 
-  .sectionhead {
-    width: 100%;
-    overflow: hidden;
-    background-color: rgb(30, 48, 137);
-    cursor: pointer;
-    font-weight: 700;
-    color: white;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-weight: lighter;
-    padding: 1em;
-    padding-right: 2.1em;
-  }
-  .article {
-    padding: 0em;
-    color: #333;
-    line-height: 1.3;
+  .registerSubtitle {
+    font-size: 18px !important;
   }
 
-    /* HAMUBRGER MENU CSS END*/
-        /* HAMUBRGER MENU CSS END*/
-            /* HAMUBRGER MENU CSS END*/
+  .registerHowToLogos img:nth-child(even) {
+    margin-bottom: 10px;
+  }
+
+  .faqLogosText {
+    display: flex;
+    align-items: center;
+  }
+
+  .contactPhoneFaxContainer {
+    margin-left: 0px;
+  }
+
+  .bottombar {
+    height: 41px !important;
+  }
+
+  .navbar .topBar {
+    height: 149px;
+  }
+  .socialLink {
+    height: auto !important;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    margin-bottom: 13px;
+  }
+
+  .socialLinks {
+    flex-basis: 100%;
+  }
+
+  #newsletter {
+    margin-bottom: 22px;
+  }
+  #facebook,
+  #twitter,
+  #email {
+    flex-basis: 14%;
+  }
+  #email {
+    margin-right: 0px !important;
+  }
 }
+
 /***************************MOBILE END*********************/
 /***************************MOBILE END*********************/
 /***************************MOBILE END*********************/
+
+/***************************CONTACT US**********************/
+/***************************CONTACT US**********************/
+/***************************CONTACT US**********************/
