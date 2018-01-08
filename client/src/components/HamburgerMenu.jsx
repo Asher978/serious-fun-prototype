@@ -11,7 +11,7 @@ const HamburgerMenu = (props) => {
   // If display state is false, hide mobile nav links
   // If display state is true, show mobile nav links
   let display = {
-    display: `${props.display ? 'inline' : 'none'}`
+    display: `${props.display ? 'inline-block' : 'none'}`
     }
   let isHorizontal = props.orientation === 'horizontal';
   let width  = `${props.width}px`;
