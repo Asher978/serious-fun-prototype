@@ -163,7 +163,7 @@ class App extends Component {
               menuClicked={this.handleClick.bind(this)}
               width={21}
               height={14}
-              strokeWidth={5}
+              strokeWidth={3}
               rotate={0}
               color={'#f5483a'}
               borderRadius={2.5}
