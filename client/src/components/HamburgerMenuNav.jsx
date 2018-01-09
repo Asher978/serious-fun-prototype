@@ -30,7 +30,7 @@ export class Section extends React.Component{
   render() {
     return (
       <div className={this.state.class}>
-        <button></button>
+        <button className="accordionIcon"></button>
         <div className="sectionhead" onClick={this.handleClick}>{this.props.title}</div>
         <div className="articlewrap">
           <div className="article">
