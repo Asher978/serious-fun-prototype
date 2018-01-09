@@ -3722,7 +3722,7 @@ th {
     margin: 0 19px;
    }
   .linkBoxMobile {
-    margin: 15px auto;
+    margin: 12px auto;
   }
   *{
     box-sizing: border-box;
@@ -3800,7 +3800,7 @@ th {
      color: white;
    }
    .section.open .articlewrap {
-     height: 120px;
+     height: fit-content;
      color: white;
    }
    .articlewrap {
@@ -3818,12 +3818,15 @@ th {
      white-space: nowrap;
      text-overflow: ellipsis;
      font-weight: lighter;
-     padding: 1em 1.5em;
+     padding: 12px 1.5em;
     }
     .article {
       padding: 0em;
       color: #333;
-      line-height: 1.3;
+      line-height: 2em;
+    }
+    .article:last-child {
+      margin-bottom: 12px;
     }
 
      /* HAMUBRGER MENU CSS END*/
