@@ -7,14 +7,10 @@ const AfterSchoolLocations = props => {
       <div className="afterSchoolTop">
       <div className="afterSchoolTitle">Serious Fun Locations</div>
       <Link to="/" className="afterSchoolBtn">Select Location</Link>
-
       </div>
-
       <div className="afterSchoolLocationContainer">
       <div className="afterSchoolLocation first">
         <div className="afterSchoolLocationTitle">Queens</div>
-
-
         <div className="afterSchoolLocationInfoColumnContainer">
         <div className="afterSchoolLocationInfoColumn ">
         <div className="afterSchoolLocationInfo">
@@ -60,16 +56,9 @@ const AfterSchoolLocations = props => {
       </div>
     </div>
     </div>
-
     <div className="infoLocationBottomText">Serious Fun has programs at these sites, but will accept children from other locations provided they coordinate their transportation.</div>
     <div className="infoLocationBottomMap"></div>
-
-
-
-
-
     </div>
-
   );
 };
 

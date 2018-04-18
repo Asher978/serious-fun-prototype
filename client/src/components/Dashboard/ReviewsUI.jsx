@@ -59,7 +59,6 @@ class ReviewsUI extends Component{
             newType: e.target.value    
         });
     }
-
     renderReviewsPortal = ()=> {
         let { newQuote, newReviewer} = this.state;
         return(

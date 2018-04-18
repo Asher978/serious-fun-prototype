@@ -26,9 +26,6 @@ class AfterSchoolLocations extends Component {
       <div className="afterSchoolContainer">
         <div className="afterSchoolTop">
         <div className="afterSchoolTitle">{content.mainH}</div>
-
-
-
         <div className="linkBox">
         <div className="afterSchoolBtn navLinks">Select Location <span className="downMenuArrow">&#8250;</span></div>
 
@@ -58,16 +55,11 @@ class AfterSchoolLocations extends Component {
           </div>
         </div>
       </div>
-
-
-
         </div>
 
         <div className="afterSchoolLocationContainer">
         <div className="afterSchoolLocation first">
           <div className="afterSchoolLocationTitle">{content.location1}</div>
-
-
           <div className="afterSchoolLocationInfoColumnContainer">
           <div className="afterSchoolLocationInfoColumn ">
           <div className="afterSchoolLocationInfo">
@@ -96,7 +88,6 @@ class AfterSchoolLocations extends Component {
             <div className="afterSchoolLocationInfoTitle">PS 166 Q </div>
             <div className="afterSchoolLocationInfoText">33-09 35th <br></br> Ave Astoria, NY 11106 <br></br> Grades Pre-K through 5th</div>
           </div>
-          
         </div>
         </div>
         </div>

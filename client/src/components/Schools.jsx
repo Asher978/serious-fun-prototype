@@ -4,7 +4,7 @@ import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
 import SingleSchool from './SingleSchool';
 
-// import School from './school.jsx';
+
 class Schools extends Component{
   constructor(){
     super();
@@ -39,7 +39,7 @@ class Schools extends Component{
 
   renderMap = (schools) => {
     const firstSchool = schools[0].coordinates;
-    // const lastSchool = schools[schools.length-1];
+    
     return (
         <Map center={firstSchool} zoom={14}>
           <TileLayer

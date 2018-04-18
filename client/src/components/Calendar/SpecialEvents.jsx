@@ -15,10 +15,10 @@ const SpecialEvents = props => {
 
             <ul className="eventInfoText">
             <li>
-            <p>Fri. Dec 1, 4:00 PM</p>
-            <p>PS 85 Violin and Guitar Show</p>
-            <p>PS 85 Cafeteria</p>
-                                    </li>
+              <p>Fri. Dec 1, 4:00 PM</p>
+              <p>PS 85 Violin and Guitar Show</p>
+              <p>PS 85 Cafeteria</p>
+            </li>
             </ul>
             <ul className="eventInfoText">
             <li>
@@ -26,8 +26,6 @@ const SpecialEvents = props => {
             <p>PS 166 School Gym</p>
             <p>PS 166 Piano Concert</p></li>
             </ul>
-            
-
           </div>
 
 

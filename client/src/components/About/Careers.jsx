@@ -46,6 +46,7 @@ class Careers extends Component {
       </div>
     )
   }
+
   renderCareersPage = () => {
     let { content, careers } = this.state;
     return (
@@ -66,12 +67,8 @@ class Careers extends Component {
       <div className="careerInfoText">
       {(careers.length <= 0) ? <div className="careerInfoTextLocation"> No jobs Available</div> : this.renderPostings()}
       </div>
-      
       </div>
-      
       </div>
-      
-
       </div>
     )
   }

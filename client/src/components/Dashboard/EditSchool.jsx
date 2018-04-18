@@ -34,14 +34,14 @@ class EditSchool extends Component {
     const cloudName = 'dnixq4nvb';
     const url = 'https://api.cloudinary.com/v1_1/'+cloudName+'/image/upload';
 
-    // cloudinary API requires timestamp in milli seconds
+    
     const timestamp = Date.now()/1000;
     const uploadPreset = 'gsolnxvn';
 
-    // prepping the string for the upload
+    
     const paramsStr = 'timestamp='+timestamp+'&upload_preset='+uploadPreset+'e-1DajckQfu24NBJcwTcAvNtlYM';
     
-    //encrypting the string before sending it to API
+    
     const signature = sha1(paramsStr); 
     const params = {
       'api_key': '862335133837131',

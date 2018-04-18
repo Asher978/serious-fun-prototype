@@ -1,11 +1,6 @@
 //https://codepen.io/cambourke/pen/QyKywO
 //https://github.com/cameronbourke/react-hamburger-menu
 import React from "react";
-// import { Link } from "react-router-dom";
-// import ReactDOM from "react-dom";
-// import App from '../App'
-// import Nav from './Nav'
-
 
 const HamburgerMenu = (props) => {
   let isHorizontal = props.orientation === 'horizontal';

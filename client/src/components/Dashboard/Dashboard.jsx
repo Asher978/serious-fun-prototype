@@ -57,9 +57,7 @@ class Dashboard extends Component {
 
   handleAddSchool = (e) => {
     e.preventDefault();
-    
     this.getSchoolCoords();
-
     if (this.state.coordsLoaded) {
       axios.post('/api/schools/add', {
         'schoolName': this.state.schoolName,
@@ -111,8 +109,9 @@ class Dashboard extends Component {
   }
 
   getSchoolCoords = () => {
-    
     let schoolAddress = `${this.state.st_Addr} ${this.state.city} ${this.state.state} ${this.state.zipcode}`;
+    
+    // TODO make a separate function
 
     geocodeByAddress(schoolAddress)
       .then(results => getLatLng(results[0]))
@@ -143,7 +142,7 @@ class Dashboard extends Component {
       });
     });
   }
-
+  
   handleDropImg = (file) => {
     this.setState({ picture_url: Upload.getUrl(file) });
   }
