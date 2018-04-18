@@ -69,6 +69,6 @@ const reviewRoutes = require('./api/routes/reviewRoutes');
 app.use('/api/reviews', reviewRoutes);
 
 
-app.use('*', (req,res) => {
+app.use('/*', (req,res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
