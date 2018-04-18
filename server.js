@@ -48,9 +48,6 @@ server.listen(port, () => {
 
 app.use(express.static('public'));
 
-app.get('*', (req,res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
 
 
 const userRoutes = require('./api/routes/userRoutes');
@@ -72,3 +69,6 @@ const reviewRoutes = require('./api/routes/reviewRoutes');
 app.use('/api/reviews', reviewRoutes);
 
 
+app.use('*', (req,res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
