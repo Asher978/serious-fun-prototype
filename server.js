@@ -69,8 +69,8 @@ const reviewRoutes = require('./api/routes/reviewRoutes');
 app.use('/api/reviews', reviewRoutes);
 
 
-app.use('/*', (req, res, next) => {
-  console.log('WILD CARD HIT------>')
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-  next();
-});
+// app.get('/*', (req, res, next) => {
+//   console.log('WILD CARD HIT------>')
+//   res.sendFile(path.join(__dirname, 'public', 'index.html'));
+//   next();
+// });
