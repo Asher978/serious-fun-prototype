@@ -70,5 +70,6 @@ app.use('/api/reviews', reviewRoutes);
 
 
 app.use('/*', (req,res) => {
+  console.log('WILD CARD HIT------>')
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
